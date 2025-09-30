@@ -462,9 +462,23 @@ spec:
                                   The execution environment being used to host this Task.
                                   Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                                 type: string
+                              gpuZonalRedundancyDisabled:
+                                description: True if GPU zonal redundancy is disabled on this execution.
+                                type: boolean
                               maxRetries:
                                 description: Number of retries allowed per Task, before marking this Task failed.
                                 type: number
+                              nodeSelector:
+                                description: |-
+                                  Node Selector describes the hardware requirements of the resources.
+                                  Structure is documented below.
+                                items:
+                                  properties:
+                                    accelerator:
+                                      description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                      type: string
+                                  type: object
+                                type: array
                               serviceAccount:
                                 description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                                 type: string
@@ -1176,9 +1190,23 @@ spec:
                                   The execution environment being used to host this Task.
                                   Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                                 type: string
+                              gpuZonalRedundancyDisabled:
+                                description: True if GPU zonal redundancy is disabled on this execution.
+                                type: boolean
                               maxRetries:
                                 description: Number of retries allowed per Task, before marking this Task failed.
                                 type: number
+                              nodeSelector:
+                                description: |-
+                                  Node Selector describes the hardware requirements of the resources.
+                                  Structure is documented below.
+                                items:
+                                  properties:
+                                    accelerator:
+                                      description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                      type: string
+                                  type: object
+                                type: array
                               serviceAccount:
                                 description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                                 type: string
@@ -2020,9 +2048,23 @@ spec:
                                   The execution environment being used to host this Task.
                                   Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                                 type: string
+                              gpuZonalRedundancyDisabled:
+                                description: True if GPU zonal redundancy is disabled on this execution.
+                                type: boolean
                               maxRetries:
                                 description: Number of retries allowed per Task, before marking this Task failed.
                                 type: number
+                              nodeSelector:
+                                description: |-
+                                  Node Selector describes the hardware requirements of the resources.
+                                  Structure is documented below.
+                                items:
+                                  properties:
+                                    accelerator:
+                                      description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                      type: string
+                                  type: object
+                                type: array
                               serviceAccount:
                                 description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                                 type: string
@@ -2734,9 +2776,21 @@ spec:
                               The execution environment being used to host this Task.
                               Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                             type: string
+                          gpuZonalRedundancyDisabled:
+                            description: True if GPU zonal redundancy is disabled on this execution.
+                            type: boolean
                           maxRetries:
                             description: Number of retries allowed per Task, before marking this Task failed. Defaults to 3. Minimum value is 0.
                             type: number
+                          nodeSelector:
+                            description: |-
+                              Node Selector describes the hardware requirements of the resources.
+                              Structure is documented below.
+                            properties:
+                              accelerator:
+                                description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                type: string
+                            type: object
                           serviceAccount:
                             description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                             type: string
@@ -3419,9 +3473,21 @@ spec:
                               The execution environment being used to host this Task.
                               Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                             type: string
+                          gpuZonalRedundancyDisabled:
+                            description: True if GPU zonal redundancy is disabled on this execution.
+                            type: boolean
                           maxRetries:
                             description: Number of retries allowed per Task, before marking this Task failed. Defaults to 3. Minimum value is 0.
                             type: number
+                          nodeSelector:
+                            description: |-
+                              Node Selector describes the hardware requirements of the resources.
+                              Structure is documented below.
+                            properties:
+                              accelerator:
+                                description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                type: string
+                            type: object
                           serviceAccount:
                             description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                             type: string
@@ -4234,9 +4300,21 @@ spec:
                               The execution environment being used to host this Task.
                               Possible values are: EXECUTION_ENVIRONMENT_GEN1, EXECUTION_ENVIRONMENT_GEN2.
                             type: string
+                          gpuZonalRedundancyDisabled:
+                            description: True if GPU zonal redundancy is disabled on this execution.
+                            type: boolean
                           maxRetries:
                             description: Number of retries allowed per Task, before marking this Task failed. Defaults to 3. Minimum value is 0.
                             type: number
+                          nodeSelector:
+                            description: |-
+                              Node Selector describes the hardware requirements of the resources.
+                              Structure is documented below.
+                            properties:
+                              accelerator:
+                                description: The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/jobs/gpu for configuring GPU.
+                                type: string
+                            type: object
                           serviceAccount:
                             description: Email address of the IAM service account associated with the Task of a Job. The service account represents the identity of the running task, and determines what permissions the task has. If not provided, the task will use the project's default service account.
                             type: string
