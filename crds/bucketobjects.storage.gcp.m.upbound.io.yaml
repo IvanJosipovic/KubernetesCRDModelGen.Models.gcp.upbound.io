@@ -180,11 +180,17 @@ spec:
                         - name
                         type: object
                     type: object
+                  deletionPolicy:
+                    description: When set to ABANDON, the object won't be deleted from storage bucket.
+                    type: string
                   detectMd5Hash:
                     description: 'MD5 hash of the data, encoded using base64. This field is not present for composite objects. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.'
                     type: string
                   eventBasedHold:
                     description: Whether an object is under event-based hold. Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
+                    type: boolean
+                  forceEmptyContentType:
+                    description: When set to true, it ensure the object's Content-Type is empty.
                     type: boolean
                   kmsKeyName:
                     description: The resource name of the Cloud KMS key that will be used to encrypt the object.
@@ -364,11 +370,17 @@ spec:
                     required:
                     - encryptionKeySecretRef
                     type: object
+                  deletionPolicy:
+                    description: When set to ABANDON, the object won't be deleted from storage bucket.
+                    type: string
                   detectMd5Hash:
                     description: 'MD5 hash of the data, encoded using base64. This field is not present for composite objects. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.'
                     type: string
                   eventBasedHold:
                     description: Whether an object is under event-based hold. Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
+                    type: boolean
+                  forceEmptyContentType:
+                    description: When set to true, it ensure the object's Content-Type is empty.
                     type: boolean
                   kmsKeyName:
                     description: The resource name of the Cloud KMS key that will be used to encrypt the object.
@@ -511,11 +523,17 @@ spec:
                         description: 'Encryption algorithm. Default: AES256'
                         type: string
                     type: object
+                  deletionPolicy:
+                    description: When set to ABANDON, the object won't be deleted from storage bucket.
+                    type: string
                   detectMd5Hash:
                     description: 'MD5 hash of the data, encoded using base64. This field is not present for composite objects. For more information about using the MD5 hash, see Hashes and ETags: Best Practices.'
                     type: string
                   eventBasedHold:
                     description: Whether an object is under event-based hold. Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
+                    type: boolean
+                  forceEmptyContentType:
+                    description: When set to true, it ensure the object's Content-Type is empty.
                     type: boolean
                   generation:
                     description: (Computed) The content generation of this object. Used for object versioning and soft delete.
