@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudidentity.gcp.m.upbound.io
   names:
+    kind: GroupMembership
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GroupMembership
     listKind: GroupMembershipList
     plural: groupmemberships
     singular: groupmembership

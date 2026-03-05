@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.gcp.upbound.io
   names:
+    kind: SourceRepresentationInstance
     categories:
     - crossplane
     - managed
     - gcp
-    kind: SourceRepresentationInstance
     listKind: SourceRepresentationInstanceList
     plural: sourcerepresentationinstances
     singular: sourcerepresentationinstance

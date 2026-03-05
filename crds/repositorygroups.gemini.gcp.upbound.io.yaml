@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gemini.gcp.upbound.io
   names:
+    kind: RepositoryGroup
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RepositoryGroup
     listKind: RepositoryGroupList
     plural: repositorygroups
     singular: repositorygroup

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.m.upbound.io
   names:
+    kind: AnalyticsHubListing
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AnalyticsHubListing
     listKind: AnalyticsHubListingList
     plural: analyticshublistings
     singular: analyticshublisting

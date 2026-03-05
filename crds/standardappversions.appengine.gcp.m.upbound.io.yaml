@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appengine.gcp.m.upbound.io
   names:
+    kind: StandardAppVersion
     categories:
     - crossplane
     - managed
     - gcp
-    kind: StandardAppVersion
     listKind: StandardAppVersionList
     plural: standardappversions
     singular: standardappversion

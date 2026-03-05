@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.gcp.m.upbound.io
   names:
+    kind: BucketIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: BucketIAMMember
     listKind: BucketIAMMemberList
     plural: bucketiammembers
     singular: bucketiammember

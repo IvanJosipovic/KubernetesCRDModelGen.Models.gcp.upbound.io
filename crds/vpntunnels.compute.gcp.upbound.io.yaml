@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: VPNTunnel
     categories:
     - crossplane
     - managed
     - gcp
-    kind: VPNTunnel
     listKind: VPNTunnelList
     plural: vpntunnels
     singular: vpntunnel

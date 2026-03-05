@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkmanagement.gcp.upbound.io
   names:
+    kind: ConnectivityTest
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ConnectivityTest
     listKind: ConnectivityTestList
     plural: connectivitytests
     singular: connectivitytest

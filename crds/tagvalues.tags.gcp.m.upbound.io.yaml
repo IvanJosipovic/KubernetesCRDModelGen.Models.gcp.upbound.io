@@ -7,11 +7,11 @@ metadata:
 spec:
   group: tags.gcp.m.upbound.io
   names:
+    kind: TagValue
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TagValue
     listKind: TagValueList
     plural: tagvalues
     singular: tagvalue

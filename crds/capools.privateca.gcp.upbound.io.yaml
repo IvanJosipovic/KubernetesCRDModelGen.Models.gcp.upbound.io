@@ -7,11 +7,11 @@ metadata:
 spec:
   group: privateca.gcp.upbound.io
   names:
+    kind: CAPool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CAPool
     listKind: CAPoolList
     plural: capools
     singular: capool

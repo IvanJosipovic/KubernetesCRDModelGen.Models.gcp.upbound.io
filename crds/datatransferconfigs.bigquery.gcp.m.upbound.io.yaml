@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.m.upbound.io
   names:
+    kind: DataTransferConfig
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DataTransferConfig
     listKind: DataTransferConfigList
     plural: datatransferconfigs
     singular: datatransferconfig

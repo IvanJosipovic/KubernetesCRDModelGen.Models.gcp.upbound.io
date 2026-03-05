@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionAutoscaler
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionAutoscaler
     listKind: RegionAutoscalerList
     plural: regionautoscalers
     singular: regionautoscaler

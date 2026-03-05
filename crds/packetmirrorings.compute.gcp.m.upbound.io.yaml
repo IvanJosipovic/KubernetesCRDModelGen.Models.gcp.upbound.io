@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: PacketMirroring
     categories:
     - crossplane
     - managed
     - gcp
-    kind: PacketMirroring
     listKind: PacketMirroringList
     plural: packetmirrorings
     singular: packetmirroring

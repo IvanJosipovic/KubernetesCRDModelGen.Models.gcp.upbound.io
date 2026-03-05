@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: GlobalForwardingRule
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GlobalForwardingRule
     listKind: GlobalForwardingRuleList
     plural: globalforwardingrules
     singular: globalforwardingrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigtable.gcp.m.upbound.io
   names:
+    kind: InstanceIAMPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InstanceIAMPolicy
     listKind: InstanceIAMPolicyList
     plural: instanceiampolicies
     singular: instanceiampolicy

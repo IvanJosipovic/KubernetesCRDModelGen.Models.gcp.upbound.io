@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudquotas.gcp.upbound.io
   names:
+    kind: QuotaPreference
     categories:
     - crossplane
     - managed
     - gcp
-    kind: QuotaPreference
     listKind: QuotaPreferenceList
     plural: quotapreferences
     singular: quotapreference

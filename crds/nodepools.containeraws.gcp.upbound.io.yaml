@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containeraws.gcp.upbound.io
   names:
+    kind: NodePool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: NodePool
     listKind: NodePoolList
     plural: nodepools
     singular: nodepool

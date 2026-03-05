@@ -7,11 +7,11 @@ metadata:
 spec:
   group: monitoring.gcp.m.upbound.io
   names:
+    kind: CustomService
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CustomService
     listKind: CustomServiceList
     plural: customservices
     singular: customservice

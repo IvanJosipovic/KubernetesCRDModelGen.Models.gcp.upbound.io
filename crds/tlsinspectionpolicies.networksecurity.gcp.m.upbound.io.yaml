@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networksecurity.gcp.m.upbound.io
   names:
+    kind: TLSInspectionPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TLSInspectionPolicy
     listKind: TLSInspectionPolicyList
     plural: tlsinspectionpolicies
     singular: tlsinspectionpolicy

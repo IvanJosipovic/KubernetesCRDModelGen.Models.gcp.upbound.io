@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventarc.gcp.m.upbound.io
   names:
+    kind: Trigger
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Trigger
     listKind: TriggerList
     plural: triggers
     singular: trigger

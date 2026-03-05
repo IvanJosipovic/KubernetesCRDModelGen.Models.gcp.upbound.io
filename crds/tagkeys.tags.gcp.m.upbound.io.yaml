@@ -7,11 +7,11 @@ metadata:
 spec:
   group: tags.gcp.m.upbound.io
   names:
+    kind: TagKey
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TagKey
     listKind: TagKeyList
     plural: tagkeys
     singular: tagkey

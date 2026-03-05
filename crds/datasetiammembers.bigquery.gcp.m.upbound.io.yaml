@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.m.upbound.io
   names:
+    kind: DatasetIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DatasetIAMMember
     listKind: DatasetIAMMemberList
     plural: datasetiammembers
     singular: datasetiammember

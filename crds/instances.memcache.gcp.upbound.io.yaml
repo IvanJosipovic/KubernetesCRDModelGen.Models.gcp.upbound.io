@@ -7,11 +7,11 @@ metadata:
 spec:
   group: memcache.gcp.upbound.io
   names:
+    kind: Instance
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Instance
     listKind: InstanceList
     plural: instances
     singular: instance

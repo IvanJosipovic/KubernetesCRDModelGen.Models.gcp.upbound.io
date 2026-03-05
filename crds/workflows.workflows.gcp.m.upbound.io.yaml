@@ -7,11 +7,11 @@ metadata:
 spec:
   group: workflows.gcp.m.upbound.io
   names:
+    kind: Workflow
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Workflow
     listKind: WorkflowList
     plural: workflows
     singular: workflow

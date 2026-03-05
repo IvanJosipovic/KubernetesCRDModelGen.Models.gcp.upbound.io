@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sql.gcp.m.upbound.io
   names:
+    kind: Database
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Database
     listKind: DatabaseList
     plural: databases
     singular: database

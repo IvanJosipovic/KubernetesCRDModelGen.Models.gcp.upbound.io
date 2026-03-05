@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.m.upbound.io
   names:
+    kind: EnvReferences
     categories:
     - crossplane
     - managed
     - gcp
-    kind: EnvReferences
     listKind: EnvReferencesList
     plural: envreferences
     singular: envreferences

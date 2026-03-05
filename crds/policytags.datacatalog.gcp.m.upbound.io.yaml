@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datacatalog.gcp.m.upbound.io
   names:
+    kind: PolicyTag
     categories:
     - crossplane
     - managed
     - gcp
-    kind: PolicyTag
     listKind: PolicyTagList
     plural: policytags
     singular: policytag

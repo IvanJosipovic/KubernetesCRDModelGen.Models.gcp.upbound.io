@@ -7,11 +7,11 @@ metadata:
 spec:
   group: identityplatform.gcp.m.upbound.io
   names:
+    kind: Config
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Config
     listKind: ConfigList
     plural: configs
     singular: config

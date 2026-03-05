@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagetransfer.gcp.upbound.io
   names:
+    kind: AgentPool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AgentPool
     listKind: AgentPoolList
     plural: agentpools
     singular: agentpool

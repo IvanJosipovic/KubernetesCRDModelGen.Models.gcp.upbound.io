@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: BackendService
     categories:
     - crossplane
     - managed
     - gcp
-    kind: BackendService
     listKind: BackendServiceList
     plural: backendservices
     singular: backendservice

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containerazure.gcp.m.upbound.io
   names:
+    kind: Client
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Client
     listKind: ClientList
     plural: clients
     singular: client

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: memorystore.gcp.m.upbound.io
   names:
+    kind: InstanceDesiredUserCreatedEndpoints
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InstanceDesiredUserCreatedEndpoints
     listKind: InstanceDesiredUserCreatedEndpointsList
     plural: instancedesiredusercreatedendpoints
     singular: instancedesiredusercreatedendpoints

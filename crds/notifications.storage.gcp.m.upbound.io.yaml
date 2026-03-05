@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.gcp.m.upbound.io
   names:
+    kind: Notification
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Notification
     listKind: NotificationList
     plural: notifications
     singular: notification

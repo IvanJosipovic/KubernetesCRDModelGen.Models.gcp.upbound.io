@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudtasks.gcp.m.upbound.io
   names:
+    kind: Queue
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Queue
     listKind: QueueList
     plural: queues
     singular: queue

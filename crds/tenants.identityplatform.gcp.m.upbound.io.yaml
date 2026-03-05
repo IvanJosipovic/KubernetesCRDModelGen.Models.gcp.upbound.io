@@ -7,11 +7,11 @@ metadata:
 spec:
   group: identityplatform.gcp.m.upbound.io
   names:
+    kind: Tenant
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Tenant
     listKind: TenantList
     plural: tenants
     singular: tenant

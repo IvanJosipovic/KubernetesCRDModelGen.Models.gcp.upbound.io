@@ -7,11 +7,11 @@ metadata:
 spec:
   group: monitoring.gcp.m.upbound.io
   names:
+    kind: AlertPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AlertPolicy
     listKind: AlertPolicyList
     plural: alertpolicies
     singular: alertpolicy

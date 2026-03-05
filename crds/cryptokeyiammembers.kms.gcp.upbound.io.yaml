@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.gcp.upbound.io
   names:
+    kind: CryptoKeyIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CryptoKeyIAMMember
     listKind: CryptoKeyIAMMemberList
     plural: cryptokeyiammembers
     singular: cryptokeyiammember

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: DiskResourcePolicyAttachment
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DiskResourcePolicyAttachment
     listKind: DiskResourcePolicyAttachmentList
     plural: diskresourcepolicyattachments
     singular: diskresourcepolicyattachment

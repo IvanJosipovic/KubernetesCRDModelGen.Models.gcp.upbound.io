@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: FolderIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: FolderIAMMember
     listKind: FolderIAMMemberList
     plural: folderiammembers
     singular: folderiammember

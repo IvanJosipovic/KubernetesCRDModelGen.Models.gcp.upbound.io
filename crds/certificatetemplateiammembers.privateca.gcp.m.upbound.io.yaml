@@ -7,11 +7,11 @@ metadata:
 spec:
   group: privateca.gcp.m.upbound.io
   names:
+    kind: CertificateTemplateIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CertificateTemplateIAMMember
     listKind: CertificateTemplateIAMMemberList
     plural: certificatetemplateiammembers
     singular: certificatetemplateiammember

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.gcp.m.upbound.io
   names:
+    kind: CryptoKeyVersion
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CryptoKeyVersion
     listKind: CryptoKeyVersionList
     plural: cryptokeyversions
     singular: cryptokeyversion

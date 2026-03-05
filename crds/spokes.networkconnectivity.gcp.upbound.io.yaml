@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkconnectivity.gcp.upbound.io
   names:
+    kind: Spoke
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Spoke
     listKind: SpokeList
     plural: spokes
     singular: spoke

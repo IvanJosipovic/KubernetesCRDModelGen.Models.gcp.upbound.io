@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.upbound.io
   names:
+    kind: DatasetIAMBinding
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DatasetIAMBinding
     listKind: DatasetIAMBindingList
     plural: datasetiambindings
     singular: datasetiambinding

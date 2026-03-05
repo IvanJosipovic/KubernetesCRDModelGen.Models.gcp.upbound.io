@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.upbound.io
   names:
+    kind: TableIAMBinding
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TableIAMBinding
     listKind: TableIAMBindingList
     plural: tableiambindings
     singular: tableiambinding

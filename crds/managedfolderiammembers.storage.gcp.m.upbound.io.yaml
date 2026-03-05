@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.gcp.m.upbound.io
   names:
+    kind: ManagedFolderIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ManagedFolderIAMMember
     listKind: ManagedFolderIAMMemberList
     plural: managedfolderiammembers
     singular: managedfolderiammember

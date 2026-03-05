@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gke.gcp.m.upbound.io
   names:
+    kind: BackupBackupPlan
     categories:
     - crossplane
     - managed
     - gcp
-    kind: BackupBackupPlan
     listKind: BackupBackupPlanList
     plural: backupbackupplans
     singular: backupbackupplan

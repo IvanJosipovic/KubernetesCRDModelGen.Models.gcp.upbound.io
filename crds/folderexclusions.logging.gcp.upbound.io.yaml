@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logging.gcp.upbound.io
   names:
+    kind: FolderExclusion
     categories:
     - crossplane
     - managed
     - gcp
-    kind: FolderExclusion
     listKind: FolderExclusionList
     plural: folderexclusions
     singular: folderexclusion

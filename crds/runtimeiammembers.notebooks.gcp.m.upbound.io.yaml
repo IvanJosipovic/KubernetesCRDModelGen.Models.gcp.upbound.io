@@ -7,11 +7,11 @@ metadata:
 spec:
   group: notebooks.gcp.m.upbound.io
   names:
+    kind: RuntimeIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RuntimeIAMMember
     listKind: RuntimeIAMMemberList
     plural: runtimeiammembers
     singular: runtimeiammember

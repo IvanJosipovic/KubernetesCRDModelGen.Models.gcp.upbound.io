@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containeranalysis.gcp.upbound.io
   names:
+    kind: Note
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Note
     listKind: NoteList
     plural: notes
     singular: note

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vertexai.gcp.m.upbound.io
   names:
+    kind: Dataset
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Dataset
     listKind: DatasetList
     plural: datasets
     singular: dataset

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.gcp.m.upbound.io
   names:
+    kind: KeyRingImportJob
     categories:
     - crossplane
     - managed
     - gcp
-    kind: KeyRingImportJob
     listKind: KeyRingImportJobList
     plural: keyringimportjobs
     singular: keyringimportjob

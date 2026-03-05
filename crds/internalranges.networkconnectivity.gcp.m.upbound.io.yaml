@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkconnectivity.gcp.m.upbound.io
   names:
+    kind: InternalRange
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InternalRange
     listKind: InternalRangeList
     plural: internalranges
     singular: internalrange

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gemini.gcp.m.upbound.io
   names:
+    kind: CodeToolsSetting
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CodeToolsSetting
     listKind: CodeToolsSettingList
     plural: codetoolssettings
     singular: codetoolssetting

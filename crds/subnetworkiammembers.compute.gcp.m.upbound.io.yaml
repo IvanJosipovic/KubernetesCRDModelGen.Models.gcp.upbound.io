@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: SubnetworkIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: SubnetworkIAMMember
     listKind: SubnetworkIAMMemberList
     plural: subnetworkiammembers
     singular: subnetworkiammember

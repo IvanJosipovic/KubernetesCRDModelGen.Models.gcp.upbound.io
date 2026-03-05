@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionTargetTCPProxy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionTargetTCPProxy
     listKind: RegionTargetTCPProxyList
     plural: regiontargettcpproxies
     singular: regiontargettcpproxy

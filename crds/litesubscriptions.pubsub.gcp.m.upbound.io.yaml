@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pubsub.gcp.m.upbound.io
   names:
+    kind: LiteSubscription
     categories:
     - crossplane
     - managed
     - gcp
-    kind: LiteSubscription
     listKind: LiteSubscriptionList
     plural: litesubscriptions
     singular: litesubscription

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.upbound.io
   names:
+    kind: ProjectService
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectService
     listKind: ProjectServiceList
     plural: projectservices
     singular: projectservice

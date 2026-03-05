@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: VPNGateway
     categories:
     - crossplane
     - managed
     - gcp
-    kind: VPNGateway
     listKind: VPNGatewayList
     plural: vpngateways
     singular: vpngateway

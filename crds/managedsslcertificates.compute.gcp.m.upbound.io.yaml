@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: ManagedSSLCertificate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ManagedSSLCertificate
     listKind: ManagedSSLCertificateList
     plural: managedsslcertificates
     singular: managedsslcertificate

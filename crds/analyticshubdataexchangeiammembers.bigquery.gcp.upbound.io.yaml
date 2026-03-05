@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.upbound.io
   names:
+    kind: AnalyticsHubDataExchangeIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AnalyticsHubDataExchangeIAMMember
     listKind: AnalyticsHubDataExchangeIAMMemberList
     plural: analyticshubdataexchangeiammembers
     singular: analyticshubdataexchangeiammember

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: InstanceTemplate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InstanceTemplate
     listKind: InstanceTemplateList
     plural: instancetemplates
     singular: instancetemplate

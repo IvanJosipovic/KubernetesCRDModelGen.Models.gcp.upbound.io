@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: ServiceNetworkingPeeredDNSDomain
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ServiceNetworkingPeeredDNSDomain
     listKind: ServiceNetworkingPeeredDNSDomainList
     plural: servicenetworkingpeereddnsdomains
     singular: servicenetworkingpeereddnsdomain

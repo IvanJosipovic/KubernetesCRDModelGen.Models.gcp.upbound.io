@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networksecurity.gcp.upbound.io
   names:
+    kind: GatewaySecurityPolicyRule
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GatewaySecurityPolicyRule
     listKind: GatewaySecurityPolicyRuleList
     plural: gatewaysecuritypolicyrules
     singular: gatewaysecuritypolicyrule

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataplex.gcp.m.upbound.io
   names:
+    kind: Lake
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Lake
     listKind: LakeList
     plural: lakes
     singular: lake

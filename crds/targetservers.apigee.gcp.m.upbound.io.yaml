@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.m.upbound.io
   names:
+    kind: TargetServer
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TargetServer
     listKind: TargetServerList
     plural: targetservers
     singular: targetserver

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.gcp.upbound.io
   names:
+    kind: BucketAccessControl
     categories:
     - crossplane
     - managed
     - gcp
-    kind: BucketAccessControl
     listKind: BucketAccessControlList
     plural: bucketaccesscontrols
     singular: bucketaccesscontrol

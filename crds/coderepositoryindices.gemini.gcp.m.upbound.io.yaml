@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gemini.gcp.m.upbound.io
   names:
+    kind: CodeRepositoryIndex
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CodeRepositoryIndex
     listKind: CodeRepositoryIndexList
     plural: coderepositoryindices
     singular: coderepositoryindex

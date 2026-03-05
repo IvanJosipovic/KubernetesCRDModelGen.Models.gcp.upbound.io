@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionURLMap
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionURLMap
     listKind: RegionURLMapList
     plural: regionurlmaps
     singular: regionurlmap

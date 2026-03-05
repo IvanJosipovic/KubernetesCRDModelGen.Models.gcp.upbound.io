@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataplex.gcp.m.upbound.io
   names:
+    kind: AspectType
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AspectType
     listKind: AspectTypeList
     plural: aspecttypes
     singular: aspecttype

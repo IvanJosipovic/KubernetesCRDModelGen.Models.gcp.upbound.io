@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.m.upbound.io
   names:
+    kind: SyncAuthorization
     categories:
     - crossplane
     - managed
     - gcp
-    kind: SyncAuthorization
     listKind: SyncAuthorizationList
     plural: syncauthorizations
     singular: syncauthorization

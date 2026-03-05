@@ -7,11 +7,11 @@ metadata:
 spec:
   group: essentialcontacts.gcp.m.upbound.io
   names:
+    kind: Contact
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Contact
     listKind: ContactList
     plural: contacts
     singular: contact

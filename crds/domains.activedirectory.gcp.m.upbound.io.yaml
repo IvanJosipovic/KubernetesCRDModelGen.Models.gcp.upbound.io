@@ -7,11 +7,11 @@ metadata:
 spec:
   group: activedirectory.gcp.m.upbound.io
   names:
+    kind: Domain
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Domain
     listKind: DomainList
     plural: domains
     singular: domain

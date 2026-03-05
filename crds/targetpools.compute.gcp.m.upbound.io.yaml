@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: TargetPool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TargetPool
     listKind: TargetPoolList
     plural: targetpools
     singular: targetpool

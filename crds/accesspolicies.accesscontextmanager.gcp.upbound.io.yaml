@@ -7,11 +7,11 @@ metadata:
 spec:
   group: accesscontextmanager.gcp.upbound.io
   names:
+    kind: AccessPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AccessPolicy
     listKind: AccessPolicyList
     plural: accesspolicies
     singular: accesspolicy

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkconnectivity.gcp.m.upbound.io
   names:
+    kind: ServiceConnectionPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ServiceConnectionPolicy
     listKind: ServiceConnectionPolicyList
     plural: serviceconnectionpolicies
     singular: serviceconnectionpolicy

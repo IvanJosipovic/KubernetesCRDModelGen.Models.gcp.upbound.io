@@ -7,11 +7,11 @@ metadata:
 spec:
   group: container.gcp.upbound.io
   names:
+    kind: Registry
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Registry
     listKind: RegistryList
     plural: registries
     singular: registry

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iam.gcp.m.upbound.io
   names:
+    kind: WorkloadIdentityPool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: WorkloadIdentityPool
     listKind: WorkloadIdentityPoolList
     plural: workloadidentitypools
     singular: workloadidentitypool

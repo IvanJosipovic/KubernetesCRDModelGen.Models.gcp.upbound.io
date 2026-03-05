@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataplex.gcp.m.upbound.io
   names:
+    kind: Zone
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Zone
     listKind: ZoneList
     plural: zones
     singular: zone

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: ProjectMetadata
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectMetadata
     listKind: ProjectMetadataList
     plural: projectmetadata
     singular: projectmetadata

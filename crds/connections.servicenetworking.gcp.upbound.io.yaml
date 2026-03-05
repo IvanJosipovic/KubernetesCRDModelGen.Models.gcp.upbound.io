@@ -7,11 +7,11 @@ metadata:
 spec:
   group: servicenetworking.gcp.upbound.io
   names:
+    kind: Connection
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Connection
     listKind: ConnectionList
     plural: connections
     singular: connection

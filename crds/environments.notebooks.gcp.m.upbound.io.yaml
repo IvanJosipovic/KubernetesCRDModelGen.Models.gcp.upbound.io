@@ -7,11 +7,11 @@ metadata:
 spec:
   group: notebooks.gcp.m.upbound.io
   names:
+    kind: Environment
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Environment
     listKind: EnvironmentList
     plural: environments
     singular: environment

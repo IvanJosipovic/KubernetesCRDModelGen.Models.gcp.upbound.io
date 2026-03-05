@@ -7,11 +7,11 @@ metadata:
 spec:
   group: certificatemanager.gcp.m.upbound.io
   names:
+    kind: TrustConfig
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TrustConfig
     listKind: TrustConfigList
     plural: trustconfigs
     singular: trustconfig

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: containeraws.gcp.m.upbound.io
   names:
+    kind: Cluster
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Cluster
     listKind: ClusterList
     plural: clusters
     singular: cluster

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: osconfig.gcp.upbound.io
   names:
+    kind: PatchDeployment
     categories:
     - crossplane
     - managed
     - gcp
-    kind: PatchDeployment
     listKind: PatchDeploymentList
     plural: patchdeployments
     singular: patchdeployment

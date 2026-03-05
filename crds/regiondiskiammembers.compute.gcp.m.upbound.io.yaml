@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionDiskIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionDiskIAMMember
     listKind: RegionDiskIAMMemberList
     plural: regiondiskiammembers
     singular: regiondiskiammember

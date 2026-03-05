@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storagetransfer.gcp.m.upbound.io
   names:
+    kind: Job
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Job
     listKind: JobList
     plural: jobs
     singular: job

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datalossprevention.gcp.m.upbound.io
   names:
+    kind: InspectTemplate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InspectTemplate
     listKind: InspectTemplateList
     plural: inspecttemplates
     singular: inspecttemplate

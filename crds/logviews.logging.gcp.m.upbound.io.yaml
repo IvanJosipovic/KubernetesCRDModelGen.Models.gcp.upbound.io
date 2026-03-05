@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logging.gcp.m.upbound.io
   names:
+    kind: LogView
     categories:
     - crossplane
     - managed
     - gcp
-    kind: LogView
     listKind: LogViewList
     plural: logviews
     singular: logview

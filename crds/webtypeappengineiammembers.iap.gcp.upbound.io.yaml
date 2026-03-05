@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iap.gcp.upbound.io
   names:
+    kind: WebTypeAppEngineIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: WebTypeAppEngineIAMMember
     listKind: WebTypeAppEngineIAMMemberList
     plural: webtypeappengineiammembers
     singular: webtypeappengineiammember

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataproc.gcp.upbound.io
   names:
+    kind: MetastoreService
     categories:
     - crossplane
     - managed
     - gcp
-    kind: MetastoreService
     listKind: MetastoreServiceList
     plural: metastoreservices
     singular: metastoreservice

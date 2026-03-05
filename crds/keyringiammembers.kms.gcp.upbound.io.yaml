@@ -7,11 +7,11 @@ metadata:
 spec:
   group: kms.gcp.upbound.io
   names:
+    kind: KeyRingIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: KeyRingIAMMember
     listKind: KeyRingIAMMemberList
     plural: keyringiammembers
     singular: keyringiammember

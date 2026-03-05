@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datacatalog.gcp.m.upbound.io
   names:
+    kind: Taxonomy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Taxonomy
     listKind: TaxonomyList
     plural: taxonomies
     singular: taxonomy

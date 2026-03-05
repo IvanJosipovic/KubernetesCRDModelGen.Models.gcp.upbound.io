@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: NetworkFirewallPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: NetworkFirewallPolicy
     listKind: NetworkFirewallPolicyList
     plural: networkfirewallpolicies
     singular: networkfirewallpolicy
