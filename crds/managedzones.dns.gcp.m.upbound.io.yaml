@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dns.gcp.m.upbound.io
   names:
+    kind: ManagedZone
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ManagedZone
     listKind: ManagedZoneList
     plural: managedzones
     singular: managedzone

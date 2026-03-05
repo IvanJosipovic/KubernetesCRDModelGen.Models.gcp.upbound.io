@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datalossprevention.gcp.m.upbound.io
   names:
+    kind: StoredInfoType
     categories:
     - crossplane
     - managed
     - gcp
-    kind: StoredInfoType
     listKind: StoredInfoTypeList
     plural: storedinfotypes
     singular: storedinfotype

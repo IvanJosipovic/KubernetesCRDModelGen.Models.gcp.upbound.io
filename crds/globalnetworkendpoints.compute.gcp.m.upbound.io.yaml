@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: GlobalNetworkEndpoint
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GlobalNetworkEndpoint
     listKind: GlobalNetworkEndpointList
     plural: globalnetworkendpoints
     singular: globalnetworkendpoint

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: Folder
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Folder
     listKind: FolderList
     plural: folders
     singular: folder

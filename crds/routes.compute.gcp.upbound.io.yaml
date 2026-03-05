@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: Route
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Route
     listKind: RouteList
     plural: routes
     singular: route

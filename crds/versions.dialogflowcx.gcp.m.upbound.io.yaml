@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dialogflowcx.gcp.m.upbound.io
   names:
+    kind: Version
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Version
     listKind: VersionList
     plural: versions
     singular: version

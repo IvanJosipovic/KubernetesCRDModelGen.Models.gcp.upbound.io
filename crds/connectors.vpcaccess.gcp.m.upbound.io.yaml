@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vpcaccess.gcp.m.upbound.io
   names:
+    kind: Connector
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Connector
     listKind: ConnectorList
     plural: connectors
     singular: connector

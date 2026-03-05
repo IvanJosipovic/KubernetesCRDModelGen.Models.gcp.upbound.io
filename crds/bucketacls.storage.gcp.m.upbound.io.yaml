@@ -7,11 +7,11 @@ metadata:
 spec:
   group: storage.gcp.m.upbound.io
   names:
+    kind: BucketACL
     categories:
     - crossplane
     - managed
     - gcp
-    kind: BucketACL
     listKind: BucketACLList
     plural: bucketacls
     singular: bucketacl

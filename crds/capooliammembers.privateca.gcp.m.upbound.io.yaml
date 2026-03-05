@@ -7,11 +7,11 @@ metadata:
 spec:
   group: privateca.gcp.m.upbound.io
   names:
+    kind: CAPoolIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CAPoolIAMMember
     listKind: CAPoolIAMMemberList
     plural: capooliammembers
     singular: capooliammember

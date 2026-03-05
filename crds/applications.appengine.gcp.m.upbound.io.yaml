@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appengine.gcp.m.upbound.io
   names:
+    kind: Application
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Application
     listKind: ApplicationList
     plural: applications
     singular: application

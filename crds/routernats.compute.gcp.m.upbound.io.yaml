@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RouterNAT
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RouterNAT
     listKind: RouterNATList
     plural: routernats
     singular: routernat

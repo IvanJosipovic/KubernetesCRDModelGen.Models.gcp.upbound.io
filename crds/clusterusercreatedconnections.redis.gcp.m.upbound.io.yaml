@@ -7,11 +7,11 @@ metadata:
 spec:
   group: redis.gcp.m.upbound.io
   names:
+    kind: ClusterUserCreatedConnections
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ClusterUserCreatedConnections
     listKind: ClusterUserCreatedConnectionsList
     plural: clusterusercreatedconnections
     singular: clusterusercreatedconnections

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigtable.gcp.m.upbound.io
   names:
+    kind: TableIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TableIAMMember
     listKind: TableIAMMemberList
     plural: tableiammembers
     singular: tableiammember

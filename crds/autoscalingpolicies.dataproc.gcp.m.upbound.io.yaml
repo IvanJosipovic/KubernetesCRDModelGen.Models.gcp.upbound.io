@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataproc.gcp.m.upbound.io
   names:
+    kind: AutoscalingPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AutoscalingPolicy
     listKind: AutoscalingPolicyList
     plural: autoscalingpolicies
     singular: autoscalingpolicy

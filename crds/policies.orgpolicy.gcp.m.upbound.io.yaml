@@ -7,11 +7,11 @@ metadata:
 spec:
   group: orgpolicy.gcp.m.upbound.io
   names:
+    kind: Policy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Policy
     listKind: PolicyList
     plural: policies
     singular: policy

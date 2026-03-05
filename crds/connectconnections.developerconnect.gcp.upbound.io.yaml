@@ -7,11 +7,11 @@ metadata:
 spec:
   group: developerconnect.gcp.upbound.io
   names:
+    kind: ConnectConnection
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ConnectConnection
     listKind: ConnectConnectionList
     plural: connectconnections
     singular: connectconnection

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: beyondcorp.gcp.m.upbound.io
   names:
+    kind: AppGateway
     categories:
     - crossplane
     - managed
     - gcp
-    kind: AppGateway
     listKind: AppGatewayList
     plural: appgateways
     singular: appgateway

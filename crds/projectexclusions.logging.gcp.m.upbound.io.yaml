@@ -7,11 +7,11 @@ metadata:
 spec:
   group: logging.gcp.m.upbound.io
   names:
+    kind: ProjectExclusion
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectExclusion
     listKind: ProjectExclusionList
     plural: projectexclusions
     singular: projectexclusion

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: documentai.gcp.m.upbound.io
   names:
+    kind: Processor
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Processor
     listKind: ProcessorList
     plural: processors
     singular: processor

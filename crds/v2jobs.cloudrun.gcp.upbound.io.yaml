@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudrun.gcp.upbound.io
   names:
+    kind: V2Job
     categories:
     - crossplane
     - managed
     - gcp
-    kind: V2Job
     listKind: V2JobList
     plural: v2jobs
     singular: v2job

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datastream.gcp.m.upbound.io
   names:
+    kind: Stream
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Stream
     listKind: StreamList
     plural: streams
     singular: stream

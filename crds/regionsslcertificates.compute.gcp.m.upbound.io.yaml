@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionSSLCertificate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionSSLCertificate
     listKind: RegionSSLCertificateList
     plural: regionsslcertificates
     singular: regionsslcertificate

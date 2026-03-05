@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionSecurityPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionSecurityPolicy
     listKind: RegionSecurityPolicyList
     plural: regionsecuritypolicies
     singular: regionsecuritypolicy

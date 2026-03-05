@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gkehub.gcp.m.upbound.io
   names:
+    kind: MembershipIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: MembershipIAMMember
     listKind: MembershipIAMMemberList
     plural: membershipiammembers
     singular: membershipiammember

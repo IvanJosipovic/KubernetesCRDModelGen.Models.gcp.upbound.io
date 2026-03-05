@@ -7,11 +7,11 @@ metadata:
 spec:
   group: monitoring.gcp.m.upbound.io
   names:
+    kind: Dashboard
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Dashboard
     listKind: DashboardList
     plural: dashboards
     singular: dashboard

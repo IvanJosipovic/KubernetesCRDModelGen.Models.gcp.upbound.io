@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dns.gcp.m.upbound.io
   names:
+    kind: ResponsePolicyRule
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ResponsePolicyRule
     listKind: ResponsePolicyRuleList
     plural: responsepolicyrules
     singular: responsepolicyrule

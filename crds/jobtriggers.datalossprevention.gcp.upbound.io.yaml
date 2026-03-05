@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datalossprevention.gcp.upbound.io
   names:
+    kind: JobTrigger
     categories:
     - crossplane
     - managed
     - gcp
-    kind: JobTrigger
     listKind: JobTriggerList
     plural: jobtriggers
     singular: jobtrigger

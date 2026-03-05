@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: OrganizationIAMCustomRole
     categories:
     - crossplane
     - managed
     - gcp
-    kind: OrganizationIAMCustomRole
     listKind: OrganizationIAMCustomRoleList
     plural: organizationiamcustomroles
     singular: organizationiamcustomrole

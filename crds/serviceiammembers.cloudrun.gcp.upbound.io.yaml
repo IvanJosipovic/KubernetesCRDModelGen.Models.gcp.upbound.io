@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudrun.gcp.upbound.io
   names:
+    kind: ServiceIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ServiceIAMMember
     listKind: ServiceIAMMemberList
     plural: serviceiammembers
     singular: serviceiammember

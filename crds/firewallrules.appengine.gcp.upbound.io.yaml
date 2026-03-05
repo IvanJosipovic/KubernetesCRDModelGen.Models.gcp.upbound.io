@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appengine.gcp.upbound.io
   names:
+    kind: FirewallRule
     categories:
     - crossplane
     - managed
     - gcp
-    kind: FirewallRule
     listKind: FirewallRuleList
     plural: firewallrules
     singular: firewallrule

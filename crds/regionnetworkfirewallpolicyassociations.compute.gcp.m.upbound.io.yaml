@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionNetworkFirewallPolicyAssociation
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionNetworkFirewallPolicyAssociation
     listKind: RegionNetworkFirewallPolicyAssociationList
     plural: regionnetworkfirewallpolicyassociations
     singular: regionnetworkfirewallpolicyassociation

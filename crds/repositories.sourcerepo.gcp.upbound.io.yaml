@@ -7,11 +7,11 @@ metadata:
 spec:
   group: sourcerepo.gcp.upbound.io
   names:
+    kind: Repository
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Repository
     listKind: RepositoryList
     plural: repositories
     singular: repository

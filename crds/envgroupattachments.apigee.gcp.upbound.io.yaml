@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.upbound.io
   names:
+    kind: EnvgroupAttachment
     categories:
     - crossplane
     - managed
     - gcp
-    kind: EnvgroupAttachment
     listKind: EnvgroupAttachmentList
     plural: envgroupattachments
     singular: envgroupattachment

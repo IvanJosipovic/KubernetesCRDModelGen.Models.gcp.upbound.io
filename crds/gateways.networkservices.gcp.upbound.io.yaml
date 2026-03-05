@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkservices.gcp.upbound.io
   names:
+    kind: Gateway
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Gateway
     listKind: GatewayList
     plural: gateways
     singular: gateway

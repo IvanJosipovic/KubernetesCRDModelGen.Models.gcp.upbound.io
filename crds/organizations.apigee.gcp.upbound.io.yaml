@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.upbound.io
   names:
+    kind: Organization
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Organization
     listKind: OrganizationList
     plural: organizations
     singular: organization

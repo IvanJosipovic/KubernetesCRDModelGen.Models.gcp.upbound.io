@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: ImageIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ImageIAMMember
     listKind: ImageIAMMemberList
     plural: imageiammembers
     singular: imageiammember

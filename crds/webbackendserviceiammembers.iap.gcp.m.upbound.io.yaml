@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iap.gcp.m.upbound.io
   names:
+    kind: WebBackendServiceIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: WebBackendServiceIAMMember
     listKind: WebBackendServiceIAMMemberList
     plural: webbackendserviceiammembers
     singular: webbackendserviceiammember

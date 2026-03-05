@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pubsub.gcp.m.upbound.io
   names:
+    kind: Schema
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Schema
     listKind: SchemaList
     plural: schemas
     singular: schema

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigtable.gcp.m.upbound.io
   names:
+    kind: GarbageCollectionPolicy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GarbageCollectionPolicy
     listKind: GarbageCollectionPolicyList
     plural: garbagecollectionpolicies
     singular: garbagecollectionpolicy

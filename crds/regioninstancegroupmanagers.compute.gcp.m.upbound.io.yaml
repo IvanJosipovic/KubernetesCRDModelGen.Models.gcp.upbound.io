@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionInstanceGroupManager
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionInstanceGroupManager
     listKind: RegionInstanceGroupManagerList
     plural: regioninstancegroupmanagers
     singular: regioninstancegroupmanager

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gemini.gcp.upbound.io
   names:
+    kind: ReleaseChannelSetting
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ReleaseChannelSetting
     listKind: ReleaseChannelSettingList
     plural: releasechannelsettings
     singular: releasechannelsetting

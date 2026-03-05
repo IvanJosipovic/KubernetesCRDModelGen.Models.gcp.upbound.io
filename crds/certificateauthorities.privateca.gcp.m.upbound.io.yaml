@@ -7,11 +7,11 @@ metadata:
 spec:
   group: privateca.gcp.m.upbound.io
   names:
+    kind: CertificateAuthority
     categories:
     - crossplane
     - managed
     - gcp
-    kind: CertificateAuthority
     listKind: CertificateAuthorityList
     plural: certificateauthorities
     singular: certificateauthority

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: firebaserules.gcp.upbound.io
   names:
+    kind: Release
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Release
     listKind: ReleaseList
     plural: releases
     singular: release

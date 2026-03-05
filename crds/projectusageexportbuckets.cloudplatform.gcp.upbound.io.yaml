@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.upbound.io
   names:
+    kind: ProjectUsageExportBucket
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectUsageExportBucket
     listKind: ProjectUsageExportBucketList
     plural: projectusageexportbuckets
     singular: projectusageexportbucket

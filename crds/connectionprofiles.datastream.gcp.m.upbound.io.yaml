@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datastream.gcp.m.upbound.io
   names:
+    kind: ConnectionProfile
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ConnectionProfile
     listKind: ConnectionProfileList
     plural: connectionprofiles
     singular: connectionprofile

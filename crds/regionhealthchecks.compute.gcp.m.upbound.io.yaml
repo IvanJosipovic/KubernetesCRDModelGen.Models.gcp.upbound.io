@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: RegionHealthCheck
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegionHealthCheck
     listKind: RegionHealthCheckList
     plural: regionhealthchecks
     singular: regionhealthcheck

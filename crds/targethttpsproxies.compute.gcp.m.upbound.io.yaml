@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: TargetHTTPSProxy
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TargetHTTPSProxy
     listKind: TargetHTTPSProxyList
     plural: targethttpsproxies
     singular: targethttpsproxy

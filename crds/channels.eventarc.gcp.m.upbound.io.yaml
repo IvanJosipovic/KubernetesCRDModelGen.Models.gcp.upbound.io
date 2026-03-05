@@ -7,11 +7,11 @@ metadata:
 spec:
   group: eventarc.gcp.m.upbound.io
   names:
+    kind: Channel
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Channel
     listKind: ChannelList
     plural: channels
     singular: channel

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.upbound.io
   names:
+    kind: Reservation
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Reservation
     listKind: ReservationList
     plural: reservations
     singular: reservation

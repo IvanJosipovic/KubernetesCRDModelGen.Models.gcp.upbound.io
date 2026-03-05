@@ -7,11 +7,11 @@ metadata:
 spec:
   group: iap.gcp.m.upbound.io
   names:
+    kind: TunnelIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TunnelIAMMember
     listKind: TunnelIAMMemberList
     plural: tunneliammembers
     singular: tunneliammember

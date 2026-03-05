@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: Disk
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Disk
     listKind: DiskList
     plural: disks
     singular: disk

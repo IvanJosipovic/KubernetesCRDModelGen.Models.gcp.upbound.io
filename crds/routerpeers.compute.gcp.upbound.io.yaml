@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: RouterPeer
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RouterPeer
     listKind: RouterPeerList
     plural: routerpeers
     singular: routerpeer

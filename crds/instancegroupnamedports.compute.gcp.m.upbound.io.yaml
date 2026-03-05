@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: InstanceGroupNamedPort
     categories:
     - crossplane
     - managed
     - gcp
-    kind: InstanceGroupNamedPort
     listKind: InstanceGroupNamedPortList
     plural: instancegroupnamedports
     singular: instancegroupnamedport

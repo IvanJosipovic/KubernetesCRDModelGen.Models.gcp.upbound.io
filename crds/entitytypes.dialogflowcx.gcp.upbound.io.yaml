@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dialogflowcx.gcp.upbound.io
   names:
+    kind: EntityType
     categories:
     - crossplane
     - managed
     - gcp
-    kind: EntityType
     listKind: EntityTypeList
     plural: entitytypes
     singular: entitytype

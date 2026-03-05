@@ -7,11 +7,11 @@ metadata:
 spec:
   group: certificatemanager.gcp.upbound.io
   names:
+    kind: Certificate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Certificate
     listKind: CertificateList
     plural: certificates
     singular: certificate

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: ProjectDefaultNetworkTier
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectDefaultNetworkTier
     listKind: ProjectDefaultNetworkTierList
     plural: projectdefaultnetworktiers
     singular: projectdefaultnetworktier

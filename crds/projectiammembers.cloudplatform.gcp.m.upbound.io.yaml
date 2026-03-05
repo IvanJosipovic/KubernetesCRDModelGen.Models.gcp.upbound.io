@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: ProjectIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ProjectIAMMember
     listKind: ProjectIAMMemberList
     plural: projectiammembers
     singular: projectiammember

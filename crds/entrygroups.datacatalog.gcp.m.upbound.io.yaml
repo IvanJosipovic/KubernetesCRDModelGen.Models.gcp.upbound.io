@@ -7,11 +7,11 @@ metadata:
 spec:
   group: datacatalog.gcp.m.upbound.io
   names:
+    kind: EntryGroup
     categories:
     - crossplane
     - managed
     - gcp
-    kind: EntryGroup
     listKind: EntryGroupList
     plural: entrygroups
     singular: entrygroup

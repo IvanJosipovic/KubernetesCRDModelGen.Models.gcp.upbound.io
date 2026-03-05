@@ -7,11 +7,11 @@ metadata:
 spec:
   group: apigee.gcp.m.upbound.io
   names:
+    kind: NATAddress
     categories:
     - crossplane
     - managed
     - gcp
-    kind: NATAddress
     listKind: NATAddressList
     plural: nataddresses
     singular: nataddress

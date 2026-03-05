@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: HTTPSHealthCheck
     categories:
     - crossplane
     - managed
     - gcp
-    kind: HTTPSHealthCheck
     listKind: HTTPSHealthCheckList
     plural: httpshealthchecks
     singular: httpshealthcheck

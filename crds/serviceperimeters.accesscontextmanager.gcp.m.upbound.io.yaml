@@ -7,11 +7,11 @@ metadata:
 spec:
   group: accesscontextmanager.gcp.m.upbound.io
   names:
+    kind: ServicePerimeter
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ServicePerimeter
     listKind: ServicePerimeterList
     plural: serviceperimeters
     singular: serviceperimeter

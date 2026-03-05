@@ -7,11 +7,11 @@ metadata:
 spec:
   group: vertexai.gcp.m.upbound.io
   names:
+    kind: FeaturestoreEntitytype
     categories:
     - crossplane
     - managed
     - gcp
-    kind: FeaturestoreEntitytype
     listKind: FeaturestoreEntitytypeList
     plural: featurestoreentitytypes
     singular: featurestoreentitytype

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dialogflowcx.gcp.m.upbound.io
   names:
+    kind: Intent
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Intent
     listKind: IntentList
     plural: intents
     singular: intent

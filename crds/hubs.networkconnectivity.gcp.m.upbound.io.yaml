@@ -7,11 +7,11 @@ metadata:
 spec:
   group: networkconnectivity.gcp.m.upbound.io
   names:
+    kind: Hub
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Hub
     listKind: HubList
     plural: hubs
     singular: hub

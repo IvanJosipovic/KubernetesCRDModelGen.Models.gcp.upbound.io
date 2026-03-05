@@ -7,11 +7,11 @@ metadata:
 spec:
   group: appengine.gcp.m.upbound.io
   names:
+    kind: ServiceNetworkSettings
     categories:
     - crossplane
     - managed
     - gcp
-    kind: ServiceNetworkSettings
     listKind: ServiceNetworkSettingsList
     plural: servicenetworksettings
     singular: servicenetworksettings

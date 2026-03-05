@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudfunctions2.gcp.m.upbound.io
   names:
+    kind: Function
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Function
     listKind: FunctionList
     plural: functions
     singular: function

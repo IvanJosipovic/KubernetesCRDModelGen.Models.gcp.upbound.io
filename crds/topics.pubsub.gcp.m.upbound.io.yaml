@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pubsub.gcp.m.upbound.io
   names:
+    kind: Topic
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Topic
     listKind: TopicList
     plural: topics
     singular: topic

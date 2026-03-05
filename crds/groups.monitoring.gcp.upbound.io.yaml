@@ -7,11 +7,11 @@ metadata:
 spec:
   group: monitoring.gcp.upbound.io
   names:
+    kind: Group
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Group
     listKind: GroupList
     plural: groups
     singular: group

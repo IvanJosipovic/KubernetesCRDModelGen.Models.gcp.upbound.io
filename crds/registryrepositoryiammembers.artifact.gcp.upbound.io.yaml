@@ -7,11 +7,11 @@ metadata:
 spec:
   group: artifact.gcp.upbound.io
   names:
+    kind: RegistryRepositoryIAMMember
     categories:
     - crossplane
     - managed
     - gcp
-    kind: RegistryRepositoryIAMMember
     listKind: RegistryRepositoryIAMMemberList
     plural: registryrepositoryiammembers
     singular: registryrepositoryiammember

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dialogflowcx.gcp.upbound.io
   names:
+    kind: Flow
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Flow
     listKind: FlowList
     plural: flows
     singular: flow

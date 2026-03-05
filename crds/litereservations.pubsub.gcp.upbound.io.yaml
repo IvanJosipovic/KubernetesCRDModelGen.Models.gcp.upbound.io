@@ -7,11 +7,11 @@ metadata:
 spec:
   group: pubsub.gcp.upbound.io
   names:
+    kind: LiteReservation
     categories:
     - crossplane
     - managed
     - gcp
-    kind: LiteReservation
     listKind: LiteReservationList
     plural: litereservations
     singular: litereservation

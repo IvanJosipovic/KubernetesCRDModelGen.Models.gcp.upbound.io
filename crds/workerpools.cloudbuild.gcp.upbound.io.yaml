@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudbuild.gcp.upbound.io
   names:
+    kind: WorkerPool
     categories:
     - crossplane
     - managed
     - gcp
-    kind: WorkerPool
     listKind: WorkerPoolList
     plural: workerpools
     singular: workerpool

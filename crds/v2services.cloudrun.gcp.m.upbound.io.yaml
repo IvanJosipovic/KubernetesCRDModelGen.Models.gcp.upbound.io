@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudrun.gcp.m.upbound.io
   names:
+    kind: V2Service
     categories:
     - crossplane
     - managed
     - gcp
-    kind: V2Service
     listKind: V2ServiceList
     plural: v2services
     singular: v2service

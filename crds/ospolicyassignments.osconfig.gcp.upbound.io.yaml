@@ -7,11 +7,11 @@ metadata:
 spec:
   group: osconfig.gcp.upbound.io
   names:
+    kind: OsPolicyAssignment
     categories:
     - crossplane
     - managed
     - gcp
-    kind: OsPolicyAssignment
     listKind: OsPolicyAssignmentList
     plural: ospolicyassignments
     singular: ospolicyassignment

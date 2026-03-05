@@ -7,11 +7,11 @@ metadata:
 spec:
   group: identityplatform.gcp.m.upbound.io
   names:
+    kind: OAuthIdPConfig
     categories:
     - crossplane
     - managed
     - gcp
-    kind: OAuthIdPConfig
     listKind: OAuthIdPConfigList
     plural: oauthidpconfigs
     singular: oauthidpconfig

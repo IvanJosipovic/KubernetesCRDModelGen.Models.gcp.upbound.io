@@ -7,11 +7,11 @@ metadata:
 spec:
   group: identityplatform.gcp.upbound.io
   names:
+    kind: TenantDefaultSupportedIdPConfig
     categories:
     - crossplane
     - managed
     - gcp
-    kind: TenantDefaultSupportedIdPConfig
     listKind: TenantDefaultSupportedIdPConfigList
     plural: tenantdefaultsupportedidpconfigs
     singular: tenantdefaultsupportedidpconfig

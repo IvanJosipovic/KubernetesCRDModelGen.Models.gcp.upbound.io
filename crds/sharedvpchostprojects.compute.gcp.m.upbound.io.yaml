@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.m.upbound.io
   names:
+    kind: SharedVPCHostProject
     categories:
     - crossplane
     - managed
     - gcp
-    kind: SharedVPCHostProject
     listKind: SharedVPCHostProjectList
     plural: sharedvpchostprojects
     singular: sharedvpchostproject

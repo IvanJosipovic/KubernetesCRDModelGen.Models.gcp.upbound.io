@@ -7,11 +7,11 @@ metadata:
 spec:
   group: gemini.gcp.upbound.io
   names:
+    kind: GeminiGCPEnablementSetting
     categories:
     - crossplane
     - managed
     - gcp
-    kind: GeminiGCPEnablementSetting
     listKind: GeminiGCPEnablementSettingList
     plural: geminigcpenablementsettings
     singular: geminigcpenablementsetting

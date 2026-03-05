@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudplatform.gcp.m.upbound.io
   names:
+    kind: OrganizationIAMAuditConfig
     categories:
     - crossplane
     - managed
     - gcp
-    kind: OrganizationIAMAuditConfig
     listKind: OrganizationIAMAuditConfigList
     plural: organizationiamauditconfigs
     singular: organizationiamauditconfig

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: dataproc.gcp.upbound.io
   names:
+    kind: WorkflowTemplate
     categories:
     - crossplane
     - managed
     - gcp
-    kind: WorkflowTemplate
     listKind: WorkflowTemplateList
     plural: workflowtemplates
     singular: workflowtemplate

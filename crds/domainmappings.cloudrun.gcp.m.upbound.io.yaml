@@ -7,11 +7,11 @@ metadata:
 spec:
   group: cloudrun.gcp.m.upbound.io
   names:
+    kind: DomainMapping
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DomainMapping
     listKind: DomainMappingList
     plural: domainmappings
     singular: domainmapping

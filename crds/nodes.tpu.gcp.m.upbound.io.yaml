@@ -7,11 +7,11 @@ metadata:
 spec:
   group: tpu.gcp.m.upbound.io
   names:
+    kind: Node
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Node
     listKind: NodeList
     plural: nodes
     singular: node

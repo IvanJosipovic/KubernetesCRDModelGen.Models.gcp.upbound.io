@@ -7,11 +7,11 @@ metadata:
 spec:
   group: bigquery.gcp.upbound.io
   names:
+    kind: DatasetAccess
     categories:
     - crossplane
     - managed
     - gcp
-    kind: DatasetAccess
     listKind: DatasetAccessList
     plural: datasetaccesses
     singular: datasetaccess

@@ -7,11 +7,11 @@ metadata:
 spec:
   group: compute.gcp.upbound.io
   names:
+    kind: Network
     categories:
     - crossplane
     - managed
     - gcp
-    kind: Network
     listKind: NetworkList
     plural: networks
     singular: network
