@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.gcp.upbound.io;
 /// <summary>ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectionProfile>
@@ -33,7 +33,7 @@ public partial class V1beta1ConnectionProfileList : IKubernetesObject<V1ListMeta
 
     /// <summary>List of V1beta1ConnectionProfile objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ConnectionProfile>? Items { get; set; }
+    public required IList<V1beta1ConnectionProfile> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1ConnectionProfileList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecDeletionPolicyEnum>))]
 public enum V1beta1ConnectionProfileSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1ConnectionProfileSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderBigqueryProfile
 {
@@ -65,7 +65,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderBigqueryProfile
 /// SSH password.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivityPasswordSecretRef
 {
@@ -86,7 +86,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
 /// SSH private key.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivityPrivateKeySecretRef
 {
@@ -103,7 +103,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivity
 {
@@ -134,7 +134,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderGcsProfile
 {
@@ -151,7 +151,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderGcsProfile
 /// Password for the MySQL connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfilePasswordSecretRef
 {
@@ -173,7 +173,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfilePassword
 /// server&apos;s certificate.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigCaCertificateSecretRef
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 /// mandatory.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigClientCertificateSecretRef
 {
@@ -220,7 +220,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 /// &apos;ca_certificate&apos; fields are mandatory.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigClientKeySecretRef
 {
@@ -237,7 +237,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfig
 {
@@ -269,7 +269,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
     public V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigClientKeySecretRef? ClientKeySecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfile
 {
@@ -308,7 +308,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfile
 /// Password for the Oracle connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderOracleProfilePasswordSecretRef
 {
@@ -325,7 +325,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderOracleProfilePasswor
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderOracleProfile
 {
@@ -367,7 +367,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderOracleProfile
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum
 {
@@ -383,7 +383,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolveEnum
 {
@@ -394,7 +394,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicy
 {
@@ -418,7 +418,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRef
 {
@@ -437,7 +437,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum
 {
@@ -453,7 +453,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum
 {
@@ -464,7 +464,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicy
 {
@@ -488,7 +488,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelector
 {
@@ -514,7 +514,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolutionEnum
 {
@@ -530,7 +530,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolveEnum
 {
@@ -541,7 +541,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicy
 {
@@ -565,7 +565,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRef
 {
@@ -584,7 +584,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum
 {
@@ -600,7 +600,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum
 {
@@ -611,7 +611,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicy
 {
@@ -635,7 +635,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelector
 {
@@ -659,7 +659,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// Password for the PostgreSQL connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfilePasswordSecretRef
 {
@@ -682,7 +682,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfilePas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolutionEnum
 {
@@ -698,7 +698,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolveEnum
 {
@@ -709,7 +709,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicy
 {
@@ -733,7 +733,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRef
 {
@@ -752,7 +752,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum
 {
@@ -768,7 +768,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum
 {
@@ -779,7 +779,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicy
 {
@@ -803,7 +803,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelector
 {
@@ -823,7 +823,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
     public V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfile
 {
@@ -885,7 +885,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfile
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum
 {
@@ -901,7 +901,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum
 {
@@ -912,7 +912,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicy
 {
@@ -936,7 +936,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 }
 
 /// <summary>Reference to a PrivateConnection in datastream to populate privateConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRef
 {
@@ -955,7 +955,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum
 {
@@ -971,7 +971,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum
 {
@@ -982,7 +982,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicy
 {
@@ -1006,7 +1006,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 }
 
 /// <summary>Selector for a PrivateConnection in datastream to populate privateConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelector
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
     public V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivity
 {
@@ -1049,7 +1049,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolutionEnum
 {
@@ -1065,7 +1065,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolveEnum
 {
@@ -1076,7 +1076,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicy
 {
@@ -1100,7 +1100,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRef
 {
@@ -1119,7 +1119,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum
 {
@@ -1135,7 +1135,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum
 {
@@ -1146,7 +1146,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicy
 {
@@ -1170,7 +1170,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelector
 {
@@ -1196,7 +1196,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolutionEnum
 {
@@ -1212,7 +1212,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolveEnum
 {
@@ -1223,7 +1223,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicy
 {
@@ -1247,7 +1247,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRef
 {
@@ -1266,7 +1266,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum
 {
@@ -1282,7 +1282,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolveEnum
 {
@@ -1293,7 +1293,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicy
 {
@@ -1317,7 +1317,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelector
 {
@@ -1341,7 +1341,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// Password for the SQL Server connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfilePasswordSecretRef
 {
@@ -1364,7 +1364,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfilePass
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolutionEnum
 {
@@ -1380,7 +1380,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolveEnum
 {
@@ -1391,7 +1391,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicy
 {
@@ -1415,7 +1415,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRef
 {
@@ -1434,7 +1434,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum
 {
@@ -1450,7 +1450,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolveEnum
 {
@@ -1461,7 +1461,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicy
 {
@@ -1485,7 +1485,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelector
 {
@@ -1505,7 +1505,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
     public V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfile
 {
@@ -1561,7 +1561,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfile
     public V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelector? UsernameSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecForProvider
 {
@@ -1646,7 +1646,7 @@ public partial class V1beta1ConnectionProfileSpecForProvider
     public IList<V1beta1ConnectionProfileSpecForProviderSqlServerProfile>? SqlServerProfile { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderBigqueryProfile
 {
@@ -1656,7 +1656,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderBigqueryProfile
 /// SSH password.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivityPasswordSecretRef
 {
@@ -1677,7 +1677,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
 /// SSH private key.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivityPrivateKeySecretRef
 {
@@ -1694,7 +1694,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivity
 {
@@ -1725,7 +1725,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderGcsProfile
 {
@@ -1742,7 +1742,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderGcsProfile
 /// Password for the MySQL connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfilePasswordSecretRef
 {
@@ -1764,7 +1764,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfilePasswor
 /// server&apos;s certificate.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigCaCertificateSecretRef
 {
@@ -1788,7 +1788,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 /// mandatory.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigClientCertificateSecretRef
 {
@@ -1811,7 +1811,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 /// &apos;ca_certificate&apos; fields are mandatory.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigClientKeySecretRef
 {
@@ -1828,7 +1828,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfig
 {
@@ -1860,7 +1860,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
     public V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigClientKeySecretRef? ClientKeySecretRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfile
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfile
 /// Password for the Oracle connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfilePasswordSecretRef
 {
@@ -1916,7 +1916,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfilePasswo
     public required string Namespace { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfile
 {
@@ -1958,7 +1958,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfile
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum
 {
@@ -1974,7 +1974,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolveEnum
 {
@@ -1985,7 +1985,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicy
 {
@@ -2009,7 +2009,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 {
@@ -2028,7 +2028,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum
 {
@@ -2044,7 +2044,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum
 {
@@ -2055,7 +2055,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicy
 {
@@ -2079,7 +2079,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelector
 {
@@ -2105,7 +2105,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolutionEnum
 {
@@ -2121,7 +2121,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolveEnum
 {
@@ -2132,7 +2132,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicy
 {
@@ -2156,7 +2156,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 {
@@ -2175,7 +2175,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum
 {
@@ -2191,7 +2191,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum
 {
@@ -2202,7 +2202,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicy
 {
@@ -2226,7 +2226,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelector
 {
@@ -2250,7 +2250,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// Password for the PostgreSQL connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfilePasswordSecretRef
 {
@@ -2273,7 +2273,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfilePa
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolutionEnum
 {
@@ -2289,7 +2289,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolveEnum
 {
@@ -2300,7 +2300,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicy
 {
@@ -2324,7 +2324,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 {
@@ -2343,7 +2343,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum
 {
@@ -2359,7 +2359,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSel
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum
 {
@@ -2370,7 +2370,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSel
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicy
 {
@@ -2394,7 +2394,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelector
 {
@@ -2414,7 +2414,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
     public V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfile
 {
@@ -2476,7 +2476,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfile
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum
 {
@@ -2492,7 +2492,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum
 {
@@ -2503,7 +2503,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicy
 {
@@ -2527,7 +2527,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 }
 
 /// <summary>Reference to a PrivateConnection in datastream to populate privateConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRef
 {
@@ -2546,7 +2546,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum
 {
@@ -2562,7 +2562,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum
 {
@@ -2573,7 +2573,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicy
 {
@@ -2597,7 +2597,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 }
 
 /// <summary>Selector for a PrivateConnection in datastream to populate privateConnection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelector
 {
@@ -2617,7 +2617,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
     public V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 {
@@ -2640,7 +2640,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolutionEnum
 {
@@ -2656,7 +2656,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolveEnum
 {
@@ -2667,7 +2667,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicy
 {
@@ -2691,7 +2691,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 }
 
 /// <summary>Reference to a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRef
 {
@@ -2710,7 +2710,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum
 {
@@ -2726,7 +2726,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum
 {
@@ -2737,7 +2737,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicy
 {
@@ -2761,7 +2761,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 }
 
 /// <summary>Selector for a Database in sql to populate database.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelector
 {
@@ -2787,7 +2787,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolutionEnum
 {
@@ -2803,7 +2803,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolveEnum
 {
@@ -2814,7 +2814,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicy
 {
@@ -2838,7 +2838,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 }
 
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRef
 {
@@ -2857,7 +2857,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum
 {
@@ -2873,7 +2873,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolveEnum
 {
@@ -2884,7 +2884,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicy
 {
@@ -2908,7 +2908,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 }
 
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelector
 {
@@ -2932,7 +2932,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// Password for the SQL Server connection.
 /// Note: This property is sensitive and will not be displayed in the plan.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfilePasswordSecretRef
 {
@@ -2955,7 +2955,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfilePas
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolutionEnum
 {
@@ -2971,7 +2971,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolveEnum
 {
@@ -2982,7 +2982,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefP
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicy
 {
@@ -3006,7 +3006,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 }
 
 /// <summary>Reference to a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRef
 {
@@ -3025,7 +3025,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum
 {
@@ -3041,7 +3041,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSele
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolveEnum
 {
@@ -3052,7 +3052,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSele
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicy
 {
@@ -3076,7 +3076,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 }
 
 /// <summary>Selector for a User in sql to populate username.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelector
 {
@@ -3096,7 +3096,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
     public V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfile
 {
@@ -3164,7 +3164,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfile
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecInitProvider
 {
@@ -3249,7 +3249,7 @@ public partial class V1beta1ConnectionProfileSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectionProfileSpecManagementPoliciesEnum
 {
@@ -3273,7 +3273,7 @@ public enum V1beta1ConnectionProfileSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3289,7 +3289,7 @@ public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3300,7 +3300,7 @@ public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecProviderConfigRefPolicy
 {
@@ -3328,7 +3328,7 @@ public partial class V1beta1ConnectionProfileSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecProviderConfigRef
 {
@@ -3347,7 +3347,7 @@ public partial class V1beta1ConnectionProfileSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpecWriteConnectionSecretToRef
 {
@@ -3361,7 +3361,7 @@ public partial class V1beta1ConnectionProfileSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectionProfileSpec defines the desired state of ConnectionProfile</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileSpec
 {
@@ -3428,13 +3428,13 @@ public partial class V1beta1ConnectionProfileSpec
     public V1beta1ConnectionProfileSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderBigqueryProfile
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderForwardSshConnectivity
 {
@@ -3451,7 +3451,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderForwardSshConnectiv
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderGcsProfile
 {
@@ -3464,7 +3464,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderGcsProfile
     public string? RootPath { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfileSslConfig
 {
@@ -3490,7 +3490,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfileSslConf
     public bool? ClientKeySet { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfile
 {
@@ -3518,7 +3518,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfile
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderOracleProfile
 {
@@ -3547,7 +3547,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderOracleProfile
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfile
 {
@@ -3572,7 +3572,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfile
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderPrivateConnectivity
 {
@@ -3581,7 +3581,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderPrivateConnectivity
     public string? PrivateConnection { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProviderSqlServerProfile
 {
@@ -3606,7 +3606,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderSqlServerProfile
     public string? Username { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusAtProvider
 {
@@ -3710,7 +3710,7 @@ public partial class V1beta1ConnectionProfileStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatusConditions
 {
@@ -3753,7 +3753,7 @@ public partial class V1beta1ConnectionProfileStatusConditions
 }
 
 /// <summary>ConnectionProfileStatus defines the observed state of ConnectionProfile.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionProfileStatus
 {
@@ -3774,7 +3774,7 @@ public partial class V1beta1ConnectionProfileStatus
 }
 
 /// <summary>ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionProfileSpec>, IStatus<V1beta1ConnectionProfileStatus?>

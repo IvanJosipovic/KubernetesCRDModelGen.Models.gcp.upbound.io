@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.gcp.m.upbound.io;
 /// <summary>Featurestore is the Schema for the Featurestores API. A collection of DataItems and Annotations on them.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FeaturestoreList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Featurestore>
@@ -33,14 +33,14 @@ public partial class V1beta1FeaturestoreList : IKubernetesObject<V1ListMeta>, II
 
     /// <summary>List of V1beta1Featurestore objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1Featurestore>? Items { get; set; }
+    public required IList<V1beta1Featurestore> Items { get; set; }
 }
 
 /// <summary>
 /// If set, both of the online and offline data storage will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecForProviderEncryptionSpec
 {
@@ -53,7 +53,7 @@ public partial class V1beta1FeaturestoreSpecForProviderEncryptionSpec
 /// Online serving scaling configuration. Only one of fixedNodeCount and scaling can be set. Setting one will reset the other.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecForProviderOnlineServingConfigScaling
 {
@@ -70,7 +70,7 @@ public partial class V1beta1FeaturestoreSpecForProviderOnlineServingConfigScalin
 /// Config for online serving resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecForProviderOnlineServingConfig
 {
@@ -86,7 +86,7 @@ public partial class V1beta1FeaturestoreSpecForProviderOnlineServingConfig
     public V1beta1FeaturestoreSpecForProviderOnlineServingConfigScaling? Scaling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecForProvider
 {
@@ -132,7 +132,7 @@ public partial class V1beta1FeaturestoreSpecForProvider
 /// If set, both of the online and offline data storage will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecInitProviderEncryptionSpec
 {
@@ -145,7 +145,7 @@ public partial class V1beta1FeaturestoreSpecInitProviderEncryptionSpec
 /// Online serving scaling configuration. Only one of fixedNodeCount and scaling can be set. Setting one will reset the other.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecInitProviderOnlineServingConfigScaling
 {
@@ -162,7 +162,7 @@ public partial class V1beta1FeaturestoreSpecInitProviderOnlineServingConfigScali
 /// Config for online serving resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecInitProviderOnlineServingConfig
 {
@@ -190,7 +190,7 @@ public partial class V1beta1FeaturestoreSpecInitProviderOnlineServingConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecInitProvider
 {
@@ -236,7 +236,7 @@ public partial class V1beta1FeaturestoreSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreSpecManagementPoliciesEnum>))]
 public enum V1beta1FeaturestoreSpecManagementPoliciesEnum
 {
@@ -259,7 +259,7 @@ public enum V1beta1FeaturestoreSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecProviderConfigRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1FeaturestoreSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpecWriteConnectionSecretToRef
 {
@@ -288,7 +288,7 @@ public partial class V1beta1FeaturestoreSpecWriteConnectionSecretToRef
 }
 
 /// <summary>FeaturestoreSpec defines the desired state of Featurestore</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreSpec
 {
@@ -343,7 +343,7 @@ public partial class V1beta1FeaturestoreSpec
 /// If set, both of the online and offline data storage will be secured by this key.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatusAtProviderEncryptionSpec
 {
@@ -356,7 +356,7 @@ public partial class V1beta1FeaturestoreStatusAtProviderEncryptionSpec
 /// Online serving scaling configuration. Only one of fixedNodeCount and scaling can be set. Setting one will reset the other.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatusAtProviderOnlineServingConfigScaling
 {
@@ -373,7 +373,7 @@ public partial class V1beta1FeaturestoreStatusAtProviderOnlineServingConfigScali
 /// Config for online serving resources.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatusAtProviderOnlineServingConfig
 {
@@ -389,7 +389,7 @@ public partial class V1beta1FeaturestoreStatusAtProviderOnlineServingConfig
     public V1beta1FeaturestoreStatusAtProviderOnlineServingConfigScaling? Scaling { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatusAtProvider
 {
@@ -459,7 +459,7 @@ public partial class V1beta1FeaturestoreStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatusConditions
 {
@@ -502,7 +502,7 @@ public partial class V1beta1FeaturestoreStatusConditions
 }
 
 /// <summary>FeaturestoreStatus defines the observed state of Featurestore.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FeaturestoreStatus
 {
@@ -523,7 +523,7 @@ public partial class V1beta1FeaturestoreStatus
 }
 
 /// <summary>Featurestore is the Schema for the Featurestores API. A collection of DataItems and Annotations on them.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Featurestore : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FeaturestoreSpec>, IStatus<V1beta1FeaturestoreStatus?>
