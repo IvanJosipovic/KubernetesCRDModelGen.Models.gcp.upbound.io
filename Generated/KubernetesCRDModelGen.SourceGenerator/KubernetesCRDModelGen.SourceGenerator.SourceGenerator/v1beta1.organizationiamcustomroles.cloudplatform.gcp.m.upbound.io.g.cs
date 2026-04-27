@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.cloudplatform.gcp.m.upbound.io;
 /// <summary>OrganizationIAMCustomRole is the Schema for the OrganizationIAMCustomRoles API. Allows management of a customized Cloud IAM organization role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OrganizationIAMCustomRoleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1OrganizationIAMCustomRole>
@@ -33,10 +33,10 @@ public partial class V1beta1OrganizationIAMCustomRoleList : IKubernetesObject<V1
 
     /// <summary>List of V1beta1OrganizationIAMCustomRole objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1OrganizationIAMCustomRole>? Items { get; set; }
+    public required IList<V1beta1OrganizationIAMCustomRole> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleSpecForProvider
 {
@@ -81,7 +81,7 @@ public partial class V1beta1OrganizationIAMCustomRoleSpecForProvider
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleSpecInitProvider
 {
@@ -118,7 +118,7 @@ public partial class V1beta1OrganizationIAMCustomRoleSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OrganizationIAMCustomRoleSpecManagementPoliciesEnum>))]
 public enum V1beta1OrganizationIAMCustomRoleSpecManagementPoliciesEnum
 {
@@ -141,7 +141,7 @@ public enum V1beta1OrganizationIAMCustomRoleSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleSpecProviderConfigRef
 {
@@ -160,7 +160,7 @@ public partial class V1beta1OrganizationIAMCustomRoleSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleSpecWriteConnectionSecretToRef
 {
@@ -170,7 +170,7 @@ public partial class V1beta1OrganizationIAMCustomRoleSpecWriteConnectionSecretTo
 }
 
 /// <summary>OrganizationIAMCustomRoleSpec defines the desired state of OrganizationIAMCustomRole</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleSpec
 {
@@ -221,7 +221,7 @@ public partial class V1beta1OrganizationIAMCustomRoleSpec
     public V1beta1OrganizationIAMCustomRoleSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleStatusAtProvider
 {
@@ -267,7 +267,7 @@ public partial class V1beta1OrganizationIAMCustomRoleStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleStatusConditions
 {
@@ -310,7 +310,7 @@ public partial class V1beta1OrganizationIAMCustomRoleStatusConditions
 }
 
 /// <summary>OrganizationIAMCustomRoleStatus defines the observed state of OrganizationIAMCustomRole.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OrganizationIAMCustomRoleStatus
 {
@@ -331,7 +331,7 @@ public partial class V1beta1OrganizationIAMCustomRoleStatus
 }
 
 /// <summary>OrganizationIAMCustomRole is the Schema for the OrganizationIAMCustomRoles API. Allows management of a customized Cloud IAM organization role.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OrganizationIAMCustomRole : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1OrganizationIAMCustomRoleSpec>, IStatus<V1beta1OrganizationIAMCustomRoleStatus?>

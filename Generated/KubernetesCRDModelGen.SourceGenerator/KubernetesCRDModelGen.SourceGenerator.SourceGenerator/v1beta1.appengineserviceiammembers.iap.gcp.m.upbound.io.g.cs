@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iap.gcp.m.upbound.io;
 /// <summary>AppEngineServiceIAMMember is the Schema for the AppEngineServiceIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppEngineServiceIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AppEngineServiceIAMMember>
@@ -33,10 +33,10 @@ public partial class V1beta1AppEngineServiceIAMMemberList : IKubernetesObject<V1
 
     /// <summary>List of V1beta1AppEngineServiceIAMMember objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1AppEngineServiceIAMMember>? Items { get; set; }
+    public required IList<V1beta1AppEngineServiceIAMMember> Items { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecForProviderCondition
 {
@@ -50,7 +50,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecForProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecForProvider
 {
@@ -73,7 +73,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecForProvider
     public string? Service { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecInitProviderCondition
 {
@@ -99,7 +99,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecInitProviderCondition
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecInitProvider
 {
@@ -126,7 +126,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AppEngineServiceIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1AppEngineServiceIAMMemberSpecManagementPoliciesEnum
 {
@@ -149,7 +149,7 @@ public enum V1beta1AppEngineServiceIAMMemberSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecProviderConfigRef
 {
@@ -168,7 +168,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -178,7 +178,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpecWriteConnectionSecretTo
 }
 
 /// <summary>AppEngineServiceIAMMemberSpec defines the desired state of AppEngineServiceIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberSpec
 {
@@ -229,7 +229,7 @@ public partial class V1beta1AppEngineServiceIAMMemberSpec
     public V1beta1AppEngineServiceIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberStatusAtProviderCondition
 {
@@ -243,7 +243,7 @@ public partial class V1beta1AppEngineServiceIAMMemberStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberStatusAtProvider
 {
@@ -273,7 +273,7 @@ public partial class V1beta1AppEngineServiceIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberStatusConditions
 {
@@ -316,7 +316,7 @@ public partial class V1beta1AppEngineServiceIAMMemberStatusConditions
 }
 
 /// <summary>AppEngineServiceIAMMemberStatus defines the observed state of AppEngineServiceIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AppEngineServiceIAMMemberStatus
 {
@@ -337,7 +337,7 @@ public partial class V1beta1AppEngineServiceIAMMemberStatus
 }
 
 /// <summary>AppEngineServiceIAMMember is the Schema for the AppEngineServiceIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AppEngineServiceIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AppEngineServiceIAMMemberSpec>, IStatus<V1beta1AppEngineServiceIAMMemberStatus?>

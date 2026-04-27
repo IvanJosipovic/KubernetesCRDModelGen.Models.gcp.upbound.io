@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
 /// <summary>DatasetIAMBinding is the Schema for the DatasetIAMBindings API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatasetIAMBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DatasetIAMBinding>
@@ -33,7 +33,7 @@ public partial class V1beta1DatasetIAMBindingList : IKubernetesObject<V1ListMeta
 
     /// <summary>List of V1beta1DatasetIAMBinding objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1DatasetIAMBinding>? Items { get; set; }
+    public required IList<V1beta1DatasetIAMBinding> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1DatasetIAMBindingList : IKubernetesObject<V1ListMeta
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecDeletionPolicyEnum>))]
 public enum V1beta1DatasetIAMBindingSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1DatasetIAMBindingSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProviderCondition
 {
@@ -75,7 +75,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProviderCondition
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolveEnum>))]
 public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdRefPolicy
 }
 
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolveEnum>))]
 public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicyResolv
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPol
 }
 
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelector
     public V1beta1DatasetIAMBindingSpecForProviderDatasetIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecForProvider
 {
@@ -244,7 +244,7 @@ public partial class V1beta1DatasetIAMBindingSpecForProvider
     public required string Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecInitProviderCondition
 {
@@ -270,7 +270,7 @@ public partial class V1beta1DatasetIAMBindingSpecInitProviderCondition
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecInitProvider
 {
@@ -288,7 +288,7 @@ public partial class V1beta1DatasetIAMBindingSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecManagementPoliciesEnum>))]
 public enum V1beta1DatasetIAMBindingSpecManagementPoliciesEnum
 {
@@ -312,7 +312,7 @@ public enum V1beta1DatasetIAMBindingSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -328,7 +328,7 @@ public enum V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolveEnum
 {
@@ -339,7 +339,7 @@ public enum V1beta1DatasetIAMBindingSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecProviderConfigRefPolicy
 {
@@ -367,7 +367,7 @@ public partial class V1beta1DatasetIAMBindingSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecProviderConfigRef
 {
@@ -386,7 +386,7 @@ public partial class V1beta1DatasetIAMBindingSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpecWriteConnectionSecretToRef
 {
@@ -400,7 +400,7 @@ public partial class V1beta1DatasetIAMBindingSpecWriteConnectionSecretToRef
 }
 
 /// <summary>DatasetIAMBindingSpec defines the desired state of DatasetIAMBinding</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingSpec
 {
@@ -467,7 +467,7 @@ public partial class V1beta1DatasetIAMBindingSpec
     public V1beta1DatasetIAMBindingSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingStatusAtProviderCondition
 {
@@ -481,7 +481,7 @@ public partial class V1beta1DatasetIAMBindingStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingStatusAtProvider
 {
@@ -508,7 +508,7 @@ public partial class V1beta1DatasetIAMBindingStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingStatusConditions
 {
@@ -551,7 +551,7 @@ public partial class V1beta1DatasetIAMBindingStatusConditions
 }
 
 /// <summary>DatasetIAMBindingStatus defines the observed state of DatasetIAMBinding.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1DatasetIAMBindingStatus
 {
@@ -572,7 +572,7 @@ public partial class V1beta1DatasetIAMBindingStatus
 }
 
 /// <summary>DatasetIAMBinding is the Schema for the DatasetIAMBindings API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatasetIAMBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DatasetIAMBindingSpec>, IStatus<V1beta1DatasetIAMBindingStatus?>

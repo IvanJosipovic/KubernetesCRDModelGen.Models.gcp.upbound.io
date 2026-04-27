@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.binaryauthorization.gcp.upbound.io;
 /// <summary>Attestor is the Schema for the Attestors API. An attestor that attests to container image artifacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AttestorList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Attestor>
@@ -33,7 +33,7 @@ public partial class V1beta1AttestorList : IKubernetesObject<V1ListMeta>, IItems
 
     /// <summary>List of V1beta1Attestor objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1Attestor>? Items { get; set; }
+    public required IList<V1beta1Attestor> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1AttestorList : IKubernetesObject<V1ListMeta>, IItems
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecDeletionPolicyEnum>))]
 public enum V1beta1AttestorSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1AttestorSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolutionEnum>))]
 public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolveEnum>))]
 public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteR
 }
 
 /// <summary>Reference to a Note in containeranalysis to populate noteReference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceS
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolveEnum>))]
 public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceS
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteR
 }
 
 /// <summary>Selector for a Note in containeranalysis to populate noteReference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelector
 {
@@ -202,7 +202,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteR
     public V1beta1AttestorSpecForProviderAttestationAuthorityNoteNoteReferenceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNotePublicKeysPkixPublicKey
 {
@@ -224,7 +224,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNotePubli
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNotePublicKeys
 {
@@ -269,7 +269,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNotePubli
     public IList<V1beta1AttestorSpecForProviderAttestationAuthorityNotePublicKeysPkixPublicKey>? PkixPublicKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNote
 {
@@ -307,7 +307,7 @@ public partial class V1beta1AttestorSpecForProviderAttestationAuthorityNote
     public IList<V1beta1AttestorSpecForProviderAttestationAuthorityNotePublicKeys>? PublicKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecForProvider
 {
@@ -339,7 +339,7 @@ public partial class V1beta1AttestorSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolutionEnum>))]
 public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolutionEnum
 {
@@ -355,7 +355,7 @@ public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReference
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolveEnum>))]
 public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRefPolicyResolveEnum
 {
@@ -366,7 +366,7 @@ public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReference
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRefPolicy
 {
@@ -390,7 +390,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNote
 }
 
 /// <summary>Reference to a Note in containeranalysis to populate noteReference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceRef
 {
@@ -409,7 +409,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNote
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolutionEnum>))]
 public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolutionEnum
 {
@@ -425,7 +425,7 @@ public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReference
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolveEnum>))]
 public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicyResolveEnum
 {
@@ -436,7 +436,7 @@ public enum V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReference
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicy
 {
@@ -460,7 +460,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNote
 }
 
 /// <summary>Selector for a Note in containeranalysis to populate noteReference.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelector
 {
@@ -480,7 +480,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNote
     public V1beta1AttestorSpecInitProviderAttestationAuthorityNoteNoteReferenceSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNotePublicKeysPkixPublicKey
 {
@@ -502,7 +502,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNotePubl
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNotePublicKeys
 {
@@ -547,7 +547,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNotePubl
     public IList<V1beta1AttestorSpecInitProviderAttestationAuthorityNotePublicKeysPkixPublicKey>? PkixPublicKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNote
 {
@@ -597,7 +597,7 @@ public partial class V1beta1AttestorSpecInitProviderAttestationAuthorityNote
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecInitProvider
 {
@@ -627,7 +627,7 @@ public partial class V1beta1AttestorSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecManagementPoliciesEnum>))]
 public enum V1beta1AttestorSpecManagementPoliciesEnum
 {
@@ -651,7 +651,7 @@ public enum V1beta1AttestorSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AttestorSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -667,7 +667,7 @@ public enum V1beta1AttestorSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AttestorSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AttestorSpecProviderConfigRefPolicyResolveEnum
 {
@@ -678,7 +678,7 @@ public enum V1beta1AttestorSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecProviderConfigRefPolicy
 {
@@ -706,7 +706,7 @@ public partial class V1beta1AttestorSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecProviderConfigRef
 {
@@ -725,7 +725,7 @@ public partial class V1beta1AttestorSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpecWriteConnectionSecretToRef
 {
@@ -739,7 +739,7 @@ public partial class V1beta1AttestorSpecWriteConnectionSecretToRef
 }
 
 /// <summary>AttestorSpec defines the desired state of Attestor</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorSpec
 {
@@ -806,7 +806,7 @@ public partial class V1beta1AttestorSpec
     public V1beta1AttestorSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNotePublicKeysPkixPublicKey
 {
@@ -828,7 +828,7 @@ public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNotePubl
     public string? SignatureAlgorithm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNotePublicKeys
 {
@@ -873,7 +873,7 @@ public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNotePubl
     public IList<V1beta1AttestorStatusAtProviderAttestationAuthorityNotePublicKeysPkixPublicKey>? PkixPublicKey { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNote
 {
@@ -918,7 +918,7 @@ public partial class V1beta1AttestorStatusAtProviderAttestationAuthorityNote
     public IList<V1beta1AttestorStatusAtProviderAttestationAuthorityNotePublicKeys>? PublicKeys { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatusAtProvider
 {
@@ -949,7 +949,7 @@ public partial class V1beta1AttestorStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatusConditions
 {
@@ -992,7 +992,7 @@ public partial class V1beta1AttestorStatusConditions
 }
 
 /// <summary>AttestorStatus defines the observed state of Attestor.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AttestorStatus
 {
@@ -1013,7 +1013,7 @@ public partial class V1beta1AttestorStatus
 }
 
 /// <summary>Attestor is the Schema for the Attestors API. An attestor that attests to container image artifacts.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Attestor : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AttestorSpec>, IStatus<V1beta1AttestorStatus?>

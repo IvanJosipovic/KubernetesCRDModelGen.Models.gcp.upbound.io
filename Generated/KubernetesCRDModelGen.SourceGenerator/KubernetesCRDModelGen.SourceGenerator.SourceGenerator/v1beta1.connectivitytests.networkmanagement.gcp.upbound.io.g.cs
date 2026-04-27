@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.networkmanagement.gcp.upbound.io;
 /// <summary>ConnectivityTest is the Schema for the ConnectivityTests API. A connectivity test are a static analysis of your resource configurations that enables you to evaluate connectivity to and from Google Cloud resources in your Virtual Private Cloud (VPC) network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectivityTestList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectivityTest>
@@ -33,7 +33,7 @@ public partial class V1beta1ConnectivityTestList : IKubernetesObject<V1ListMeta>
 
     /// <summary>List of V1beta1ConnectivityTest objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ConnectivityTest>? Items { get; set; }
+    public required IList<V1beta1ConnectivityTest> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1ConnectivityTestList : IKubernetesObject<V1ListMeta>
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecDeletionPolicyEnum>))]
 public enum V1beta1ConnectivityTestSpecDeletionPolicyEnum
 {
@@ -61,7 +61,7 @@ public enum V1beta1ConnectivityTestSpecDeletionPolicyEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyResolutionEnum
 {
@@ -77,7 +77,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyResolveEnum
 {
@@ -88,7 +88,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceRefPolicy
 {
@@ -112,7 +112,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceRe
 }
 
 /// <summary>Reference to a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceRef
 {
@@ -131,7 +131,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPolicyResolutionEnum
 {
@@ -147,7 +147,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPolicyResolveEnum
 {
@@ -158,7 +158,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelectorPolicy
 {
@@ -182,7 +182,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceSe
 }
 
 /// <summary>Selector for a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceSelector
 {
@@ -208,7 +208,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationInstanceSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyResolutionEnum
 {
@@ -224,7 +224,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyResolveEnum
 {
@@ -235,7 +235,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRefPolicy
 {
@@ -259,7 +259,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressR
 }
 
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressRef
 {
@@ -278,7 +278,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPolicyResolutionEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPolicyResolveEnum
 {
@@ -305,7 +305,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelectorPolicy
 {
@@ -329,7 +329,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressS
 }
 
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressSelector
 {
@@ -355,7 +355,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationIpAddressS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyResolutionEnum
 {
@@ -371,7 +371,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyResolveEnum
 {
@@ -382,7 +382,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicyRes
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkRefPolicy
 {
@@ -406,7 +406,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkRef
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkRef
 {
@@ -425,7 +425,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPolicyResolutionEnum
 {
@@ -441,7 +441,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPoli
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPolicyResolveEnum
 {
@@ -452,7 +452,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPoli
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelectorPolicy
 {
@@ -476,7 +476,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkSel
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkSelector
 {
@@ -502,7 +502,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationNetworkSel
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyResolutionEnum
 {
@@ -518,7 +518,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyResolveEnum
 {
@@ -529,7 +529,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRefPolicy
 {
@@ -553,7 +553,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdR
 }
 
 /// <summary>Reference to a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdRef
 {
@@ -572,7 +572,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicyResolutionEnum
 {
@@ -588,7 +588,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicyResolveEnum
 {
@@ -599,7 +599,7 @@ public enum V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicy
 {
@@ -623,7 +623,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdS
 }
 
 /// <summary>Selector for a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelector
 {
@@ -643,7 +643,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestinationProjectIdS
     public V1beta1ConnectivityTestSpecForProviderDestinationProjectIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderDestination
 {
@@ -739,7 +739,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderDestination
     public string? RedisInstance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceAppEngineVersion
 {
@@ -748,7 +748,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceAppEngineVersio
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceCloudFunction
 {
@@ -757,7 +757,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceCloudFunction
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceCloudRunRevision
 {
@@ -772,7 +772,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceCloudRunRevisio
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolutionEnum
 {
@@ -788,7 +788,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolveEnum
 {
@@ -799,7 +799,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPolicy
 {
@@ -823,7 +823,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceRefPoli
 }
 
 /// <summary>Reference to a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceRef
 {
@@ -842,7 +842,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyResolutionEnum
 {
@@ -858,7 +858,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyResolveEnum
 {
@@ -869,7 +869,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceSelectorPolicy
 {
@@ -893,7 +893,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceSelecto
 }
 
 /// <summary>Selector for a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceSelector
 {
@@ -919,7 +919,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceInstanceSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolutionEnum
 {
@@ -935,7 +935,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolveEnum
 {
@@ -946,7 +946,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPolicy
 {
@@ -970,7 +970,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressRefPol
 }
 
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressRef
 {
@@ -989,7 +989,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyResolutionEnum
 {
@@ -1005,7 +1005,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyResolveEnum
 {
@@ -1016,7 +1016,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelectorPolicy
 {
@@ -1040,7 +1040,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelect
 }
 
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelector
 {
@@ -1066,7 +1066,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceIpAddressSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResolutionEnum
 {
@@ -1082,7 +1082,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResoluti
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResolveEnum
 {
@@ -1093,7 +1093,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicyResolveE
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolicy
 {
@@ -1117,7 +1117,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkRefPolic
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkRef
 {
@@ -1136,7 +1136,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyResolutionEnum
 {
@@ -1152,7 +1152,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyRes
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyResolveEnum
 {
@@ -1163,7 +1163,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicyRes
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkSelectorPolicy
 {
@@ -1187,7 +1187,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkSelector
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkSelector
 {
@@ -1213,7 +1213,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceNetworkSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolutionEnum
 {
@@ -1229,7 +1229,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolveEnum
 {
@@ -1240,7 +1240,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPolicy
 {
@@ -1264,7 +1264,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdRefPol
 }
 
 /// <summary>Reference to a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdRef
 {
@@ -1283,7 +1283,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyResolutionEnum
 {
@@ -1299,7 +1299,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyResolveEnum
 {
@@ -1310,7 +1310,7 @@ public enum V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicy
 {
@@ -1334,7 +1334,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelect
 }
 
 /// <summary>Selector for a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelector
 {
@@ -1354,7 +1354,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelect
     public V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProviderSource
 {
@@ -1455,7 +1455,7 @@ public partial class V1beta1ConnectivityTestSpecForProviderSource
     public V1beta1ConnectivityTestSpecForProviderSourceProjectIdSelector? ProjectIdSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecForProvider
 {
@@ -1535,7 +1535,7 @@ public partial class V1beta1ConnectivityTestSpecForProvider
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyResolutionEnum
 {
@@ -1551,7 +1551,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyResolveEnum
 {
@@ -1562,7 +1562,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRefPolicy
 {
@@ -1586,7 +1586,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceR
 }
 
 /// <summary>Reference to a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceRef
 {
@@ -1605,7 +1605,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPolicyResolutionEnum
 {
@@ -1621,7 +1621,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPolicyResolveEnum
 {
@@ -1632,7 +1632,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPo
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelectorPolicy
 {
@@ -1656,7 +1656,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceS
 }
 
 /// <summary>Selector for a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceSelector
 {
@@ -1682,7 +1682,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationInstanceS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicyResolutionEnum
 {
@@ -1698,7 +1698,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicyResolveEnum
 {
@@ -1709,7 +1709,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRefPolicy
 {
@@ -1733,7 +1733,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddress
 }
 
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressRef
 {
@@ -1752,7 +1752,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorPolicyResolutionEnum
 {
@@ -1768,7 +1768,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorPolicyResolveEnum
 {
@@ -1779,7 +1779,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelectorPolicy
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddress
 }
 
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddressSelector
 {
@@ -1829,7 +1829,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationIpAddress
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyResolutionEnum
 {
@@ -1845,7 +1845,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyResolveEnum
 {
@@ -1856,7 +1856,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicyRe
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRefPolicy
 {
@@ -1880,7 +1880,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRe
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRef
 {
@@ -1899,7 +1899,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkRe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPolicyResolutionEnum
 {
@@ -1915,7 +1915,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPolicyResolveEnum
 {
@@ -1926,7 +1926,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPol
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelectorPolicy
 {
@@ -1950,7 +1950,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSe
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSelector
 {
@@ -1976,7 +1976,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationNetworkSe
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicyResolutionEnum
 {
@@ -1992,7 +1992,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicyResolveEnum
 {
@@ -2003,7 +2003,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicy
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRefPolicy
 {
@@ -2027,7 +2027,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectId
 }
 
 /// <summary>Reference to a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdRef
 {
@@ -2046,7 +2046,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectId
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicyResolutionEnum
 {
@@ -2062,7 +2062,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorP
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicyResolveEnum
 {
@@ -2073,7 +2073,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorP
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicy
 {
@@ -2097,7 +2097,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectId
 }
 
 /// <summary>Selector for a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelector
 {
@@ -2117,7 +2117,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestinationProjectId
     public V1beta1ConnectivityTestSpecInitProviderDestinationProjectIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderDestination
 {
@@ -2213,7 +2213,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderDestination
     public string? RedisInstance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceAppEngineVersion
 {
@@ -2222,7 +2222,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceAppEngineVersi
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceCloudFunction
 {
@@ -2231,7 +2231,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceCloudFunction
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceCloudRunRevision
 {
@@ -2246,7 +2246,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceCloudRunRevisi
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolutionEnum
 {
@@ -2262,7 +2262,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolveEnum
 {
@@ -2273,7 +2273,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPolicy
 {
@@ -2297,7 +2297,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceRefPol
 }
 
 /// <summary>Reference to a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceRef
 {
@@ -2316,7 +2316,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyResolutionEnum
 {
@@ -2332,7 +2332,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyResolveEnum
 {
@@ -2343,7 +2343,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelectorPolicy
 {
@@ -2367,7 +2367,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelect
 }
 
 /// <summary>Selector for a Instance in compute to populate instance.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelector
 {
@@ -2393,7 +2393,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceInstanceSelect
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResolutionEnum
 {
@@ -2409,7 +2409,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResolveEnum
 {
@@ -2420,7 +2420,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPolicy
 {
@@ -2444,7 +2444,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRefPo
 }
 
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRef
 {
@@ -2463,7 +2463,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicyResolutionEnum
 {
@@ -2479,7 +2479,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicyResolveEnum
 {
@@ -2490,7 +2490,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelectorPolicy
 {
@@ -2514,7 +2514,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelec
 }
 
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelector
 {
@@ -2540,7 +2540,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceIpAddressSelec
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolutionEnum
 {
@@ -2556,7 +2556,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolveEnum
 {
@@ -2567,7 +2567,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPolicy
 {
@@ -2591,7 +2591,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkRefPoli
 }
 
 /// <summary>Reference to a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkRef
 {
@@ -2610,7 +2610,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyResolutionEnum
 {
@@ -2626,7 +2626,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyResolveEnum
 {
@@ -2637,7 +2637,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelectorPolicy
 {
@@ -2661,7 +2661,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelecto
 }
 
 /// <summary>Selector for a Network in compute to populate network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelector
 {
@@ -2687,7 +2687,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceNetworkSelecto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResolutionEnum
 {
@@ -2703,7 +2703,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResolveEnum
 {
@@ -2714,7 +2714,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicyResol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPolicy
 {
@@ -2738,7 +2738,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRefPo
 }
 
 /// <summary>Reference to a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRef
 {
@@ -2757,7 +2757,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicyResolutionEnum
 {
@@ -2773,7 +2773,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicy
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicyResolveEnum
 {
@@ -2784,7 +2784,7 @@ public enum V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicy
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicy
 {
@@ -2808,7 +2808,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelec
 }
 
 /// <summary>Selector for a Address in compute to populate projectId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelector
 {
@@ -2828,7 +2828,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelec
     public V1beta1ConnectivityTestSpecInitProviderSourceProjectIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProviderSource
 {
@@ -2941,7 +2941,7 @@ public partial class V1beta1ConnectivityTestSpecInitProviderSource
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecInitProvider
 {
@@ -3019,7 +3019,7 @@ public partial class V1beta1ConnectivityTestSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecManagementPoliciesEnum>))]
 public enum V1beta1ConnectivityTestSpecManagementPoliciesEnum
 {
@@ -3043,7 +3043,7 @@ public enum V1beta1ConnectivityTestSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -3059,7 +3059,7 @@ public enum V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolveEnum
 {
@@ -3070,7 +3070,7 @@ public enum V1beta1ConnectivityTestSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecProviderConfigRefPolicy
 {
@@ -3098,7 +3098,7 @@ public partial class V1beta1ConnectivityTestSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecProviderConfigRef
 {
@@ -3117,7 +3117,7 @@ public partial class V1beta1ConnectivityTestSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpecWriteConnectionSecretToRef
 {
@@ -3131,7 +3131,7 @@ public partial class V1beta1ConnectivityTestSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ConnectivityTestSpec defines the desired state of ConnectivityTest</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestSpec
 {
@@ -3198,7 +3198,7 @@ public partial class V1beta1ConnectivityTestSpec
     public V1beta1ConnectivityTestSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProviderDestination
 {
@@ -3262,7 +3262,7 @@ public partial class V1beta1ConnectivityTestStatusAtProviderDestination
     public string? RedisInstance { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProviderSourceAppEngineVersion
 {
@@ -3271,7 +3271,7 @@ public partial class V1beta1ConnectivityTestStatusAtProviderSourceAppEngineVersi
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProviderSourceCloudFunction
 {
@@ -3280,7 +3280,7 @@ public partial class V1beta1ConnectivityTestStatusAtProviderSourceCloudFunction
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProviderSourceCloudRunRevision
 {
@@ -3289,7 +3289,7 @@ public partial class V1beta1ConnectivityTestStatusAtProviderSourceCloudRunRevisi
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProviderSource
 {
@@ -3358,7 +3358,7 @@ public partial class V1beta1ConnectivityTestStatusAtProviderSource
     public string? ProjectId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusAtProvider
 {
@@ -3448,7 +3448,7 @@ public partial class V1beta1ConnectivityTestStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatusConditions
 {
@@ -3491,7 +3491,7 @@ public partial class V1beta1ConnectivityTestStatusConditions
 }
 
 /// <summary>ConnectivityTestStatus defines the observed state of ConnectivityTest.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectivityTestStatus
 {
@@ -3512,7 +3512,7 @@ public partial class V1beta1ConnectivityTestStatus
 }
 
 /// <summary>ConnectivityTest is the Schema for the ConnectivityTests API. A connectivity test are a static analysis of your resource configurations that enables you to evaluate connectivity to and from Google Cloud resources in your Virtual Private Cloud (VPC) network.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectivityTest : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectivityTestSpec>, IStatus<V1beta1ConnectivityTestStatus?>

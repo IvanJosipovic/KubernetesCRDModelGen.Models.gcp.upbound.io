@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identityplatform.gcp.m.upbound.io;
 /// <summary>OAuthIdPConfig is the Schema for the OAuthIdPConfigs API. OIDC IdP configuration for a Identity Toolkit project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OAuthIdPConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1OAuthIdPConfig>
@@ -33,11 +33,11 @@ public partial class V1beta1OAuthIdPConfigList : IKubernetesObject<V1ListMeta>, 
 
     /// <summary>List of V1beta1OAuthIdPConfig objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1OAuthIdPConfig>? Items { get; set; }
+    public required IList<V1beta1OAuthIdPConfig> Items { get; set; }
 }
 
 /// <summary>The client id of an OAuth client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecForProviderClientIdSecretRef
 {
@@ -50,7 +50,7 @@ public partial class V1beta1OAuthIdPConfigSpecForProviderClientIdSecretRef
 }
 
 /// <summary>The client secret of the OAuth client, to enable OIDC code flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecForProviderClientSecretSecretRef
 {
@@ -68,7 +68,7 @@ public partial class V1beta1OAuthIdPConfigSpecForProviderClientSecretSecretRef
 /// Setting both types to be simultaneously true ({code: true, idToken: true}) is not yet supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecForProviderResponseType
 {
@@ -81,7 +81,7 @@ public partial class V1beta1OAuthIdPConfigSpecForProviderResponseType
     public bool? IdToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecForProvider
 {
@@ -127,7 +127,7 @@ public partial class V1beta1OAuthIdPConfigSpecForProvider
 }
 
 /// <summary>The client id of an OAuth client.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecInitProviderClientIdSecretRef
 {
@@ -140,7 +140,7 @@ public partial class V1beta1OAuthIdPConfigSpecInitProviderClientIdSecretRef
 }
 
 /// <summary>The client secret of the OAuth client, to enable OIDC code flow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecInitProviderClientSecretSecretRef
 {
@@ -158,7 +158,7 @@ public partial class V1beta1OAuthIdPConfigSpecInitProviderClientSecretSecretRef
 /// Setting both types to be simultaneously true ({code: true, idToken: true}) is not yet supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecInitProviderResponseType
 {
@@ -183,7 +183,7 @@ public partial class V1beta1OAuthIdPConfigSpecInitProviderResponseType
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecInitProvider
 {
@@ -232,7 +232,7 @@ public partial class V1beta1OAuthIdPConfigSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1OAuthIdPConfigSpecManagementPoliciesEnum>))]
 public enum V1beta1OAuthIdPConfigSpecManagementPoliciesEnum
 {
@@ -255,7 +255,7 @@ public enum V1beta1OAuthIdPConfigSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecProviderConfigRef
 {
@@ -274,7 +274,7 @@ public partial class V1beta1OAuthIdPConfigSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpecWriteConnectionSecretToRef
 {
@@ -284,7 +284,7 @@ public partial class V1beta1OAuthIdPConfigSpecWriteConnectionSecretToRef
 }
 
 /// <summary>OAuthIdPConfigSpec defines the desired state of OAuthIdPConfig</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigSpec
 {
@@ -341,7 +341,7 @@ public partial class V1beta1OAuthIdPConfigSpec
 /// Setting both types to be simultaneously true ({code: true, idToken: true}) is not yet supported.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigStatusAtProviderResponseType
 {
@@ -354,7 +354,7 @@ public partial class V1beta1OAuthIdPConfigStatusAtProviderResponseType
     public bool? IdToken { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigStatusAtProvider
 {
@@ -396,7 +396,7 @@ public partial class V1beta1OAuthIdPConfigStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigStatusConditions
 {
@@ -439,7 +439,7 @@ public partial class V1beta1OAuthIdPConfigStatusConditions
 }
 
 /// <summary>OAuthIdPConfigStatus defines the observed state of OAuthIdPConfig.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1OAuthIdPConfigStatus
 {
@@ -460,7 +460,7 @@ public partial class V1beta1OAuthIdPConfigStatus
 }
 
 /// <summary>OAuthIdPConfig is the Schema for the OAuthIdPConfigs API. OIDC IdP configuration for a Identity Toolkit project.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1OAuthIdPConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1OAuthIdPConfigSpec>, IStatus<V1beta1OAuthIdPConfigStatus?>

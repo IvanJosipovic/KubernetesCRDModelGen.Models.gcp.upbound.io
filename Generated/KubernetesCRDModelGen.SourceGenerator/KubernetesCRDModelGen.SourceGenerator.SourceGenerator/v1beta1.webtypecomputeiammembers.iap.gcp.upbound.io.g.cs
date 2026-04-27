@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iap.gcp.upbound.io;
 /// <summary>WebTypeComputeIAMMember is the Schema for the WebTypeComputeIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebTypeComputeIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebTypeComputeIAMMember>
@@ -33,7 +33,7 @@ public partial class V1beta1WebTypeComputeIAMMemberList : IKubernetesObject<V1Li
 
     /// <summary>List of V1beta1WebTypeComputeIAMMember objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1WebTypeComputeIAMMember>? Items { get; set; }
+    public required IList<V1beta1WebTypeComputeIAMMember> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1WebTypeComputeIAMMemberList : IKubernetesObject<V1Li
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebTypeComputeIAMMemberSpecDeletionPolicyEnum>))]
 public enum V1beta1WebTypeComputeIAMMemberSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1WebTypeComputeIAMMemberSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecForProviderCondition
 {
@@ -69,7 +69,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecForProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecForProvider
 {
@@ -86,7 +86,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecForProvider
     public string? Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecInitProviderCondition
 {
@@ -112,7 +112,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecInitProviderCondition
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecInitProvider
 {
@@ -133,7 +133,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebTypeComputeIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1WebTypeComputeIAMMemberSpecManagementPoliciesEnum
 {
@@ -157,7 +157,7 @@ public enum V1beta1WebTypeComputeIAMMemberSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -173,7 +173,7 @@ public enum V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolutionE
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolveEnum
 {
@@ -184,7 +184,7 @@ public enum V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicy
 {
@@ -212,7 +212,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecProviderConfigRef
 {
@@ -231,7 +231,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -245,7 +245,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpecWriteConnectionSecretToRe
 }
 
 /// <summary>WebTypeComputeIAMMemberSpec defines the desired state of WebTypeComputeIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberSpec
 {
@@ -312,7 +312,7 @@ public partial class V1beta1WebTypeComputeIAMMemberSpec
     public V1beta1WebTypeComputeIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberStatusAtProviderCondition
 {
@@ -326,7 +326,7 @@ public partial class V1beta1WebTypeComputeIAMMemberStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberStatusAtProvider
 {
@@ -350,7 +350,7 @@ public partial class V1beta1WebTypeComputeIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberStatusConditions
 {
@@ -393,7 +393,7 @@ public partial class V1beta1WebTypeComputeIAMMemberStatusConditions
 }
 
 /// <summary>WebTypeComputeIAMMemberStatus defines the observed state of WebTypeComputeIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WebTypeComputeIAMMemberStatus
 {
@@ -414,7 +414,7 @@ public partial class V1beta1WebTypeComputeIAMMemberStatus
 }
 
 /// <summary>WebTypeComputeIAMMember is the Schema for the WebTypeComputeIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebTypeComputeIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebTypeComputeIAMMemberSpec>, IStatus<V1beta1WebTypeComputeIAMMemberStatus?>

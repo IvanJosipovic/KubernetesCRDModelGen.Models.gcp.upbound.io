@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
 /// <summary>Cluster is the Schema for the Clusters API. Manages a Cloud Dataproc cluster resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ClusterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Cluster>
@@ -33,7 +33,7 @@ public partial class V1beta1ClusterList : IKubernetesObject<V1ListMeta>, IItems<
 
     /// <summary>List of V1beta1Cluster objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1Cluster>? Items { get; set; }
+    public required IList<V1beta1Cluster> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1ClusterList : IKubernetesObject<V1ListMeta>, IItems<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecDeletionPolicyEnum>))]
 public enum V1beta1ClusterSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1ClusterSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAutoscalingConfig
 {
@@ -64,7 +64,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAutoscalingConfig
     public string? PolicyUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators
 {
@@ -77,7 +77,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
@@ -115,7 +115,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig
 {
@@ -147,7 +147,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroupsNodeGroup
 {
@@ -163,7 +163,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGroups
 {
@@ -175,7 +175,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigAuxiliaryNodeGrou
     public string? NodeGroupId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigDataprocMetricConfigMetrics
 {
@@ -188,7 +188,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigDataprocMetricCon
     public string? MetricSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigDataprocMetricConfig
 {
@@ -197,7 +197,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigDataprocMetricCon
     public IList<V1beta1ClusterSpecForProviderClusterConfigDataprocMetricConfigMetrics>? Metrics { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigEncryptionConfig
 {
@@ -209,7 +209,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigEncryptionConfig
     public string? KmsKeyName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigEndpointConfig
 {
@@ -221,7 +221,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigEndpointConfig
     public bool? EnableHttpPortAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
@@ -230,7 +230,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigC
     public bool? EnableConfidentialCompute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -239,7 +239,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigN
     public string? NodeGroupUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigReservationAffinity
 {
@@ -262,7 +262,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigR
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolutionEnum
 {
@@ -278,7 +278,7 @@ public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolveEnum
 {
@@ -289,7 +289,7 @@ public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAcc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRefPolicy
 {
@@ -313,7 +313,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigS
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountRef
 {
@@ -332,7 +332,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigS
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolutionEnum
 {
@@ -348,7 +348,7 @@ public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAcc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolveEnum
 {
@@ -359,7 +359,7 @@ public enum V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAcc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicy
 {
@@ -383,7 +383,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigS
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelector
 {
@@ -403,7 +403,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigS
     public V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -420,7 +420,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfigS
     public bool? EnableVtpm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfig
 {
@@ -517,7 +517,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigGceClusterConfig
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigInitializationAction
 {
@@ -537,7 +537,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigInitializationAct
     public double? TimeoutSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigLifecycleConfig
 {
@@ -557,7 +557,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigLifecycleConfig
     public string? IdleDeleteTtl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigAccelerators
 {
@@ -570,7 +570,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigAccel
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskConfig
 {
@@ -608,7 +608,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfigDiskC
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfig
 {
@@ -652,7 +652,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMasterConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigMetastoreConfig
 {
@@ -661,7 +661,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
@@ -699,7 +699,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
@@ -712,7 +712,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
     public double? Rank { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix
 {
@@ -725,7 +725,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
     public double? StandardCapacityPercentAboveBase { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 {
@@ -738,7 +738,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
     public IList<V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix>? ProvisioningModelMix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorkerConfig
 {
@@ -765,7 +765,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigPreemptibleWorker
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfigIdentityConfig
 {
@@ -777,7 +777,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfigIde
     public IDictionary<string, string>? UserServiceAccountMapping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfigKerberosConfig
 {
@@ -882,7 +882,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfigKer
     public string? TruststoreUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfig
 {
@@ -901,7 +901,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigSecurityConfig
     public IList<V1beta1ClusterSpecForProviderClusterConfigSecurityConfigKerberosConfig>? KerberosConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigSoftwareConfig
 {
@@ -929,7 +929,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigSoftwareConfig
     public IDictionary<string, string>? OverrideProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigAccelerators
 {
@@ -942,7 +942,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigAccel
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskConfig
 {
@@ -980,7 +980,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfigDiskC
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfig
 {
@@ -1033,7 +1033,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfigWorkerConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderClusterConfig
 {
@@ -1159,7 +1159,7 @@ public partial class V1beta1ClusterSpecForProviderClusterConfig
     public IList<V1beta1ClusterSpecForProviderClusterConfigWorkerConfig>? WorkerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig
 {
@@ -1168,7 +1168,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryS
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig
 {
@@ -1177,7 +1177,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryS
     public string? DataprocCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryServicesConfig
 {
@@ -1193,7 +1193,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryS
     public IList<V1beta1ClusterSpecForProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig>? SparkHistoryServerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling
 {
@@ -1206,7 +1206,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public double? MinNodeCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig
 {
@@ -1242,7 +1242,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public bool? Spot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig
 {
@@ -1265,7 +1265,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public IList<string>? Locations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget
 {
@@ -1290,7 +1290,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig
 {
@@ -1310,7 +1310,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public IList<V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget>? NodePoolTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig
 {
@@ -1329,7 +1329,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfig
 {
@@ -1351,7 +1351,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetes
     public IList<V1beta1ClusterSpecForProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig>? KubernetesSoftwareConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProviderVirtualClusterConfig
 {
@@ -1382,7 +1382,7 @@ public partial class V1beta1ClusterSpecForProviderVirtualClusterConfig
     public string? StagingBucket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecForProvider
 {
@@ -1438,7 +1438,7 @@ public partial class V1beta1ClusterSpecForProvider
     public IList<V1beta1ClusterSpecForProviderVirtualClusterConfig>? VirtualClusterConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAutoscalingConfig
 {
@@ -1447,7 +1447,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAutoscalingConfi
     public string? PolicyUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators
 {
@@ -1460,7 +1460,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
@@ -1498,7 +1498,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig
 {
@@ -1530,7 +1530,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroupsNodeGroup
 {
@@ -1546,7 +1546,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGroups
 {
@@ -1558,7 +1558,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigAuxiliaryNodeGro
     public string? NodeGroupId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigDataprocMetricConfigMetrics
 {
@@ -1571,7 +1571,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigDataprocMetricCo
     public string? MetricSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigDataprocMetricConfig
 {
@@ -1580,7 +1580,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigDataprocMetricCo
     public IList<V1beta1ClusterSpecInitProviderClusterConfigDataprocMetricConfigMetrics>? Metrics { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigEncryptionConfig
 {
@@ -1592,7 +1592,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigEncryptionConfig
     public string? KmsKeyName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigEndpointConfig
 {
@@ -1604,7 +1604,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigEndpointConfig
     public bool? EnableHttpPortAccess { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
@@ -1613,7 +1613,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public bool? EnableConfidentialCompute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -1622,7 +1622,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public string? NodeGroupUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigReservationAffinity
 {
@@ -1645,7 +1645,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolutionEnum
 {
@@ -1661,7 +1661,7 @@ public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolveEnum>))]
 public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRefPolicyResolveEnum
 {
@@ -1672,7 +1672,7 @@ public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAc
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRefPolicy
 {
@@ -1696,7 +1696,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
 }
 
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountRef
 {
@@ -1715,7 +1715,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolutionEnum
 {
@@ -1731,7 +1731,7 @@ public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAc
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolveEnum>))]
 public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicyResolveEnum
 {
@@ -1742,7 +1742,7 @@ public enum V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAc
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicy
 {
@@ -1766,7 +1766,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
 }
 
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccount.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelector
 {
@@ -1786,7 +1786,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigServiceAccountSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -1803,7 +1803,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public bool? EnableVtpm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
 {
@@ -1900,7 +1900,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigGceClusterConfig
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigInitializationAction
 {
@@ -1920,7 +1920,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigInitializationAc
     public double? TimeoutSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigLifecycleConfig
 {
@@ -1940,7 +1940,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigLifecycleConfig
     public string? IdleDeleteTtl { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigAccelerators
 {
@@ -1953,7 +1953,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDiskConfig
 {
@@ -1991,7 +1991,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfig
 {
@@ -2035,7 +2035,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMasterConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigMetastoreConfig
 {
@@ -2044,7 +2044,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
@@ -2082,7 +2082,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
@@ -2095,7 +2095,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
     public double? Rank { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix
 {
@@ -2108,7 +2108,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
     public double? StandardCapacityPercentAboveBase { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 {
@@ -2121,7 +2121,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
     public IList<V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix>? ProvisioningModelMix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorkerConfig
 {
@@ -2148,7 +2148,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigPreemptibleWorke
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfigIdentityConfig
 {
@@ -2160,7 +2160,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfigId
     public IDictionary<string, string>? UserServiceAccountMapping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfigKerberosConfig
 {
@@ -2265,7 +2265,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfigKe
     public string? TruststoreUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfig
 {
@@ -2284,7 +2284,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigSecurityConfig
     public IList<V1beta1ClusterSpecInitProviderClusterConfigSecurityConfigKerberosConfig>? KerberosConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigSoftwareConfig
 {
@@ -2312,7 +2312,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigSoftwareConfig
     public IDictionary<string, string>? OverrideProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigAccelerators
 {
@@ -2325,7 +2325,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDiskConfig
 {
@@ -2363,7 +2363,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfig
 {
@@ -2416,7 +2416,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfigWorkerConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderClusterConfig
 {
@@ -2542,7 +2542,7 @@ public partial class V1beta1ClusterSpecInitProviderClusterConfig
     public IList<V1beta1ClusterSpecInitProviderClusterConfigWorkerConfig>? WorkerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig
 {
@@ -2551,7 +2551,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliary
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig
 {
@@ -2560,7 +2560,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliary
     public string? DataprocCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliaryServicesConfig
 {
@@ -2576,7 +2576,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliary
     public IList<V1beta1ClusterSpecInitProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig>? SparkHistoryServerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling
 {
@@ -2589,7 +2589,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public double? MinNodeCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig
 {
@@ -2625,7 +2625,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public bool? Spot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig
 {
@@ -2648,7 +2648,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public IList<string>? Locations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget
 {
@@ -2673,7 +2673,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig
 {
@@ -2693,7 +2693,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public IList<V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget>? NodePoolTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig
 {
@@ -2712,7 +2712,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfig
 {
@@ -2734,7 +2734,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernete
     public IList<V1beta1ClusterSpecInitProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig>? KubernetesSoftwareConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfig
 {
@@ -2777,7 +2777,7 @@ public partial class V1beta1ClusterSpecInitProviderVirtualClusterConfig
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProvider
 {
@@ -2837,7 +2837,7 @@ public partial class V1beta1ClusterSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecManagementPoliciesEnum>))]
 public enum V1beta1ClusterSpecManagementPoliciesEnum
 {
@@ -2861,7 +2861,7 @@ public enum V1beta1ClusterSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ClusterSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -2877,7 +2877,7 @@ public enum V1beta1ClusterSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ClusterSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ClusterSpecProviderConfigRefPolicyResolveEnum
 {
@@ -2888,7 +2888,7 @@ public enum V1beta1ClusterSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecProviderConfigRefPolicy
 {
@@ -2916,7 +2916,7 @@ public partial class V1beta1ClusterSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecProviderConfigRef
 {
@@ -2935,7 +2935,7 @@ public partial class V1beta1ClusterSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecWriteConnectionSecretToRef
 {
@@ -2949,7 +2949,7 @@ public partial class V1beta1ClusterSpecWriteConnectionSecretToRef
 }
 
 /// <summary>ClusterSpec defines the desired state of Cluster</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpec
 {
@@ -3016,7 +3016,7 @@ public partial class V1beta1ClusterSpec
     public V1beta1ClusterSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAutoscalingConfig
 {
@@ -3025,7 +3025,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAutoscalingConfi
     public string? PolicyUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators
 {
@@ -3038,7 +3038,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig
 {
@@ -3076,7 +3076,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig
 {
@@ -3115,7 +3115,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroupsNodeGroup
 {
@@ -3138,7 +3138,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGroups
 {
@@ -3150,7 +3150,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigAuxiliaryNodeGro
     public string? NodeGroupId { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigDataprocMetricConfigMetrics
 {
@@ -3163,7 +3163,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigDataprocMetricCo
     public string? MetricSource { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigDataprocMetricConfig
 {
@@ -3172,7 +3172,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigDataprocMetricCo
     public IList<V1beta1ClusterStatusAtProviderClusterConfigDataprocMetricConfigMetrics>? Metrics { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigEncryptionConfig
 {
@@ -3184,7 +3184,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigEncryptionConfig
     public string? KmsKeyName { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigEndpointConfig
 {
@@ -3203,7 +3203,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigEndpointConfig
     public IDictionary<string, string>? HttpPorts { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigConfidentialInstanceConfig
 {
@@ -3212,7 +3212,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public bool? EnableConfidentialCompute { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigNodeGroupAffinity
 {
@@ -3221,7 +3221,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public string? NodeGroupUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigReservationAffinity
 {
@@ -3238,7 +3238,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public IList<string>? Values { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfigShieldedInstanceConfig
 {
@@ -3255,7 +3255,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public bool? EnableVtpm { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
 {
@@ -3344,7 +3344,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigGceClusterConfig
     public string? Zone { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigInitializationAction
 {
@@ -3364,7 +3364,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigInitializationAc
     public double? TimeoutSec { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigLifecycleConfig
 {
@@ -3391,7 +3391,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigLifecycleConfig
     public string? IdleStartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigAccelerators
 {
@@ -3404,7 +3404,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDiskConfig
 {
@@ -3442,7 +3442,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfig
 {
@@ -3493,7 +3493,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMasterConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigMetastoreConfig
 {
@@ -3502,7 +3502,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigMetastoreConfig
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigDiskConfig
 {
@@ -3540,7 +3540,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionList
 {
@@ -3553,7 +3553,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public double? Rank { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResults
 {
@@ -3565,7 +3565,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public double? VmCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix
 {
@@ -3578,7 +3578,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public double? StandardCapacityPercentAboveBase { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 {
@@ -3594,7 +3594,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public IList<V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix>? ProvisioningModelMix { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorkerConfig
 {
@@ -3628,7 +3628,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigPreemptibleWorke
     public string? Preemptibility { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfigIdentityConfig
 {
@@ -3640,7 +3640,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfigId
     public IDictionary<string, string>? UserServiceAccountMapping { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfigKerberosConfig
 {
@@ -3745,7 +3745,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfigKe
     public string? TruststoreUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfig
 {
@@ -3764,7 +3764,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigSecurityConfig
     public IList<V1beta1ClusterStatusAtProviderClusterConfigSecurityConfigKerberosConfig>? KerberosConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigSoftwareConfig
 {
@@ -3799,7 +3799,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigSoftwareConfig
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigAccelerators
 {
@@ -3812,7 +3812,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigAcce
     public string? AcceleratorType { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDiskConfig
 {
@@ -3850,7 +3850,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfigDisk
     public double? NumLocalSsds { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfig
 {
@@ -3910,7 +3910,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfigWorkerConfig
     public double? NumInstances { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderClusterConfig
 {
@@ -4044,7 +4044,7 @@ public partial class V1beta1ClusterStatusAtProviderClusterConfig
     public IList<V1beta1ClusterStatusAtProviderClusterConfigWorkerConfig>? WorkerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig
 {
@@ -4053,7 +4053,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliary
     public string? DataprocMetastoreService { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig
 {
@@ -4062,7 +4062,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliary
     public string? DataprocCluster { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliaryServicesConfig
 {
@@ -4078,7 +4078,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliary
     public IList<V1beta1ClusterStatusAtProviderVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig>? SparkHistoryServerConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling
 {
@@ -4091,7 +4091,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public double? MinNodeCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig
 {
@@ -4127,7 +4127,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public bool? Spot { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig
 {
@@ -4150,7 +4150,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public IList<string>? Locations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget
 {
@@ -4175,7 +4175,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public IList<string>? Roles { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig
 {
@@ -4195,7 +4195,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public IList<V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget>? NodePoolTarget { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig
 {
@@ -4214,7 +4214,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public IDictionary<string, string>? Properties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfig
 {
@@ -4236,7 +4236,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernete
     public IList<V1beta1ClusterStatusAtProviderVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig>? KubernetesSoftwareConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfig
 {
@@ -4267,7 +4267,7 @@ public partial class V1beta1ClusterStatusAtProviderVirtualClusterConfig
     public string? StagingBucket { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusAtProvider
 {
@@ -4339,7 +4339,7 @@ public partial class V1beta1ClusterStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatusConditions
 {
@@ -4382,7 +4382,7 @@ public partial class V1beta1ClusterStatusConditions
 }
 
 /// <summary>ClusterStatus defines the observed state of Cluster.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterStatus
 {
@@ -4403,7 +4403,7 @@ public partial class V1beta1ClusterStatus
 }
 
 /// <summary>Cluster is the Schema for the Clusters API. Manages a Cloud Dataproc cluster resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Cluster : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ClusterSpec>, IStatus<V1beta1ClusterStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.artifact.gcp.upbound.io;
 /// <summary>RegistryRepositoryIAMMember is the Schema for the RegistryRepositoryIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegistryRepositoryIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegistryRepositoryIAMMember>
@@ -33,7 +33,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberList : IKubernetesObject<
 
     /// <summary>List of V1beta1RegistryRepositoryIAMMember objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1RegistryRepositoryIAMMember>? Items { get; set; }
+    public required IList<V1beta1RegistryRepositoryIAMMember> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberList : IKubernetesObject<
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositoryIAMMemberSpecDeletionPolicyEnum>))]
 public enum V1beta1RegistryRepositoryIAMMemberSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1RegistryRepositoryIAMMemberSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecForProviderCondition
 {
@@ -69,7 +69,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecForProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecForProvider
 {
@@ -92,7 +92,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecForProvider
     public string? Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecInitProviderCondition
 {
@@ -118,7 +118,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecInitProviderCondition
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecInitProvider
 {
@@ -145,7 +145,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositoryIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1RegistryRepositoryIAMMemberSpecManagementPoliciesEnum
 {
@@ -169,7 +169,7 @@ public enum V1beta1RegistryRepositoryIAMMemberSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -185,7 +185,7 @@ public enum V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolveEnum
 {
@@ -196,7 +196,7 @@ public enum V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPolicy
 {
@@ -224,7 +224,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRefPoli
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRef
 {
@@ -243,7 +243,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -257,7 +257,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpecWriteConnectionSecret
 }
 
 /// <summary>RegistryRepositoryIAMMemberSpec defines the desired state of RegistryRepositoryIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberSpec
 {
@@ -324,7 +324,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberSpec
     public V1beta1RegistryRepositoryIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberStatusAtProviderCondition
 {
@@ -338,7 +338,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberStatusAtProviderCondition
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberStatusAtProvider
 {
@@ -368,7 +368,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberStatusConditions
 {
@@ -411,7 +411,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberStatusConditions
 }
 
 /// <summary>RegistryRepositoryIAMMemberStatus defines the observed state of RegistryRepositoryIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegistryRepositoryIAMMemberStatus
 {
@@ -432,7 +432,7 @@ public partial class V1beta1RegistryRepositoryIAMMemberStatus
 }
 
 /// <summary>RegistryRepositoryIAMMember is the Schema for the RegistryRepositoryIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegistryRepositoryIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegistryRepositoryIAMMemberSpec>, IStatus<V1beta1RegistryRepositoryIAMMemberStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
 /// <summary>ResourcePolicy is the Schema for the ResourcePolicys API. A policy that can be attached to a resource to specify or schedule actions on that resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourcePolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ResourcePolicy>
@@ -33,7 +33,7 @@ public partial class V1beta1ResourcePolicyList : IKubernetesObject<V1ListMeta>, 
 
     /// <summary>List of V1beta1ResourcePolicy objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1ResourcePolicy>? Items { get; set; }
+    public required IList<V1beta1ResourcePolicy> Items { get; set; }
 }
 
 /// <summary>
@@ -45,7 +45,7 @@ public partial class V1beta1ResourcePolicyList : IKubernetesObject<V1ListMeta>, 
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourcePolicySpecDeletionPolicyEnum>))]
 public enum V1beta1ResourcePolicySpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1ResourcePolicySpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderDiskConsistencyGroupPolicy
 {
@@ -64,7 +64,7 @@ public partial class V1beta1ResourcePolicySpecForProviderDiskConsistencyGroupPol
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderGroupPlacementPolicy
 {
@@ -98,7 +98,7 @@ public partial class V1beta1ResourcePolicySpecForProviderGroupPlacementPolicy
     public double? VmCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicyVmStartSchedule
 {
@@ -107,7 +107,7 @@ public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicyV
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicyVmStopSchedule
 {
@@ -116,7 +116,7 @@ public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicyV
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicy
 {
@@ -150,7 +150,7 @@ public partial class V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicy
     public IList<V1beta1ResourcePolicySpecForProviderInstanceSchedulePolicyVmStopSchedule>? VmStopSchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyRetentionPolicy
 {
@@ -168,7 +168,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyR
     public string? OnSourceDiskDelete { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleDailySchedule
 {
@@ -184,7 +184,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleHourlySchedule
 {
@@ -200,7 +200,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks
 {
@@ -219,7 +219,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleWeeklySchedule
 {
@@ -231,7 +231,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public IList<V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks>? DayOfWeeks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicySchedule
 {
@@ -257,7 +257,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public IList<V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyScheduleWeeklySchedule>? WeeklySchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicySnapshotProperties
 {
@@ -285,7 +285,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicyS
     public IList<string>? StorageLocations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicy
 {
@@ -311,7 +311,7 @@ public partial class V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicySpecForProviderSnapshotSchedulePolicySnapshotProperties>? SnapshotProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProviderWorkloadPolicy
 {
@@ -338,7 +338,7 @@ public partial class V1beta1ResourcePolicySpecForProviderWorkloadPolicy
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecForProvider
 {
@@ -393,7 +393,7 @@ public partial class V1beta1ResourcePolicySpecForProvider
     public IList<V1beta1ResourcePolicySpecForProviderWorkloadPolicy>? WorkloadPolicy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderDiskConsistencyGroupPolicy
 {
@@ -402,7 +402,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderDiskConsistencyGroupPo
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderGroupPlacementPolicy
 {
@@ -436,7 +436,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderGroupPlacementPolicy
     public double? VmCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicyVmStartSchedule
 {
@@ -445,7 +445,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicy
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicyVmStopSchedule
 {
@@ -454,7 +454,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicy
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicy
 {
@@ -488,7 +488,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicy
     public IList<V1beta1ResourcePolicySpecInitProviderInstanceSchedulePolicyVmStopSchedule>? VmStopSchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyRetentionPolicy
 {
@@ -506,7 +506,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public string? OnSourceDiskDelete { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleDailySchedule
 {
@@ -522,7 +522,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleHourlySchedule
 {
@@ -538,7 +538,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks
 {
@@ -557,7 +557,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleWeeklySchedule
 {
@@ -569,7 +569,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks>? DayOfWeeks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicySchedule
 {
@@ -595,7 +595,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicyScheduleWeeklySchedule>? WeeklySchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicySnapshotProperties
 {
@@ -623,7 +623,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public IList<string>? StorageLocations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
 {
@@ -649,7 +649,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicySpecInitProviderSnapshotSchedulePolicySnapshotProperties>? SnapshotProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProviderWorkloadPolicy
 {
@@ -688,7 +688,7 @@ public partial class V1beta1ResourcePolicySpecInitProviderWorkloadPolicy
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecInitProvider
 {
@@ -743,7 +743,7 @@ public partial class V1beta1ResourcePolicySpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourcePolicySpecManagementPoliciesEnum>))]
 public enum V1beta1ResourcePolicySpecManagementPoliciesEnum
 {
@@ -767,7 +767,7 @@ public enum V1beta1ResourcePolicySpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourcePolicySpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1ResourcePolicySpecProviderConfigRefPolicyResolutionEnum
 {
@@ -783,7 +783,7 @@ public enum V1beta1ResourcePolicySpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ResourcePolicySpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1ResourcePolicySpecProviderConfigRefPolicyResolveEnum
 {
@@ -794,7 +794,7 @@ public enum V1beta1ResourcePolicySpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecProviderConfigRefPolicy
 {
@@ -822,7 +822,7 @@ public partial class V1beta1ResourcePolicySpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecProviderConfigRef
 {
@@ -841,7 +841,7 @@ public partial class V1beta1ResourcePolicySpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpecWriteConnectionSecretToRef
 {
@@ -855,7 +855,7 @@ public partial class V1beta1ResourcePolicySpecWriteConnectionSecretToRef
 }
 
 /// <summary>ResourcePolicySpec defines the desired state of ResourcePolicy</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicySpec
 {
@@ -922,7 +922,7 @@ public partial class V1beta1ResourcePolicySpec
     public V1beta1ResourcePolicySpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderDiskConsistencyGroupPolicy
 {
@@ -931,7 +931,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderDiskConsistencyGroupPo
     public bool? Enabled { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderGroupPlacementPolicy
 {
@@ -965,7 +965,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderGroupPlacementPolicy
     public double? VmCount { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicyVmStartSchedule
 {
@@ -974,7 +974,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicy
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicyVmStopSchedule
 {
@@ -983,7 +983,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicy
     public string? Schedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicy
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicy
     public IList<V1beta1ResourcePolicyStatusAtProviderInstanceSchedulePolicyVmStopSchedule>? VmStopSchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyRetentionPolicy
 {
@@ -1035,7 +1035,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public string? OnSourceDiskDelete { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleDailySchedule
 {
@@ -1051,7 +1051,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleHourlySchedule
 {
@@ -1067,7 +1067,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks
 {
@@ -1086,7 +1086,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public string? StartTime { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleWeeklySchedule
 {
@@ -1098,7 +1098,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks>? DayOfWeeks { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicySchedule
 {
@@ -1124,7 +1124,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicyScheduleWeeklySchedule>? WeeklySchedule { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicySnapshotProperties
 {
@@ -1152,7 +1152,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public IList<string>? StorageLocations { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
 {
@@ -1178,7 +1178,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicy
     public IList<V1beta1ResourcePolicyStatusAtProviderSnapshotSchedulePolicySnapshotProperties>? SnapshotProperties { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProviderWorkloadPolicy
 {
@@ -1205,7 +1205,7 @@ public partial class V1beta1ResourcePolicyStatusAtProviderWorkloadPolicy
     public string? Type { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusAtProvider
 {
@@ -1269,7 +1269,7 @@ public partial class V1beta1ResourcePolicyStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatusConditions
 {
@@ -1312,7 +1312,7 @@ public partial class V1beta1ResourcePolicyStatusConditions
 }
 
 /// <summary>ResourcePolicyStatus defines the observed state of ResourcePolicy.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ResourcePolicyStatus
 {
@@ -1333,7 +1333,7 @@ public partial class V1beta1ResourcePolicyStatus
 }
 
 /// <summary>ResourcePolicy is the Schema for the ResourcePolicys API. A policy that can be attached to a resource to specify or schedule actions on that resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ResourcePolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ResourcePolicySpec>, IStatus<V1beta1ResourcePolicyStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.m.upbound.io;
 /// <summary>AnalyticsHubDataExchange is the Schema for the AnalyticsHubDataExchanges API. A Bigquery Analytics Hub data exchange</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubDataExchangeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AnalyticsHubDataExchange>
@@ -33,18 +33,18 @@ public partial class V1beta1AnalyticsHubDataExchangeList : IKubernetesObject<V1L
 
     /// <summary>List of V1beta1AnalyticsHubDataExchange objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1beta1AnalyticsHubDataExchange>? Items { get; set; }
+    public required IList<V1beta1AnalyticsHubDataExchange> Items { get; set; }
 }
 
 /// <summary>Data Clean Room (DCR), used for privacy-safe and secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnvironmentConfigDcrExchangeConfig
 {
 }
 
 /// <summary>Default Analytics Hub data exchange, used for secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnvironmentConfigDefaultExchangeConfig
 {
@@ -55,7 +55,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnviro
 /// This field is required for data clean room exchanges.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnvironmentConfig
 {
@@ -68,7 +68,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnviro
     public V1beta1AnalyticsHubDataExchangeSpecForProviderSharingEnvironmentConfigDefaultExchangeConfig? DefaultExchangeConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecForProvider
 {
@@ -128,14 +128,14 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecForProvider
 }
 
 /// <summary>Data Clean Room (DCR), used for privacy-safe and secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecInitProviderSharingEnvironmentConfigDcrExchangeConfig
 {
 }
 
 /// <summary>Default Analytics Hub data exchange, used for secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecInitProviderSharingEnvironmentConfigDefaultExchangeConfig
 {
@@ -146,7 +146,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecInitProviderSharingEnvir
 /// This field is required for data clean room exchanges.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecInitProviderSharingEnvironmentConfig
 {
@@ -171,7 +171,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecInitProviderSharingEnvir
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecInitProvider
 {
@@ -234,7 +234,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeSpecManagementPoliciesEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeSpecManagementPoliciesEnum
 {
@@ -257,7 +257,7 @@ public enum V1beta1AnalyticsHubDataExchangeSpecManagementPoliciesEnum
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecProviderConfigRef
 {
@@ -276,7 +276,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpecWriteConnectionSecretToRef
 {
@@ -286,7 +286,7 @@ public partial class V1beta1AnalyticsHubDataExchangeSpecWriteConnectionSecretToR
 }
 
 /// <summary>AnalyticsHubDataExchangeSpec defines the desired state of AnalyticsHubDataExchange</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeSpec
 {
@@ -338,14 +338,14 @@ public partial class V1beta1AnalyticsHubDataExchangeSpec
 }
 
 /// <summary>Data Clean Room (DCR), used for privacy-safe and secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvironmentConfigDcrExchangeConfig
 {
 }
 
 /// <summary>Default Analytics Hub data exchange, used for secured data sharing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvironmentConfigDefaultExchangeConfig
 {
@@ -356,7 +356,7 @@ public partial class V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvir
 /// This field is required for data clean room exchanges.
 /// Structure is documented below.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvironmentConfig
 {
@@ -369,7 +369,7 @@ public partial class V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvir
     public V1beta1AnalyticsHubDataExchangeStatusAtProviderSharingEnvironmentConfigDefaultExchangeConfig? DefaultExchangeConfig { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatusAtProvider
 {
@@ -444,7 +444,7 @@ public partial class V1beta1AnalyticsHubDataExchangeStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatusConditions
 {
@@ -487,7 +487,7 @@ public partial class V1beta1AnalyticsHubDataExchangeStatusConditions
 }
 
 /// <summary>AnalyticsHubDataExchangeStatus defines the observed state of AnalyticsHubDataExchange.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeStatus
 {
@@ -508,7 +508,7 @@ public partial class V1beta1AnalyticsHubDataExchangeStatus
 }
 
 /// <summary>AnalyticsHubDataExchange is the Schema for the AnalyticsHubDataExchanges API. A Bigquery Analytics Hub data exchange</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubDataExchange : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AnalyticsHubDataExchangeSpec>, IStatus<V1beta1AnalyticsHubDataExchangeStatus?>
