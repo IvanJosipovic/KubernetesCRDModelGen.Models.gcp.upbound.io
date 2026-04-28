@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dialogflowcx.gcp.upbound.io;
 /// <summary>Page is the Schema for the Pages API. A Dialogflow CX conversation (session) can be described and visualized as a state machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Page>
@@ -45,7 +45,7 @@ public partial class V1beta1PageList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecDeletionPolicyEnum>))]
 public enum V1beta1PageSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1PageSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderAdvancedSettingsDtmfSettings
 {
@@ -72,7 +72,7 @@ public partial class V1beta1PageSpecForProviderAdvancedSettingsDtmfSettings
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderAdvancedSettings
 {
@@ -81,7 +81,7 @@ public partial class V1beta1PageSpecForProviderAdvancedSettings
     public IList<V1beta1PageSpecForProviderAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentConditionalCases
 {
@@ -93,7 +93,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentConditionalCases
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesConversationSuccess
 {
@@ -102,7 +102,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesConversat
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesLiveAgentHandoff
 {
@@ -111,7 +111,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesLiveAgent
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesOutputAudioText
 {
@@ -124,7 +124,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesOutputAud
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesPlayAudio
 {
@@ -133,7 +133,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesPlayAudio
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesTelephonyTransferCall
 {
@@ -142,7 +142,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesTelephony
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesText
 {
@@ -151,7 +151,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessagesText
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentMessages
 {
@@ -205,7 +205,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentMessages
     public IList<V1beta1PageSpecForProviderEntryFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillmentSetParameterActions
 {
@@ -218,7 +218,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillmentSetParameterActio
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEntryFulfillment
 {
@@ -256,7 +256,7 @@ public partial class V1beta1PageSpecForProviderEntryFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -268,7 +268,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentCo
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -277,7 +277,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -286,7 +286,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -299,7 +299,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -308,7 +308,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -317,7 +317,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesText
 {
@@ -326,7 +326,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessages
 {
@@ -380,7 +380,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMe
     public IList<V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -393,7 +393,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillmentSe
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillment
 {
@@ -431,7 +431,7 @@ public partial class V1beta1PageSpecForProviderEventHandlersTriggerFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderEventHandlers
 {
@@ -461,7 +461,7 @@ public partial class V1beta1PageSpecForProviderEventHandlers
     public IList<V1beta1PageSpecForProviderEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersAdvancedSettingsDtmfSettings
 {
@@ -478,7 +478,7 @@ public partial class V1beta1PageSpecForProviderFormParametersAdvancedSettingsDtm
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersAdvancedSettings
 {
@@ -487,7 +487,7 @@ public partial class V1beta1PageSpecForProviderFormParametersAdvancedSettings
     public IList<V1beta1PageSpecForProviderFormParametersAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases
 {
@@ -499,7 +499,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess
 {
@@ -508,7 +508,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff
 {
@@ -517,7 +517,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText
 {
@@ -530,7 +530,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio
 {
@@ -539,7 +539,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall
 {
@@ -548,7 +548,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText
 {
@@ -557,7 +557,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessages
 {
@@ -611,7 +611,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public IList<V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions
 {
@@ -624,7 +624,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitialPromptFulfillment
 {
@@ -668,7 +668,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorInitial
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolutionEnum
 {
@@ -684,7 +684,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolveEnum
 {
@@ -695,7 +695,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicy
 {
@@ -719,7 +719,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRef
 {
@@ -738,7 +738,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolutionEnum
 {
@@ -754,7 +754,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolveEnum
 {
@@ -765,7 +765,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicy
 {
@@ -789,7 +789,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelector
 {
@@ -815,7 +815,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolutionEnum
 {
@@ -831,7 +831,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolveEnum
 {
@@ -842,7 +842,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicy
 {
@@ -866,7 +866,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRef
 {
@@ -885,7 +885,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolutionEnum
 {
@@ -901,7 +901,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolveEnum
 {
@@ -912,7 +912,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicy
 {
@@ -936,7 +936,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelector
 {
@@ -956,7 +956,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -968,7 +968,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -977,7 +977,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -986,7 +986,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -999,7 +999,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -1008,7 +1008,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -1017,7 +1017,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText
 {
@@ -1026,7 +1026,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages
 {
@@ -1080,7 +1080,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public IList<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -1099,7 +1099,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
@@ -1115,7 +1115,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
@@ -1126,7 +1126,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicy
 {
@@ -1150,7 +1150,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRef
 {
@@ -1169,7 +1169,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
@@ -1185,7 +1185,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
@@ -1196,7 +1196,7 @@ public enum V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHan
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicy
 {
@@ -1220,7 +1220,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
 }
 
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelector
 {
@@ -1240,7 +1240,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment
 {
@@ -1286,7 +1286,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelector? WebhookSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlers
 {
@@ -1332,7 +1332,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehaviorRepromp
     public IList<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParametersFillBehavior
 {
@@ -1348,7 +1348,7 @@ public partial class V1beta1PageSpecForProviderFormParametersFillBehavior
     public IList<V1beta1PageSpecForProviderFormParametersFillBehaviorRepromptEventHandlers>? RepromptEventHandlers { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderFormParameters
 {
@@ -1401,7 +1401,7 @@ public partial class V1beta1PageSpecForProviderFormParameters
     public bool? Required { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderForm
 {
@@ -1413,7 +1413,7 @@ public partial class V1beta1PageSpecForProviderForm
     public IList<V1beta1PageSpecForProviderFormParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsDataStoreConnections
 {
@@ -1436,7 +1436,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsDataSto
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolutionEnum
 {
@@ -1452,7 +1452,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPol
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolveEnum
 {
@@ -1463,7 +1463,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPol
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRefPolicy
 {
@@ -1487,7 +1487,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetP
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageRef
 {
@@ -1506,7 +1506,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetP
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolutionEnum
 {
@@ -1522,7 +1522,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelect
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolveEnum
 {
@@ -1533,7 +1533,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelect
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicy
 {
@@ -1557,7 +1557,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetP
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelector
 {
@@ -1577,7 +1577,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetP
     public V1beta1PageSpecForProviderKnowledgeConnectorSettingsTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
@@ -1608,7 +1608,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
@@ -1625,7 +1625,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public bool? EnableStackdriverLogging { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
@@ -1652,7 +1652,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public bool? UseTimeoutBasedEndpointing { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
@@ -1669,7 +1669,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public IList<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings>? SpeechSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
@@ -1681,7 +1681,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
@@ -1690,13 +1690,13 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -1705,7 +1705,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
@@ -1718,7 +1718,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
@@ -1727,7 +1727,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -1736,7 +1736,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
@@ -1745,7 +1745,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
@@ -1808,7 +1808,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public IList<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
@@ -1827,7 +1827,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
@@ -1843,7 +1843,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
@@ -1854,7 +1854,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicy
 {
@@ -1878,7 +1878,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
 }
 
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRef
 {
@@ -1897,7 +1897,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
@@ -1913,7 +1913,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
@@ -1924,7 +1924,7 @@ public enum V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy
 {
@@ -1948,7 +1948,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
 }
 
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector
 {
@@ -1968,7 +1968,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
@@ -2027,7 +2027,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettingsTrigger
     public V1beta1PageSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector? WebhookSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettings
 {
@@ -2080,7 +2080,7 @@ public partial class V1beta1PageSpecForProviderKnowledgeConnectorSettings
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderParentRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderParentRefPolicyResolutionEnum
 {
@@ -2096,7 +2096,7 @@ public enum V1beta1PageSpecForProviderParentRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderParentRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderParentRefPolicyResolveEnum
 {
@@ -2107,7 +2107,7 @@ public enum V1beta1PageSpecForProviderParentRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderParentRefPolicy
 {
@@ -2131,7 +2131,7 @@ public partial class V1beta1PageSpecForProviderParentRefPolicy
 }
 
 /// <summary>Reference to a Agent in dialogflowcx to populate parent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderParentRef
 {
@@ -2150,7 +2150,7 @@ public partial class V1beta1PageSpecForProviderParentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderParentSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderParentSelectorPolicyResolutionEnum
 {
@@ -2166,7 +2166,7 @@ public enum V1beta1PageSpecForProviderParentSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderParentSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderParentSelectorPolicyResolveEnum
 {
@@ -2177,7 +2177,7 @@ public enum V1beta1PageSpecForProviderParentSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderParentSelectorPolicy
 {
@@ -2201,7 +2201,7 @@ public partial class V1beta1PageSpecForProviderParentSelectorPolicy
 }
 
 /// <summary>Selector for a Agent in dialogflowcx to populate parent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderParentSelector
 {
@@ -2227,7 +2227,7 @@ public partial class V1beta1PageSpecForProviderParentSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolutionEnum
 {
@@ -2243,7 +2243,7 @@ public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolut
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolveEnum
 {
@@ -2254,7 +2254,7 @@ public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicyResolve
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPolicy
 {
@@ -2278,7 +2278,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageRefPoli
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageRef
 {
@@ -2297,7 +2297,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyResolutionEnum
 {
@@ -2313,7 +2313,7 @@ public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyRe
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyResolveEnum
 {
@@ -2324,7 +2324,7 @@ public enum V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicyRe
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicy
 {
@@ -2348,7 +2348,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageSelecto
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageSelector
 {
@@ -2368,7 +2368,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTargetPageSelecto
     public V1beta1PageSpecForProviderTransitionRoutesTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
@@ -2380,7 +2380,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
@@ -2389,7 +2389,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -2398,7 +2398,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
@@ -2411,7 +2411,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
@@ -2420,7 +2420,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -2429,7 +2429,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
@@ -2438,7 +2438,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessages
 {
@@ -2492,7 +2492,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public IList<V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
@@ -2505,7 +2505,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillment
 {
@@ -2543,7 +2543,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillmen
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProviderTransitionRoutes
 {
@@ -2591,7 +2591,7 @@ public partial class V1beta1PageSpecForProviderTransitionRoutes
     public IList<V1beta1PageSpecForProviderTransitionRoutesTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecForProvider
 {
@@ -2691,7 +2691,7 @@ public partial class V1beta1PageSpecForProvider
     public IList<V1beta1PageSpecForProviderTransitionRoutes>? TransitionRoutes { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderAdvancedSettingsDtmfSettings
 {
@@ -2708,7 +2708,7 @@ public partial class V1beta1PageSpecInitProviderAdvancedSettingsDtmfSettings
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderAdvancedSettings
 {
@@ -2717,7 +2717,7 @@ public partial class V1beta1PageSpecInitProviderAdvancedSettings
     public IList<V1beta1PageSpecInitProviderAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentConditionalCases
 {
@@ -2729,7 +2729,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentConditionalCases
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesConversationSuccess
 {
@@ -2738,7 +2738,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesConversa
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesLiveAgentHandoff
 {
@@ -2747,7 +2747,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesLiveAgen
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesOutputAudioText
 {
@@ -2760,7 +2760,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesOutputAu
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesPlayAudio
 {
@@ -2769,7 +2769,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesPlayAudi
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesTelephonyTransferCall
 {
@@ -2778,7 +2778,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesTelephon
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesText
 {
@@ -2787,7 +2787,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessagesText
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessages
 {
@@ -2841,7 +2841,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentMessages
     public IList<V1beta1PageSpecInitProviderEntryFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillmentSetParameterActions
 {
@@ -2854,7 +2854,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillmentSetParameterActi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEntryFulfillment
 {
@@ -2892,7 +2892,7 @@ public partial class V1beta1PageSpecInitProviderEntryFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -2904,7 +2904,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentC
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -2913,7 +2913,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -2922,7 +2922,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -2935,7 +2935,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -2944,7 +2944,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -2953,7 +2953,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesText
 {
@@ -2962,7 +2962,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessages
 {
@@ -3016,7 +3016,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentM
     public IList<V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -3029,7 +3029,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillmentS
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillment
 {
@@ -3067,7 +3067,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlersTriggerFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderEventHandlers
 {
@@ -3097,7 +3097,7 @@ public partial class V1beta1PageSpecInitProviderEventHandlers
     public IList<V1beta1PageSpecInitProviderEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersAdvancedSettingsDtmfSettings
 {
@@ -3114,7 +3114,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersAdvancedSettingsDt
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersAdvancedSettings
 {
@@ -3123,7 +3123,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersAdvancedSettings
     public IList<V1beta1PageSpecInitProviderFormParametersAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases
 {
@@ -3135,7 +3135,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess
 {
@@ -3144,7 +3144,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff
 {
@@ -3153,7 +3153,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText
 {
@@ -3166,7 +3166,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio
 {
@@ -3175,7 +3175,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall
 {
@@ -3184,7 +3184,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText
 {
@@ -3193,7 +3193,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessages
 {
@@ -3247,7 +3247,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public IList<V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions
 {
@@ -3260,7 +3260,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitialPromptFulfillment
 {
@@ -3304,7 +3304,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorInitia
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolutionEnum
 {
@@ -3320,7 +3320,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicyResolveEnum
 {
@@ -3331,7 +3331,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRefPolicy
 {
@@ -3355,7 +3355,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowRef
 {
@@ -3374,7 +3374,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolutionEnum
 {
@@ -3390,7 +3390,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicyResolveEnum
 {
@@ -3401,7 +3401,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelectorPolicy
 {
@@ -3425,7 +3425,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetFlowSelector
 {
@@ -3451,7 +3451,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolutionEnum
 {
@@ -3467,7 +3467,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicyResolveEnum
 {
@@ -3478,7 +3478,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRefPolicy
 {
@@ -3502,7 +3502,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageRef
 {
@@ -3521,7 +3521,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolutionEnum
 {
@@ -3537,7 +3537,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicyResolveEnum
 {
@@ -3548,7 +3548,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicy
 {
@@ -3572,7 +3572,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelector
 {
@@ -3592,7 +3592,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -3604,7 +3604,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -3613,7 +3613,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -3622,7 +3622,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -3635,7 +3635,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -3644,7 +3644,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -3653,7 +3653,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText
 {
@@ -3662,7 +3662,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages
 {
@@ -3716,7 +3716,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public IList<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -3735,7 +3735,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
@@ -3751,7 +3751,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
@@ -3762,7 +3762,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRefPolicy
 {
@@ -3786,7 +3786,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookRef
 {
@@ -3805,7 +3805,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
@@ -3821,7 +3821,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
@@ -3832,7 +3832,7 @@ public enum V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHa
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicy
 {
@@ -3856,7 +3856,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
 }
 
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelector
 {
@@ -3876,7 +3876,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment
 {
@@ -3922,7 +3922,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentWebhookSelector? WebhookSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlers
 {
@@ -3968,7 +3968,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehaviorReprom
     public IList<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParametersFillBehavior
 {
@@ -3984,7 +3984,7 @@ public partial class V1beta1PageSpecInitProviderFormParametersFillBehavior
     public IList<V1beta1PageSpecInitProviderFormParametersFillBehaviorRepromptEventHandlers>? RepromptEventHandlers { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderFormParameters
 {
@@ -4037,7 +4037,7 @@ public partial class V1beta1PageSpecInitProviderFormParameters
     public bool? Required { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderForm
 {
@@ -4049,7 +4049,7 @@ public partial class V1beta1PageSpecInitProviderForm
     public IList<V1beta1PageSpecInitProviderFormParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsDataStoreConnections
 {
@@ -4072,7 +4072,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsDataSt
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolutionEnum
 {
@@ -4088,7 +4088,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPo
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPolicyResolveEnum
 {
@@ -4099,7 +4099,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPo
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRefPolicy
 {
@@ -4123,7 +4123,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTarget
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageRef
 {
@@ -4142,7 +4142,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTarget
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolutionEnum
 {
@@ -4158,7 +4158,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelec
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicyResolveEnum
 {
@@ -4169,7 +4169,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelec
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicy
 {
@@ -4193,7 +4193,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTarget
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelector
 {
@@ -4213,7 +4213,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTarget
     public V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
@@ -4244,7 +4244,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
@@ -4261,7 +4261,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public bool? EnableStackdriverLogging { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
@@ -4288,7 +4288,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public bool? UseTimeoutBasedEndpointing { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
@@ -4305,7 +4305,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public IList<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings>? SpeechSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
@@ -4317,7 +4317,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
@@ -4326,13 +4326,13 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -4341,7 +4341,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
@@ -4354,7 +4354,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
@@ -4363,7 +4363,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -4372,7 +4372,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
@@ -4381,7 +4381,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
@@ -4444,7 +4444,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public IList<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
@@ -4463,7 +4463,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
@@ -4479,7 +4479,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
@@ -4490,7 +4490,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicy
 {
@@ -4514,7 +4514,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
 }
 
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRef
 {
@@ -4533,7 +4533,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
@@ -4549,7 +4549,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
@@ -4560,7 +4560,7 @@ public enum V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy
 {
@@ -4584,7 +4584,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
 }
 
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector
 {
@@ -4604,7 +4604,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
@@ -4663,7 +4663,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTrigge
     public V1beta1PageSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector? WebhookSelector { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettings
 {
@@ -4716,7 +4716,7 @@ public partial class V1beta1PageSpecInitProviderKnowledgeConnectorSettings
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderParentRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderParentRefPolicyResolutionEnum
 {
@@ -4732,7 +4732,7 @@ public enum V1beta1PageSpecInitProviderParentRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderParentRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderParentRefPolicyResolveEnum
 {
@@ -4743,7 +4743,7 @@ public enum V1beta1PageSpecInitProviderParentRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderParentRefPolicy
 {
@@ -4767,7 +4767,7 @@ public partial class V1beta1PageSpecInitProviderParentRefPolicy
 }
 
 /// <summary>Reference to a Agent in dialogflowcx to populate parent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderParentRef
 {
@@ -4786,7 +4786,7 @@ public partial class V1beta1PageSpecInitProviderParentRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderParentSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderParentSelectorPolicyResolutionEnum
 {
@@ -4802,7 +4802,7 @@ public enum V1beta1PageSpecInitProviderParentSelectorPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderParentSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderParentSelectorPolicyResolveEnum
 {
@@ -4813,7 +4813,7 @@ public enum V1beta1PageSpecInitProviderParentSelectorPolicyResolveEnum
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderParentSelectorPolicy
 {
@@ -4837,7 +4837,7 @@ public partial class V1beta1PageSpecInitProviderParentSelectorPolicy
 }
 
 /// <summary>Selector for a Agent in dialogflowcx to populate parent.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderParentSelector
 {
@@ -4863,7 +4863,7 @@ public partial class V1beta1PageSpecInitProviderParentSelector
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolutionEnum
 {
@@ -4879,7 +4879,7 @@ public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolu
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolveEnum
 {
@@ -4890,7 +4890,7 @@ public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicyResolv
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPolicy
 {
@@ -4914,7 +4914,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageRefPol
 }
 
 /// <summary>Reference to a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageRef
 {
@@ -4933,7 +4933,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageRef
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyResolutionEnum>))]
 public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyResolutionEnum
 {
@@ -4949,7 +4949,7 @@ public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyResolveEnum>))]
 public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyResolveEnum
 {
@@ -4960,7 +4960,7 @@ public enum V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicyR
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicy
 {
@@ -4984,7 +4984,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelect
 }
 
 /// <summary>Selector for a Page in dialogflowcx to populate targetPage.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelector
 {
@@ -5004,7 +5004,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelect
     public V1beta1PageSpecInitProviderTransitionRoutesTargetPageSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
@@ -5016,7 +5016,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
@@ -5025,7 +5025,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -5034,7 +5034,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
@@ -5047,7 +5047,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
@@ -5056,7 +5056,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -5065,7 +5065,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
@@ -5074,7 +5074,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessages
 {
@@ -5128,7 +5128,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public IList<V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
@@ -5141,7 +5141,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillment
 {
@@ -5179,7 +5179,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutesTriggerFulfillme
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProviderTransitionRoutes
 {
@@ -5239,7 +5239,7 @@ public partial class V1beta1PageSpecInitProviderTransitionRoutes
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecInitProvider
 {
@@ -5343,7 +5343,7 @@ public partial class V1beta1PageSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecManagementPoliciesEnum>))]
 public enum V1beta1PageSpecManagementPoliciesEnum
 {
@@ -5367,7 +5367,7 @@ public enum V1beta1PageSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1PageSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -5383,7 +5383,7 @@ public enum V1beta1PageSpecProviderConfigRefPolicyResolutionEnum
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PageSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1PageSpecProviderConfigRefPolicyResolveEnum
 {
@@ -5394,7 +5394,7 @@ public enum V1beta1PageSpecProviderConfigRefPolicyResolveEnum
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecProviderConfigRefPolicy
 {
@@ -5422,7 +5422,7 @@ public partial class V1beta1PageSpecProviderConfigRefPolicy
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecProviderConfigRef
 {
@@ -5441,7 +5441,7 @@ public partial class V1beta1PageSpecProviderConfigRef
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpecWriteConnectionSecretToRef
 {
@@ -5455,7 +5455,7 @@ public partial class V1beta1PageSpecWriteConnectionSecretToRef
 }
 
 /// <summary>PageSpec defines the desired state of Page</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageSpec
 {
@@ -5522,7 +5522,7 @@ public partial class V1beta1PageSpec
     public V1beta1PageSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderAdvancedSettingsDtmfSettings
 {
@@ -5539,7 +5539,7 @@ public partial class V1beta1PageStatusAtProviderAdvancedSettingsDtmfSettings
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderAdvancedSettings
 {
@@ -5548,7 +5548,7 @@ public partial class V1beta1PageStatusAtProviderAdvancedSettings
     public IList<V1beta1PageStatusAtProviderAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentConditionalCases
 {
@@ -5560,7 +5560,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentConditionalCases
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesConversationSuccess
 {
@@ -5569,7 +5569,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesConversa
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesLiveAgentHandoff
 {
@@ -5578,7 +5578,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesLiveAgen
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesOutputAudioText
 {
@@ -5598,7 +5598,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesOutputAu
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesPlayAudio
 {
@@ -5614,7 +5614,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesPlayAudi
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesTelephonyTransferCall
 {
@@ -5623,7 +5623,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesTelephon
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesText
 {
@@ -5639,7 +5639,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessagesText
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessages
 {
@@ -5693,7 +5693,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentMessages
     public IList<V1beta1PageStatusAtProviderEntryFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillmentSetParameterActions
 {
@@ -5706,7 +5706,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillmentSetParameterActi
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEntryFulfillment
 {
@@ -5744,7 +5744,7 @@ public partial class V1beta1PageStatusAtProviderEntryFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -5756,7 +5756,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentC
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -5765,7 +5765,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -5774,7 +5774,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -5794,7 +5794,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -5810,7 +5810,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -5819,7 +5819,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesText
 {
@@ -5835,7 +5835,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessages
 {
@@ -5889,7 +5889,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentM
     public IList<V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -5902,7 +5902,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillmentS
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillment
 {
@@ -5940,7 +5940,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlersTriggerFulfillment
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderEventHandlers
 {
@@ -5977,7 +5977,7 @@ public partial class V1beta1PageStatusAtProviderEventHandlers
     public IList<V1beta1PageStatusAtProviderEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersAdvancedSettingsDtmfSettings
 {
@@ -5994,7 +5994,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersAdvancedSettingsDt
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersAdvancedSettings
 {
@@ -6003,7 +6003,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersAdvancedSettings
     public IList<V1beta1PageStatusAtProviderFormParametersAdvancedSettingsDtmfSettings>? DtmfSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentConditionalCases
 {
@@ -6015,7 +6015,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess
 {
@@ -6024,7 +6024,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff
 {
@@ -6033,7 +6033,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText
 {
@@ -6053,7 +6053,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio
 {
@@ -6069,7 +6069,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall
 {
@@ -6078,7 +6078,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText
 {
@@ -6094,7 +6094,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessages
 {
@@ -6148,7 +6148,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public IList<V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillmentSetParameterActions
 {
@@ -6161,7 +6161,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitialPromptFulfillment
 {
@@ -6199,7 +6199,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorInitia
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentConditionalCases
 {
@@ -6211,7 +6211,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
@@ -6220,7 +6220,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -6229,7 +6229,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
@@ -6249,7 +6249,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
@@ -6265,7 +6265,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -6274,7 +6274,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText
 {
@@ -6290,7 +6290,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessages
 {
@@ -6344,7 +6344,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public IList<V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentSetParameterActions
 {
@@ -6357,7 +6357,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment
 {
@@ -6395,7 +6395,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlers
 {
@@ -6432,7 +6432,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehaviorReprom
     public IList<V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParametersFillBehavior
 {
@@ -6448,7 +6448,7 @@ public partial class V1beta1PageStatusAtProviderFormParametersFillBehavior
     public IList<V1beta1PageStatusAtProviderFormParametersFillBehaviorRepromptEventHandlers>? RepromptEventHandlers { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderFormParameters
 {
@@ -6501,7 +6501,7 @@ public partial class V1beta1PageStatusAtProviderFormParameters
     public bool? Required { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderForm
 {
@@ -6513,7 +6513,7 @@ public partial class V1beta1PageStatusAtProviderForm
     public IList<V1beta1PageStatusAtProviderFormParameters>? Parameters { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsDataStoreConnections
 {
@@ -6530,7 +6530,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsDataSt
     public string? DocumentProcessingMode { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
@@ -6561,7 +6561,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public double? MaxDigits { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
@@ -6578,7 +6578,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public bool? EnableStackdriverLogging { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
@@ -6605,7 +6605,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public bool? UseTimeoutBasedEndpointing { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
@@ -6622,7 +6622,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public IList<V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings>? SpeechSettings { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
@@ -6634,7 +6634,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
@@ -6643,19 +6643,19 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -6664,7 +6664,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments
 {
@@ -6691,7 +6691,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Uri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio
 {
@@ -6703,7 +6703,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public IList<V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments>? Segments { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
@@ -6723,7 +6723,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
@@ -6739,7 +6739,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -6748,7 +6748,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
@@ -6764,7 +6764,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
@@ -6845,7 +6845,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public IList<V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
@@ -6858,7 +6858,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
@@ -6909,7 +6909,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTrigge
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettings
 {
@@ -6948,7 +6948,7 @@ public partial class V1beta1PageStatusAtProviderKnowledgeConnectorSettings
     public IList<V1beta1PageStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
@@ -6960,7 +6960,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Cases { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
@@ -6969,7 +6969,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
@@ -6978,7 +6978,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Metadata { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
@@ -6998,7 +6998,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
@@ -7014,7 +7014,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? AudioUri { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
@@ -7023,7 +7023,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? PhoneNumber { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
@@ -7039,7 +7039,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public IList<string>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessages
 {
@@ -7093,7 +7093,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public IList<V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesText>? Text { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
@@ -7106,7 +7106,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Value { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillment
 {
@@ -7144,7 +7144,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillme
     public string? Webhook { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProviderTransitionRoutes
 {
@@ -7191,7 +7191,7 @@ public partial class V1beta1PageStatusAtProviderTransitionRoutes
     public IList<V1beta1PageStatusAtProviderTransitionRoutesTriggerFulfillment>? TriggerFulfillment { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusAtProvider
 {
@@ -7295,7 +7295,7 @@ public partial class V1beta1PageStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatusConditions
 {
@@ -7338,7 +7338,7 @@ public partial class V1beta1PageStatusConditions
 }
 
 /// <summary>PageStatus defines the observed state of Page.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1PageStatus
 {
@@ -7359,7 +7359,7 @@ public partial class V1beta1PageStatus
 }
 
 /// <summary>Page is the Schema for the Pages API. A Dialogflow CX conversation (session) can be described and visualized as a state machine.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Page : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PageSpec>, IStatus<V1beta1PageStatus?>

@@ -10,7 +10,7 @@ using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
 /// <summary>AnalyticsHubDataExchangeIAMMember is the Schema for the AnalyticsHubDataExchangeIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AnalyticsHubDataExchangeIAMMember>
@@ -45,7 +45,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberList : IKubernetesO
 /// non-default values would be honored if the feature flag is enabled.
 /// See the design doc for more information: https://github.com/crossplane/crossplane/blob/499895a25d1a1a0ba1604944ef98ac7a1a71f197/design/design-doc-observe-only-resources.md?plain=1#L223
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecDeletionPolicyEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecDeletionPolicyEnum
 {
@@ -55,7 +55,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecDeletionPolicyEnum
     Delete
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderCondition
 {
@@ -75,7 +75,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderCond
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRefPolicyResolutionEnum
 {
@@ -91,7 +91,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRefPolicyResolveEnum
 {
@@ -102,7 +102,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeI
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRefPolicy
 {
@@ -126,7 +126,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderData
 }
 
 /// <summary>Reference to a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdRef
 {
@@ -145,7 +145,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderData
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum
 {
@@ -161,7 +161,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeI
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicyResolveEnum
 {
@@ -172,7 +172,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeI
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicy
 {
@@ -196,7 +196,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderData
 }
 
 /// <summary>Selector for a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelector
 {
@@ -216,7 +216,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderData
     public V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProviderDataExchangeIdSelectorPolicy? Policy { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProvider
 {
@@ -247,7 +247,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecForProvider
     public string? Role { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderCondition
 {
@@ -267,7 +267,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderCon
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRefPolicyResolutionEnum
 {
@@ -283,7 +283,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchange
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRefPolicyResolveEnum
 {
@@ -294,7 +294,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchange
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRefPolicy
 {
@@ -318,7 +318,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDat
 }
 
 /// <summary>Reference to a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdRef
 {
@@ -337,7 +337,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDat
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelectorPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelectorPolicyResolutionEnum
 {
@@ -353,7 +353,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchange
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelectorPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelectorPolicyResolveEnum
 {
@@ -364,7 +364,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchange
 }
 
 /// <summary>Policies for selection.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelectorPolicy
 {
@@ -388,7 +388,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDat
 }
 
 /// <summary>Selector for a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDataExchangeIdSelector
 {
@@ -420,7 +420,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProviderDat
 /// for example because of an external controller is managing them, like an
 /// autoscaler.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProvider
 {
@@ -455,7 +455,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecInitProvider
 /// A ManagementAction represents an action that the Crossplane controllers
 /// can take on an external resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecManagementPoliciesEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecManagementPoliciesEnum
 {
@@ -479,7 +479,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecManagementPoliciesEnum
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
 /// a no-op if it cannot be resolved.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyResolutionEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 {
@@ -495,7 +495,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyR
 /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
 /// reference on every reconcile.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyResolveEnum>))]
 public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyResolveEnum
 {
@@ -506,7 +506,7 @@ public enum V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicyR
 }
 
 /// <summary>Policies for referencing.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRefPolicy
 {
@@ -534,7 +534,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigR
 /// create, observe, update, and delete this managed resource should be
 /// configured.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigRef
 {
@@ -553,7 +553,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecProviderConfigR
 /// be written. Connection details frequently include the endpoint, username,
 /// and password required to connect to the managed resource.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecWriteConnectionSecretToRef
 {
@@ -567,7 +567,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpecWriteConnection
 }
 
 /// <summary>AnalyticsHubDataExchangeIAMMemberSpec defines the desired state of AnalyticsHubDataExchangeIAMMember</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpec
 {
@@ -634,7 +634,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberSpec
     public V1beta1AnalyticsHubDataExchangeIAMMemberSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusAtProviderCondition
 {
@@ -648,7 +648,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusAtProviderCon
     public string? Title { get; set; }
 }
 
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusAtProvider
 {
@@ -678,7 +678,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusAtProvider
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusConditions
 {
@@ -721,7 +721,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatusConditions
 }
 
 /// <summary>AnalyticsHubDataExchangeIAMMemberStatus defines the observed state of AnalyticsHubDataExchangeIAMMember.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatus
 {
@@ -742,7 +742,7 @@ public partial class V1beta1AnalyticsHubDataExchangeIAMMemberStatus
 }
 
 /// <summary>AnalyticsHubDataExchangeIAMMember is the Schema for the AnalyticsHubDataExchangeIAMMembers API. &lt;no value&gt;</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubDataExchangeIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AnalyticsHubDataExchangeIAMMemberSpec>, IStatus<V1beta1AnalyticsHubDataExchangeIAMMemberStatus?>
