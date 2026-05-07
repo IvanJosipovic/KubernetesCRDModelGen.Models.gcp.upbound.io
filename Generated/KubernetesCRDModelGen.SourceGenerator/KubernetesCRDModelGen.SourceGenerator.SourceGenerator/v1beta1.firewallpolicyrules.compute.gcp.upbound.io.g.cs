@@ -202,6 +202,153 @@ public partial class V1beta1FirewallPolicyRuleSpecForProviderFirewallPolicySelec
     public V1beta1FirewallPolicyRuleSpecForProviderFirewallPolicySelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolutionEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolveEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolveEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleSpecForProviderMatchLayer4Configs
@@ -386,6 +533,14 @@ public partial class V1beta1FirewallPolicyRuleSpecForProviderMatch
     /// <summary>Address groups which should be matched against the traffic destination. Maximum number of destination address groups is 10. Destination address groups is only supported in Egress rules.</summary>
     [JsonPropertyName("destAddressGroups")]
     public IList<string>? DestAddressGroups { get; set; }
+
+    /// <summary>References to NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+    [JsonPropertyName("destAddressGroupsRefs")]
+    public IList<V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsRefs>? DestAddressGroupsRefs { get; set; }
+
+    /// <summary>Selector for a list of NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+    [JsonPropertyName("destAddressGroupsSelector")]
+    public V1beta1FirewallPolicyRuleSpecForProviderMatchDestAddressGroupsSelector? DestAddressGroupsSelector { get; set; }
 
     /// <summary>Domain names that will be used to match against the resolved domain name of destination of traffic. Can only be specified if DIRECTION is egress.</summary>
     [JsonPropertyName("destFqdns")]
@@ -816,6 +971,153 @@ public partial class V1beta1FirewallPolicyRuleSpecInitProviderFirewallPolicySele
     public V1beta1FirewallPolicyRuleSpecInitProviderFirewallPolicySelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolutionEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolveEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>A Reference to a named object.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefs
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefsPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolveEnum>))]
+public enum V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a list of NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatchLayer4Configs
@@ -1000,6 +1302,14 @@ public partial class V1beta1FirewallPolicyRuleSpecInitProviderMatch
     /// <summary>Address groups which should be matched against the traffic destination. Maximum number of destination address groups is 10. Destination address groups is only supported in Egress rules.</summary>
     [JsonPropertyName("destAddressGroups")]
     public IList<string>? DestAddressGroups { get; set; }
+
+    /// <summary>References to NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+    [JsonPropertyName("destAddressGroupsRefs")]
+    public IList<V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsRefs>? DestAddressGroupsRefs { get; set; }
+
+    /// <summary>Selector for a list of NetworkFirewallPolicy in compute to populate destAddressGroups.</summary>
+    [JsonPropertyName("destAddressGroupsSelector")]
+    public V1beta1FirewallPolicyRuleSpecInitProviderMatchDestAddressGroupsSelector? DestAddressGroupsSelector { get; set; }
 
     /// <summary>Domain names that will be used to match against the resolved domain name of destination of traffic. Can only be specified if DIRECTION is egress.</summary>
     [JsonPropertyName("destFqdns")]
@@ -1586,6 +1896,10 @@ public partial class V1beta1FirewallPolicyRuleStatusAtProvider
     /// <summary>The Action to perform when the client connection triggers the rule. Valid actions are &quot;allow&quot;, &quot;deny&quot; and &quot;goto_next&quot;.</summary>
     [JsonPropertyName("action")]
     public string? Action { get; set; }
+
+    /// <summary>Creation timestamp in RFC3339 text format.</summary>
+    [JsonPropertyName("creationTimestamp")]
+    public string? CreationTimestamp { get; set; }
 
     /// <summary>An optional description for this resource.</summary>
     [JsonPropertyName("description")]

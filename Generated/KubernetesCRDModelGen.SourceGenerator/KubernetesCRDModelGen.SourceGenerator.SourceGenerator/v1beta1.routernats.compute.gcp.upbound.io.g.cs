@@ -71,6 +71,15 @@ public partial class V1beta1RouterNATSpecForProviderLogConfig
     public string? Filter { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterNATSpecForProviderNat64Subnetwork
+{
+    /// <summary>Self-link of the subnetwork resource that will use NAT64</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
 /// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
@@ -982,6 +991,13 @@ public partial class V1beta1RouterNATSpecForProvider
     public double? IcmpIdleTimeoutSec { get; set; }
 
     /// <summary>
+    /// Self-links of NAT IPs to be used as initial value for creation alongside a RouterNatAddress resource.
+    /// Conflicts with natIps and drainNatIps. Only valid if natIpAllocateOption is set to MANUAL_ONLY.
+    /// </summary>
+    [JsonPropertyName("initialNatIps")]
+    public IList<string>? InitialNatIps { get; set; }
+
+    /// <summary>
     /// Configuration for logging on NAT
     /// Structure is documented below.
     /// </summary>
@@ -998,6 +1014,14 @@ public partial class V1beta1RouterNATSpecForProvider
     /// <summary>Minimum number of ports allocated to a VM from this NAT. Defaults to 64 for static port allocation and 32 dynamic port allocation if not set.</summary>
     [JsonPropertyName("minPortsPerVm")]
     public double? MinPortsPerVm { get; set; }
+
+    /// <summary>
+    /// One or more subnetwork NAT configurations whose traffic should be translated by NAT64 Gateway.
+    /// Only used if source_subnetwork_ip_ranges_to_nat64 is set to LIST_OF_IPV6_SUBNETWORKS
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nat64Subnetwork")]
+    public IList<V1beta1RouterNATSpecForProviderNat64Subnetwork>? Nat64Subnetwork { get; set; }
 
     /// <summary>
     /// How external IPs should be allocated for this NAT. Valid values are
@@ -1070,6 +1094,15 @@ public partial class V1beta1RouterNATSpecForProvider
     public string? SourceSubnetworkIpRangesToNat { get; set; }
 
     /// <summary>
+    /// Specify the Nat option for NAT64, which can take one of the following values:
+    /// ALL_IPV6_SUBNETWORKS: All of the IP ranges in every Subnetwork are allowed to Nat.
+    /// LIST_OF_IPV6_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field nat64Subnetwork below).
+    /// Possible values are: ALL_IPV6_SUBNETWORKS, LIST_OF_IPV6_SUBNETWORKS.
+    /// </summary>
+    [JsonPropertyName("sourceSubnetworkIpRangesToNat64")]
+    public string? SourceSubnetworkIpRangesToNat64 { get; set; }
+
+    /// <summary>
     /// One or more subnetwork NAT configurations. Only used if
     /// source_subnetwork_ip_ranges_to_nat is set to LIST_OF_SUBNETWORKS
     /// Structure is documented below.
@@ -1098,6 +1131,13 @@ public partial class V1beta1RouterNATSpecForProvider
     [JsonPropertyName("tcpTransitoryIdleTimeoutSec")]
     public double? TcpTransitoryIdleTimeoutSec { get; set; }
 
+    /// <summary>
+    /// Indicates whether this NAT is used for public or private IP translation.
+    /// Possible values are: PUBLIC, PRIVATE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
+
     /// <summary>Timeout (in seconds) for UDP connections. Defaults to 30s if not set.</summary>
     [JsonPropertyName("udpIdleTimeoutSec")]
     public double? UdpIdleTimeoutSec { get; set; }
@@ -1117,6 +1157,15 @@ public partial class V1beta1RouterNATSpecInitProviderLogConfig
     /// </summary>
     [JsonPropertyName("filter")]
     public string? Filter { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterNATSpecInitProviderNat64Subnetwork
+{
+    /// <summary>Self-link of the subnetwork resource that will use NAT64</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
 }
 
 /// <summary>
@@ -1895,6 +1944,13 @@ public partial class V1beta1RouterNATSpecInitProvider
     public double? IcmpIdleTimeoutSec { get; set; }
 
     /// <summary>
+    /// Self-links of NAT IPs to be used as initial value for creation alongside a RouterNatAddress resource.
+    /// Conflicts with natIps and drainNatIps. Only valid if natIpAllocateOption is set to MANUAL_ONLY.
+    /// </summary>
+    [JsonPropertyName("initialNatIps")]
+    public IList<string>? InitialNatIps { get; set; }
+
+    /// <summary>
     /// Configuration for logging on NAT
     /// Structure is documented below.
     /// </summary>
@@ -1911,6 +1967,14 @@ public partial class V1beta1RouterNATSpecInitProvider
     /// <summary>Minimum number of ports allocated to a VM from this NAT. Defaults to 64 for static port allocation and 32 dynamic port allocation if not set.</summary>
     [JsonPropertyName("minPortsPerVm")]
     public double? MinPortsPerVm { get; set; }
+
+    /// <summary>
+    /// One or more subnetwork NAT configurations whose traffic should be translated by NAT64 Gateway.
+    /// Only used if source_subnetwork_ip_ranges_to_nat64 is set to LIST_OF_IPV6_SUBNETWORKS
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nat64Subnetwork")]
+    public IList<V1beta1RouterNATSpecInitProviderNat64Subnetwork>? Nat64Subnetwork { get; set; }
 
     /// <summary>
     /// How external IPs should be allocated for this NAT. Valid values are
@@ -1967,6 +2031,15 @@ public partial class V1beta1RouterNATSpecInitProvider
     public string? SourceSubnetworkIpRangesToNat { get; set; }
 
     /// <summary>
+    /// Specify the Nat option for NAT64, which can take one of the following values:
+    /// ALL_IPV6_SUBNETWORKS: All of the IP ranges in every Subnetwork are allowed to Nat.
+    /// LIST_OF_IPV6_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field nat64Subnetwork below).
+    /// Possible values are: ALL_IPV6_SUBNETWORKS, LIST_OF_IPV6_SUBNETWORKS.
+    /// </summary>
+    [JsonPropertyName("sourceSubnetworkIpRangesToNat64")]
+    public string? SourceSubnetworkIpRangesToNat64 { get; set; }
+
+    /// <summary>
     /// One or more subnetwork NAT configurations. Only used if
     /// source_subnetwork_ip_ranges_to_nat is set to LIST_OF_SUBNETWORKS
     /// Structure is documented below.
@@ -1994,6 +2067,15 @@ public partial class V1beta1RouterNATSpecInitProvider
     /// </summary>
     [JsonPropertyName("tcpTransitoryIdleTimeoutSec")]
     public double? TcpTransitoryIdleTimeoutSec { get; set; }
+
+    /// <summary>
+    /// Indicates whether this NAT is used for public or private IP translation.
+    /// If unspecified, it defaults to PUBLIC.
+    /// Default value is PUBLIC.
+    /// Possible values are: PUBLIC, PRIVATE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 
     /// <summary>Timeout (in seconds) for UDP connections. Defaults to 30s if not set.</summary>
     [JsonPropertyName("udpIdleTimeoutSec")]
@@ -2201,6 +2283,15 @@ public partial class V1beta1RouterNATStatusAtProviderLogConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterNATStatusAtProviderNat64Subnetwork
+{
+    /// <summary>Self-link of the subnetwork resource that will use NAT64</summary>
+    [JsonPropertyName("name")]
+    public string? Name { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterNATStatusAtProviderRulesAction
 {
     /// <summary>
@@ -2355,6 +2446,13 @@ public partial class V1beta1RouterNATStatusAtProvider
     public string? Id { get; set; }
 
     /// <summary>
+    /// Self-links of NAT IPs to be used as initial value for creation alongside a RouterNatAddress resource.
+    /// Conflicts with natIps and drainNatIps. Only valid if natIpAllocateOption is set to MANUAL_ONLY.
+    /// </summary>
+    [JsonPropertyName("initialNatIps")]
+    public IList<string>? InitialNatIps { get; set; }
+
+    /// <summary>
     /// Configuration for logging on NAT
     /// Structure is documented below.
     /// </summary>
@@ -2371,6 +2469,14 @@ public partial class V1beta1RouterNATStatusAtProvider
     /// <summary>Minimum number of ports allocated to a VM from this NAT. Defaults to 64 for static port allocation and 32 dynamic port allocation if not set.</summary>
     [JsonPropertyName("minPortsPerVm")]
     public double? MinPortsPerVm { get; set; }
+
+    /// <summary>
+    /// One or more subnetwork NAT configurations whose traffic should be translated by NAT64 Gateway.
+    /// Only used if source_subnetwork_ip_ranges_to_nat64 is set to LIST_OF_IPV6_SUBNETWORKS
+    /// Structure is documented below.
+    /// </summary>
+    [JsonPropertyName("nat64Subnetwork")]
+    public IList<V1beta1RouterNATStatusAtProviderNat64Subnetwork>? Nat64Subnetwork { get; set; }
 
     /// <summary>
     /// How external IPs should be allocated for this NAT. Valid values are
@@ -2427,6 +2533,15 @@ public partial class V1beta1RouterNATStatusAtProvider
     public string? SourceSubnetworkIpRangesToNat { get; set; }
 
     /// <summary>
+    /// Specify the Nat option for NAT64, which can take one of the following values:
+    /// ALL_IPV6_SUBNETWORKS: All of the IP ranges in every Subnetwork are allowed to Nat.
+    /// LIST_OF_IPV6_SUBNETWORKS: A list of Subnetworks are allowed to Nat (specified in the field nat64Subnetwork below).
+    /// Possible values are: ALL_IPV6_SUBNETWORKS, LIST_OF_IPV6_SUBNETWORKS.
+    /// </summary>
+    [JsonPropertyName("sourceSubnetworkIpRangesToNat64")]
+    public string? SourceSubnetworkIpRangesToNat64 { get; set; }
+
+    /// <summary>
     /// One or more subnetwork NAT configurations. Only used if
     /// source_subnetwork_ip_ranges_to_nat is set to LIST_OF_SUBNETWORKS
     /// Structure is documented below.
@@ -2454,6 +2569,13 @@ public partial class V1beta1RouterNATStatusAtProvider
     /// </summary>
     [JsonPropertyName("tcpTransitoryIdleTimeoutSec")]
     public double? TcpTransitoryIdleTimeoutSec { get; set; }
+
+    /// <summary>
+    /// Indicates whether this NAT is used for public or private IP translation.
+    /// Possible values are: PUBLIC, PRIVATE.
+    /// </summary>
+    [JsonPropertyName("type")]
+    public string? Type { get; set; }
 
     /// <summary>Timeout (in seconds) for UDP connections. Defaults to 30s if not set.</summary>
     [JsonPropertyName("udpIdleTimeoutSec")]

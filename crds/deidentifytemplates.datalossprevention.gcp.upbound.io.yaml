@@ -4485,6 +4485,28 @@ spec:
                                                                       Unwrapped crypto key. Using raw keys is prone to security risks due to accidentally leaking the key. Choose another type of key if possible.
                                                                       Structure is documented below.
                                                                     items:
+                                                                      properties:
+                                                                        keySecretRef:
+                                                                          description: |-
+                                                                            A 128/192/256 bit key.
+                                                                            A base64-encoded string.
+                                                                          properties:
+                                                                            key:
+                                                                              description: The key to select.
+                                                                              type: string
+                                                                            name:
+                                                                              description: Name of the secret.
+                                                                              type: string
+                                                                            namespace:
+                                                                              description: Namespace of the secret.
+                                                                              type: string
+                                                                          required:
+                                                                          - key
+                                                                          - name
+                                                                          - namespace
+                                                                          type: object
+                                                                      required:
+                                                                      - keySecretRef
                                                                       type: object
                                                                     type: array
                                                                 type: object
@@ -4571,6 +4593,28 @@ spec:
                                                                       Unwrapped crypto key. Using raw keys is prone to security risks due to accidentally leaking the key. Choose another type of key if possible.
                                                                       Structure is documented below.
                                                                     items:
+                                                                      properties:
+                                                                        keySecretRef:
+                                                                          description: |-
+                                                                            A 128/192/256 bit key.
+                                                                            A base64-encoded string.
+                                                                          properties:
+                                                                            key:
+                                                                              description: The key to select.
+                                                                              type: string
+                                                                            name:
+                                                                              description: Name of the secret.
+                                                                              type: string
+                                                                            namespace:
+                                                                              description: Namespace of the secret.
+                                                                              type: string
+                                                                          required:
+                                                                          - key
+                                                                          - name
+                                                                          - namespace
+                                                                          type: object
+                                                                      required:
+                                                                      - keySecretRef
                                                                       type: object
                                                                     type: array
                                                                 type: object
@@ -4642,6 +4686,28 @@ spec:
                                                                       Unwrapped crypto key. Using raw keys is prone to security risks due to accidentally leaking the key. Choose another type of key if possible.
                                                                       Structure is documented below.
                                                                     items:
+                                                                      properties:
+                                                                        keySecretRef:
+                                                                          description: |-
+                                                                            A 128/192/256 bit key.
+                                                                            A base64-encoded string.
+                                                                          properties:
+                                                                            key:
+                                                                              description: The key to select.
+                                                                              type: string
+                                                                            name:
+                                                                              description: Name of the secret.
+                                                                              type: string
+                                                                            namespace:
+                                                                              description: Namespace of the secret.
+                                                                              type: string
+                                                                          required:
+                                                                          - key
+                                                                          - name
+                                                                          - namespace
+                                                                          type: object
+                                                                      required:
+                                                                      - keySecretRef
                                                                       type: object
                                                                     type: array
                                                                 type: object
@@ -4745,6 +4811,28 @@ spec:
                                                                       Unwrapped crypto key. Using raw keys is prone to security risks due to accidentally leaking the key. Choose another type of key if possible.
                                                                       Structure is documented below.
                                                                     items:
+                                                                      properties:
+                                                                        keySecretRef:
+                                                                          description: |-
+                                                                            A 128/192/256 bit key.
+                                                                            A base64-encoded string.
+                                                                          properties:
+                                                                            key:
+                                                                              description: The key to select.
+                                                                              type: string
+                                                                            name:
+                                                                              description: Name of the secret.
+                                                                              type: string
+                                                                            namespace:
+                                                                              description: Namespace of the secret.
+                                                                              type: string
+                                                                          required:
+                                                                          - key
+                                                                          - name
+                                                                          - namespace
+                                                                          type: object
+                                                                      required:
+                                                                      - keySecretRef
                                                                       type: object
                                                                     type: array
                                                                 type: object

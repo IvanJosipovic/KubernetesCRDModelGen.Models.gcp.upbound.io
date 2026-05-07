@@ -55,6 +55,153 @@ public enum V1beta1SubscriptionSpecDeletionPolicyEnum
     Delete
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionSpecForProviderBigqueryConfig
@@ -66,6 +213,22 @@ public partial class V1beta1SubscriptionSpecForProviderBigqueryConfig
     /// </summary>
     [JsonPropertyName("dropUnknownFields")]
     public bool? DropUnknownFields { get; set; }
+
+    /// <summary>
+    /// The service account to use to write to BigQuery. If not specified, the Pub/Sub
+    /// service agent,
+    /// service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1SubscriptionSpecForProviderBigqueryConfigServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
 
     /// <summary>The name of the table to which to write data, of the form {projectId}:{datasetId}.{tableId}</summary>
     [JsonPropertyName("table")]
@@ -983,6 +1146,153 @@ public partial class V1beta1SubscriptionSpecForProvider
     public V1beta1SubscriptionSpecForProviderTopicSelector? TopicSelector { get; set; }
 }
 
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for referencing.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRef
+{
+    /// <summary>Name of the referenced object.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Policies for referencing.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRefPolicy? Policy { get; set; }
+}
+
+/// <summary>
+/// Resolution specifies whether resolution of this reference is required.
+/// The default is &apos;Required&apos;, which means the reconcile will fail if the
+/// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+/// a no-op if it cannot be resolved.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum
+{
+    [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
+    Required,
+    [EnumMember(Value = "Optional"), JsonStringEnumMemberName("Optional")]
+    Optional
+}
+
+/// <summary>
+/// Resolve specifies when this reference should be resolved. The default
+/// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+/// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+/// reference on every reconcile.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[JsonConverter(typeof(JsonStringEnumConverter<V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum>))]
+public enum V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum
+{
+    [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
+    Always,
+    [EnumMember(Value = "IfNotPresent"), JsonStringEnumMemberName("IfNotPresent")]
+    IfNotPresent
+}
+
+/// <summary>Policies for selection.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicy
+{
+    /// <summary>
+    /// Resolution specifies whether resolution of this reference is required.
+    /// The default is &apos;Required&apos;, which means the reconcile will fail if the
+    /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
+    /// a no-op if it cannot be resolved.
+    /// </summary>
+    [JsonPropertyName("resolution")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolutionEnum? Resolution { get; set; }
+
+    /// <summary>
+    /// Resolve specifies when this reference should be resolved. The default
+    /// is &apos;IfNotPresent&apos;, which will attempt to resolve the reference only when
+    /// the corresponding field is not present. Use &apos;Always&apos; to resolve the
+    /// reference on every reconcile.
+    /// </summary>
+    [JsonPropertyName("resolve")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicyResolveEnum? Resolve { get; set; }
+}
+
+/// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelector
+{
+    /// <summary>
+    /// MatchControllerRef ensures an object with the same controller reference
+    /// as the selecting object is selected.
+    /// </summary>
+    [JsonPropertyName("matchControllerRef")]
+    public bool? MatchControllerRef { get; set; }
+
+    /// <summary>MatchLabels ensures an object with matching labels is selected.</summary>
+    [JsonPropertyName("matchLabels")]
+    public IDictionary<string, string>? MatchLabels { get; set; }
+
+    /// <summary>Policies for selection.</summary>
+    [JsonPropertyName("policy")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelectorPolicy? Policy { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfig
@@ -994,6 +1304,22 @@ public partial class V1beta1SubscriptionSpecInitProviderBigqueryConfig
     /// </summary>
     [JsonPropertyName("dropUnknownFields")]
     public bool? DropUnknownFields { get; set; }
+
+    /// <summary>
+    /// The service account to use to write to BigQuery. If not specified, the Pub/Sub
+    /// service agent,
+    /// service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
+
+    /// <summary>Reference to a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailRef")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailRef? ServiceAccountEmailRef { get; set; }
+
+    /// <summary>Selector for a ServiceAccount in cloudplatform to populate serviceAccountEmail.</summary>
+    [JsonPropertyName("serviceAccountEmailSelector")]
+    public V1beta1SubscriptionSpecInitProviderBigqueryConfigServiceAccountEmailSelector? ServiceAccountEmailSelector { get; set; }
 
     /// <summary>The name of the table to which to write data, of the form {projectId}:{datasetId}.{tableId}</summary>
     [JsonPropertyName("table")]
@@ -2117,6 +2443,14 @@ public partial class V1beta1SubscriptionStatusAtProviderBigqueryConfig
     /// </summary>
     [JsonPropertyName("dropUnknownFields")]
     public bool? DropUnknownFields { get; set; }
+
+    /// <summary>
+    /// The service account to use to write to BigQuery. If not specified, the Pub/Sub
+    /// service agent,
+    /// service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used.
+    /// </summary>
+    [JsonPropertyName("serviceAccountEmail")]
+    public string? ServiceAccountEmail { get; set; }
 
     /// <summary>The name of the table to which to write data, of the form {projectId}:{datasetId}.{tableId}</summary>
     [JsonPropertyName("table")]

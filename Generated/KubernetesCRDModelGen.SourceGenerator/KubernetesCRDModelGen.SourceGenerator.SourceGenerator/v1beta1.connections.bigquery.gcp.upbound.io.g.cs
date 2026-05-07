@@ -1000,6 +1000,27 @@ public partial class V1beta1ConnectionSpecInitProviderCloudSpanner
 }
 
 /// <summary>
+/// Password for database.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ConnectionSpecInitProviderCloudSqlCredentialPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
+/// <summary>
 /// Resolution specifies whether resolution of this reference is required.
 /// The default is &apos;Required&apos;, which means the reconcile will fail if the
 /// reference cannot be resolved. &apos;Optional&apos; means this reference will be
@@ -1150,6 +1171,13 @@ public partial class V1beta1ConnectionSpecInitProviderCloudSqlCredentialUsername
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ConnectionSpecInitProviderCloudSqlCredential
 {
+    /// <summary>
+    /// Password for database.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1ConnectionSpecInitProviderCloudSqlCredentialPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>Username for database.</summary>
     [JsonPropertyName("username")]
     public string? Username { get; set; }
