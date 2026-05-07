@@ -1338,10 +1338,32 @@ public partial class V1beta1RouterPeerSpecInitProviderInterfaceSelector
     public V1beta1RouterPeerSpecInitProviderInterfaceSelectorPolicy? Policy { get; set; }
 }
 
+/// <summary>The MD5 authentication key for this BGP peer. Maximum length is 80 characters. Can only contain printable ASCII characters</summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKeyKeySecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RouterPeerSpecInitProviderMd5AuthenticationKey
 {
+    /// <summary>The MD5 authentication key for this BGP peer. Maximum length is 80 characters. Can only contain printable ASCII characters</summary>
+    [JsonPropertyName("keySecretRef")]
+    public required V1beta1RouterPeerSpecInitProviderMd5AuthenticationKeyKeySecretRef KeySecretRef { get; set; }
+
     /// <summary>
     /// Name of this BGP peer. The name must be 1-63 characters long,
     /// and comply with RFC1035. Specifically, the name must be 1-63 characters

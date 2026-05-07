@@ -293,6 +293,19 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProviderNamedPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1RegionInstanceGroupManagerSpecForProviderStandbyPolicy
+{
+    /// <summary>- Specifies the number of seconds that the MIG should wait to suspend or stop a VM after that VM was created. The initial delay gives the initialization script the time to prepare your VM for a quick scale out. The value of initial delay must be between 0 and 3600 seconds. The default value is 0.</summary>
+    [JsonPropertyName("initialDelaySec")]
+    public double? InitialDelaySec { get; set; }
+
+    /// <summary>- Defines how a MIG resumes or starts VMs from a standby pool when the group scales out. Valid options are: MANUAL, SCALE_OUT_POOL. If MANUAL(default), you have full control over which VMs are stopped and suspended in the MIG. If SCALE_OUT_POOL, the MIG uses the VMs from the standby pools to accelerate the scale out by resuming or starting them and then automatically replenishes the standby pool with new VMs to maintain the target sizes.</summary>
+    [JsonPropertyName("mode")]
+    public string? Mode { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1RegionInstanceGroupManagerSpecForProviderStatefulDisk
 {
     /// <summary>, A value that prescribes what should happen to the stateful disk when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.</summary>
@@ -799,6 +812,10 @@ public partial class V1beta1RegionInstanceGroupManagerSpecForProvider
     /// <summary>The region where the managed instance group resides. If not provided, the provider region is used.</summary>
     [JsonPropertyName("region")]
     public string? Region { get; set; }
+
+    /// <summary>The standby policy for stopped and suspended instances. Structure is documented below. For more information, see the official documentation.</summary>
+    [JsonPropertyName("standbyPolicy")]
+    public IList<V1beta1RegionInstanceGroupManagerSpecForProviderStandbyPolicy>? StandbyPolicy { get; set; }
 
     /// <summary>Disks created on the instances that will be preserved on instance delete, update, etc. Structure is documented below. For more information see the official documentation. Proactive cross zone instance redistribution must be disabled before you can update stateful disks on existing instance group managers. This can be controlled via the update_policy.</summary>
     [JsonPropertyName("statefulDisk")]

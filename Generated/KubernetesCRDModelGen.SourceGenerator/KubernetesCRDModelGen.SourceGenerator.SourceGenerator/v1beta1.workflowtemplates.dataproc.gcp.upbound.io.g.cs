@@ -57,6 +57,15 @@ public enum V1beta1WorkflowTemplateSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WorkflowTemplateSpecForProviderEncryptionConfig
+{
+    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    [JsonPropertyName("kmsKey")]
+    public string? KmsKey { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1077,6 +1086,10 @@ public partial class V1beta1WorkflowTemplateSpecForProvider
     [JsonPropertyName("dagTimeout")]
     public string? DagTimeout { get; set; }
 
+    /// <summary>Encryption settings for the cluster.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public IList<V1beta1WorkflowTemplateSpecForProviderEncryptionConfig>? EncryptionConfig { get; set; }
+
     /// <summary>Required. The Directed Acyclic Graph of Jobs to submit.</summary>
     [JsonPropertyName("jobs")]
     public IList<V1beta1WorkflowTemplateSpecForProviderJobs>? Jobs { get; set; }
@@ -1104,6 +1117,15 @@ public partial class V1beta1WorkflowTemplateSpecForProvider
     /// <summary>Used to perform a consistent read-modify-write. This field should be left blank for a CreateWorkflowTemplate request. It is required for an UpdateWorkflowTemplate request, and must match the current server version. A typical update template flow would fetch the current template with a GetWorkflowTemplate request, which will return the current template with the version field filled in with the current server version. The user updates other fields in the template, then returns it as part of the UpdateWorkflowTemplate request.</summary>
     [JsonPropertyName("version")]
     public double? Version { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig
+{
+    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    [JsonPropertyName("kmsKey")]
+    public string? KmsKey { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -2140,6 +2162,10 @@ public partial class V1beta1WorkflowTemplateSpecInitProvider
     [JsonPropertyName("dagTimeout")]
     public string? DagTimeout { get; set; }
 
+    /// <summary>Encryption settings for the cluster.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public IList<V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig>? EncryptionConfig { get; set; }
+
     /// <summary>Required. The Directed Acyclic Graph of Jobs to submit.</summary>
     [JsonPropertyName("jobs")]
     public IList<V1beta1WorkflowTemplateSpecInitProviderJobs>? Jobs { get; set; }
@@ -2346,6 +2372,15 @@ public partial class V1beta1WorkflowTemplateSpec
     /// </summary>
     [JsonPropertyName("writeConnectionSecretToRef")]
     public V1beta1WorkflowTemplateSpecWriteConnectionSecretToRef? WriteConnectionSecretToRef { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig
+{
+    /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
+    [JsonPropertyName("kmsKey")]
+    public string? KmsKey { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -3459,6 +3494,10 @@ public partial class V1beta1WorkflowTemplateStatusAtProvider
 
     [JsonPropertyName("effectiveLabels")]
     public IDictionary<string, string>? EffectiveLabels { get; set; }
+
+    /// <summary>Encryption settings for the cluster.</summary>
+    [JsonPropertyName("encryptionConfig")]
+    public IList<V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig>? EncryptionConfig { get; set; }
 
     /// <summary>an identifier for the resource with format projects/{{project}}/locations/{{location}}/workflowTemplates/{{name}}</summary>
     [JsonPropertyName("id")]

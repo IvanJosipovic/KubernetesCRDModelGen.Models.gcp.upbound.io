@@ -268,11 +268,11 @@ public partial class V1beta1V2ServiceSpecForProviderBuildConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceSpecForProviderScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
-    [JsonPropertyName("maxInstanceCount")]
-    public double? MaxInstanceCount { get; set; }
+    /// <summary>Total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
 
-    /// <summary>Minimum number of serving instances that this resource should have.</summary>
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
     public double? MinInstanceCount { get; set; }
 
@@ -848,20 +848,16 @@ public partial class V1beta1V2ServiceSpecForProviderTemplateNodeSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceSpecForProviderTemplateScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
     [JsonPropertyName("maxInstanceCount")]
     public double? MaxInstanceCount { get; set; }
 
-    /// <summary>Minimum number of serving instances that this resource should have.</summary>
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
     public double? MinInstanceCount { get; set; }
-
-    /// <summary>
-    /// The scaling mode for the service.
-    /// Possible values are: AUTOMATIC, MANUAL.
-    /// </summary>
-    [JsonPropertyName("scalingMode")]
-    public string? ScalingMode { get; set; }
 }
 
 /// <summary>
@@ -1965,9 +1961,9 @@ public partial class V1beta1V2ServiceSpecInitProviderBuildConfig
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceSpecInitProviderScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
-    [JsonPropertyName("maxInstanceCount")]
-    public double? MaxInstanceCount { get; set; }
+    /// <summary>Total instance count for the service in manual scaling mode.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
 
     /// <summary>Minimum number of serving instances that this resource should have.</summary>
     [JsonPropertyName("minInstanceCount")]
@@ -2545,20 +2541,16 @@ public partial class V1beta1V2ServiceSpecInitProviderTemplateNodeSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceSpecInitProviderTemplateScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
     [JsonPropertyName("maxInstanceCount")]
     public double? MaxInstanceCount { get; set; }
 
-    /// <summary>Minimum number of serving instances that this resource should have.</summary>
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
     public double? MinInstanceCount { get; set; }
-
-    /// <summary>
-    /// The scaling mode for the service.
-    /// Possible values are: AUTOMATIC, MANUAL.
-    /// </summary>
-    [JsonPropertyName("scalingMode")]
-    public string? ScalingMode { get; set; }
 }
 
 /// <summary>
@@ -3767,9 +3759,9 @@ public partial class V1beta1V2ServiceStatusAtProviderConditions
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceStatusAtProviderScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
-    [JsonPropertyName("maxInstanceCount")]
-    public double? MaxInstanceCount { get; set; }
+    /// <summary>Total instance count for the service in manual scaling mode.</summary>
+    [JsonPropertyName("manualInstanceCount")]
+    public double? ManualInstanceCount { get; set; }
 
     /// <summary>Minimum number of serving instances that this resource should have.</summary>
     [JsonPropertyName("minInstanceCount")]
@@ -4219,20 +4211,16 @@ public partial class V1beta1V2ServiceStatusAtProviderTemplateNodeSelector
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1V2ServiceStatusAtProviderTemplateScaling
 {
-    /// <summary>Maximum number of serving instances that this resource should have.</summary>
+    /// <summary>
+    /// Maximum number of serving instances that this resource should have. Must not be less than minimum instance count. If absent, Cloud Run will calculate
+    /// a default value based on the project&apos;s available container instances quota in the region and specified instance size.
+    /// </summary>
     [JsonPropertyName("maxInstanceCount")]
     public double? MaxInstanceCount { get; set; }
 
-    /// <summary>Minimum number of serving instances that this resource should have.</summary>
+    /// <summary>Minimum number of serving instances that this resource should have. Defaults to 0. Must not be greater than maximum instance count.</summary>
     [JsonPropertyName("minInstanceCount")]
     public double? MinInstanceCount { get; set; }
-
-    /// <summary>
-    /// The scaling mode for the service.
-    /// Possible values are: AUTOMATIC, MANUAL.
-    /// </summary>
-    [JsonPropertyName("scalingMode")]
-    public string? ScalingMode { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -4856,6 +4844,10 @@ public partial class V1beta1V2ServiceStatusAtProvider
     /// <summary>The main URI in which this Service is serving traffic.</summary>
     [JsonPropertyName("uri")]
     public string? Uri { get; set; }
+
+    /// <summary>All URLs serving traffic for this Service.</summary>
+    [JsonPropertyName("urls")]
+    public IList<string>? Urls { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>

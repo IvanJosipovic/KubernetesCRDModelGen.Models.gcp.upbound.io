@@ -644,15 +644,15 @@ public partial class V1beta1CryptoKeyVersionStatusAtProviderAttestationCertChain
 {
     /// <summary>Cavium certificate chain corresponding to the attestation.</summary>
     [JsonPropertyName("caviumCerts")]
-    public string? CaviumCerts { get; set; }
+    public IList<string>? CaviumCerts { get; set; }
 
     /// <summary>Google card certificate chain corresponding to the attestation.</summary>
     [JsonPropertyName("googleCardCerts")]
-    public string? GoogleCardCerts { get; set; }
+    public IList<string>? GoogleCardCerts { get; set; }
 
     /// <summary>Google partition certificate chain corresponding to the attestation.</summary>
     [JsonPropertyName("googlePartitionCerts")]
-    public string? GooglePartitionCerts { get; set; }
+    public IList<string>? GooglePartitionCerts { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

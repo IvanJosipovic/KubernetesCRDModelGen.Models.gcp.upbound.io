@@ -1295,10 +1295,38 @@ public partial class V1beta1ClusterSpecInitProviderEncryptionConfig
     public string? KmsKeyName { get; set; }
 }
 
+/// <summary>
+/// The initial password for the user.
+/// Note: This property is sensitive and will not be displayed in the plan.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterSpecInitProviderInitialUserPasswordSecretRef
+{
+    /// <summary>The key to select.</summary>
+    [JsonPropertyName("key")]
+    public required string Key { get; set; }
+
+    /// <summary>Name of the secret.</summary>
+    [JsonPropertyName("name")]
+    public required string Name { get; set; }
+
+    /// <summary>Namespace of the secret.</summary>
+    [JsonPropertyName("namespace")]
+    public required string Namespace { get; set; }
+}
+
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta1ClusterSpecInitProviderInitialUser
 {
+    /// <summary>
+    /// The initial password for the user.
+    /// Note: This property is sensitive and will not be displayed in the plan.
+    /// </summary>
+    [JsonPropertyName("passwordSecretRef")]
+    public required V1beta1ClusterSpecInitProviderInitialUserPasswordSecretRef PasswordSecretRef { get; set; }
+
     /// <summary>The database username.</summary>
     [JsonPropertyName("user")]
     public string? User { get; set; }
