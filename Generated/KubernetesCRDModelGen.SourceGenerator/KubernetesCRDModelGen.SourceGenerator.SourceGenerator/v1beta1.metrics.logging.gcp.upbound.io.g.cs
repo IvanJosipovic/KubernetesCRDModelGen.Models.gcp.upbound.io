@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.logging.gcp.upbound.io;
-/// <summary>Metric is the Schema for the Metrics API. Logs-based metric can also be used to extract values from logs and create a a distribution of the values.</summary>
+/// <summary>
+/// Metric is the Schema for the Metrics API. Logs-based metric can also be used to extract values from logs and create a a distribution of the values.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetricList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Metric>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MetricList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MetricSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecForProviderBucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecForProviderBucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MetricSpecForProviderBucketNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecForProviderBucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecForProviderBucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MetricSpecForProviderBucketNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MetricSpecForProviderBucketNameRefPolicy
 /// <summary>Reference to a ProjectBucketConfig in logging to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MetricSpecForProviderBucketNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MetricSpecForProviderBucketNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MetricSpecForProviderBucketNameSelectorPolicy
 /// <summary>Selector for a ProjectBucketConfig in logging to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1MetricSpecForProviderBucketNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketOptionsExplicitBuckets
 {
     /// <summary>The values must be monotonically increasing.</summary>
@@ -213,6 +227,7 @@ public partial class V1beta1MetricSpecForProviderBucketOptionsExplicitBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketOptionsExponentialBuckets
 {
     /// <summary>Must be greater than 1.</summary>
@@ -230,6 +245,7 @@ public partial class V1beta1MetricSpecForProviderBucketOptionsExponentialBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketOptionsLinearBuckets
 {
     /// <summary>Must be greater than 0.</summary>
@@ -247,6 +263,7 @@ public partial class V1beta1MetricSpecForProviderBucketOptionsLinearBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderBucketOptions
 {
     /// <summary>
@@ -275,6 +292,7 @@ public partial class V1beta1MetricSpecForProviderBucketOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderMetricDescriptorLabels
 {
     /// <summary>A human-readable description for the label.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1MetricSpecForProviderMetricDescriptorLabels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProviderMetricDescriptor
 {
     /// <summary>
@@ -346,6 +365,7 @@ public partial class V1beta1MetricSpecForProviderMetricDescriptor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecForProvider
 {
     /// <summary>
@@ -436,6 +456,7 @@ public partial class V1beta1MetricSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecInitProviderBucketNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecInitProviderBucketNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -452,6 +473,7 @@ public enum V1beta1MetricSpecInitProviderBucketNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecInitProviderBucketNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecInitProviderBucketNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -463,6 +485,7 @@ public enum V1beta1MetricSpecInitProviderBucketNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketNameRefPolicy
 {
     /// <summary>
@@ -487,6 +510,7 @@ public partial class V1beta1MetricSpecInitProviderBucketNameRefPolicy
 /// <summary>Reference to a ProjectBucketConfig in logging to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -506,6 +530,7 @@ public partial class V1beta1MetricSpecInitProviderBucketNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -522,6 +547,7 @@ public enum V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -533,6 +559,7 @@ public enum V1beta1MetricSpecInitProviderBucketNameSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketNameSelectorPolicy
 {
     /// <summary>
@@ -557,6 +584,7 @@ public partial class V1beta1MetricSpecInitProviderBucketNameSelectorPolicy
 /// <summary>Selector for a ProjectBucketConfig in logging to populate bucketName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketNameSelector
 {
     /// <summary>
@@ -577,6 +605,7 @@ public partial class V1beta1MetricSpecInitProviderBucketNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketOptionsExplicitBuckets
 {
     /// <summary>The values must be monotonically increasing.</summary>
@@ -586,6 +615,7 @@ public partial class V1beta1MetricSpecInitProviderBucketOptionsExplicitBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketOptionsExponentialBuckets
 {
     /// <summary>Must be greater than 1.</summary>
@@ -603,6 +633,7 @@ public partial class V1beta1MetricSpecInitProviderBucketOptionsExponentialBucket
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketOptionsLinearBuckets
 {
     /// <summary>Must be greater than 0.</summary>
@@ -620,6 +651,7 @@ public partial class V1beta1MetricSpecInitProviderBucketOptionsLinearBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderBucketOptions
 {
     /// <summary>
@@ -648,6 +680,7 @@ public partial class V1beta1MetricSpecInitProviderBucketOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderMetricDescriptorLabels
 {
     /// <summary>A human-readable description for the label.</summary>
@@ -670,6 +703,7 @@ public partial class V1beta1MetricSpecInitProviderMetricDescriptorLabels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProviderMetricDescriptor
 {
     /// <summary>
@@ -731,6 +765,7 @@ public partial class V1beta1MetricSpecInitProviderMetricDescriptor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecInitProvider
 {
     /// <summary>
@@ -819,6 +854,7 @@ public partial class V1beta1MetricSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -843,6 +879,7 @@ public enum V1beta1MetricSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -859,6 +896,7 @@ public enum V1beta1MetricSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetricSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetricSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -870,6 +908,7 @@ public enum V1beta1MetricSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -898,6 +937,7 @@ public partial class V1beta1MetricSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -917,6 +957,7 @@ public partial class V1beta1MetricSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -931,6 +972,7 @@ public partial class V1beta1MetricSpecWriteConnectionSecretToRef
 /// <summary>MetricSpec defines the desired state of Metric</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricSpec
 {
     /// <summary>
@@ -998,6 +1040,7 @@ public partial class V1beta1MetricSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderBucketOptionsExplicitBuckets
 {
     /// <summary>The values must be monotonically increasing.</summary>
@@ -1007,6 +1050,7 @@ public partial class V1beta1MetricStatusAtProviderBucketOptionsExplicitBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderBucketOptionsExponentialBuckets
 {
     /// <summary>Must be greater than 1.</summary>
@@ -1024,6 +1068,7 @@ public partial class V1beta1MetricStatusAtProviderBucketOptionsExponentialBucket
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderBucketOptionsLinearBuckets
 {
     /// <summary>Must be greater than 0.</summary>
@@ -1041,6 +1086,7 @@ public partial class V1beta1MetricStatusAtProviderBucketOptionsLinearBuckets
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderBucketOptions
 {
     /// <summary>
@@ -1069,6 +1115,7 @@ public partial class V1beta1MetricStatusAtProviderBucketOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderMetricDescriptorLabels
 {
     /// <summary>A human-readable description for the label.</summary>
@@ -1091,6 +1138,7 @@ public partial class V1beta1MetricStatusAtProviderMetricDescriptorLabels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProviderMetricDescriptor
 {
     /// <summary>
@@ -1140,6 +1188,7 @@ public partial class V1beta1MetricStatusAtProviderMetricDescriptor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusAtProvider
 {
     /// <summary>
@@ -1221,6 +1270,7 @@ public partial class V1beta1MetricStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatusConditions
 {
     /// <summary>
@@ -1264,6 +1314,7 @@ public partial class V1beta1MetricStatusConditions
 /// <summary>MetricStatus defines the observed state of Metric.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetricStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1282,9 +1333,13 @@ public partial class V1beta1MetricStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Metric is the Schema for the Metrics API. Logs-based metric can also be used to extract values from logs and create a a distribution of the values.</summary>
+/// <summary>
+/// Metric is the Schema for the Metrics API. Logs-based metric can also be used to extract values from logs and create a a distribution of the values.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Metric : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MetricSpec>, IStatus<V1beta1MetricStatus?>
 {

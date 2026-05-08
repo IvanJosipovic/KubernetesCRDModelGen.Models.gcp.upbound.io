@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigtable.gcp.upbound.io;
-/// <summary>TableIAMBinding is the Schema for the TableIAMBindings API. &lt;no value&gt;</summary>
+/// <summary>
+/// TableIAMBinding is the Schema for the TableIAMBindings API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TableIAMBindingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TableIAMBinding>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1TableIAMBindingList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMBindingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TableIAMBindingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1TableIAMBindingSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecForProviderCondition
 {
     [JsonPropertyName("description")]
@@ -71,6 +77,7 @@ public partial class V1beta1TableIAMBindingSpecForProviderCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecForProvider
 {
     [JsonPropertyName("condition")]
@@ -94,6 +101,7 @@ public partial class V1beta1TableIAMBindingSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecInitProviderCondition
 {
     [JsonPropertyName("description")]
@@ -120,6 +128,7 @@ public partial class V1beta1TableIAMBindingSpecInitProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecInitProvider
 {
     [JsonPropertyName("condition")]
@@ -141,6 +150,7 @@ public partial class V1beta1TableIAMBindingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMBindingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TableIAMBindingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -165,6 +175,7 @@ public enum V1beta1TableIAMBindingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -181,6 +192,7 @@ public enum V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -192,6 +204,7 @@ public enum V1beta1TableIAMBindingSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -220,6 +233,7 @@ public partial class V1beta1TableIAMBindingSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -239,6 +253,7 @@ public partial class V1beta1TableIAMBindingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -253,6 +268,7 @@ public partial class V1beta1TableIAMBindingSpecWriteConnectionSecretToRef
 /// <summary>TableIAMBindingSpec defines the desired state of TableIAMBinding</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingSpec
 {
     /// <summary>
@@ -320,6 +336,7 @@ public partial class V1beta1TableIAMBindingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingStatusAtProviderCondition
 {
     [JsonPropertyName("description")]
@@ -334,6 +351,7 @@ public partial class V1beta1TableIAMBindingStatusAtProviderCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingStatusAtProvider
 {
     [JsonPropertyName("condition")]
@@ -364,6 +382,7 @@ public partial class V1beta1TableIAMBindingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingStatusConditions
 {
     /// <summary>
@@ -407,6 +426,7 @@ public partial class V1beta1TableIAMBindingStatusConditions
 /// <summary>TableIAMBindingStatus defines the observed state of TableIAMBinding.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TableIAMBindingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -425,9 +445,13 @@ public partial class V1beta1TableIAMBindingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>TableIAMBinding is the Schema for the TableIAMBindings API. &lt;no value&gt;</summary>
+/// <summary>
+/// TableIAMBinding is the Schema for the TableIAMBindings API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TableIAMBinding : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TableIAMBindingSpec>, IStatus<V1beta1TableIAMBindingStatus?>
 {

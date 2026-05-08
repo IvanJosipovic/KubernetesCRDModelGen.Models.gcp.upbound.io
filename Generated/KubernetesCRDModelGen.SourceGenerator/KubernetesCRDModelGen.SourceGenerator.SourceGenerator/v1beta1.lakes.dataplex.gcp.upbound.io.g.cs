@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataplex.gcp.upbound.io;
-/// <summary>Lake is the Schema for the Lakes API. The Dataplex Lake resource</summary>
+/// <summary>
+/// Lake is the Schema for the Lakes API. The Dataplex Lake resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1LakeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Lake>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1LakeList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LakeSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LakeSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1LakeSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecForProviderMetastore
 {
     /// <summary>Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: projects/{project_id}/locations/{location_id}/services/{service_id}</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1LakeSpecForProviderMetastore
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecForProvider
 {
     /// <summary>Optional. Description of the lake.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1LakeSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecInitProviderMetastore
 {
     /// <summary>Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: projects/{project_id}/locations/{location_id}/services/{service_id}</summary>
@@ -116,6 +124,7 @@ public partial class V1beta1LakeSpecInitProviderMetastore
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecInitProvider
 {
     /// <summary>Optional. Description of the lake.</summary>
@@ -145,6 +154,7 @@ public partial class V1beta1LakeSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LakeSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LakeSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -169,6 +179,7 @@ public enum V1beta1LakeSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LakeSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LakeSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -185,6 +196,7 @@ public enum V1beta1LakeSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1LakeSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1LakeSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -196,6 +208,7 @@ public enum V1beta1LakeSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -224,6 +237,7 @@ public partial class V1beta1LakeSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -243,6 +257,7 @@ public partial class V1beta1LakeSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -257,6 +272,7 @@ public partial class V1beta1LakeSpecWriteConnectionSecretToRef
 /// <summary>LakeSpec defines the desired state of Lake</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeSpec
 {
     /// <summary>
@@ -324,6 +340,7 @@ public partial class V1beta1LakeSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatusAtProviderAssetStatus
 {
     [JsonPropertyName("activeAssets")]
@@ -339,6 +356,7 @@ public partial class V1beta1LakeStatusAtProviderAssetStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatusAtProviderMetastore
 {
     /// <summary>Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: projects/{project_id}/locations/{location_id}/services/{service_id}</summary>
@@ -348,6 +366,7 @@ public partial class V1beta1LakeStatusAtProviderMetastore
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatusAtProviderMetastoreStatus
 {
     [JsonPropertyName("endpoint")]
@@ -367,6 +386,7 @@ public partial class V1beta1LakeStatusAtProviderMetastoreStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatusAtProvider
 {
     /// <summary>Output only. Aggregated status of the underlying assets of the lake.</summary>
@@ -436,6 +456,7 @@ public partial class V1beta1LakeStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatusConditions
 {
     /// <summary>
@@ -479,6 +500,7 @@ public partial class V1beta1LakeStatusConditions
 /// <summary>LakeStatus defines the observed state of Lake.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1LakeStatus
 {
     [JsonPropertyName("atProvider")]
@@ -497,9 +519,13 @@ public partial class V1beta1LakeStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Lake is the Schema for the Lakes API. The Dataplex Lake resource</summary>
+/// <summary>
+/// Lake is the Schema for the Lakes API. The Dataplex Lake resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Lake : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1LakeSpec>, IStatus<V1beta1LakeStatus?>
 {

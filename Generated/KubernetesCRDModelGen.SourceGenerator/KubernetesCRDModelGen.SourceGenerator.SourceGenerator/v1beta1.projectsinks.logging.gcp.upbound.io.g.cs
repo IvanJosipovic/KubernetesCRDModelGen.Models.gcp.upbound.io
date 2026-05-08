@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.logging.gcp.upbound.io;
-/// <summary>ProjectSink is the Schema for the ProjectSinks API. Manages a project-level logging sink.</summary>
+/// <summary>
+/// ProjectSink is the Schema for the ProjectSinks API. Manages a project-level logging sink.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectSinkList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProjectSink>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ProjectSinkList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ProjectSinkSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderBigqueryOptions
 {
     /// <summary>
@@ -77,6 +83,7 @@ public partial class V1beta1ProjectSinkSpecForProviderBigqueryOptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -93,6 +100,7 @@ public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -104,6 +112,7 @@ public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPolicy
 {
     /// <summary>
@@ -128,6 +137,7 @@ public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRefPol
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate customWriterIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -147,6 +157,7 @@ public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentityRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -163,6 +174,7 @@ public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -174,6 +186,7 @@ public enum V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelectorPolicy
 {
     /// <summary>
@@ -198,6 +211,7 @@ public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelect
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate customWriterIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelector
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1ProjectSinkSpecForProviderCustomWriterIdentitySelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProviderExclusions
 {
     /// <summary>A description of this exclusion.</summary>
@@ -242,6 +257,7 @@ public partial class V1beta1ProjectSinkSpecForProviderExclusions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecForProvider
 {
     /// <summary>Options that affect sinks exporting data to BigQuery. Structure documented below.</summary>
@@ -307,6 +323,7 @@ public partial class V1beta1ProjectSinkSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderBigqueryOptions
 {
     /// <summary>
@@ -327,6 +344,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderBigqueryOptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -343,6 +361,7 @@ public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -354,6 +373,7 @@ public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPolicy
 {
     /// <summary>
@@ -378,6 +398,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRefPo
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate customWriterIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -397,6 +418,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentityRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -413,6 +435,7 @@ public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -424,6 +447,7 @@ public enum V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelectorPolicy
 {
     /// <summary>
@@ -448,6 +472,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelec
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate customWriterIdentity.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelector
 {
     /// <summary>
@@ -468,6 +493,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderCustomWriterIdentitySelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProviderExclusions
 {
     /// <summary>A description of this exclusion.</summary>
@@ -504,6 +530,7 @@ public partial class V1beta1ProjectSinkSpecInitProviderExclusions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecInitProvider
 {
     /// <summary>Options that affect sinks exporting data to BigQuery. Structure documented below.</summary>
@@ -573,6 +600,7 @@ public partial class V1beta1ProjectSinkSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -597,6 +625,7 @@ public enum V1beta1ProjectSinkSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -613,6 +642,7 @@ public enum V1beta1ProjectSinkSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectSinkSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectSinkSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -624,6 +654,7 @@ public enum V1beta1ProjectSinkSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -652,6 +683,7 @@ public partial class V1beta1ProjectSinkSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -671,6 +703,7 @@ public partial class V1beta1ProjectSinkSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -685,6 +718,7 @@ public partial class V1beta1ProjectSinkSpecWriteConnectionSecretToRef
 /// <summary>ProjectSinkSpec defines the desired state of ProjectSink</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkSpec
 {
     /// <summary>
@@ -752,6 +786,7 @@ public partial class V1beta1ProjectSinkSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkStatusAtProviderBigqueryOptions
 {
     /// <summary>
@@ -766,6 +801,7 @@ public partial class V1beta1ProjectSinkStatusAtProviderBigqueryOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkStatusAtProviderExclusions
 {
     /// <summary>A description of this exclusion.</summary>
@@ -790,6 +826,7 @@ public partial class V1beta1ProjectSinkStatusAtProviderExclusions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkStatusAtProvider
 {
     /// <summary>Options that affect sinks exporting data to BigQuery. Structure documented below.</summary>
@@ -859,6 +896,7 @@ public partial class V1beta1ProjectSinkStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkStatusConditions
 {
     /// <summary>
@@ -902,6 +940,7 @@ public partial class V1beta1ProjectSinkStatusConditions
 /// <summary>ProjectSinkStatus defines the observed state of ProjectSink.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectSinkStatus
 {
     [JsonPropertyName("atProvider")]
@@ -920,9 +959,13 @@ public partial class V1beta1ProjectSinkStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ProjectSink is the Schema for the ProjectSinks API. Manages a project-level logging sink.</summary>
+/// <summary>
+/// ProjectSink is the Schema for the ProjectSinks API. Manages a project-level logging sink.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectSink : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProjectSinkSpec>, IStatus<V1beta1ProjectSinkStatus?>
 {

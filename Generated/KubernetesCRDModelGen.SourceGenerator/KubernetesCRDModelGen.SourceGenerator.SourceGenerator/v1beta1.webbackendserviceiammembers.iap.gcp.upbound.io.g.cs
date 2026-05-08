@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iap.gcp.upbound.io;
-/// <summary>WebBackendServiceIAMMember is the Schema for the WebBackendServiceIAMMembers API. &lt;no value&gt;</summary>
+/// <summary>
+/// WebBackendServiceIAMMember is the Schema for the WebBackendServiceIAMMembers API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebBackendServiceIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WebBackendServiceIAMMember>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WebBackendServiceIAMMemberList : IKubernetesObject<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderCondition
 {
     [JsonPropertyName("description")]
@@ -77,6 +83,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -93,6 +100,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -104,6 +112,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRefPolicy
 {
     /// <summary>
@@ -128,6 +137,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendS
 /// <summary>Reference to a BackendService in compute to populate webBackendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -147,6 +157,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -163,6 +174,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -174,6 +186,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -198,6 +211,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendS
 /// <summary>Selector for a BackendService in compute to populate webBackendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendServiceSelector
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProviderWebBackendS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecForProvider
 {
     [JsonPropertyName("condition")]
@@ -246,6 +261,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderCondition
 {
     [JsonPropertyName("description")]
@@ -266,6 +282,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -282,6 +299,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -293,6 +311,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRefPolicy
 {
     /// <summary>
@@ -317,6 +336,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackend
 /// <summary>Reference to a BackendService in compute to populate webBackendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -336,6 +356,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackend
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -352,6 +373,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -363,6 +385,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -387,6 +410,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackend
 /// <summary>Selector for a BackendService in compute to populate webBackendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackendServiceSelector
 {
     /// <summary>
@@ -419,6 +443,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProviderWebBackend
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecInitProvider
 {
     [JsonPropertyName("condition")]
@@ -451,6 +476,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -475,6 +501,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -491,6 +518,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -502,6 +530,7 @@ public enum V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -530,6 +559,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecProviderConfigRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -549,6 +579,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -563,6 +594,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpecWriteConnectionSecretT
 /// <summary>WebBackendServiceIAMMemberSpec defines the desired state of WebBackendServiceIAMMember</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberSpec
 {
     /// <summary>
@@ -630,6 +662,7 @@ public partial class V1beta1WebBackendServiceIAMMemberSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberStatusAtProviderCondition
 {
     [JsonPropertyName("description")]
@@ -644,6 +677,7 @@ public partial class V1beta1WebBackendServiceIAMMemberStatusAtProviderCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberStatusAtProvider
 {
     [JsonPropertyName("condition")]
@@ -671,6 +705,7 @@ public partial class V1beta1WebBackendServiceIAMMemberStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberStatusConditions
 {
     /// <summary>
@@ -714,6 +749,7 @@ public partial class V1beta1WebBackendServiceIAMMemberStatusConditions
 /// <summary>WebBackendServiceIAMMemberStatus defines the observed state of WebBackendServiceIAMMember.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WebBackendServiceIAMMemberStatus
 {
     [JsonPropertyName("atProvider")]
@@ -732,9 +768,13 @@ public partial class V1beta1WebBackendServiceIAMMemberStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WebBackendServiceIAMMember is the Schema for the WebBackendServiceIAMMembers API. &lt;no value&gt;</summary>
+/// <summary>
+/// WebBackendServiceIAMMember is the Schema for the WebBackendServiceIAMMembers API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WebBackendServiceIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WebBackendServiceIAMMemberSpec>, IStatus<V1beta1WebBackendServiceIAMMemberStatus?>
 {

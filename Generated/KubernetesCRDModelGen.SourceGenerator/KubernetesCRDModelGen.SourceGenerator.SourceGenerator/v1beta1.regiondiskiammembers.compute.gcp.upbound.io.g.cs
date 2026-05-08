@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>RegionDiskIAMMember is the Schema for the RegionDiskIAMMembers API. &lt;no value&gt;</summary>
+/// <summary>
+/// RegionDiskIAMMember is the Schema for the RegionDiskIAMMembers API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionDiskIAMMemberList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionDiskIAMMember>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RegionDiskIAMMemberList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RegionDiskIAMMemberSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProviderCondition
 {
     [JsonPropertyName("description")]
@@ -77,6 +83,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -93,6 +100,7 @@ public enum V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -104,6 +112,7 @@ public enum V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicy
 {
     /// <summary>
@@ -128,6 +137,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameRefPolicy
 /// <summary>Reference to a RegionDisk in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -147,6 +157,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -163,6 +174,7 @@ public enum V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -174,6 +186,7 @@ public enum V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicy
 {
     /// <summary>
@@ -198,6 +211,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameSelectorPolicy
 /// <summary>Selector for a RegionDisk in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameSelector
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProviderNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecForProvider
 {
     [JsonPropertyName("condition")]
@@ -249,6 +264,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProviderCondition
 {
     [JsonPropertyName("description")]
@@ -269,6 +285,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProviderCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -285,6 +302,7 @@ public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -296,6 +314,7 @@ public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicy
 {
     /// <summary>
@@ -320,6 +339,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameRefPolicy
 /// <summary>Reference to a RegionDisk in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -339,6 +359,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -355,6 +376,7 @@ public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -366,6 +388,7 @@ public enum V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolicy
 {
     /// <summary>
@@ -390,6 +413,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameSelectorPolic
 /// <summary>Selector for a RegionDisk in compute to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameSelector
 {
     /// <summary>
@@ -422,6 +446,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProviderNameSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecInitProvider
 {
     [JsonPropertyName("condition")]
@@ -457,6 +482,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -481,6 +507,7 @@ public enum V1beta1RegionDiskIAMMemberSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -497,6 +524,7 @@ public enum V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -508,6 +536,7 @@ public enum V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -536,6 +565,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -555,6 +585,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -569,6 +600,7 @@ public partial class V1beta1RegionDiskIAMMemberSpecWriteConnectionSecretToRef
 /// <summary>RegionDiskIAMMemberSpec defines the desired state of RegionDiskIAMMember</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberSpec
 {
     /// <summary>
@@ -636,6 +668,7 @@ public partial class V1beta1RegionDiskIAMMemberSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberStatusAtProviderCondition
 {
     [JsonPropertyName("description")]
@@ -650,6 +683,7 @@ public partial class V1beta1RegionDiskIAMMemberStatusAtProviderCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberStatusAtProvider
 {
     [JsonPropertyName("condition")]
@@ -680,6 +714,7 @@ public partial class V1beta1RegionDiskIAMMemberStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberStatusConditions
 {
     /// <summary>
@@ -723,6 +758,7 @@ public partial class V1beta1RegionDiskIAMMemberStatusConditions
 /// <summary>RegionDiskIAMMemberStatus defines the observed state of RegionDiskIAMMember.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionDiskIAMMemberStatus
 {
     [JsonPropertyName("atProvider")]
@@ -741,9 +777,13 @@ public partial class V1beta1RegionDiskIAMMemberStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RegionDiskIAMMember is the Schema for the RegionDiskIAMMembers API. &lt;no value&gt;</summary>
+/// <summary>
+/// RegionDiskIAMMember is the Schema for the RegionDiskIAMMembers API. &lt;no value&gt;
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionDiskIAMMember : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionDiskIAMMemberSpec>, IStatus<V1beta1RegionDiskIAMMemberStatus?>
 {

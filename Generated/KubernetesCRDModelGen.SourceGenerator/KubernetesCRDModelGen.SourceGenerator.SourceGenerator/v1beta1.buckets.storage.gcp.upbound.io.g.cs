@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.storage.gcp.upbound.io;
-/// <summary>Bucket is the Schema for the Buckets API. Creates a new bucket in Google Cloud Storage.</summary>
+/// <summary>
+/// Bucket is the Schema for the Buckets API. Creates a new bucket in Google Cloud Storage.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1BucketList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Bucket>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1BucketList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BucketSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1BucketSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderAutoclass
 {
     /// <summary>While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object&apos;s access pattern.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1BucketSpecForProviderAutoclass
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderCors
 {
     /// <summary>The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses.</summary>
@@ -91,6 +98,7 @@ public partial class V1beta1BucketSpecForProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderCustomPlacementConfig
 {
     /// <summary>The list of individual regions that comprise a dual-region bucket. See Cloud Storage bucket locations for a list of acceptable regions. Note: If any of the data_locations changes, it will recreate the bucket.</summary>
@@ -100,6 +108,7 @@ public partial class V1beta1BucketSpecForProviderCustomPlacementConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderEncryption
 {
     /// <summary>
@@ -113,6 +122,7 @@ public partial class V1beta1BucketSpecForProviderEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderHierarchicalNamespace
 {
     /// <summary>Enables hierarchical namespace for the bucket.</summary>
@@ -122,6 +132,7 @@ public partial class V1beta1BucketSpecForProviderHierarchicalNamespace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderIpFilterPublicNetworkSource
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -131,6 +142,7 @@ public partial class V1beta1BucketSpecForProviderIpFilterPublicNetworkSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderIpFilterVpcNetworkSources
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -144,6 +156,7 @@ public partial class V1beta1BucketSpecForProviderIpFilterVpcNetworkSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderIpFilter
 {
     /// <summary>While set true, allows all service agents to access the bucket regardless of the IP filter configuration.</summary>
@@ -169,6 +182,7 @@ public partial class V1beta1BucketSpecForProviderIpFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderLifecycleRuleAction
 {
     /// <summary>The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.</summary>
@@ -182,6 +196,7 @@ public partial class V1beta1BucketSpecForProviderLifecycleRuleAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderLifecycleRuleCondition
 {
     /// <summary>Minimum age of an object in days to satisfy this condition.</summary>
@@ -247,6 +262,7 @@ public partial class V1beta1BucketSpecForProviderLifecycleRuleCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderLifecycleRule
 {
     /// <summary>The Lifecycle Rule&apos;s action configuration. A single block of this type is supported. Structure is documented below.</summary>
@@ -260,6 +276,7 @@ public partial class V1beta1BucketSpecForProviderLifecycleRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderLogging
 {
     /// <summary>The bucket that will receive log objects.</summary>
@@ -276,6 +293,7 @@ public partial class V1beta1BucketSpecForProviderLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderRetentionPolicy
 {
     /// <summary>If set to true, the bucket will be locked and permanently restrict edits to the bucket&apos;s retention policy.  Caution: Locking a bucket is an irreversible action.</summary>
@@ -289,6 +307,7 @@ public partial class V1beta1BucketSpecForProviderRetentionPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderSoftDeletePolicy
 {
     /// <summary>The duration in seconds that soft-deleted objects in the bucket will be retained and cannot be permanently deleted. Default value is 604800. The value must be in between 604800(7 days) and 7776000(90 days). Note: To disable the soft delete policy on a bucket, This field must be set to 0.</summary>
@@ -298,6 +317,7 @@ public partial class V1beta1BucketSpecForProviderSoftDeletePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderVersioning
 {
     /// <summary>While set to true, versioning is fully enabled for this bucket.</summary>
@@ -307,6 +327,7 @@ public partial class V1beta1BucketSpecForProviderVersioning
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProviderWebsite
 {
     /// <summary>
@@ -326,6 +347,7 @@ public partial class V1beta1BucketSpecForProviderWebsite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecForProvider
 {
     /// <summary>The bucket&apos;s Autoclass configuration.  Structure is documented below.</summary>
@@ -429,6 +451,7 @@ public partial class V1beta1BucketSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderAutoclass
 {
     /// <summary>While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object&apos;s access pattern.</summary>
@@ -442,6 +465,7 @@ public partial class V1beta1BucketSpecInitProviderAutoclass
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderCors
 {
     /// <summary>The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses.</summary>
@@ -463,6 +487,7 @@ public partial class V1beta1BucketSpecInitProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderCustomPlacementConfig
 {
     /// <summary>The list of individual regions that comprise a dual-region bucket. See Cloud Storage bucket locations for a list of acceptable regions. Note: If any of the data_locations changes, it will recreate the bucket.</summary>
@@ -472,6 +497,7 @@ public partial class V1beta1BucketSpecInitProviderCustomPlacementConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderEncryption
 {
     /// <summary>
@@ -485,6 +511,7 @@ public partial class V1beta1BucketSpecInitProviderEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderHierarchicalNamespace
 {
     /// <summary>Enables hierarchical namespace for the bucket.</summary>
@@ -494,6 +521,7 @@ public partial class V1beta1BucketSpecInitProviderHierarchicalNamespace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderIpFilterPublicNetworkSource
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -503,6 +531,7 @@ public partial class V1beta1BucketSpecInitProviderIpFilterPublicNetworkSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderIpFilterVpcNetworkSources
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -516,6 +545,7 @@ public partial class V1beta1BucketSpecInitProviderIpFilterVpcNetworkSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderIpFilter
 {
     /// <summary>While set true, allows all service agents to access the bucket regardless of the IP filter configuration.</summary>
@@ -541,6 +571,7 @@ public partial class V1beta1BucketSpecInitProviderIpFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderLifecycleRuleAction
 {
     /// <summary>The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.</summary>
@@ -554,6 +585,7 @@ public partial class V1beta1BucketSpecInitProviderLifecycleRuleAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderLifecycleRuleCondition
 {
     /// <summary>Minimum age of an object in days to satisfy this condition.</summary>
@@ -619,6 +651,7 @@ public partial class V1beta1BucketSpecInitProviderLifecycleRuleCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderLifecycleRule
 {
     /// <summary>The Lifecycle Rule&apos;s action configuration. A single block of this type is supported. Structure is documented below.</summary>
@@ -632,6 +665,7 @@ public partial class V1beta1BucketSpecInitProviderLifecycleRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderLogging
 {
     /// <summary>The bucket that will receive log objects.</summary>
@@ -648,6 +682,7 @@ public partial class V1beta1BucketSpecInitProviderLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderRetentionPolicy
 {
     /// <summary>If set to true, the bucket will be locked and permanently restrict edits to the bucket&apos;s retention policy.  Caution: Locking a bucket is an irreversible action.</summary>
@@ -661,6 +696,7 @@ public partial class V1beta1BucketSpecInitProviderRetentionPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderSoftDeletePolicy
 {
     /// <summary>The duration in seconds that soft-deleted objects in the bucket will be retained and cannot be permanently deleted. Default value is 604800. The value must be in between 604800(7 days) and 7776000(90 days). Note: To disable the soft delete policy on a bucket, This field must be set to 0.</summary>
@@ -670,6 +706,7 @@ public partial class V1beta1BucketSpecInitProviderSoftDeletePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderVersioning
 {
     /// <summary>While set to true, versioning is fully enabled for this bucket.</summary>
@@ -679,6 +716,7 @@ public partial class V1beta1BucketSpecInitProviderVersioning
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProviderWebsite
 {
     /// <summary>
@@ -710,6 +748,7 @@ public partial class V1beta1BucketSpecInitProviderWebsite
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecInitProvider
 {
     /// <summary>The bucket&apos;s Autoclass configuration.  Structure is documented below.</summary>
@@ -817,6 +856,7 @@ public partial class V1beta1BucketSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BucketSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -841,6 +881,7 @@ public enum V1beta1BucketSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BucketSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -857,6 +898,7 @@ public enum V1beta1BucketSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1BucketSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1BucketSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -868,6 +910,7 @@ public enum V1beta1BucketSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -896,6 +939,7 @@ public partial class V1beta1BucketSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -915,6 +959,7 @@ public partial class V1beta1BucketSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -929,6 +974,7 @@ public partial class V1beta1BucketSpecWriteConnectionSecretToRef
 /// <summary>BucketSpec defines the desired state of Bucket</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketSpec
 {
     /// <summary>
@@ -996,6 +1042,7 @@ public partial class V1beta1BucketSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderAutoclass
 {
     /// <summary>While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object&apos;s access pattern.</summary>
@@ -1009,6 +1056,7 @@ public partial class V1beta1BucketStatusAtProviderAutoclass
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderCors
 {
     /// <summary>The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses.</summary>
@@ -1030,6 +1078,7 @@ public partial class V1beta1BucketStatusAtProviderCors
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderCustomPlacementConfig
 {
     /// <summary>The list of individual regions that comprise a dual-region bucket. See Cloud Storage bucket locations for a list of acceptable regions. Note: If any of the data_locations changes, it will recreate the bucket.</summary>
@@ -1039,6 +1088,7 @@ public partial class V1beta1BucketStatusAtProviderCustomPlacementConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderEncryption
 {
     /// <summary>
@@ -1052,6 +1102,7 @@ public partial class V1beta1BucketStatusAtProviderEncryption
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderHierarchicalNamespace
 {
     /// <summary>Enables hierarchical namespace for the bucket.</summary>
@@ -1061,6 +1112,7 @@ public partial class V1beta1BucketStatusAtProviderHierarchicalNamespace
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderIpFilterPublicNetworkSource
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -1070,6 +1122,7 @@ public partial class V1beta1BucketStatusAtProviderIpFilterPublicNetworkSource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderIpFilterVpcNetworkSources
 {
     /// <summary>The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.</summary>
@@ -1083,6 +1136,7 @@ public partial class V1beta1BucketStatusAtProviderIpFilterVpcNetworkSources
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderIpFilter
 {
     /// <summary>While set true, allows all service agents to access the bucket regardless of the IP filter configuration.</summary>
@@ -1108,6 +1162,7 @@ public partial class V1beta1BucketStatusAtProviderIpFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleAction
 {
     /// <summary>The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.</summary>
@@ -1121,6 +1176,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderLifecycleRuleCondition
 {
     /// <summary>Minimum age of an object in days to satisfy this condition.</summary>
@@ -1186,6 +1242,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRuleCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderLifecycleRule
 {
     /// <summary>The Lifecycle Rule&apos;s action configuration. A single block of this type is supported. Structure is documented below.</summary>
@@ -1199,6 +1256,7 @@ public partial class V1beta1BucketStatusAtProviderLifecycleRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderLogging
 {
     /// <summary>The bucket that will receive log objects.</summary>
@@ -1215,6 +1273,7 @@ public partial class V1beta1BucketStatusAtProviderLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderRetentionPolicy
 {
     /// <summary>If set to true, the bucket will be locked and permanently restrict edits to the bucket&apos;s retention policy.  Caution: Locking a bucket is an irreversible action.</summary>
@@ -1228,6 +1287,7 @@ public partial class V1beta1BucketStatusAtProviderRetentionPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderSoftDeletePolicy
 {
     /// <summary>(Computed) Server-determined value that indicates the time from which the policy, or one with a greater retention, was effective. This value is in RFC 3339 format.</summary>
@@ -1241,6 +1301,7 @@ public partial class V1beta1BucketStatusAtProviderSoftDeletePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderVersioning
 {
     /// <summary>While set to true, versioning is fully enabled for this bucket.</summary>
@@ -1250,6 +1311,7 @@ public partial class V1beta1BucketStatusAtProviderVersioning
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProviderWebsite
 {
     /// <summary>
@@ -1269,6 +1331,7 @@ public partial class V1beta1BucketStatusAtProviderWebsite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusAtProvider
 {
     /// <summary>The bucket&apos;s Autoclass configuration.  Structure is documented below.</summary>
@@ -1403,6 +1466,7 @@ public partial class V1beta1BucketStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatusConditions
 {
     /// <summary>
@@ -1446,6 +1510,7 @@ public partial class V1beta1BucketStatusConditions
 /// <summary>BucketStatus defines the observed state of Bucket.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1BucketStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1464,9 +1529,13 @@ public partial class V1beta1BucketStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Bucket is the Schema for the Buckets API. Creates a new bucket in Google Cloud Storage.</summary>
+/// <summary>
+/// Bucket is the Schema for the Buckets API. Creates a new bucket in Google Cloud Storage.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Bucket : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1BucketSpec>, IStatus<V1beta1BucketStatus?>
 {

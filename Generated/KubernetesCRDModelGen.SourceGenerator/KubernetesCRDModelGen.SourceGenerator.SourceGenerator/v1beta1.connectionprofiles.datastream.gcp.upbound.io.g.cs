@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.gcp.upbound.io;
-/// <summary>ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.</summary>
+/// <summary>
+/// ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionProfileList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ConnectionProfile>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ConnectionProfileList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ConnectionProfileSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderBigqueryProfile
 {
 }
@@ -67,6 +73,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderBigqueryProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivityPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -88,6 +95,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivityPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -105,6 +113,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivity
 {
     /// <summary>Hostname for the SSH tunnel.</summary>
@@ -136,6 +145,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderForwardSshConnectivi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderGcsProfile
 {
     /// <summary>The Cloud Storage bucket name.</summary>
@@ -153,6 +163,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderGcsProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -175,6 +186,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfilePassword
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigCaCertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -199,6 +211,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigClientCertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -222,6 +235,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfigClientKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -239,6 +253,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfig
 {
     /// <summary>
@@ -271,6 +286,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfileSslConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfile
 {
     /// <summary>Hostname for the MySQL connection.</summary>
@@ -310,6 +326,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderMysqlProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderOracleProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -327,6 +344,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderOracleProfilePasswor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderOracleProfile
 {
     /// <summary>Connection string attributes</summary>
@@ -369,6 +387,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderOracleProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -385,6 +404,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -396,6 +416,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRefPolicy
 {
     /// <summary>
@@ -420,6 +441,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// <summary>Reference to a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -439,6 +461,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -455,6 +478,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -466,6 +490,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelectorPolicy
 {
     /// <summary>
@@ -490,6 +515,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// <summary>Selector for a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDatabaseSelector
 {
     /// <summary>
@@ -516,6 +542,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -532,6 +559,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -543,6 +571,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRefPolicy
 {
     /// <summary>
@@ -567,6 +596,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -586,6 +616,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -602,6 +633,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -613,6 +645,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelectorPolicy
 {
     /// <summary>
@@ -637,6 +670,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHostnameSelector
 {
     /// <summary>
@@ -661,6 +695,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileHos
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -684,6 +719,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfilePas
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -700,6 +736,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -711,6 +748,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRefPolicy
 {
     /// <summary>
@@ -735,6 +773,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 /// <summary>Reference to a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -754,6 +793,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -770,6 +810,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -781,6 +822,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelectorPolicy
 {
     /// <summary>
@@ -805,6 +847,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 /// <summary>Selector for a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUsernameSelector
 {
     /// <summary>
@@ -825,6 +868,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfileUse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfile
 {
     /// <summary>Database for the PostgreSQL connection.</summary>
@@ -887,6 +931,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPostgresqlProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -903,6 +948,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -914,6 +960,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRefPolicy
 {
     /// <summary>
@@ -938,6 +985,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 /// <summary>Reference to a PrivateConnection in datastream to populate privateConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -957,6 +1005,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -973,6 +1022,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -984,6 +1034,7 @@ public enum V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateCon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelectorPolicy
 {
     /// <summary>
@@ -1008,6 +1059,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 /// <summary>Selector for a PrivateConnection in datastream to populate privateConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityPrivateConnectionSelector
 {
     /// <summary>
@@ -1028,6 +1080,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivityP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivity
 {
     /// <summary>A reference to a private connection resource. Format: projects/{project}/locations/{location}/privateConnections/{name}</summary>
@@ -1051,6 +1104,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderPrivateConnectivity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1067,6 +1121,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1078,6 +1133,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRefPolicy
 {
     /// <summary>
@@ -1102,6 +1158,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// <summary>Reference to a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1121,6 +1178,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1137,6 +1195,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1148,6 +1207,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelectorPolicy
 {
     /// <summary>
@@ -1172,6 +1232,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// <summary>Selector for a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileDatabaseSelector
 {
     /// <summary>
@@ -1198,6 +1259,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileData
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1214,6 +1276,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1225,6 +1288,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRefPolicy
 {
     /// <summary>
@@ -1249,6 +1313,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1268,6 +1333,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1284,6 +1350,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1295,6 +1362,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelectorPolicy
 {
     /// <summary>
@@ -1319,6 +1387,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHostnameSelector
 {
     /// <summary>
@@ -1343,6 +1412,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileHost
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1366,6 +1436,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfilePass
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1382,6 +1453,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1393,6 +1465,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRefPolicy
 {
     /// <summary>
@@ -1417,6 +1490,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 /// <summary>Reference to a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1436,6 +1510,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1452,6 +1527,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1463,6 +1539,7 @@ public enum V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelectorPolicy
 {
     /// <summary>
@@ -1487,6 +1564,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 /// <summary>Selector for a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUsernameSelector
 {
     /// <summary>
@@ -1507,6 +1585,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfileUser
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfile
 {
     /// <summary>Database for the SQL Server connection.</summary>
@@ -1563,6 +1642,7 @@ public partial class V1beta1ConnectionProfileSpecForProviderSqlServerProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecForProvider
 {
     /// <summary>BigQuery warehouse profile.</summary>
@@ -1648,6 +1728,7 @@ public partial class V1beta1ConnectionProfileSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderBigqueryProfile
 {
 }
@@ -1658,6 +1739,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderBigqueryProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivityPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1679,6 +1761,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivityPrivateKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1696,6 +1779,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectivity
 {
     /// <summary>Hostname for the SSH tunnel.</summary>
@@ -1727,6 +1811,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderForwardSshConnectiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderGcsProfile
 {
     /// <summary>The Cloud Storage bucket name.</summary>
@@ -1744,6 +1829,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderGcsProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1766,6 +1852,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfilePasswor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigCaCertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1790,6 +1877,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigClientCertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1813,6 +1901,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfigClientKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1830,6 +1919,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConfig
 {
     /// <summary>
@@ -1862,6 +1952,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfileSslConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfile
 {
     /// <summary>Hostname for the MySQL connection.</summary>
@@ -1901,6 +1992,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderMysqlProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1918,6 +2010,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfilePasswo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfile
 {
     /// <summary>Connection string attributes</summary>
@@ -1960,6 +2053,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderOracleProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1976,6 +2070,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1987,6 +2082,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRefPolicy
 {
     /// <summary>
@@ -2011,6 +2107,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// <summary>Reference to a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2030,6 +2127,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2046,6 +2144,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2057,6 +2156,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelectorPolicy
 {
     /// <summary>
@@ -2081,6 +2181,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// <summary>Selector for a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDatabaseSelector
 {
     /// <summary>
@@ -2107,6 +2208,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileDa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2123,6 +2225,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2134,6 +2237,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRefPolicy
 {
     /// <summary>
@@ -2158,6 +2262,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2177,6 +2282,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2193,6 +2299,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2204,6 +2311,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelectorPolicy
 {
     /// <summary>
@@ -2228,6 +2336,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHostnameSelector
 {
     /// <summary>
@@ -2252,6 +2361,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileHo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2275,6 +2385,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfilePa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2291,6 +2402,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2302,6 +2414,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRefPolicy
 {
     /// <summary>
@@ -2326,6 +2439,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 /// <summary>Reference to a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2345,6 +2459,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2361,6 +2476,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2372,6 +2488,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelectorPolicy
 {
     /// <summary>
@@ -2396,6 +2513,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 /// <summary>Selector for a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUsernameSelector
 {
     /// <summary>
@@ -2416,6 +2534,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfileUs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfile
 {
     /// <summary>Database for the PostgreSQL connection.</summary>
@@ -2478,6 +2597,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPostgresqlProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2494,6 +2614,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2505,6 +2626,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRefPolicy
 {
     /// <summary>
@@ -2529,6 +2651,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// <summary>Reference to a PrivateConnection in datastream to populate privateConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2548,6 +2671,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2564,6 +2688,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2575,6 +2700,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateCo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelectorPolicy
 {
     /// <summary>
@@ -2599,6 +2725,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// <summary>Selector for a PrivateConnection in datastream to populate privateConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivityPrivateConnectionSelector
 {
     /// <summary>
@@ -2619,6 +2746,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 {
     /// <summary>A reference to a private connection resource. Format: projects/{project}/locations/{location}/privateConnections/{name}</summary>
@@ -2642,6 +2770,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderPrivateConnectivity
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2658,6 +2787,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2669,6 +2799,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRefPolicy
 {
     /// <summary>
@@ -2693,6 +2824,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// <summary>Reference to a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2712,6 +2844,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2728,6 +2861,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2739,6 +2873,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelectorPolicy
 {
     /// <summary>
@@ -2763,6 +2898,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// <summary>Selector for a Database in sql to populate database.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDatabaseSelector
 {
     /// <summary>
@@ -2789,6 +2925,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2805,6 +2942,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2816,6 +2954,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRefPolicy
 {
     /// <summary>
@@ -2840,6 +2979,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// <summary>Reference to a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2859,6 +2999,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2875,6 +3016,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2886,6 +3028,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelectorPolicy
 {
     /// <summary>
@@ -2910,6 +3053,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// <summary>Selector for a DatabaseInstance in sql to populate hostname.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHostnameSelector
 {
     /// <summary>
@@ -2934,6 +3078,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileHos
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfilePasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2957,6 +3102,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfilePas
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2973,6 +3119,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2984,6 +3131,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRefPolicy
 {
     /// <summary>
@@ -3008,6 +3156,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 /// <summary>Reference to a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3027,6 +3176,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3043,6 +3193,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3054,6 +3205,7 @@ public enum V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelectorPolicy
 {
     /// <summary>
@@ -3078,6 +3230,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 /// <summary>Selector for a User in sql to populate username.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUsernameSelector
 {
     /// <summary>
@@ -3098,6 +3251,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfileUse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfile
 {
     /// <summary>Database for the SQL Server connection.</summary>
@@ -3166,6 +3320,7 @@ public partial class V1beta1ConnectionProfileSpecInitProviderSqlServerProfile
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecInitProvider
 {
     /// <summary>BigQuery warehouse profile.</summary>
@@ -3251,6 +3406,7 @@ public partial class V1beta1ConnectionProfileSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3275,6 +3431,7 @@ public enum V1beta1ConnectionProfileSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3291,6 +3448,7 @@ public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3302,6 +3460,7 @@ public enum V1beta1ConnectionProfileSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3330,6 +3489,7 @@ public partial class V1beta1ConnectionProfileSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3349,6 +3509,7 @@ public partial class V1beta1ConnectionProfileSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3363,6 +3524,7 @@ public partial class V1beta1ConnectionProfileSpecWriteConnectionSecretToRef
 /// <summary>ConnectionProfileSpec defines the desired state of ConnectionProfile</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileSpec
 {
     /// <summary>
@@ -3430,12 +3592,14 @@ public partial class V1beta1ConnectionProfileSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderBigqueryProfile
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderForwardSshConnectivity
 {
     /// <summary>Hostname for the SSH tunnel.</summary>
@@ -3453,6 +3617,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderForwardSshConnectiv
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderGcsProfile
 {
     /// <summary>The Cloud Storage bucket name.</summary>
@@ -3466,6 +3631,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderGcsProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfileSslConfig
 {
     /// <summary>
@@ -3492,6 +3658,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfileSslConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfile
 {
     /// <summary>Hostname for the MySQL connection.</summary>
@@ -3520,6 +3687,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderMysqlProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderOracleProfile
 {
     /// <summary>Connection string attributes</summary>
@@ -3549,6 +3717,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderOracleProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfile
 {
     /// <summary>Database for the PostgreSQL connection.</summary>
@@ -3574,6 +3743,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderPostgresqlProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderPrivateConnectivity
 {
     /// <summary>A reference to a private connection resource. Format: projects/{project}/locations/{location}/privateConnections/{name}</summary>
@@ -3583,6 +3753,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderPrivateConnectivity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProviderSqlServerProfile
 {
     /// <summary>Database for the SQL Server connection.</summary>
@@ -3608,6 +3779,7 @@ public partial class V1beta1ConnectionProfileStatusAtProviderSqlServerProfile
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusAtProvider
 {
     /// <summary>BigQuery warehouse profile.</summary>
@@ -3712,6 +3884,7 @@ public partial class V1beta1ConnectionProfileStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatusConditions
 {
     /// <summary>
@@ -3755,6 +3928,7 @@ public partial class V1beta1ConnectionProfileStatusConditions
 /// <summary>ConnectionProfileStatus defines the observed state of ConnectionProfile.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ConnectionProfileStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3773,9 +3947,13 @@ public partial class V1beta1ConnectionProfileStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.</summary>
+/// <summary>
+/// ConnectionProfile is the Schema for the ConnectionProfiles API. A set of reusable connection configurations to be used as a source or destination for a stream.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ConnectionProfile : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ConnectionProfileSpec>, IStatus<V1beta1ConnectionProfileStatus?>
 {

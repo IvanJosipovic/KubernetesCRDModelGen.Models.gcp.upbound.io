@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.logging.gcp.upbound.io;
-/// <summary>ProjectBucketConfig is the Schema for the ProjectBucketConfigs API. Manages a project-level logging bucket config.</summary>
+/// <summary>
+/// ProjectBucketConfig is the Schema for the ProjectBucketConfigs API. Manages a project-level logging bucket config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectBucketConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ProjectBucketConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ProjectBucketConfigList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1ProjectBucketConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKey
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKey
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKeyNameSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettingsKmsKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettings
 {
     /// <summary>
@@ -228,6 +242,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderCmekSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderIndexConfigs
 {
     /// <summary>
@@ -250,6 +265,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderIndexConfigs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -266,6 +282,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -277,6 +294,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicy
 {
     /// <summary>
@@ -301,6 +319,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderProjectRefPolicy
 /// <summary>Reference to a Project in cloudplatform to populate project.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderProjectRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -320,6 +339,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderProjectRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -336,6 +356,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -347,6 +368,7 @@ public enum V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPolicy
 {
     /// <summary>
@@ -371,6 +393,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderProjectSelectorPol
 /// <summary>Selector for a Project in cloudplatform to populate project.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProviderProjectSelector
 {
     /// <summary>
@@ -391,6 +414,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProviderProjectSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecForProvider
 {
     /// <summary>The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.</summary>
@@ -446,6 +470,7 @@ public partial class V1beta1ProjectBucketConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -462,6 +487,7 @@ public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -473,6 +499,7 @@ public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -497,6 +524,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKe
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -516,6 +544,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -532,6 +561,7 @@ public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -543,6 +573,7 @@ public enum V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -567,6 +598,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKe
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKeyNameSelector
 {
     /// <summary>
@@ -587,6 +619,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettingsKmsKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettings
 {
     /// <summary>
@@ -611,6 +644,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderCmekSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProviderIndexConfigs
 {
     /// <summary>
@@ -639,6 +673,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProviderIndexConfigs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecInitProvider
 {
     /// <summary>The CMEK settings of the log bucket. If present, new log entries written to this log bucket are encrypted using the CMEK key provided in this configuration. If a log bucket has CMEK settings, the CMEK settings cannot be disabled later by updating the log bucket. Changing the KMS key is allowed. Structure is documented below.</summary>
@@ -672,6 +707,7 @@ public partial class V1beta1ProjectBucketConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -696,6 +732,7 @@ public enum V1beta1ProjectBucketConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -712,6 +749,7 @@ public enum V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -723,6 +761,7 @@ public enum V1beta1ProjectBucketConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -751,6 +790,7 @@ public partial class V1beta1ProjectBucketConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -770,6 +810,7 @@ public partial class V1beta1ProjectBucketConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -784,6 +825,7 @@ public partial class V1beta1ProjectBucketConfigSpecWriteConnectionSecretToRef
 /// <summary>ProjectBucketConfigSpec defines the desired state of ProjectBucketConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigSpec
 {
     /// <summary>
@@ -851,6 +893,7 @@ public partial class V1beta1ProjectBucketConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigStatusAtProviderCmekSettings
 {
     /// <summary>
@@ -890,6 +933,7 @@ public partial class V1beta1ProjectBucketConfigStatusAtProviderCmekSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigStatusAtProviderIndexConfigs
 {
     /// <summary>
@@ -906,6 +950,7 @@ public partial class V1beta1ProjectBucketConfigStatusAtProviderIndexConfigs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigStatusAtProvider
 {
     /// <summary>The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.</summary>
@@ -960,6 +1005,7 @@ public partial class V1beta1ProjectBucketConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigStatusConditions
 {
     /// <summary>
@@ -1003,6 +1049,7 @@ public partial class V1beta1ProjectBucketConfigStatusConditions
 /// <summary>ProjectBucketConfigStatus defines the observed state of ProjectBucketConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ProjectBucketConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1021,9 +1068,13 @@ public partial class V1beta1ProjectBucketConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ProjectBucketConfig is the Schema for the ProjectBucketConfigs API. Manages a project-level logging bucket config.</summary>
+/// <summary>
+/// ProjectBucketConfig is the Schema for the ProjectBucketConfigs API. Manages a project-level logging bucket config.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ProjectBucketConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ProjectBucketConfigSpec>, IStatus<V1beta1ProjectBucketConfigStatus?>
 {

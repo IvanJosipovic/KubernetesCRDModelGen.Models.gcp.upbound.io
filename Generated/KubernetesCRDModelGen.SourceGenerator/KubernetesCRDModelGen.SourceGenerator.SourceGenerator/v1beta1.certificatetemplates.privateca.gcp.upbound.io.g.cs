@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.gcp.upbound.io;
-/// <summary>CertificateTemplate is the Schema for the CertificateTemplates API. Certificate Authority Service provides reusable and parameterized templates that you can use for common certificate issuance scenarios. A certificate template represents a relatively static and well-defined certificate issuance schema within an organization.  A certificate template can essentially become a full-fledged vertical certificate issuance framework.</summary>
+/// <summary>
+/// CertificateTemplate is the Schema for the CertificateTemplates API. Certificate Authority Service provides reusable and parameterized templates that you can use for common certificate issuance scenarios. A certificate template represents a relatively static and well-defined certificate issuance schema within an organization.  A certificate template can essentially become a full-fledged vertical certificate issuance framework.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CertificateTemplate>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CertificateTemplateList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateTemplateSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1CertificateTemplateSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderIdentityConstraintsCelExpression
 {
     /// <summary>Optional. A human-readable description of scenarios this template is intended for.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderIdentityConstraint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderIdentityConstraints
 {
     /// <summary>Required. If this is true, the SubjectAltNames extension may be copied from a certificate request into the signed certificate. Otherwise, the requested SubjectAltNames will be discarded.</summary>
@@ -95,6 +102,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderIdentityConstraint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPassthroughExtensionsAdditionalExtensions
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -104,6 +112,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPassthroughExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPassthroughExtensions
 {
     /// <summary>Optional. A set of ObjectIds identifying custom X.509 extensions. Will be combined with known_extensions to determine the full set of X.509 extensions.</summary>
@@ -117,6 +126,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPassthroughExtensi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesAdditionalExtensionsObjectId
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -126,6 +136,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesAdditionalExtensions
 {
     /// <summary>Optional. Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).</summary>
@@ -143,6 +154,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesCaOptions
 {
     /// <summary>Optional. Refers to the &quot;CA&quot; X.509 extension, which is a boolean value. When this value is true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -175,6 +187,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesCa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -216,6 +229,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -245,6 +259,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -254,6 +269,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKeyUsage
 {
     /// <summary>Describes high-level ways in which a key may be used.</summary>
@@ -271,6 +287,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -352,6 +369,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesNa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesPolicyIds
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -361,6 +379,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValuesPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValues
 {
     /// <summary>Optional. Describes custom X.509 extensions.</summary>
@@ -393,6 +412,7 @@ public partial class V1beta1CertificateTemplateSpecForProviderPredefinedValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecForProvider
 {
     /// <summary>Optional. A human-readable description of scenarios this template is intended for.</summary>
@@ -430,6 +450,7 @@ public partial class V1beta1CertificateTemplateSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderIdentityConstraintsCelExpression
 {
     /// <summary>Optional. A human-readable description of scenarios this template is intended for.</summary>
@@ -447,6 +468,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderIdentityConstraints
 {
     /// <summary>Required. If this is true, the SubjectAltNames extension may be copied from a certificate request into the signed certificate. Otherwise, the requested SubjectAltNames will be discarded.</summary>
@@ -464,6 +486,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPassthroughExtensionsAdditionalExtensions
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -473,6 +496,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPassthroughExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPassthroughExtensions
 {
     /// <summary>Optional. A set of ObjectIds identifying custom X.509 extensions. Will be combined with known_extensions to determine the full set of X.509 extensions.</summary>
@@ -486,6 +510,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPassthroughExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesAdditionalExtensionsObjectId
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -495,6 +520,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesAdditionalExtensions
 {
     /// <summary>Optional. Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).</summary>
@@ -512,6 +538,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesCaOptions
 {
     /// <summary>Optional. Refers to the &quot;CA&quot; X.509 extension, which is a boolean value. When this value is true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -544,6 +571,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -585,6 +613,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -614,6 +643,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -623,6 +653,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesKeyUsage
 {
     /// <summary>Describes high-level ways in which a key may be used.</summary>
@@ -640,6 +671,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -721,6 +753,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesPolicyIds
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -730,6 +763,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValuesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValues
 {
     /// <summary>Optional. Describes custom X.509 extensions.</summary>
@@ -774,6 +808,7 @@ public partial class V1beta1CertificateTemplateSpecInitProviderPredefinedValues
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecInitProvider
 {
     /// <summary>Optional. A human-readable description of scenarios this template is intended for.</summary>
@@ -811,6 +846,7 @@ public partial class V1beta1CertificateTemplateSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateTemplateSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -835,6 +871,7 @@ public enum V1beta1CertificateTemplateSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -851,6 +888,7 @@ public enum V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -862,6 +900,7 @@ public enum V1beta1CertificateTemplateSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -890,6 +929,7 @@ public partial class V1beta1CertificateTemplateSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -909,6 +949,7 @@ public partial class V1beta1CertificateTemplateSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -923,6 +964,7 @@ public partial class V1beta1CertificateTemplateSpecWriteConnectionSecretToRef
 /// <summary>CertificateTemplateSpec defines the desired state of CertificateTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateSpec
 {
     /// <summary>
@@ -990,6 +1032,7 @@ public partial class V1beta1CertificateTemplateSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderIdentityConstraintsCelExpression
 {
     /// <summary>Optional. A human-readable description of scenarios this template is intended for.</summary>
@@ -1011,6 +1054,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderIdentityConstraints
 {
     /// <summary>Required. If this is true, the SubjectAltNames extension may be copied from a certificate request into the signed certificate. Otherwise, the requested SubjectAltNames will be discarded.</summary>
@@ -1028,6 +1072,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPassthroughExtensionsAdditionalExtensions
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -1037,6 +1082,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPassthroughExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPassthroughExtensions
 {
     /// <summary>Optional. A set of ObjectIds identifying custom X.509 extensions. Will be combined with known_extensions to determine the full set of X.509 extensions.</summary>
@@ -1050,6 +1096,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPassthroughExtens
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesAdditionalExtensionsObjectId
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -1059,6 +1106,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesAdditionalExtensions
 {
     /// <summary>Optional. Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).</summary>
@@ -1076,6 +1124,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesCaOptions
 {
     /// <summary>Optional. Refers to the &quot;CA&quot; X.509 extension, which is a boolean value. When this value is true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -1108,6 +1157,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -1149,6 +1199,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -1178,6 +1229,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -1187,6 +1239,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesKeyUsage
 {
     /// <summary>Describes high-level ways in which a key may be used.</summary>
@@ -1204,6 +1257,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -1285,6 +1339,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesN
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesPolicyIds
 {
     /// <summary>Required. The parts of an OID path. The most significant parts of the path come first.</summary>
@@ -1294,6 +1349,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValuesP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValues
 {
     /// <summary>Optional. Describes custom X.509 extensions.</summary>
@@ -1326,6 +1382,7 @@ public partial class V1beta1CertificateTemplateStatusAtProviderPredefinedValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusAtProvider
 {
     /// <summary>Output only. The time at which this CertificateTemplate was created.</summary>
@@ -1383,6 +1440,7 @@ public partial class V1beta1CertificateTemplateStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatusConditions
 {
     /// <summary>
@@ -1426,6 +1484,7 @@ public partial class V1beta1CertificateTemplateStatusConditions
 /// <summary>CertificateTemplateStatus defines the observed state of CertificateTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CertificateTemplateStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1444,9 +1503,13 @@ public partial class V1beta1CertificateTemplateStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CertificateTemplate is the Schema for the CertificateTemplates API. Certificate Authority Service provides reusable and parameterized templates that you can use for common certificate issuance scenarios. A certificate template represents a relatively static and well-defined certificate issuance schema within an organization.  A certificate template can essentially become a full-fledged vertical certificate issuance framework.</summary>
+/// <summary>
+/// CertificateTemplate is the Schema for the CertificateTemplates API. Certificate Authority Service provides reusable and parameterized templates that you can use for common certificate issuance scenarios. A certificate template represents a relatively static and well-defined certificate issuance schema within an organization.  A certificate template can essentially become a full-fledged vertical certificate issuance framework.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CertificateTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CertificateTemplateSpec>, IStatus<V1beta1CertificateTemplateStatus?>
 {

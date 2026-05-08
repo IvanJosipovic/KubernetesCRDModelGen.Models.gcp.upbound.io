@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.sql.gcp.upbound.io;
-/// <summary>DatabaseInstance is the Schema for the DatabaseInstances API. Creates a new SQL database instance in Google Cloud SQL.</summary>
+/// <summary>
+/// DatabaseInstance is the Schema for the DatabaseInstances API. Creates a new SQL database instance in Google Cloud SQL.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatabaseInstanceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DatabaseInstance>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DatabaseInstanceList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DatabaseInstanceSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderClone
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -83,6 +89,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderClone
 /// <summary>Password for the replication connection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderReplicaConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -100,6 +107,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderReplicaConfigurationP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderReplicaConfiguration
 {
     /// <summary>
@@ -180,6 +188,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderReplicaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderReplicationCluster
 {
     /// <summary>project:your-instance&quot;. You can also set this field to &quot;your-instance&quot;, but cloud SQL backend will convert it to the aforementioned standard format.</summary>
@@ -189,6 +198,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderReplicationCluster
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderRestoreBackupContext
 {
     /// <summary>The ID of the backup run to restore from.</summary>
@@ -210,6 +220,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderRestoreBackupContext
 /// <summary>Initial root password. Can be updated. Required for MS SQL Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderRootPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -227,6 +238,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderRootPasswordSecretRef
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsActiveDirectoryConfig
 {
     /// <summary>
@@ -239,6 +251,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsActiveDirecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsAdvancedMachineFeatures
 {
     /// <summary>The number of threads per core. The value of this flag can be 1 or 2. To disable SMT, set this flag to 1. Only available in Cloud SQL for SQL Server instances. See smt for more details.</summary>
@@ -248,6 +261,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsAdvancedMachi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsBackupConfigurationBackupRetentionSettings
 {
     /// <summary>
@@ -264,6 +278,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsBackupConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsBackupConfiguration
 {
     /// <summary>Backup retention settings. The configuration is detailed below.</summary>
@@ -303,6 +318,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsBackupConfigu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsConnectionPoolConfigFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -320,6 +336,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsConnectionPoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsConnectionPoolConfig
 {
     /// <summary>:  True if the manager connection pooling configuration is enabled.</summary>
@@ -332,6 +349,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsConnectionPoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDataCacheConfig
 {
     /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
@@ -341,6 +359,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDataCacheConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDatabaseFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -358,6 +377,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDatabaseFlags
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDenyMaintenancePeriod
 {
     /// <summary>&quot;deny maintenance period&quot; end date. If the year of the end date is empty, the year of the start date also must be empty. In this case, it means the no maintenance interval recurs every year. The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01</summary>
@@ -375,6 +395,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsDenyMaintenan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsInsightsConfig
 {
     /// <summary>True if Query Insights feature is enabled.</summary>
@@ -400,6 +421,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsInsightsConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationAuthorizedNetworks
 {
     /// <summary>
@@ -430,6 +452,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -446,6 +469,7 @@ public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -457,6 +481,7 @@ public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivate
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRefPolicy
 {
     /// <summary>
@@ -481,6 +506,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 /// <summary>Reference to a Network in compute to populate privateNetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -500,6 +526,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -516,6 +543,7 @@ public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivate
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -527,6 +555,7 @@ public enum V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivate
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelectorPolicy
 {
     /// <summary>
@@ -551,6 +580,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 /// <summary>Selector for a Network in compute to populate privateNetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPrivateNetworkSelector
 {
     /// <summary>
@@ -571,6 +601,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPscConfigPscAutoConnections
 {
     /// <summary>&quot;The consumer network of this consumer endpoint. This must be a resource path that includes both the host project and the network name. For example, projects/project1/global/networks/network1. The consumer host project of this network might be different from the consumer service project.&quot;</summary>
@@ -584,6 +615,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurationPscConfig
 {
     /// <summary>List of consumer projects that are allow-listed for PSC connections to this instance. This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).</summary>
@@ -601,6 +633,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfiguration
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -662,6 +695,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsIpConfigurati
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsLocationPreference
 {
     /// <summary>
@@ -685,6 +719,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsLocationPrefe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsMaintenanceWindow
 {
     /// <summary>Day of week (1-7), starting on Monday</summary>
@@ -705,6 +740,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsMaintenanceWi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsPasswordValidationPolicy
 {
     /// <summary>Checks if the password is a combination of lowercase, uppercase, numeric, and non-alphanumeric characters.</summary>
@@ -734,6 +770,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsPasswordValid
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -751,6 +788,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettingsSqlServerAudi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProviderSettings
 {
     /// <summary>
@@ -877,6 +915,7 @@ public partial class V1beta1DatabaseInstanceSpecForProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecForProvider
 {
     /// <summary>
@@ -977,6 +1016,7 @@ public partial class V1beta1DatabaseInstanceSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderClone
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -1003,6 +1043,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderClone
 /// <summary>Password for the replication connection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderReplicaConfigurationPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1020,6 +1061,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderReplicaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderReplicaConfiguration
 {
     /// <summary>
@@ -1100,6 +1142,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderReplicaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderReplicationCluster
 {
     /// <summary>project:your-instance&quot;. You can also set this field to &quot;your-instance&quot;, but cloud SQL backend will convert it to the aforementioned standard format.</summary>
@@ -1109,6 +1152,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderReplicationCluster
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderRestoreBackupContext
 {
     /// <summary>The ID of the backup run to restore from.</summary>
@@ -1130,6 +1174,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderRestoreBackupContext
 /// <summary>Initial root password. Can be updated. Required for MS SQL Server.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderRootPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1147,6 +1192,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderRootPasswordSecretRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsActiveDirectoryConfig
 {
     /// <summary>
@@ -1159,6 +1205,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsActiveDirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsAdvancedMachineFeatures
 {
     /// <summary>The number of threads per core. The value of this flag can be 1 or 2. To disable SMT, set this flag to 1. Only available in Cloud SQL for SQL Server instances. See smt for more details.</summary>
@@ -1168,6 +1215,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsAdvancedMach
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsBackupConfigurationBackupRetentionSettings
 {
     /// <summary>
@@ -1184,6 +1232,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsBackupConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsBackupConfiguration
 {
     /// <summary>Backup retention settings. The configuration is detailed below.</summary>
@@ -1223,6 +1272,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsBackupConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsConnectionPoolConfigFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -1240,6 +1290,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsConnectionPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsConnectionPoolConfig
 {
     /// <summary>:  True if the manager connection pooling configuration is enabled.</summary>
@@ -1252,6 +1303,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsConnectionPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDataCacheConfig
 {
     /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
@@ -1261,6 +1313,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDataCacheCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDatabaseFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -1278,6 +1331,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDatabaseFlag
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDenyMaintenancePeriod
 {
     /// <summary>&quot;deny maintenance period&quot; end date. If the year of the end date is empty, the year of the start date also must be empty. In this case, it means the no maintenance interval recurs every year. The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01</summary>
@@ -1295,6 +1349,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsDenyMaintena
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsInsightsConfig
 {
     /// <summary>True if Query Insights feature is enabled.</summary>
@@ -1320,6 +1375,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsInsightsConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationAuthorizedNetworks
 {
     /// <summary>
@@ -1350,6 +1406,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1366,6 +1423,7 @@ public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1377,6 +1435,7 @@ public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivat
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRefPolicy
 {
     /// <summary>
@@ -1401,6 +1460,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 /// <summary>Reference to a Network in compute to populate privateNetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1420,6 +1480,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1436,6 +1497,7 @@ public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1447,6 +1509,7 @@ public enum V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivat
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelectorPolicy
 {
     /// <summary>
@@ -1471,6 +1534,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 /// <summary>Selector for a Network in compute to populate privateNetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPrivateNetworkSelector
 {
     /// <summary>
@@ -1491,6 +1555,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPscConfigPscAutoConnections
 {
     /// <summary>&quot;The consumer network of this consumer endpoint. This must be a resource path that includes both the host project and the network name. For example, projects/project1/global/networks/network1. The consumer host project of this network might be different from the consumer service project.&quot;</summary>
@@ -1504,6 +1569,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurationPscConfig
 {
     /// <summary>List of consumer projects that are allow-listed for PSC connections to this instance. This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).</summary>
@@ -1521,6 +1587,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfiguration
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -1582,6 +1649,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsLocationPreference
 {
     /// <summary>
@@ -1605,6 +1673,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsLocationPref
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsMaintenanceWindow
 {
     /// <summary>Day of week (1-7), starting on Monday</summary>
@@ -1625,6 +1694,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsMaintenanceW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsPasswordValidationPolicy
 {
     /// <summary>Checks if the password is a combination of lowercase, uppercase, numeric, and non-alphanumeric characters.</summary>
@@ -1654,6 +1724,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsPasswordVali
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -1671,6 +1742,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettingsSqlServerAud
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProviderSettings
 {
     /// <summary>
@@ -1809,6 +1881,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProviderSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecInitProvider
 {
     /// <summary>
@@ -1913,6 +1986,7 @@ public partial class V1beta1DatabaseInstanceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1937,6 +2011,7 @@ public enum V1beta1DatabaseInstanceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1953,6 +2028,7 @@ public enum V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1964,6 +2040,7 @@ public enum V1beta1DatabaseInstanceSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1992,6 +2069,7 @@ public partial class V1beta1DatabaseInstanceSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2011,6 +2089,7 @@ public partial class V1beta1DatabaseInstanceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2025,6 +2104,7 @@ public partial class V1beta1DatabaseInstanceSpecWriteConnectionSecretToRef
 /// <summary>DatabaseInstanceSpec defines the desired state of DatabaseInstance</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceSpec
 {
     /// <summary>
@@ -2092,6 +2172,7 @@ public partial class V1beta1DatabaseInstanceSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderClone
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the cloned instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -2117,6 +2198,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderClone
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderDnsNames
 {
     /// <summary>The connection type of the DNS name. Can be either PUBLIC, PRIVATE_SERVICES_ACCESS, or PRIVATE_SERVICE_CONNECT.</summary>
@@ -2134,6 +2216,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderDnsNames
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderIpAddress
 {
     /// <summary>The IPv4 address assigned.</summary>
@@ -2154,6 +2237,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderIpAddress
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderReplicaConfiguration
 {
     /// <summary>
@@ -2230,6 +2314,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderReplicaConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderReplicationCluster
 {
     /// <summary>only field that indicates whether the replica is a DR replica.</summary>
@@ -2243,6 +2328,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderReplicationCluster
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderRestoreBackupContext
 {
     /// <summary>The ID of the backup run to restore from.</summary>
@@ -2263,6 +2349,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderRestoreBackupContext
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsActiveDirectoryConfig
 {
     /// <summary>
@@ -2275,6 +2362,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsActiveDirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsAdvancedMachineFeatures
 {
     /// <summary>The number of threads per core. The value of this flag can be 1 or 2. To disable SMT, set this flag to 1. Only available in Cloud SQL for SQL Server instances. See smt for more details.</summary>
@@ -2284,6 +2372,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsAdvancedMach
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsBackupConfigurationBackupRetentionSettings
 {
     /// <summary>
@@ -2300,6 +2389,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsBackupConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsBackupConfiguration
 {
     /// <summary>Backup retention settings. The configuration is detailed below.</summary>
@@ -2339,6 +2429,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsBackupConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsConnectionPoolConfigFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -2356,6 +2447,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsConnectionPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsConnectionPoolConfig
 {
     /// <summary>:  True if the manager connection pooling configuration is enabled.</summary>
@@ -2368,6 +2460,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsConnectionPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDataCacheConfig
 {
     /// <summary>Whether data cache is enabled for the instance. Defaults to false. Can be used with MYSQL and PostgreSQL only.</summary>
@@ -2377,6 +2470,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDataCacheCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDatabaseFlags
 {
     /// <summary>A name for this whitelist entry.</summary>
@@ -2394,6 +2488,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDatabaseFlag
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDenyMaintenancePeriod
 {
     /// <summary>&quot;deny maintenance period&quot; end date. If the year of the end date is empty, the year of the start date also must be empty. In this case, it means the no maintenance interval recurs every year. The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01</summary>
@@ -2411,6 +2506,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsDenyMaintena
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsInsightsConfig
 {
     /// <summary>True if Query Insights feature is enabled.</summary>
@@ -2436,6 +2532,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsInsightsConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurationAuthorizedNetworks
 {
     /// <summary>
@@ -2460,6 +2557,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurationPscConfigPscAutoConnections
 {
     /// <summary>&quot;The consumer network of this consumer endpoint. This must be a resource path that includes both the host project and the network name. For example, projects/project1/global/networks/network1. The consumer host project of this network might be different from the consumer service project.&quot;</summary>
@@ -2473,6 +2571,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurationPscConfig
 {
     /// <summary>List of consumer projects that are allow-listed for PSC connections to this instance. This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).</summary>
@@ -2490,6 +2589,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfiguration
 {
     /// <summary>The name of the allocated ip range for the private ip CloudSQL instance. For example: &quot;google-managed-services-default&quot;. If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression a-z?.</summary>
@@ -2543,6 +2643,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsIpConfigurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsLocationPreference
 {
     /// <summary>
@@ -2566,6 +2667,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsLocationPref
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsMaintenanceWindow
 {
     /// <summary>Day of week (1-7), starting on Monday</summary>
@@ -2586,6 +2688,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsMaintenanceW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsPasswordValidationPolicy
 {
     /// <summary>Checks if the password is a combination of lowercase, uppercase, numeric, and non-alphanumeric characters.</summary>
@@ -2615,6 +2718,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsPasswordVali
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsSqlServerAuditConfig
 {
     /// <summary>The name of the destination bucket (e.g., gs://mybucket).</summary>
@@ -2632,6 +2736,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettingsSqlServerAud
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProviderSettings
 {
     /// <summary>
@@ -2765,6 +2870,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProviderSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusAtProvider
 {
     /// <summary>The list of all maintenance versions applicable on the instance.</summary>
@@ -2922,6 +3028,7 @@ public partial class V1beta1DatabaseInstanceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatusConditions
 {
     /// <summary>
@@ -2965,6 +3072,7 @@ public partial class V1beta1DatabaseInstanceStatusConditions
 /// <summary>DatabaseInstanceStatus defines the observed state of DatabaseInstance.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatabaseInstanceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2983,9 +3091,13 @@ public partial class V1beta1DatabaseInstanceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DatabaseInstance is the Schema for the DatabaseInstances API. Creates a new SQL database instance in Google Cloud SQL.</summary>
+/// <summary>
+/// DatabaseInstance is the Schema for the DatabaseInstances API. Creates a new SQL database instance in Google Cloud SQL.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatabaseInstance : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DatabaseInstanceSpec>, IStatus<V1beta1DatabaseInstanceStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>Image is the Schema for the Images API. Represents an Image resource.</summary>
+/// <summary>
+/// Image is the Schema for the Images API. Represents an Image resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ImageList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Image>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ImageList : IKubernetesObject<V1ListMeta>, IItems<V1
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ImageSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderGuestOsFeatures
 {
     /// <summary>
@@ -74,6 +80,7 @@ public partial class V1beta1ImageSpecForProviderGuestOsFeatures
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -96,6 +103,7 @@ public partial class V1beta1ImageSpecForProviderImageEncryptionKeyRawKeySecretRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -113,6 +121,7 @@ public partial class V1beta1ImageSpecForProviderImageEncryptionKeyRsaEncryptedKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderImageEncryptionKey
 {
     /// <summary>
@@ -149,6 +158,7 @@ public partial class V1beta1ImageSpecForProviderImageEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderRawDisk
 {
     /// <summary>
@@ -180,6 +190,7 @@ public partial class V1beta1ImageSpecForProviderRawDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateDbs
 {
     /// <summary>
@@ -196,6 +207,7 @@ public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateDbs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateDbxs
 {
     /// <summary>
@@ -212,6 +224,7 @@ public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateDbxs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateKeks
 {
     /// <summary>
@@ -228,6 +241,7 @@ public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStateKeks
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStatePk
 {
     /// <summary>
@@ -244,6 +258,7 @@ public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialStatePk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialState
 {
     /// <summary>
@@ -282,6 +297,7 @@ public partial class V1beta1ImageSpecForProviderShieldedInstanceInitialState
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -305,6 +321,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKeyRawKeySec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -322,6 +339,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKeyRsaEncryp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKey
 {
     /// <summary>
@@ -368,6 +386,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecForProviderSourceDiskRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecForProviderSourceDiskRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -384,6 +403,7 @@ public enum V1beta1ImageSpecForProviderSourceDiskRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecForProviderSourceDiskRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecForProviderSourceDiskRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -395,6 +415,7 @@ public enum V1beta1ImageSpecForProviderSourceDiskRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskRefPolicy
 {
     /// <summary>
@@ -419,6 +440,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskRefPolicy
 /// <summary>Reference to a Disk in compute to populate sourceDisk.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -438,6 +460,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -454,6 +477,7 @@ public enum V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -465,6 +489,7 @@ public enum V1beta1ImageSpecForProviderSourceDiskSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskSelectorPolicy
 {
     /// <summary>
@@ -489,6 +514,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskSelectorPolicy
 /// <summary>Selector for a Disk in compute to populate sourceDisk.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceDiskSelector
 {
     /// <summary>
@@ -514,6 +540,7 @@ public partial class V1beta1ImageSpecForProviderSourceDiskSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -537,6 +564,7 @@ public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKeyRawKeySe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -554,6 +582,7 @@ public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKeyRsaEncry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKey
 {
     /// <summary>
@@ -599,6 +628,7 @@ public partial class V1beta1ImageSpecForProviderSourceImageEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -622,6 +652,7 @@ public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKeyRawKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -639,6 +670,7 @@ public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKeyRsaEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -679,6 +711,7 @@ public partial class V1beta1ImageSpecForProviderSourceSnapshotEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecForProvider
 {
     /// <summary>
@@ -818,6 +851,7 @@ public partial class V1beta1ImageSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderGuestOsFeatures
 {
     /// <summary>
@@ -835,6 +869,7 @@ public partial class V1beta1ImageSpecInitProviderGuestOsFeatures
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -857,6 +892,7 @@ public partial class V1beta1ImageSpecInitProviderImageEncryptionKeyRawKeySecretR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -874,6 +910,7 @@ public partial class V1beta1ImageSpecInitProviderImageEncryptionKeyRsaEncryptedK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderImageEncryptionKey
 {
     /// <summary>
@@ -910,6 +947,7 @@ public partial class V1beta1ImageSpecInitProviderImageEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderRawDisk
 {
     /// <summary>
@@ -941,6 +979,7 @@ public partial class V1beta1ImageSpecInitProviderRawDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateDbs
 {
     /// <summary>
@@ -957,6 +996,7 @@ public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateDbs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateDbxs
 {
     /// <summary>
@@ -973,6 +1013,7 @@ public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateDbx
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateKeks
 {
     /// <summary>
@@ -989,6 +1030,7 @@ public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStateKek
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStatePk
 {
     /// <summary>
@@ -1005,6 +1047,7 @@ public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialStatePk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialState
 {
     /// <summary>
@@ -1043,6 +1086,7 @@ public partial class V1beta1ImageSpecInitProviderShieldedInstanceInitialState
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1066,6 +1110,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKeyRawKeySe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1083,6 +1128,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKeyRsaEncry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKey
 {
     /// <summary>
@@ -1129,6 +1175,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1145,6 +1192,7 @@ public enum V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1156,6 +1204,7 @@ public enum V1beta1ImageSpecInitProviderSourceDiskRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskRefPolicy
 {
     /// <summary>
@@ -1180,6 +1229,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskRefPolicy
 /// <summary>Reference to a Disk in compute to populate sourceDisk.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1199,6 +1249,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1215,6 +1266,7 @@ public enum V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1226,6 +1278,7 @@ public enum V1beta1ImageSpecInitProviderSourceDiskSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskSelectorPolicy
 {
     /// <summary>
@@ -1250,6 +1303,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskSelectorPolicy
 /// <summary>Selector for a Disk in compute to populate sourceDisk.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceDiskSelector
 {
     /// <summary>
@@ -1275,6 +1329,7 @@ public partial class V1beta1ImageSpecInitProviderSourceDiskSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1298,6 +1353,7 @@ public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKeyRawKeyS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1315,6 +1371,7 @@ public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKeyRsaEncr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKey
 {
     /// <summary>
@@ -1360,6 +1417,7 @@ public partial class V1beta1ImageSpecInitProviderSourceImageEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1383,6 +1441,7 @@ public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKeyRawK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1400,6 +1459,7 @@ public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKeyRsaE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -1452,6 +1512,7 @@ public partial class V1beta1ImageSpecInitProviderSourceSnapshotEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecInitProvider
 {
     /// <summary>
@@ -1595,6 +1656,7 @@ public partial class V1beta1ImageSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1619,6 +1681,7 @@ public enum V1beta1ImageSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1635,6 +1698,7 @@ public enum V1beta1ImageSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ImageSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ImageSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1646,6 +1710,7 @@ public enum V1beta1ImageSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1674,6 +1739,7 @@ public partial class V1beta1ImageSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1693,6 +1759,7 @@ public partial class V1beta1ImageSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1707,6 +1774,7 @@ public partial class V1beta1ImageSpecWriteConnectionSecretToRef
 /// <summary>ImageSpec defines the desired state of Image</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageSpec
 {
     /// <summary>
@@ -1774,6 +1842,7 @@ public partial class V1beta1ImageSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderGuestOsFeatures
 {
     /// <summary>
@@ -1786,6 +1855,7 @@ public partial class V1beta1ImageStatusAtProviderGuestOsFeatures
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderImageEncryptionKey
 {
     /// <summary>
@@ -1806,6 +1876,7 @@ public partial class V1beta1ImageStatusAtProviderImageEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderRawDisk
 {
     /// <summary>
@@ -1837,6 +1908,7 @@ public partial class V1beta1ImageStatusAtProviderRawDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateDbs
 {
     /// <summary>
@@ -1853,6 +1925,7 @@ public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateDbs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateDbxs
 {
     /// <summary>
@@ -1869,6 +1942,7 @@ public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateDbx
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateKeks
 {
     /// <summary>
@@ -1885,6 +1959,7 @@ public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStateKek
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStatePk
 {
     /// <summary>
@@ -1901,6 +1976,7 @@ public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialStatePk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialState
 {
     /// <summary>
@@ -1934,6 +2010,7 @@ public partial class V1beta1ImageStatusAtProviderShieldedInstanceInitialState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderSourceDiskEncryptionKey
 {
     /// <summary>
@@ -1957,6 +2034,7 @@ public partial class V1beta1ImageStatusAtProviderSourceDiskEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderSourceImageEncryptionKey
 {
     /// <summary>
@@ -1980,6 +2058,7 @@ public partial class V1beta1ImageStatusAtProviderSourceImageEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProviderSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -2003,6 +2082,7 @@ public partial class V1beta1ImageStatusAtProviderSourceSnapshotEncryptionKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusAtProvider
 {
     /// <summary>
@@ -2171,6 +2251,7 @@ public partial class V1beta1ImageStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatusConditions
 {
     /// <summary>
@@ -2214,6 +2295,7 @@ public partial class V1beta1ImageStatusConditions
 /// <summary>ImageStatus defines the observed state of Image.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ImageStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2232,9 +2314,13 @@ public partial class V1beta1ImageStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Image is the Schema for the Images API. Represents an Image resource.</summary>
+/// <summary>
+/// Image is the Schema for the Images API. Represents an Image resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Image : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ImageSpec>, IStatus<V1beta1ImageStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.notebooks.gcp.upbound.io;
-/// <summary>Runtime is the Schema for the Runtimes API. A Cloud AI Platform Notebook runtime.</summary>
+/// <summary>
+/// Runtime is the Schema for the Runtimes API. A Cloud AI Platform Notebook runtime.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RuntimeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Runtime>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RuntimeList : IKubernetesObject<V1ListMeta>, IItems<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RuntimeSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RuntimeSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RuntimeSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderAccessConfig
 {
     /// <summary>
@@ -76,6 +82,7 @@ public partial class V1beta1RuntimeSpecForProviderAccessConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderSoftwareConfigKernels
 {
     /// <summary>
@@ -92,6 +99,7 @@ public partial class V1beta1RuntimeSpecForProviderSoftwareConfigKernels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderSoftwareConfig
 {
     /// <summary>
@@ -155,6 +163,7 @@ public partial class V1beta1RuntimeSpecForProviderSoftwareConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigAcceleratorConfig
 {
     /// <summary>Count of cores of this accelerator.</summary>
@@ -171,6 +180,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigContainerImages
 {
     /// <summary>
@@ -187,6 +197,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigDataDiskInitializeParams
 {
     /// <summary>Provide this property when creating the disk.</summary>
@@ -233,6 +244,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigDataDisk
 {
     /// <summary>
@@ -283,6 +295,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigEncryptionConfig
 {
     /// <summary>
@@ -297,6 +310,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfigShieldedInstanceConfig
 {
     /// <summary>
@@ -330,6 +344,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineConfig
 {
     /// <summary>
@@ -445,6 +460,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachineVirtualMachineCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProviderVirtualMachine
 {
     /// <summary>
@@ -457,6 +473,7 @@ public partial class V1beta1RuntimeSpecForProviderVirtualMachine
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecForProvider
 {
     /// <summary>
@@ -505,6 +522,7 @@ public partial class V1beta1RuntimeSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderAccessConfig
 {
     /// <summary>
@@ -524,6 +542,7 @@ public partial class V1beta1RuntimeSpecInitProviderAccessConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderSoftwareConfigKernels
 {
     /// <summary>
@@ -540,6 +559,7 @@ public partial class V1beta1RuntimeSpecInitProviderSoftwareConfigKernels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderSoftwareConfig
 {
     /// <summary>
@@ -603,6 +623,7 @@ public partial class V1beta1RuntimeSpecInitProviderSoftwareConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigAcceleratorConfig
 {
     /// <summary>Count of cores of this accelerator.</summary>
@@ -619,6 +640,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigContainerImages
 {
     /// <summary>
@@ -635,6 +657,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigDataDiskInitializeParams
 {
     /// <summary>Provide this property when creating the disk.</summary>
@@ -681,6 +704,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigDataDisk
 {
     /// <summary>
@@ -731,6 +755,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigEncryptionConfig
 {
     /// <summary>
@@ -745,6 +770,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfigShieldedInstanceConfig
 {
     /// <summary>
@@ -778,6 +804,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineConfig
 {
     /// <summary>
@@ -893,6 +920,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProviderVirtualMachine
 {
     /// <summary>
@@ -917,6 +945,7 @@ public partial class V1beta1RuntimeSpecInitProviderVirtualMachine
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecInitProvider
 {
     /// <summary>
@@ -965,6 +994,7 @@ public partial class V1beta1RuntimeSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RuntimeSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RuntimeSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -989,6 +1019,7 @@ public enum V1beta1RuntimeSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RuntimeSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RuntimeSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1005,6 +1036,7 @@ public enum V1beta1RuntimeSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RuntimeSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RuntimeSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1016,6 +1048,7 @@ public enum V1beta1RuntimeSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1044,6 +1077,7 @@ public partial class V1beta1RuntimeSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1063,6 +1097,7 @@ public partial class V1beta1RuntimeSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1077,6 +1112,7 @@ public partial class V1beta1RuntimeSpecWriteConnectionSecretToRef
 /// <summary>RuntimeSpec defines the desired state of Runtime</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeSpec
 {
     /// <summary>
@@ -1144,6 +1180,7 @@ public partial class V1beta1RuntimeSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderAccessConfig
 {
     /// <summary>
@@ -1170,6 +1207,7 @@ public partial class V1beta1RuntimeStatusAtProviderAccessConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderMetrics
 {
     /// <summary>
@@ -1183,6 +1221,7 @@ public partial class V1beta1RuntimeStatusAtProviderMetrics
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderSoftwareConfigKernels
 {
     /// <summary>
@@ -1199,6 +1238,7 @@ public partial class V1beta1RuntimeStatusAtProviderSoftwareConfigKernels
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderSoftwareConfig
 {
     /// <summary>
@@ -1269,6 +1309,7 @@ public partial class V1beta1RuntimeStatusAtProviderSoftwareConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigAcceleratorConfig
 {
     /// <summary>Count of cores of this accelerator.</summary>
@@ -1285,6 +1326,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigContainerImages
 {
     /// <summary>
@@ -1301,6 +1343,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigDataDiskInitializeParams
 {
     /// <summary>Provide this property when creating the disk.</summary>
@@ -1347,6 +1390,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigDataDisk
 {
     /// <summary>
@@ -1464,6 +1508,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigEncryptionConfig
 {
     /// <summary>
@@ -1478,6 +1523,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfigShieldedInstanceConfig
 {
     /// <summary>
@@ -1511,6 +1557,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineConfig
 {
     /// <summary>
@@ -1642,6 +1689,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachineVirtualMachineC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProviderVirtualMachine
 {
     /// <summary>
@@ -1668,6 +1716,7 @@ public partial class V1beta1RuntimeStatusAtProviderVirtualMachine
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusAtProvider
 {
     /// <summary>
@@ -1751,6 +1800,7 @@ public partial class V1beta1RuntimeStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatusConditions
 {
     /// <summary>
@@ -1794,6 +1844,7 @@ public partial class V1beta1RuntimeStatusConditions
 /// <summary>RuntimeStatus defines the observed state of Runtime.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RuntimeStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1812,9 +1863,13 @@ public partial class V1beta1RuntimeStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Runtime is the Schema for the Runtimes API. A Cloud AI Platform Notebook runtime.</summary>
+/// <summary>
+/// Runtime is the Schema for the Runtimes API. A Cloud AI Platform Notebook runtime.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Runtime : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RuntimeSpec>, IStatus<V1beta1RuntimeStatus?>
 {

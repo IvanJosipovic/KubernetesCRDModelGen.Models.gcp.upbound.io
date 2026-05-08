@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>ForwardingRule is the Schema for the ForwardingRules API. A ForwardingRule resource.</summary>
+/// <summary>
+/// ForwardingRule is the Schema for the ForwardingRules API. A ForwardingRule resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ForwardingRuleList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ForwardingRule>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ForwardingRuleList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1ForwardingRuleSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceRefPolicy
 /// <summary>Reference to a RegionBackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceSelectorP
 /// <summary>Selector for a RegionBackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderBackendServiceSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderIpAddressRefPolicy
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderIpAddressRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderIpAddressRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderIpAddressSelectorPolicy
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderIpAddressSelector
 {
     /// <summary>
@@ -357,6 +378,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderIpAddressSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -373,6 +395,7 @@ public enum V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -384,6 +407,7 @@ public enum V1beta1ForwardingRuleSpecForProviderNetworkRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderNetworkRefPolicy
 {
     /// <summary>
@@ -408,6 +432,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderNetworkRefPolicy
 /// <summary>Reference to a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -427,6 +452,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderNetworkRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -443,6 +469,7 @@ public enum V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -454,6 +481,7 @@ public enum V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicy
 {
     /// <summary>
@@ -478,6 +506,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderNetworkSelectorPolicy
 /// <summary>Selector for a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderNetworkSelector
 {
     /// <summary>
@@ -498,6 +527,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderNetworkSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderServiceDirectoryRegistrations
 {
     /// <summary>Service Directory namespace to register the forwarding rule under.</summary>
@@ -517,6 +547,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderServiceDirectoryRegistr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -533,6 +564,7 @@ public enum V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -544,6 +576,7 @@ public enum V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicy
 {
     /// <summary>
@@ -568,6 +601,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkRefPolicy
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -587,6 +621,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -603,6 +638,7 @@ public enum V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -614,6 +650,7 @@ public enum V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -638,6 +675,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkSelectorPolic
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkSelector
 {
     /// <summary>
@@ -664,6 +702,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderSubnetworkSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -680,6 +719,7 @@ public enum V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -691,6 +731,7 @@ public enum V1beta1ForwardingRuleSpecForProviderTargetRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderTargetRefPolicy
 {
     /// <summary>
@@ -715,6 +756,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderTargetRefPolicy
 /// <summary>Reference to a RegionTargetHTTPProxy in compute to populate target.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderTargetRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -734,6 +776,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderTargetRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -750,6 +793,7 @@ public enum V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -761,6 +805,7 @@ public enum V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicy
 {
     /// <summary>
@@ -785,6 +830,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderTargetSelectorPolicy
 /// <summary>Selector for a RegionTargetHTTPProxy in compute to populate target.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProviderTargetSelector
 {
     /// <summary>
@@ -805,6 +851,7 @@ public partial class V1beta1ForwardingRuleSpecForProviderTargetSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecForProvider
 {
     /// <summary>
@@ -1081,6 +1128,7 @@ public partial class V1beta1ForwardingRuleSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1097,6 +1145,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1108,6 +1157,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolicy
 {
     /// <summary>
@@ -1132,6 +1182,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceRefPolic
 /// <summary>Reference to a RegionBackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1151,6 +1202,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1167,6 +1219,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1178,6 +1231,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -1202,6 +1256,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceSelector
 /// <summary>Selector for a RegionBackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceSelector
 {
     /// <summary>
@@ -1228,6 +1283,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderBackendServiceSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1244,6 +1300,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1255,6 +1312,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicy
 {
     /// <summary>
@@ -1279,6 +1337,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressRefPolicy
 /// <summary>Reference to a Address in compute to populate ipAddress.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1298,6 +1357,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1314,6 +1374,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1325,6 +1386,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolicy
 {
     /// <summary>
@@ -1349,6 +1411,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressSelectorPolic
 /// <summary>Selector for a Address in compute to populate ipAddress.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressSelector
 {
     /// <summary>
@@ -1375,6 +1438,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderIpAddressSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1391,6 +1455,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1402,6 +1467,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicy
 {
     /// <summary>
@@ -1426,6 +1492,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderNetworkRefPolicy
 /// <summary>Reference to a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1445,6 +1512,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderNetworkRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1461,6 +1529,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1472,6 +1541,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicyResolveEnu
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicy
 {
     /// <summary>
@@ -1496,6 +1566,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderNetworkSelectorPolicy
 /// <summary>Selector for a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderNetworkSelector
 {
     /// <summary>
@@ -1516,6 +1587,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderNetworkSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderServiceDirectoryRegistrations
 {
     /// <summary>Service Directory namespace to register the forwarding rule under.</summary>
@@ -1535,6 +1607,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderServiceDirectoryRegist
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1551,6 +1624,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1562,6 +1636,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicy
 {
     /// <summary>
@@ -1586,6 +1661,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkRefPolicy
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1605,6 +1681,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1621,6 +1698,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1632,6 +1710,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicyResolve
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -1656,6 +1735,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkSelectorPoli
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkSelector
 {
     /// <summary>
@@ -1682,6 +1762,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderSubnetworkSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1698,6 +1779,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1709,6 +1791,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderTargetRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderTargetRefPolicy
 {
     /// <summary>
@@ -1733,6 +1816,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderTargetRefPolicy
 /// <summary>Reference to a RegionTargetHTTPProxy in compute to populate target.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderTargetRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1752,6 +1836,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderTargetRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1768,6 +1853,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1779,6 +1865,7 @@ public enum V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicy
 {
     /// <summary>
@@ -1803,6 +1890,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderTargetSelectorPolicy
 /// <summary>Selector for a RegionTargetHTTPProxy in compute to populate target.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProviderTargetSelector
 {
     /// <summary>
@@ -1835,6 +1923,7 @@ public partial class V1beta1ForwardingRuleSpecInitProviderTargetSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecInitProvider
 {
     /// <summary>
@@ -2102,6 +2191,7 @@ public partial class V1beta1ForwardingRuleSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2126,6 +2216,7 @@ public enum V1beta1ForwardingRuleSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2142,6 +2233,7 @@ public enum V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2153,6 +2245,7 @@ public enum V1beta1ForwardingRuleSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2181,6 +2274,7 @@ public partial class V1beta1ForwardingRuleSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2200,6 +2294,7 @@ public partial class V1beta1ForwardingRuleSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2214,6 +2309,7 @@ public partial class V1beta1ForwardingRuleSpecWriteConnectionSecretToRef
 /// <summary>ForwardingRuleSpec defines the desired state of ForwardingRule</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleSpec
 {
     /// <summary>
@@ -2281,6 +2377,7 @@ public partial class V1beta1ForwardingRuleSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleStatusAtProviderServiceDirectoryRegistrations
 {
     /// <summary>Service Directory namespace to register the forwarding rule under.</summary>
@@ -2294,6 +2391,7 @@ public partial class V1beta1ForwardingRuleStatusAtProviderServiceDirectoryRegist
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleStatusAtProvider
 {
     /// <summary>
@@ -2578,6 +2676,7 @@ public partial class V1beta1ForwardingRuleStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleStatusConditions
 {
     /// <summary>
@@ -2621,6 +2720,7 @@ public partial class V1beta1ForwardingRuleStatusConditions
 /// <summary>ForwardingRuleStatus defines the observed state of ForwardingRule.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ForwardingRuleStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2639,9 +2739,13 @@ public partial class V1beta1ForwardingRuleStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ForwardingRule is the Schema for the ForwardingRules API. A ForwardingRule resource.</summary>
+/// <summary>
+/// ForwardingRule is the Schema for the ForwardingRules API. A ForwardingRule resource.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ForwardingRule : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ForwardingRuleSpec>, IStatus<V1beta1ForwardingRuleStatus?>
 {

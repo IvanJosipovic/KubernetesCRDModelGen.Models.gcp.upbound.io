@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.eventarc.gcp.upbound.io;
-/// <summary>Trigger is the Schema for the Triggers API. The Eventarc Trigger resource</summary>
+/// <summary>
+/// Trigger is the Schema for the Triggers API. The Eventarc Trigger resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TriggerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Trigger>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1TriggerList : IKubernetesObject<V1ListMeta>, IItems<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1TriggerSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServ
 /// <summary>Reference to a Service in cloudrun to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServ
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServ
 /// <summary>Selector for a Service in cloudrun to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServiceSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationCloudRunServiceServ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationCloudRunService
 {
     /// <summary>Optional. The relative path on the GKE service the events should be sent to. The value must conform to the definition of a URI path segment (section 3.3 of RFC2396). Examples: &quot;/route&quot;, &quot;route&quot;, &quot;route/subroute&quot;.</summary>
@@ -229,6 +243,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationCloudRunService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationGke
 {
     /// <summary>Required. The name of the cluster the GKE service is running in. The cluster must be running in the same project as the trigger being created.</summary>
@@ -254,6 +269,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationGke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationHttpEndpoint
 {
     /// <summary>Required. The URI of the HTTP enpdoint. The value must be a RFC2396 URI string. Examples: http://10.10.10.8:80/route, http://svc.us-central1.p.local:8080/. Only HTTP and HTTPS protocols are supported. The host can be either a static IP addressable from the VPC specified by the network config, or an internal DNS hostname of the service resolvable via Cloud DNS.</summary>
@@ -263,6 +279,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationHttpEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestinationNetworkConfig
 {
     /// <summary>Required. Name of the NetworkAttachment that allows access to the destination VPC. Format: projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}</summary>
@@ -272,6 +289,7 @@ public partial class V1beta1TriggerSpecForProviderDestinationNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderDestination
 {
     /// <summary>Cloud Run fully-managed service that receives the events. The service should be running in the same project of the trigger.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1TriggerSpecForProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderMatchingCriteria
 {
     /// <summary>Required. The name of a CloudEvents attribute. Currently, only a subset of attributes are supported for filtering. All triggers MUST provide a filter for the &apos;type&apos; attribute.</summary>
@@ -320,6 +339,7 @@ public partial class V1beta1TriggerSpecForProviderMatchingCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -336,6 +356,7 @@ public enum V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -347,6 +368,7 @@ public enum V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicy
 {
     /// <summary>
@@ -371,6 +393,7 @@ public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicRefPolicy
 /// <summary>Reference to a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -390,6 +413,7 @@ public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -406,6 +430,7 @@ public enum V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -417,6 +442,7 @@ public enum V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPolicy
 {
     /// <summary>
@@ -441,6 +467,7 @@ public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicSelectorPo
 /// <summary>Selector for a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicSelector
 {
     /// <summary>
@@ -461,6 +488,7 @@ public partial class V1beta1TriggerSpecForProviderTransportPubsubTopicSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransportPubsub
 {
     /// <summary>Optional. The name of the Pub/Sub topic created and managed by Eventarc system as a transport for the event delivery. Format: projects/{PROJECT_ID}/topics/{TOPIC_NAME}. You may set an existing topic for triggers of the type google.cloud.pubsub.topic.v1.messagePublished only. The topic you provide here will not be deleted by Eventarc at trigger deletion.</summary>
@@ -478,6 +506,7 @@ public partial class V1beta1TriggerSpecForProviderTransportPubsub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProviderTransport
 {
     /// <summary>The Pub/Sub topic and subscription used by Eventarc as delivery intermediary.</summary>
@@ -487,6 +516,7 @@ public partial class V1beta1TriggerSpecForProviderTransport
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecForProvider
 {
     /// <summary>Optional. The name of the channel associated with the trigger in projects/{project}/locations/{location}/channels/{channel} format. You must provide a channel to receive events from Eventarc SaaS partners.</summary>
@@ -534,6 +564,7 @@ public partial class V1beta1TriggerSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -550,6 +581,7 @@ public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -561,6 +593,7 @@ public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRefPolicy
 {
     /// <summary>
@@ -585,6 +618,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceSer
 /// <summary>Reference to a Service in cloudrun to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -604,6 +638,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceSer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -620,6 +655,7 @@ public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -631,6 +667,7 @@ public enum V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelectorPolicy
 {
     /// <summary>
@@ -655,6 +692,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceSer
 /// <summary>Selector for a Service in cloudrun to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceServiceSelector
 {
     /// <summary>
@@ -675,6 +713,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunServiceSer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunService
 {
     /// <summary>Optional. The relative path on the GKE service the events should be sent to. The value must conform to the definition of a URI path segment (section 3.3 of RFC2396). Examples: &quot;/route&quot;, &quot;route&quot;, &quot;route/subroute&quot;.</summary>
@@ -700,6 +739,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationCloudRunService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationGke
 {
     /// <summary>Required. The name of the cluster the GKE service is running in. The cluster must be running in the same project as the trigger being created.</summary>
@@ -721,6 +761,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationGke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationHttpEndpoint
 {
     /// <summary>Required. The URI of the HTTP enpdoint. The value must be a RFC2396 URI string. Examples: http://10.10.10.8:80/route, http://svc.us-central1.p.local:8080/. Only HTTP and HTTPS protocols are supported. The host can be either a static IP addressable from the VPC specified by the network config, or an internal DNS hostname of the service resolvable via Cloud DNS.</summary>
@@ -730,6 +771,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationHttpEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestinationNetworkConfig
 {
     /// <summary>Required. Name of the NetworkAttachment that allows access to the destination VPC. Format: projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}</summary>
@@ -739,6 +781,7 @@ public partial class V1beta1TriggerSpecInitProviderDestinationNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderDestination
 {
     /// <summary>Cloud Run fully-managed service that receives the events. The service should be running in the same project of the trigger.</summary>
@@ -764,6 +807,7 @@ public partial class V1beta1TriggerSpecInitProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderMatchingCriteria
 {
     /// <summary>Required. The name of a CloudEvents attribute. Currently, only a subset of attributes are supported for filtering. All triggers MUST provide a filter for the &apos;type&apos; attribute.</summary>
@@ -787,6 +831,7 @@ public partial class V1beta1TriggerSpecInitProviderMatchingCriteria
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -803,6 +848,7 @@ public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -814,6 +860,7 @@ public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicyResolveEn
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicy
 {
     /// <summary>
@@ -838,6 +885,7 @@ public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicRefPolicy
 /// <summary>Reference to a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -857,6 +905,7 @@ public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -873,6 +922,7 @@ public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -884,6 +934,7 @@ public enum V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicyReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorPolicy
 {
     /// <summary>
@@ -908,6 +959,7 @@ public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicSelectorP
 /// <summary>Selector for a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicSelector
 {
     /// <summary>
@@ -928,6 +980,7 @@ public partial class V1beta1TriggerSpecInitProviderTransportPubsubTopicSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransportPubsub
 {
     /// <summary>Optional. The name of the Pub/Sub topic created and managed by Eventarc system as a transport for the event delivery. Format: projects/{PROJECT_ID}/topics/{TOPIC_NAME}. You may set an existing topic for triggers of the type google.cloud.pubsub.topic.v1.messagePublished only. The topic you provide here will not be deleted by Eventarc at trigger deletion.</summary>
@@ -945,6 +998,7 @@ public partial class V1beta1TriggerSpecInitProviderTransportPubsub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProviderTransport
 {
     /// <summary>The Pub/Sub topic and subscription used by Eventarc as delivery intermediary.</summary>
@@ -966,6 +1020,7 @@ public partial class V1beta1TriggerSpecInitProviderTransport
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecInitProvider
 {
     /// <summary>Optional. The name of the channel associated with the trigger in projects/{project}/locations/{location}/channels/{channel} format. You must provide a channel to receive events from Eventarc SaaS partners.</summary>
@@ -1007,6 +1062,7 @@ public partial class V1beta1TriggerSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1031,6 +1087,7 @@ public enum V1beta1TriggerSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1047,6 +1104,7 @@ public enum V1beta1TriggerSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TriggerSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TriggerSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1058,6 +1116,7 @@ public enum V1beta1TriggerSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1086,6 +1145,7 @@ public partial class V1beta1TriggerSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1105,6 +1165,7 @@ public partial class V1beta1TriggerSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1119,6 +1180,7 @@ public partial class V1beta1TriggerSpecWriteConnectionSecretToRef
 /// <summary>TriggerSpec defines the desired state of Trigger</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerSpec
 {
     /// <summary>
@@ -1186,6 +1248,7 @@ public partial class V1beta1TriggerSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderDestinationCloudRunService
 {
     /// <summary>Optional. The relative path on the GKE service the events should be sent to. The value must conform to the definition of a URI path segment (section 3.3 of RFC2396). Examples: &quot;/route&quot;, &quot;route&quot;, &quot;route/subroute&quot;.</summary>
@@ -1203,6 +1266,7 @@ public partial class V1beta1TriggerStatusAtProviderDestinationCloudRunService
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderDestinationGke
 {
     /// <summary>Required. The name of the cluster the GKE service is running in. The cluster must be running in the same project as the trigger being created.</summary>
@@ -1228,6 +1292,7 @@ public partial class V1beta1TriggerStatusAtProviderDestinationGke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderDestinationHttpEndpoint
 {
     /// <summary>Required. The URI of the HTTP enpdoint. The value must be a RFC2396 URI string. Examples: http://10.10.10.8:80/route, http://svc.us-central1.p.local:8080/. Only HTTP and HTTPS protocols are supported. The host can be either a static IP addressable from the VPC specified by the network config, or an internal DNS hostname of the service resolvable via Cloud DNS.</summary>
@@ -1237,6 +1302,7 @@ public partial class V1beta1TriggerStatusAtProviderDestinationHttpEndpoint
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderDestinationNetworkConfig
 {
     /// <summary>Required. Name of the NetworkAttachment that allows access to the destination VPC. Format: projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}</summary>
@@ -1246,6 +1312,7 @@ public partial class V1beta1TriggerStatusAtProviderDestinationNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderDestination
 {
     /// <summary>The Cloud Function resource name. Only Cloud Functions V2 is supported. Format projects/{project}/locations/{location}/functions/{function} This is a read-only field. [WARNING] Creating Cloud Functions V2 triggers is only supported via the Cloud Functions product. An error will be returned if the user sets this value.</summary>
@@ -1275,6 +1342,7 @@ public partial class V1beta1TriggerStatusAtProviderDestination
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderMatchingCriteria
 {
     /// <summary>Required. The name of a CloudEvents attribute. Currently, only a subset of attributes are supported for filtering. All triggers MUST provide a filter for the &apos;type&apos; attribute.</summary>
@@ -1292,6 +1360,7 @@ public partial class V1beta1TriggerStatusAtProviderMatchingCriteria
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderTransportPubsub
 {
     /// <summary>
@@ -1308,6 +1377,7 @@ public partial class V1beta1TriggerStatusAtProviderTransportPubsub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProviderTransport
 {
     /// <summary>The Pub/Sub topic and subscription used by Eventarc as delivery intermediary.</summary>
@@ -1317,6 +1387,7 @@ public partial class V1beta1TriggerStatusAtProviderTransport
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusAtProvider
 {
     /// <summary>Optional. The name of the channel associated with the trigger in projects/{project}/locations/{location}/channels/{channel} format. You must provide a channel to receive events from Eventarc SaaS partners.</summary>
@@ -1390,6 +1461,7 @@ public partial class V1beta1TriggerStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatusConditions
 {
     /// <summary>
@@ -1433,6 +1505,7 @@ public partial class V1beta1TriggerStatusConditions
 /// <summary>TriggerStatus defines the observed state of Trigger.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TriggerStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1451,9 +1524,13 @@ public partial class V1beta1TriggerStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Trigger is the Schema for the Triggers API. The Eventarc Trigger resource</summary>
+/// <summary>
+/// Trigger is the Schema for the Triggers API. The Eventarc Trigger resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Trigger : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TriggerSpec>, IStatus<V1beta1TriggerStatus?>
 {

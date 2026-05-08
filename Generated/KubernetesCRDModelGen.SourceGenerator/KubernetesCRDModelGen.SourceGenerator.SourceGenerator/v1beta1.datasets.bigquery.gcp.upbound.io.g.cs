@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
-/// <summary>Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.</summary>
+/// <summary>
+/// Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DatasetList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Dataset>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DatasetList : IKubernetesObject<V1ListMeta>, IItems<
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1DatasetSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessCondition
 {
     /// <summary>A user-friendly description of the dataset</summary>
@@ -96,6 +102,7 @@ public partial class V1beta1DatasetSpecForProviderAccessCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -112,6 +119,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -123,6 +131,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRefPolicy
 {
     /// <summary>
@@ -147,6 +156,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdR
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -166,6 +176,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -182,6 +193,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -193,6 +205,7 @@ public enum V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -217,6 +230,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdS
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdSelector
 {
     /// <summary>
@@ -237,6 +251,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDatasetDatasetIdS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDatasetDataset
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -258,6 +273,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDatasetDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessDataset
 {
     /// <summary>
@@ -283,6 +299,7 @@ public partial class V1beta1DatasetSpecForProviderAccessDataset
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -299,6 +316,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -310,6 +328,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolicy
 {
     /// <summary>
@@ -334,6 +353,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRefPolic
 /// <summary>Reference to a Routine in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -353,6 +373,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -369,6 +390,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -380,6 +402,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -404,6 +427,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 /// <summary>Selector for a Routine in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 {
     /// <summary>
@@ -430,6 +454,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineDatasetIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -446,6 +471,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -457,6 +483,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolicy
 {
     /// <summary>
@@ -481,6 +508,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRefPolic
 /// <summary>Reference to a Routine in bigquery to populate projectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -500,6 +528,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -516,6 +545,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -527,6 +557,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelectorPolicy
 {
     /// <summary>
@@ -551,6 +582,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 /// <summary>Selector for a Routine in bigquery to populate projectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 {
     /// <summary>
@@ -577,6 +609,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineProjectIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -593,6 +626,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -604,6 +638,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolicy
 {
     /// <summary>
@@ -628,6 +663,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRefPolic
 /// <summary>Reference to a Routine in bigquery to populate routineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -647,6 +683,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -663,6 +700,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -674,6 +712,7 @@ public enum V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelectorPolicy
 {
     /// <summary>
@@ -698,6 +737,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 /// <summary>Selector for a Routine in bigquery to populate routineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 {
     /// <summary>
@@ -718,6 +758,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutineRoutineIdSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessRoutine
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -769,6 +810,7 @@ public partial class V1beta1DatasetSpecForProviderAccessRoutine
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -785,6 +827,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -796,6 +839,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicy
 {
     /// <summary>
@@ -820,6 +864,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRefPolicy
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate userByEmail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -839,6 +884,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -855,6 +901,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -866,6 +913,7 @@ public enum V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolicy
 {
     /// <summary>
@@ -890,6 +938,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelectorPolic
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate userByEmail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelector
 {
     /// <summary>
@@ -910,6 +959,7 @@ public partial class V1beta1DatasetSpecForProviderAccessUserByEmailSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccessView
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -931,6 +981,7 @@ public partial class V1beta1DatasetSpecForProviderAccessView
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderAccess
 {
     /// <summary>
@@ -1026,6 +1077,7 @@ public partial class V1beta1DatasetSpecForProviderAccess
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1042,6 +1094,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1053,6 +1106,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -1077,6 +1131,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1096,6 +1151,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1112,6 +1168,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1123,6 +1180,7 @@ public enum V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNam
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -1147,6 +1205,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfigurationKmsKeyNameSelector
 {
     /// <summary>
@@ -1167,6 +1226,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 {
     /// <summary>
@@ -1188,6 +1248,7 @@ public partial class V1beta1DatasetSpecForProviderDefaultEncryptionConfiguration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderExternalCatalogDatasetOptions
 {
     /// <summary>
@@ -1207,6 +1268,7 @@ public partial class V1beta1DatasetSpecForProviderExternalCatalogDatasetOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProviderExternalDatasetReference
 {
     /// <summary>
@@ -1223,6 +1285,7 @@ public partial class V1beta1DatasetSpecForProviderExternalDatasetReference
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecForProvider
 {
     /// <summary>
@@ -1353,6 +1416,7 @@ public partial class V1beta1DatasetSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessCondition
 {
     /// <summary>A user-friendly description of the dataset</summary>
@@ -1392,6 +1456,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessCondition
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1408,6 +1473,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1419,6 +1485,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRefPolicy
 {
     /// <summary>
@@ -1443,6 +1510,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1462,6 +1530,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1478,6 +1547,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1489,6 +1559,7 @@ public enum V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -1513,6 +1584,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetIdSelector
 {
     /// <summary>
@@ -1533,6 +1605,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDatasetDatasetId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDatasetDataset
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -1554,6 +1627,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDatasetDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessDataset
 {
     /// <summary>
@@ -1579,6 +1653,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessDataset
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1595,6 +1670,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1606,6 +1682,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPolicy
 {
     /// <summary>
@@ -1630,6 +1707,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRefPoli
 /// <summary>Reference to a Routine in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1649,6 +1727,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1665,6 +1744,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1676,6 +1756,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -1700,6 +1781,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelecto
 /// <summary>Selector for a Routine in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelector
 {
     /// <summary>
@@ -1726,6 +1808,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineDatasetIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1742,6 +1825,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1753,6 +1837,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPolicy
 {
     /// <summary>
@@ -1777,6 +1862,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRefPoli
 /// <summary>Reference to a Routine in bigquery to populate projectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1796,6 +1882,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1812,6 +1899,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1823,6 +1911,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelectorPolicy
 {
     /// <summary>
@@ -1847,6 +1936,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelecto
 /// <summary>Selector for a Routine in bigquery to populate projectId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelector
 {
     /// <summary>
@@ -1873,6 +1963,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineProjectIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1889,6 +1980,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1900,6 +1992,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPolicy
 {
     /// <summary>
@@ -1924,6 +2017,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRefPoli
 /// <summary>Reference to a Routine in bigquery to populate routineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1943,6 +2037,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1959,6 +2054,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1970,6 +2066,7 @@ public enum V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelectorPolicy
 {
     /// <summary>
@@ -1994,6 +2091,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelecto
 /// <summary>Selector for a Routine in bigquery to populate routineId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelector
 {
     /// <summary>
@@ -2014,6 +2112,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutineRoutineIdSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessRoutine
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2065,6 +2164,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessRoutine
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2081,6 +2181,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2092,6 +2193,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicy
 {
     /// <summary>
@@ -2116,6 +2218,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRefPolicy
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate userByEmail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2135,6 +2238,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2151,6 +2255,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2162,6 +2267,7 @@ public enum V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicyResolve
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPolicy
 {
     /// <summary>
@@ -2186,6 +2292,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelectorPoli
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate userByEmail.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelector
 {
     /// <summary>
@@ -2206,6 +2313,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessUserByEmailSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccessView
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2227,6 +2335,7 @@ public partial class V1beta1DatasetSpecInitProviderAccessView
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderAccess
 {
     /// <summary>
@@ -2322,6 +2431,7 @@ public partial class V1beta1DatasetSpecInitProviderAccess
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2338,6 +2448,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2349,6 +2460,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -2373,6 +2485,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2392,6 +2505,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2408,6 +2522,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2419,6 +2534,7 @@ public enum V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNa
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -2443,6 +2559,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfigurationKmsKeyNameSelector
 {
     /// <summary>
@@ -2463,6 +2580,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguration
 {
     /// <summary>
@@ -2484,6 +2602,7 @@ public partial class V1beta1DatasetSpecInitProviderDefaultEncryptionConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderExternalCatalogDatasetOptions
 {
     /// <summary>
@@ -2503,6 +2622,7 @@ public partial class V1beta1DatasetSpecInitProviderExternalCatalogDatasetOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProviderExternalDatasetReference
 {
     /// <summary>
@@ -2531,6 +2651,7 @@ public partial class V1beta1DatasetSpecInitProviderExternalDatasetReference
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecInitProvider
 {
     /// <summary>
@@ -2658,6 +2779,7 @@ public partial class V1beta1DatasetSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2682,6 +2804,7 @@ public enum V1beta1DatasetSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2698,6 +2821,7 @@ public enum V1beta1DatasetSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DatasetSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DatasetSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2709,6 +2833,7 @@ public enum V1beta1DatasetSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2737,6 +2862,7 @@ public partial class V1beta1DatasetSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2756,6 +2882,7 @@ public partial class V1beta1DatasetSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2770,6 +2897,7 @@ public partial class V1beta1DatasetSpecWriteConnectionSecretToRef
 /// <summary>DatasetSpec defines the desired state of Dataset</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetSpec
 {
     /// <summary>
@@ -2837,6 +2965,7 @@ public partial class V1beta1DatasetSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccessCondition
 {
     /// <summary>A user-friendly description of the dataset</summary>
@@ -2870,6 +2999,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessCondition
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccessDatasetDataset
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2883,6 +3013,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessDatasetDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccessDataset
 {
     /// <summary>
@@ -2902,6 +3033,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccessRoutine
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2923,6 +3055,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessRoutine
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccessView
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2944,6 +3077,7 @@ public partial class V1beta1DatasetStatusAtProviderAccessView
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderAccess
 {
     /// <summary>
@@ -3025,6 +3159,7 @@ public partial class V1beta1DatasetStatusAtProviderAccess
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderDefaultEncryptionConfiguration
 {
     /// <summary>
@@ -3038,6 +3173,7 @@ public partial class V1beta1DatasetStatusAtProviderDefaultEncryptionConfiguratio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderExternalCatalogDatasetOptions
 {
     /// <summary>
@@ -3057,6 +3193,7 @@ public partial class V1beta1DatasetStatusAtProviderExternalCatalogDatasetOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProviderExternalDatasetReference
 {
     /// <summary>
@@ -3073,6 +3210,7 @@ public partial class V1beta1DatasetStatusAtProviderExternalDatasetReference
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusAtProvider
 {
     /// <summary>
@@ -3241,6 +3379,7 @@ public partial class V1beta1DatasetStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatusConditions
 {
     /// <summary>
@@ -3284,6 +3423,7 @@ public partial class V1beta1DatasetStatusConditions
 /// <summary>DatasetStatus defines the observed state of Dataset.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DatasetStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3302,9 +3442,13 @@ public partial class V1beta1DatasetStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.</summary>
+/// <summary>
+/// Dataset is the Schema for the Datasets API. Datasets allow you to organize and control access to your tables.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Dataset : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DatasetSpec>, IStatus<V1beta1DatasetStatus?>
 {

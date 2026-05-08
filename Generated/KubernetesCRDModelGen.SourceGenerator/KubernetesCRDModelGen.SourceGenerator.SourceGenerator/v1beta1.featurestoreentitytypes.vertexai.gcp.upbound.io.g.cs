@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.vertexai.gcp.upbound.io;
-/// <summary>FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.</summary>
+/// <summary>
+/// FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FeaturestoreEntitytypeList : IKubernetesObject<V1ListMeta>, IItems<V1beta1FeaturestoreEntitytype>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FeaturestoreEntitytypeList : IKubernetesObject<V1Lis
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 /// <summary>Reference to a Featurestore in vertexai to populate featurestore.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSel
 /// <summary>Selector for a Featurestore in vertexai to populate featurestore.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderFeaturestoreSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfigCategoricalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -213,6 +227,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfigImportFeaturesAnalysis
 {
     /// <summary>Defines the baseline to do anomaly detection for feature values imported by each [entityTypes.importFeatureValues][] operation. The value must be one of the values below:</summary>
@@ -226,6 +241,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfigNumericalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -235,6 +251,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfigSnapshotAnalysis
 {
     /// <summary>The monitoring schedule for snapshot analysis. For EntityType-level config: unset / disabled = true indicates disabled by default for Features under it; otherwise by default enable snapshot analysis monitoring with monitoringInterval for Features under it.</summary>
@@ -255,6 +272,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfig
 {
     /// <summary>
@@ -288,6 +306,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProviderMonitoringConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecForProvider
 {
     /// <summary>Optional. Description of the EntityType.</summary>
@@ -331,6 +350,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -347,6 +367,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -358,6 +379,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRefPolicy
 {
     /// <summary>
@@ -382,6 +404,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRe
 /// <summary>Reference to a Featurestore in vertexai to populate featurestore.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -401,6 +424,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -417,6 +441,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -428,6 +453,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelectorPolicy
 {
     /// <summary>
@@ -452,6 +478,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSe
 /// <summary>Selector for a Featurestore in vertexai to populate featurestore.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSelector
 {
     /// <summary>
@@ -472,6 +499,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderFeaturestoreSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConfigCategoricalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -481,6 +509,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConfigImportFeaturesAnalysis
 {
     /// <summary>Defines the baseline to do anomaly detection for feature values imported by each [entityTypes.importFeatureValues][] operation. The value must be one of the values below:</summary>
@@ -494,6 +523,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConfigNumericalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -503,6 +533,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConfigSnapshotAnalysis
 {
     /// <summary>The monitoring schedule for snapshot analysis. For EntityType-level config: unset / disabled = true indicates disabled by default for Features under it; otherwise by default enable snapshot analysis monitoring with monitoringInterval for Features under it.</summary>
@@ -523,6 +554,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConfig
 {
     /// <summary>
@@ -568,6 +600,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProviderMonitoringConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecInitProvider
 {
     /// <summary>Optional. Description of the EntityType.</summary>
@@ -609,6 +642,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -633,6 +667,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -649,6 +684,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -660,6 +696,7 @@ public enum V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -688,6 +725,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -707,6 +745,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -721,6 +760,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpecWriteConnectionSecretToRef
 /// <summary>FeaturestoreEntitytypeSpec defines the desired state of FeaturestoreEntitytype</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeSpec
 {
     /// <summary>
@@ -788,6 +828,7 @@ public partial class V1beta1FeaturestoreEntitytypeSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConfigCategoricalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -797,6 +838,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConfigImportFeaturesAnalysis
 {
     /// <summary>Defines the baseline to do anomaly detection for feature values imported by each [entityTypes.importFeatureValues][] operation. The value must be one of the values below:</summary>
@@ -810,6 +852,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConfigNumericalThresholdConfig
 {
     /// <summary>Specify a threshold value that can trigger the alert. For numerical feature, the distribution distance is calculated by Jensen–Shannon divergence. Each feature must have a non-zero threshold if they need to be monitored. Otherwise no alert will be triggered for that feature. The default value is 0.3.</summary>
@@ -819,6 +862,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConfigSnapshotAnalysis
 {
     /// <summary>The monitoring schedule for snapshot analysis. For EntityType-level config: unset / disabled = true indicates disabled by default for Features under it; otherwise by default enable snapshot analysis monitoring with monitoringInterval for Features under it.</summary>
@@ -839,6 +883,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConfig
 {
     /// <summary>
@@ -872,6 +917,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProviderMonitoringConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusAtProvider
 {
     /// <summary>The timestamp of when the featurestore was created in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits.</summary>
@@ -932,6 +978,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatusConditions
 {
     /// <summary>
@@ -975,6 +1022,7 @@ public partial class V1beta1FeaturestoreEntitytypeStatusConditions
 /// <summary>FeaturestoreEntitytypeStatus defines the observed state of FeaturestoreEntitytype.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FeaturestoreEntitytypeStatus
 {
     [JsonPropertyName("atProvider")]
@@ -993,9 +1041,13 @@ public partial class V1beta1FeaturestoreEntitytypeStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.</summary>
+/// <summary>
+/// FeaturestoreEntitytype is the Schema for the FeaturestoreEntitytypes API. An entity type is a type of object in a system that needs to be modeled and have stored information about.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FeaturestoreEntitytype : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FeaturestoreEntitytypeSpec>, IStatus<V1beta1FeaturestoreEntitytypeStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dns.gcp.upbound.io;
-/// <summary>ManagedZone is the Schema for the ManagedZones API. A zone is a subtree of the DNS namespace under one administrative responsibility.</summary>
+/// <summary>
+/// ManagedZone is the Schema for the ManagedZones API. A zone is a subtree of the DNS namespace under one administrative responsibility.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedZoneList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ManagedZone>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ManagedZoneList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1ManagedZoneSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderCloudLoggingConfig
 {
     /// <summary>If set, enable query logging for this ManagedZone. False by default, making logging opt-in.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1ManagedZoneSpecForProviderCloudLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderDnssecConfigDefaultKeySpecs
 {
     /// <summary>
@@ -98,6 +105,7 @@ public partial class V1beta1ManagedZoneSpecForProviderDnssecConfigDefaultKeySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderDnssecConfig
 {
     /// <summary>
@@ -132,6 +140,7 @@ public partial class V1beta1ManagedZoneSpecForProviderDnssecConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderForwardingConfigTargetNameServers
 {
     /// <summary>Fully qualified domain name for the forwarding target.</summary>
@@ -154,6 +163,7 @@ public partial class V1beta1ManagedZoneSpecForProviderForwardingConfigTargetName
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderForwardingConfig
 {
     /// <summary>
@@ -174,6 +184,7 @@ public partial class V1beta1ManagedZoneSpecForProviderForwardingConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -190,6 +201,7 @@ public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -201,6 +213,7 @@ public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRefPolicy
 {
     /// <summary>
@@ -225,6 +238,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -244,6 +258,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -260,6 +275,7 @@ public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -271,6 +287,7 @@ public enum V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicy
 {
     /// <summary>
@@ -295,6 +312,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetworkNetworkUrlSelector
 {
     /// <summary>
@@ -315,6 +333,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 {
     /// <summary>
@@ -336,6 +355,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfigTargetNetwork
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPeeringConfig
 {
     /// <summary>
@@ -354,6 +374,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPeeringConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -370,6 +391,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -381,6 +403,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersG
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicy
 {
     /// <summary>
@@ -405,6 +428,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGke
 /// <summary>Reference to a Cluster in container to populate gkeClusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -424,6 +448,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGke
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -440,6 +465,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersG
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -451,6 +477,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersG
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicy
 {
     /// <summary>
@@ -475,6 +502,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGke
 /// <summary>Selector for a Cluster in container to populate gkeClusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelector
 {
     /// <summary>
@@ -495,6 +523,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGkeClusters
 {
     /// <summary>
@@ -522,6 +551,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigGke
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -538,6 +568,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -549,6 +580,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetw
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicy
 {
     /// <summary>
@@ -573,6 +605,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNet
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -592,6 +625,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -608,6 +642,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -619,6 +654,7 @@ public enum V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetw
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicy
 {
     /// <summary>
@@ -643,6 +679,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNet
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworksNetworkUrlSelector
 {
     /// <summary>
@@ -663,6 +700,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNetworks
 {
     /// <summary>
@@ -684,6 +722,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfigNet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfig
 {
     /// <summary>
@@ -705,6 +744,7 @@ public partial class V1beta1ManagedZoneSpecForProviderPrivateVisibilityConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecForProvider
 {
     /// <summary>
@@ -781,6 +821,7 @@ public partial class V1beta1ManagedZoneSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderCloudLoggingConfig
 {
     /// <summary>If set, enable query logging for this ManagedZone. False by default, making logging opt-in.</summary>
@@ -790,6 +831,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderCloudLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderDnssecConfigDefaultKeySpecs
 {
     /// <summary>
@@ -822,6 +864,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderDnssecConfigDefaultKeySpe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderDnssecConfig
 {
     /// <summary>
@@ -856,6 +899,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderDnssecConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderForwardingConfigTargetNameServers
 {
     /// <summary>Fully qualified domain name for the forwarding target.</summary>
@@ -878,6 +922,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderForwardingConfigTargetNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderForwardingConfig
 {
     /// <summary>
@@ -898,6 +943,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderForwardingConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -914,6 +960,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -925,6 +972,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkU
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRefPolicy
 {
     /// <summary>
@@ -949,6 +997,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwor
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -968,6 +1017,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -984,6 +1034,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -995,6 +1046,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkU
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelectorPolicy
 {
     /// <summary>
@@ -1019,6 +1071,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwor
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetworkNetworkUrlSelector
 {
     /// <summary>
@@ -1039,6 +1092,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwork
 {
     /// <summary>
@@ -1060,6 +1114,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfigTargetNetwor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfig
 {
     /// <summary>
@@ -1078,6 +1133,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPeeringConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1094,6 +1150,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClusters
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1105,6 +1162,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClusters
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRefPolicy
 {
     /// <summary>
@@ -1129,6 +1187,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGk
 /// <summary>Reference to a Cluster in container to populate gkeClusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1148,6 +1207,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGk
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1164,6 +1224,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClusters
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1175,6 +1236,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClusters
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelectorPolicy
 {
     /// <summary>
@@ -1199,6 +1261,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGk
 /// <summary>Selector for a Cluster in container to populate gkeClusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClustersGkeClusterNameSelector
 {
     /// <summary>
@@ -1219,6 +1282,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGkeClusters
 {
     /// <summary>
@@ -1246,6 +1310,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigGk
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1262,6 +1327,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1273,6 +1339,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNet
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRefPolicy
 {
     /// <summary>
@@ -1297,6 +1364,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNe
 /// <summary>Reference to a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1316,6 +1384,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1332,6 +1401,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1343,6 +1413,7 @@ public enum V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNet
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelectorPolicy
 {
     /// <summary>
@@ -1367,6 +1438,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNe
 /// <summary>Selector for a Network in compute to populate networkUrl.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworksNetworkUrlSelector
 {
     /// <summary>
@@ -1387,6 +1459,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNetworks
 {
     /// <summary>
@@ -1408,6 +1481,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfigNe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfig
 {
     /// <summary>
@@ -1441,6 +1515,7 @@ public partial class V1beta1ManagedZoneSpecInitProviderPrivateVisibilityConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecInitProvider
 {
     /// <summary>
@@ -1521,6 +1596,7 @@ public partial class V1beta1ManagedZoneSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1545,6 +1621,7 @@ public enum V1beta1ManagedZoneSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1561,6 +1638,7 @@ public enum V1beta1ManagedZoneSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ManagedZoneSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ManagedZoneSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1572,6 +1650,7 @@ public enum V1beta1ManagedZoneSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1600,6 +1679,7 @@ public partial class V1beta1ManagedZoneSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1619,6 +1699,7 @@ public partial class V1beta1ManagedZoneSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1633,6 +1714,7 @@ public partial class V1beta1ManagedZoneSpecWriteConnectionSecretToRef
 /// <summary>ManagedZoneSpec defines the desired state of ManagedZone</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneSpec
 {
     /// <summary>
@@ -1700,6 +1782,7 @@ public partial class V1beta1ManagedZoneSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderCloudLoggingConfig
 {
     /// <summary>If set, enable query logging for this ManagedZone. False by default, making logging opt-in.</summary>
@@ -1709,6 +1792,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderCloudLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderDnssecConfigDefaultKeySpecs
 {
     /// <summary>
@@ -1741,6 +1825,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderDnssecConfigDefaultKeySpe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderDnssecConfig
 {
     /// <summary>
@@ -1775,6 +1860,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderDnssecConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderForwardingConfigTargetNameServers
 {
     /// <summary>Fully qualified domain name for the forwarding target.</summary>
@@ -1797,6 +1883,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderForwardingConfigTargetNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderForwardingConfig
 {
     /// <summary>
@@ -1811,6 +1898,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderForwardingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderPeeringConfigTargetNetwork
 {
     /// <summary>
@@ -1824,6 +1912,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderPeeringConfigTargetNetwor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderPeeringConfig
 {
     /// <summary>
@@ -1836,6 +1925,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderPeeringConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfigGkeClusters
 {
     /// <summary>
@@ -1849,6 +1939,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfigGk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfigNetworks
 {
     /// <summary>
@@ -1862,6 +1953,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfigNe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfig
 {
     /// <summary>
@@ -1883,6 +1975,7 @@ public partial class V1beta1ManagedZoneStatusAtProviderPrivateVisibilityConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusAtProvider
 {
     /// <summary>
@@ -1993,6 +2086,7 @@ public partial class V1beta1ManagedZoneStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatusConditions
 {
     /// <summary>
@@ -2036,6 +2130,7 @@ public partial class V1beta1ManagedZoneStatusConditions
 /// <summary>ManagedZoneStatus defines the observed state of ManagedZone.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ManagedZoneStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2054,9 +2149,13 @@ public partial class V1beta1ManagedZoneStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ManagedZone is the Schema for the ManagedZones API. A zone is a subtree of the DNS namespace under one administrative responsibility.</summary>
+/// <summary>
+/// ManagedZone is the Schema for the ManagedZones API. A zone is a subtree of the DNS namespace under one administrative responsibility.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ManagedZone : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ManagedZoneSpec>, IStatus<V1beta1ManagedZoneStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
-/// <summary>DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.</summary>
+/// <summary>
+/// DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataTransferConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataTransferConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DataTransferConfigList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1DataTransferConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetI
 /// <summary>Reference to a Dataset in bigquery to populate destinationDatasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetI
 /// <summary>Selector for a Dataset in bigquery to populate destinationDatasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetIdSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderDestinationDatasetI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEmailPreferences
 {
     /// <summary>If true, email notifications will be sent on transfer run failures.</summary>
@@ -219,6 +233,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEmailPreferences
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -235,6 +250,7 @@ public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -246,6 +262,7 @@ public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -270,6 +287,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigura
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -289,6 +307,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -305,6 +324,7 @@ public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -316,6 +336,7 @@ public enum V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -340,6 +361,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigura
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigurationKmsKeyNameSelector
 {
     /// <summary>
@@ -360,6 +382,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfiguration
 {
     /// <summary>The name of the KMS key used for encrypting BigQuery data.</summary>
@@ -377,6 +400,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderEncryptionConfigura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderScheduleOptions
 {
     /// <summary>
@@ -412,6 +436,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderScheduleOptions
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParamsSecretAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -429,6 +454,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParamsSecr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParams
 {
     /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
@@ -448,6 +474,7 @@ public partial class V1beta1DataTransferConfigSpecForProviderSensitiveParams
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecForProvider
 {
     /// <summary>
@@ -578,6 +605,7 @@ public partial class V1beta1DataTransferConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -594,6 +622,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -605,6 +634,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRefPolicy
 {
     /// <summary>
@@ -629,6 +659,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDataset
 /// <summary>Reference to a Dataset in bigquery to populate destinationDatasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -648,6 +679,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDataset
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -664,6 +696,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -675,6 +708,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -699,6 +733,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDataset
 /// <summary>Selector for a Dataset in bigquery to populate destinationDatasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDatasetIdSelector
 {
     /// <summary>
@@ -719,6 +754,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderDestinationDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEmailPreferences
 {
     /// <summary>If true, email notifications will be sent on transfer run failures.</summary>
@@ -734,6 +770,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEmailPreferences
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -750,6 +787,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -761,6 +799,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRefPolicy
 {
     /// <summary>
@@ -785,6 +824,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigur
 /// <summary>Reference to a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -804,6 +844,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -820,6 +861,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -831,6 +873,7 @@ public enum V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsK
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelectorPolicy
 {
     /// <summary>
@@ -855,6 +898,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigur
 /// <summary>Selector for a CryptoKey in kms to populate kmsKeyName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigurationKmsKeyNameSelector
 {
     /// <summary>
@@ -875,6 +919,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfiguration
 {
     /// <summary>The name of the KMS key used for encrypting BigQuery data.</summary>
@@ -892,6 +937,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderEncryptionConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderScheduleOptions
 {
     /// <summary>
@@ -927,6 +973,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderScheduleOptions
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParamsSecretAccessKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -944,6 +991,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParamsSec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParams
 {
     /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
@@ -975,6 +1023,7 @@ public partial class V1beta1DataTransferConfigSpecInitProviderSensitiveParams
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecInitProvider
 {
     /// <summary>
@@ -1103,6 +1152,7 @@ public partial class V1beta1DataTransferConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1127,6 +1177,7 @@ public enum V1beta1DataTransferConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1143,6 +1194,7 @@ public enum V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1154,6 +1206,7 @@ public enum V1beta1DataTransferConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1182,6 +1235,7 @@ public partial class V1beta1DataTransferConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1201,6 +1255,7 @@ public partial class V1beta1DataTransferConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1215,6 +1270,7 @@ public partial class V1beta1DataTransferConfigSpecWriteConnectionSecretToRef
 /// <summary>DataTransferConfigSpec defines the desired state of DataTransferConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigSpec
 {
     /// <summary>
@@ -1282,6 +1338,7 @@ public partial class V1beta1DataTransferConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusAtProviderEmailPreferences
 {
     /// <summary>If true, email notifications will be sent on transfer run failures.</summary>
@@ -1291,6 +1348,7 @@ public partial class V1beta1DataTransferConfigStatusAtProviderEmailPreferences
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusAtProviderEncryptionConfiguration
 {
     /// <summary>The name of the KMS key used for encrypting BigQuery data.</summary>
@@ -1300,6 +1358,7 @@ public partial class V1beta1DataTransferConfigStatusAtProviderEncryptionConfigur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusAtProviderScheduleOptions
 {
     /// <summary>
@@ -1334,6 +1393,7 @@ public partial class V1beta1DataTransferConfigStatusAtProviderScheduleOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusAtProviderSensitiveParams
 {
     /// <summary>
@@ -1349,6 +1409,7 @@ public partial class V1beta1DataTransferConfigStatusAtProviderSensitiveParams
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusAtProvider
 {
     /// <summary>
@@ -1480,6 +1541,7 @@ public partial class V1beta1DataTransferConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatusConditions
 {
     /// <summary>
@@ -1523,6 +1585,7 @@ public partial class V1beta1DataTransferConfigStatusConditions
 /// <summary>DataTransferConfigStatus defines the observed state of DataTransferConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1DataTransferConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1541,9 +1604,13 @@ public partial class V1beta1DataTransferConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.</summary>
+/// <summary>
+/// DataTransferConfig is the Schema for the DataTransferConfigs API. Represents a data transfer configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataTransferConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataTransferConfigSpec>, IStatus<V1beta1DataTransferConfigStatus?>
 {

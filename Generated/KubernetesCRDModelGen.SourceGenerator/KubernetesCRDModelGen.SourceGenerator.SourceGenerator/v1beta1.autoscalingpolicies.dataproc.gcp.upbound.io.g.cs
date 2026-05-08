@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
-/// <summary>AutoscalingPolicy is the Schema for the AutoscalingPolicys API. Describes an autoscaling policy for Dataproc cluster autoscaler.</summary>
+/// <summary>
+/// AutoscalingPolicy is the Schema for the AutoscalingPolicys API. Describes an autoscaling policy for Dataproc cluster autoscaler.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoscalingPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AutoscalingPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1AutoscalingPolicyList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AutoscalingPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1AutoscalingPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecForProviderBasicAlgorithmYarnConfig
 {
     /// <summary>
@@ -113,6 +119,7 @@ public partial class V1beta1AutoscalingPolicySpecForProviderBasicAlgorithmYarnCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecForProviderBasicAlgorithm
 {
     /// <summary>
@@ -133,6 +140,7 @@ public partial class V1beta1AutoscalingPolicySpecForProviderBasicAlgorithm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecForProviderSecondaryWorkerConfig
 {
     /// <summary>
@@ -167,6 +175,7 @@ public partial class V1beta1AutoscalingPolicySpecForProviderSecondaryWorkerConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecForProviderWorkerConfig
 {
     /// <summary>Maximum number of instances for this group.</summary>
@@ -197,6 +206,7 @@ public partial class V1beta1AutoscalingPolicySpecForProviderWorkerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecForProvider
 {
     /// <summary>
@@ -237,6 +247,7 @@ public partial class V1beta1AutoscalingPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecInitProviderBasicAlgorithmYarnConfig
 {
     /// <summary>
@@ -293,6 +304,7 @@ public partial class V1beta1AutoscalingPolicySpecInitProviderBasicAlgorithmYarnC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecInitProviderBasicAlgorithm
 {
     /// <summary>
@@ -313,6 +325,7 @@ public partial class V1beta1AutoscalingPolicySpecInitProviderBasicAlgorithm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecInitProviderSecondaryWorkerConfig
 {
     /// <summary>
@@ -347,6 +360,7 @@ public partial class V1beta1AutoscalingPolicySpecInitProviderSecondaryWorkerConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecInitProviderWorkerConfig
 {
     /// <summary>Maximum number of instances for this group.</summary>
@@ -389,6 +403,7 @@ public partial class V1beta1AutoscalingPolicySpecInitProviderWorkerConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecInitProvider
 {
     /// <summary>
@@ -426,6 +441,7 @@ public partial class V1beta1AutoscalingPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AutoscalingPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -450,6 +466,7 @@ public enum V1beta1AutoscalingPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -466,6 +483,7 @@ public enum V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -477,6 +495,7 @@ public enum V1beta1AutoscalingPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -505,6 +524,7 @@ public partial class V1beta1AutoscalingPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -524,6 +544,7 @@ public partial class V1beta1AutoscalingPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -538,6 +559,7 @@ public partial class V1beta1AutoscalingPolicySpecWriteConnectionSecretToRef
 /// <summary>AutoscalingPolicySpec defines the desired state of AutoscalingPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicySpec
 {
     /// <summary>
@@ -605,6 +627,7 @@ public partial class V1beta1AutoscalingPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusAtProviderBasicAlgorithmYarnConfig
 {
     /// <summary>
@@ -661,6 +684,7 @@ public partial class V1beta1AutoscalingPolicyStatusAtProviderBasicAlgorithmYarnC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusAtProviderBasicAlgorithm
 {
     /// <summary>
@@ -681,6 +705,7 @@ public partial class V1beta1AutoscalingPolicyStatusAtProviderBasicAlgorithm
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusAtProviderSecondaryWorkerConfig
 {
     /// <summary>
@@ -715,6 +740,7 @@ public partial class V1beta1AutoscalingPolicyStatusAtProviderSecondaryWorkerConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusAtProviderWorkerConfig
 {
     /// <summary>Maximum number of instances for this group.</summary>
@@ -745,6 +771,7 @@ public partial class V1beta1AutoscalingPolicyStatusAtProviderWorkerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusAtProvider
 {
     /// <summary>
@@ -794,6 +821,7 @@ public partial class V1beta1AutoscalingPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatusConditions
 {
     /// <summary>
@@ -837,6 +865,7 @@ public partial class V1beta1AutoscalingPolicyStatusConditions
 /// <summary>AutoscalingPolicyStatus defines the observed state of AutoscalingPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AutoscalingPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -855,9 +884,13 @@ public partial class V1beta1AutoscalingPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AutoscalingPolicy is the Schema for the AutoscalingPolicys API. Describes an autoscaling policy for Dataproc cluster autoscaler.</summary>
+/// <summary>
+/// AutoscalingPolicy is the Schema for the AutoscalingPolicys API. Describes an autoscaling policy for Dataproc cluster autoscaler.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AutoscalingPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AutoscalingPolicySpec>, IStatus<V1beta1AutoscalingPolicyStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datastream.gcp.upbound.io;
-/// <summary>PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.</summary>
+/// <summary>
+/// PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateConnectionList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PrivateConnection>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PrivateConnectionList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PrivateConnectionSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderPscInterfaceConfig
 {
     /// <summary>
@@ -79,6 +85,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderPscInterfaceConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -95,6 +102,7 @@ public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -106,6 +114,7 @@ public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRefPolicy
 {
     /// <summary>
@@ -130,6 +139,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcR
 /// <summary>Reference to a Network in compute to populate vpc.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -149,6 +159,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -165,6 +176,7 @@ public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -176,6 +188,7 @@ public enum V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelectorPolicy
 {
     /// <summary>
@@ -200,6 +213,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcS
 /// <summary>Selector for a Network in compute to populate vpc.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcSelector
 {
     /// <summary>
@@ -220,6 +234,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfigVpcS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfig
 {
     /// <summary>A free subnet for peering. (CIDR of /29)</summary>
@@ -244,6 +259,7 @@ public partial class V1beta1PrivateConnectionSpecForProviderVpcPeeringConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecForProvider
 {
     /// <summary>If set to true, will skip validations.</summary>
@@ -292,6 +308,7 @@ public partial class V1beta1PrivateConnectionSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderPscInterfaceConfig
 {
     /// <summary>
@@ -314,6 +331,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderPscInterfaceConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -330,6 +348,7 @@ public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -341,6 +360,7 @@ public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRefPolicy
 {
     /// <summary>
@@ -365,6 +385,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 /// <summary>Reference to a Network in compute to populate vpc.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -384,6 +405,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -400,6 +422,7 @@ public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -411,6 +434,7 @@ public enum V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelectorPolicy
 {
     /// <summary>
@@ -435,6 +459,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 /// <summary>Selector for a Network in compute to populate vpc.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpcSelector
 {
     /// <summary>
@@ -455,6 +480,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfigVpc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfig
 {
     /// <summary>A free subnet for peering. (CIDR of /29)</summary>
@@ -491,6 +517,7 @@ public partial class V1beta1PrivateConnectionSpecInitProviderVpcPeeringConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecInitProvider
 {
     /// <summary>If set to true, will skip validations.</summary>
@@ -539,6 +566,7 @@ public partial class V1beta1PrivateConnectionSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -563,6 +591,7 @@ public enum V1beta1PrivateConnectionSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -579,6 +608,7 @@ public enum V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -590,6 +620,7 @@ public enum V1beta1PrivateConnectionSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -618,6 +649,7 @@ public partial class V1beta1PrivateConnectionSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -637,6 +669,7 @@ public partial class V1beta1PrivateConnectionSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -651,6 +684,7 @@ public partial class V1beta1PrivateConnectionSpecWriteConnectionSecretToRef
 /// <summary>PrivateConnectionSpec defines the desired state of PrivateConnection</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionSpec
 {
     /// <summary>
@@ -718,6 +752,7 @@ public partial class V1beta1PrivateConnectionSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatusAtProviderError
 {
     /// <summary>A list of messages that carry the error details.</summary>
@@ -731,6 +766,7 @@ public partial class V1beta1PrivateConnectionStatusAtProviderError
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatusAtProviderPscInterfaceConfig
 {
     /// <summary>
@@ -747,6 +783,7 @@ public partial class V1beta1PrivateConnectionStatusAtProviderPscInterfaceConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatusAtProviderVpcPeeringConfig
 {
     /// <summary>A free subnet for peering. (CIDR of /29)</summary>
@@ -763,6 +800,7 @@ public partial class V1beta1PrivateConnectionStatusAtProviderVpcPeeringConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatusAtProvider
 {
     /// <summary>If set to true, will skip validations.</summary>
@@ -841,6 +879,7 @@ public partial class V1beta1PrivateConnectionStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatusConditions
 {
     /// <summary>
@@ -884,6 +923,7 @@ public partial class V1beta1PrivateConnectionStatusConditions
 /// <summary>PrivateConnectionStatus defines the observed state of PrivateConnection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PrivateConnectionStatus
 {
     [JsonPropertyName("atProvider")]
@@ -902,9 +942,13 @@ public partial class V1beta1PrivateConnectionStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.</summary>
+/// <summary>
+/// PrivateConnection is the Schema for the PrivateConnections API. The PrivateConnection resource is used to establish private connectivity between Datastream and a customer&apos;s network.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PrivateConnection : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PrivateConnectionSpec>, IStatus<V1beta1PrivateConnectionStatus?>
 {

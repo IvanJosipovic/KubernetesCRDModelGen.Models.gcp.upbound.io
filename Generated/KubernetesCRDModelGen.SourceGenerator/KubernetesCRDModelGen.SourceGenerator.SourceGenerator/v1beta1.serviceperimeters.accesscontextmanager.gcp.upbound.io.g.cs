@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.accesscontextmanager.gcp.upbound.io;
-/// <summary>ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.</summary>
+/// <summary>
+/// ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServicePerimeterList : IKubernetesObject<V1ListMeta>, IItems<V1beta1ServicePerimeter>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1ServicePerimeterList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1ServicePerimeterSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefsP
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelec
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecAccessLevelsSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -236,6 +250,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -272,6 +287,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -292,6 +308,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -315,6 +332,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgressTo
 {
     /// <summary>
@@ -352,6 +370,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPoliciesEgr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPolicies
 {
     /// <summary>
@@ -376,6 +395,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -405,6 +425,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -434,6 +455,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -454,6 +476,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -477,6 +500,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIngressTo
 {
     /// <summary>
@@ -506,6 +530,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPoliciesIn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPolicies
 {
     /// <summary>
@@ -531,6 +556,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpecVpcAccessibleServices
 {
     /// <summary>
@@ -550,6 +576,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpecVpcAccessibleServ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderSpec
 {
     /// <summary>
@@ -629,6 +656,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -645,6 +673,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -656,6 +685,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefsPolicy
 {
     /// <summary>
@@ -680,6 +710,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRef
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -699,6 +730,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -715,6 +747,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -726,6 +759,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelectorPolicy
 {
     /// <summary>
@@ -750,6 +784,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSel
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSelector
 {
     /// <summary>
@@ -770,6 +805,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusAccessLevelsSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -802,6 +838,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -838,6 +875,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -858,6 +896,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -881,6 +920,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesEgressTo
 {
     /// <summary>
@@ -918,6 +958,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPoliciesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPolicies
 {
     /// <summary>
@@ -948,6 +989,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusEgressPolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -964,6 +1006,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -975,6 +1018,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicy
 {
     /// <summary>
@@ -999,6 +1043,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 /// <summary>Reference to a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1018,6 +1063,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1034,6 +1080,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1045,6 +1092,7 @@ public enum V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy
 {
     /// <summary>
@@ -1069,6 +1117,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector
 {
     /// <summary>
@@ -1089,6 +1138,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -1126,6 +1176,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -1155,6 +1206,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -1175,6 +1227,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -1198,6 +1251,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPoliciesIngressTo
 {
     /// <summary>
@@ -1227,6 +1281,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 {
     /// <summary>
@@ -1252,6 +1307,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatusVpcAccessibleServices
 {
     /// <summary>
@@ -1271,6 +1327,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatusVpcAccessibleSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProviderStatus
 {
     /// <summary>
@@ -1344,6 +1401,7 @@ public partial class V1beta1ServicePerimeterSpecForProviderStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecForProvider
 {
     /// <summary>
@@ -1435,6 +1493,7 @@ public partial class V1beta1ServicePerimeterSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1451,6 +1510,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1462,6 +1522,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefsPolicy
 {
     /// <summary>
@@ -1486,6 +1547,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1505,6 +1567,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1521,6 +1584,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1532,6 +1596,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelectorPolicy
 {
     /// <summary>
@@ -1556,6 +1621,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSele
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSelector
 {
     /// <summary>
@@ -1576,6 +1642,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecAccessLevelsSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -1608,6 +1675,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -1644,6 +1712,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -1664,6 +1733,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -1687,6 +1757,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEgressTo
 {
     /// <summary>
@@ -1724,6 +1795,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPolicies
 {
     /// <summary>
@@ -1748,6 +1820,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -1777,6 +1850,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -1806,6 +1880,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -1826,6 +1901,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -1849,6 +1925,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesIngressTo
 {
     /// <summary>
@@ -1878,6 +1955,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPolicies
 {
     /// <summary>
@@ -1903,6 +1981,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpecVpcAccessibleServices
 {
     /// <summary>
@@ -1922,6 +2001,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpecVpcAccessibleSer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderSpec
 {
     /// <summary>
@@ -2001,6 +2081,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2017,6 +2098,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2028,6 +2110,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefsPolicy
 {
     /// <summary>
@@ -2052,6 +2135,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRe
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2071,6 +2155,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2087,6 +2172,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2098,6 +2184,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelectorPolicy
 {
     /// <summary>
@@ -2122,6 +2209,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSe
 /// <summary>Selector for a list of AccessLevel in accesscontextmanager to populate accessLevels.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSelector
 {
     /// <summary>
@@ -2142,6 +2230,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusAccessLevelsSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -2174,6 +2263,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -2210,6 +2300,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -2230,6 +2321,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -2253,6 +2345,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPoliciesEgressTo
 {
     /// <summary>
@@ -2290,6 +2383,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 {
     /// <summary>
@@ -2320,6 +2414,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusEgressPolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2336,6 +2431,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2347,6 +2443,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRefPolicy
 {
     /// <summary>
@@ -2371,6 +2468,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// <summary>Reference to a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2390,6 +2488,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2406,6 +2505,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2417,6 +2517,7 @@ public enum V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressF
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelectorPolicy
 {
     /// <summary>
@@ -2441,6 +2542,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 /// <summary>Selector for a AccessLevel in accesscontextmanager to populate accessLevel.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSourcesAccessLevelSelector
 {
     /// <summary>
@@ -2461,6 +2563,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -2498,6 +2601,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -2527,6 +2631,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -2547,6 +2652,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -2570,6 +2676,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPoliciesIngressTo
 {
     /// <summary>
@@ -2599,6 +2706,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicies
 {
     /// <summary>
@@ -2624,6 +2732,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatusVpcAccessibleServices
 {
     /// <summary>
@@ -2643,6 +2752,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatusVpcAccessibleS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProviderStatus
 {
     /// <summary>
@@ -2728,6 +2838,7 @@ public partial class V1beta1ServicePerimeterSpecInitProviderStatus
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecInitProvider
 {
     /// <summary>
@@ -2817,6 +2928,7 @@ public partial class V1beta1ServicePerimeterSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2841,6 +2953,7 @@ public enum V1beta1ServicePerimeterSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2857,6 +2970,7 @@ public enum V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2868,6 +2982,7 @@ public enum V1beta1ServicePerimeterSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2896,6 +3011,7 @@ public partial class V1beta1ServicePerimeterSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2915,6 +3031,7 @@ public partial class V1beta1ServicePerimeterSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2929,6 +3046,7 @@ public partial class V1beta1ServicePerimeterSpecWriteConnectionSecretToRef
 /// <summary>ServicePerimeterSpec defines the desired state of ServicePerimeter</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterSpec
 {
     /// <summary>
@@ -2996,6 +3114,7 @@ public partial class V1beta1ServicePerimeterSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -3028,6 +3147,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -3064,6 +3184,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -3084,6 +3205,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -3107,6 +3229,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEgressTo
 {
     /// <summary>
@@ -3144,6 +3267,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPoliciesEg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPolicies
 {
     /// <summary>
@@ -3168,6 +3292,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -3197,6 +3322,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -3226,6 +3352,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -3246,6 +3373,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -3269,6 +3397,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesIngressTo
 {
     /// <summary>
@@ -3298,6 +3427,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPoliciesI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPolicies
 {
     /// <summary>
@@ -3323,6 +3453,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecIngressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpecVpcAccessibleServices
 {
     /// <summary>
@@ -3342,6 +3473,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpecVpcAccessibleSer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderSpec
 {
     /// <summary>
@@ -3407,6 +3539,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFromSources
 {
     /// <summary>
@@ -3439,6 +3572,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressFrom
 {
     /// <summary>
@@ -3475,6 +3609,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressToOperationsMethodSelectors
 {
     /// <summary>
@@ -3495,6 +3630,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressToOperations
 {
     /// <summary>
@@ -3518,6 +3654,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPoliciesEgressTo
 {
     /// <summary>
@@ -3555,6 +3692,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 {
     /// <summary>
@@ -3579,6 +3717,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusEgressPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFromSources
 {
     /// <summary>
@@ -3608,6 +3747,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressFrom
 {
     /// <summary>
@@ -3637,6 +3777,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressToOperationsMethodSelectors
 {
     /// <summary>
@@ -3657,6 +3798,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressToOperations
 {
     /// <summary>
@@ -3680,6 +3822,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPoliciesIngressTo
 {
     /// <summary>
@@ -3709,6 +3852,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicies
 {
     /// <summary>
@@ -3734,6 +3878,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusIngressPolicie
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatusVpcAccessibleServices
 {
     /// <summary>
@@ -3753,6 +3898,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatusVpcAccessibleS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProviderStatus
 {
     /// <summary>
@@ -3818,6 +3964,7 @@ public partial class V1beta1ServicePerimeterStatusAtProviderStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusAtProvider
 {
     /// <summary>Time the AccessPolicy was created in UTC.</summary>
@@ -3916,6 +4063,7 @@ public partial class V1beta1ServicePerimeterStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatusConditions
 {
     /// <summary>
@@ -3959,6 +4107,7 @@ public partial class V1beta1ServicePerimeterStatusConditions
 /// <summary>ServicePerimeterStatus defines the observed state of ServicePerimeter.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ServicePerimeterStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3977,9 +4126,13 @@ public partial class V1beta1ServicePerimeterStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.</summary>
+/// <summary>
+/// ServicePerimeter is the Schema for the ServicePerimeters API. ServicePerimeter describes a set of GCP resources which can freely import and export data amongst themselves, but not export outside of the ServicePerimeter.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1ServicePerimeter : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1ServicePerimeterSpec>, IStatus<V1beta1ServicePerimeterStatus?>
 {

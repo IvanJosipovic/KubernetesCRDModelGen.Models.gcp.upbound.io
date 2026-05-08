@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.privateca.gcp.upbound.io;
-/// <summary>CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.</summary>
+/// <summary>
+/// CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CAPoolList : IKubernetesObject<V1ListMeta>, IItems<V1beta1CAPool>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1CAPoolList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CAPoolSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CAPoolSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1CAPoolSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedIssuanceModes
 {
     /// <summary>When true, allows callers to create Certificates by specifying a CertificateConfig.</summary>
@@ -70,6 +76,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedIssuanceMo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
     /// <summary>
@@ -82,6 +89,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesEl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesRsa
 {
     /// <summary>
@@ -101,6 +109,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypesRs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypes
 {
     /// <summary>
@@ -120,6 +129,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyAllowedKeyTypes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -129,6 +139,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesAdd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -149,6 +160,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesAdd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesCaOptions
 {
     /// <summary>When true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -180,6 +192,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesCaO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -221,6 +234,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -250,6 +264,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -259,6 +274,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKeyUsage
 {
     /// <summary>
@@ -285,6 +301,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesKey
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -366,6 +383,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesNam
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesPolicyIds
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -375,6 +393,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValuesPol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValues
 {
     /// <summary>
@@ -422,6 +441,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyBaselineValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyIdentityConstraintsCelExpression
 {
     /// <summary>Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.</summary>
@@ -446,6 +466,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicyIdentityConstraints
 {
     /// <summary>
@@ -474,6 +495,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicyIdentityConstrain
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderIssuancePolicy
 {
     /// <summary>
@@ -529,6 +551,7 @@ public partial class V1beta1CAPoolSpecForProviderIssuancePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProviderPublishingOptions
 {
     /// <summary>
@@ -560,6 +583,7 @@ public partial class V1beta1CAPoolSpecForProviderPublishingOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecForProvider
 {
     /// <summary>
@@ -608,6 +632,7 @@ public partial class V1beta1CAPoolSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedIssuanceModes
 {
     /// <summary>When true, allows callers to create Certificates by specifying a CertificateConfig.</summary>
@@ -621,6 +646,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedIssuanceM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
     /// <summary>
@@ -633,6 +659,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesRsa
 {
     /// <summary>
@@ -652,6 +679,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypesR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypes
 {
     /// <summary>
@@ -671,6 +699,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyAllowedKeyTypes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -680,6 +709,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -700,6 +730,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesCaOptions
 {
     /// <summary>When true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -731,6 +762,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesCa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -772,6 +804,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -801,6 +834,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -810,6 +844,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKeyUsage
 {
     /// <summary>
@@ -836,6 +871,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -917,6 +953,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesNa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesPolicyIds
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -926,6 +963,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValuesPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValues
 {
     /// <summary>
@@ -973,6 +1011,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyBaselineValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyIdentityConstraintsCelExpression
 {
     /// <summary>Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.</summary>
@@ -990,6 +1029,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyIdentityConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyIdentityConstraints
 {
     /// <summary>
@@ -1018,6 +1058,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicyIdentityConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderIssuancePolicy
 {
     /// <summary>
@@ -1073,6 +1114,7 @@ public partial class V1beta1CAPoolSpecInitProviderIssuancePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProviderPublishingOptions
 {
     /// <summary>
@@ -1116,6 +1158,7 @@ public partial class V1beta1CAPoolSpecInitProviderPublishingOptions
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecInitProvider
 {
     /// <summary>
@@ -1161,6 +1204,7 @@ public partial class V1beta1CAPoolSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CAPoolSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CAPoolSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1185,6 +1229,7 @@ public enum V1beta1CAPoolSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CAPoolSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CAPoolSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1201,6 +1246,7 @@ public enum V1beta1CAPoolSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1CAPoolSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1CAPoolSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1212,6 +1258,7 @@ public enum V1beta1CAPoolSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1240,6 +1287,7 @@ public partial class V1beta1CAPoolSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1259,6 +1307,7 @@ public partial class V1beta1CAPoolSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1273,6 +1322,7 @@ public partial class V1beta1CAPoolSpecWriteConnectionSecretToRef
 /// <summary>CAPoolSpec defines the desired state of CAPool</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolSpec
 {
     /// <summary>
@@ -1340,6 +1390,7 @@ public partial class V1beta1CAPoolSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedIssuanceModes
 {
     /// <summary>When true, allows callers to create Certificates by specifying a CertificateConfig.</summary>
@@ -1353,6 +1404,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedIssuanceM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesEllipticCurve
 {
     /// <summary>
@@ -1365,6 +1417,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesE
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesRsa
 {
     /// <summary>
@@ -1384,6 +1437,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypesR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypes
 {
     /// <summary>
@@ -1403,6 +1457,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyAllowedKeyTypes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesAdditionalExtensionsObjectId
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -1412,6 +1467,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesAdditionalExtensions
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -1432,6 +1488,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesCaOptions
 {
     /// <summary>When true, the &quot;CA&quot; in Basic Constraints extension will be set to true.</summary>
@@ -1463,6 +1520,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesCa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
 {
     /// <summary>The key may be used to sign certificates.</summary>
@@ -1504,6 +1562,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
 {
     /// <summary>Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as &quot;TLS WWW client authentication&quot;, though regularly used for non-WWW TLS.</summary>
@@ -1533,6 +1592,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -1542,6 +1602,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKeyUsage
 {
     /// <summary>
@@ -1568,6 +1629,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesNameConstraints
 {
     /// <summary>Indicates whether or not the name constraints are marked critical.</summary>
@@ -1649,6 +1711,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesNa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesPolicyIds
 {
     /// <summary>An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.</summary>
@@ -1658,6 +1721,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValuesPo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValues
 {
     /// <summary>
@@ -1705,6 +1769,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyBaselineValues
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyIdentityConstraintsCelExpression
 {
     /// <summary>Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.</summary>
@@ -1729,6 +1794,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyIdentityConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyIdentityConstraints
 {
     /// <summary>
@@ -1757,6 +1823,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicyIdentityConstrai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderIssuancePolicy
 {
     /// <summary>
@@ -1812,6 +1879,7 @@ public partial class V1beta1CAPoolStatusAtProviderIssuancePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProviderPublishingOptions
 {
     /// <summary>
@@ -1843,6 +1911,7 @@ public partial class V1beta1CAPoolStatusAtProviderPublishingOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusAtProvider
 {
     /// <summary>for all of the labels present on the resource.</summary>
@@ -1907,6 +1976,7 @@ public partial class V1beta1CAPoolStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatusConditions
 {
     /// <summary>
@@ -1950,6 +2020,7 @@ public partial class V1beta1CAPoolStatusConditions
 /// <summary>CAPoolStatus defines the observed state of CAPool.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1CAPoolStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1968,9 +2039,13 @@ public partial class V1beta1CAPoolStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.</summary>
+/// <summary>
+/// CAPool is the Schema for the CAPools API. A CaPool represents a group of CertificateAuthorities that form a trust anchor.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1CAPool : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1CAPoolSpec>, IStatus<V1beta1CAPoolStatus?>
 {

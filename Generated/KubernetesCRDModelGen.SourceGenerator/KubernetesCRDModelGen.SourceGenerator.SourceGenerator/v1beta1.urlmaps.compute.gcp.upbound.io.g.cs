@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.</summary>
+/// <summary>
+/// URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1URLMapList : IKubernetesObject<V1ListMeta>, IItems<V1beta1URLMap>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1URLMapList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1URLMapSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -83,6 +89,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -99,6 +106,7 @@ public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -110,6 +118,7 @@ public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -134,6 +143,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -153,6 +163,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -169,6 +180,7 @@ public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -180,6 +192,7 @@ public enum V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorSer
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -224,6 +238,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -258,6 +273,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultCustomErrorResponsePolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -309,6 +325,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionCorsPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -329,6 +346,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -349,6 +367,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -369,6 +388,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -390,6 +410,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionFaultInjectio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -416,6 +437,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionMaxStreamDura
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -432,6 +454,7 @@ public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -443,6 +466,7 @@ public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -467,6 +491,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -486,6 +511,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -502,6 +528,7 @@ public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -513,6 +540,7 @@ public enum V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBac
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -537,6 +565,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirror
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -557,6 +586,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirror
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -578,6 +608,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRequestMirror
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -598,6 +629,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRetryPolicyPe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -618,6 +650,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionTimeout
 {
     /// <summary>
@@ -638,6 +671,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -659,6 +693,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionUrlRewrite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -680,6 +715,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBacke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -701,6 +737,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBacke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -735,6 +772,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBacke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -768,6 +806,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteActionWeightedBacke
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultRouteAction
 {
     /// <summary>
@@ -854,6 +893,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -870,6 +910,7 @@ public enum V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -881,6 +922,7 @@ public enum V1beta1URLMapSpecForProviderDefaultServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultServiceRefPolicy
 {
     /// <summary>
@@ -905,6 +947,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultServiceRefPolicy
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -924,6 +967,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -940,6 +984,7 @@ public enum V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolutionEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -951,6 +996,7 @@ public enum V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicy
 {
     /// <summary>
@@ -975,6 +1021,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultServiceSelectorPolicy
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultServiceSelector
 {
     /// <summary>
@@ -995,6 +1042,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderDefaultUrlRedirect
 {
     /// <summary>
@@ -1049,6 +1097,7 @@ public partial class V1beta1URLMapSpecForProviderDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -1070,6 +1119,7 @@ public partial class V1beta1URLMapSpecForProviderHeaderActionRequestHeadersToAdd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -1091,6 +1141,7 @@ public partial class V1beta1URLMapSpecForProviderHeaderActionResponseHeadersToAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderHeaderAction
 {
     /// <summary>
@@ -1125,6 +1176,7 @@ public partial class V1beta1URLMapSpecForProviderHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderHostRule
 {
     /// <summary>
@@ -1152,6 +1204,7 @@ public partial class V1beta1URLMapSpecForProviderHostRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -1178,6 +1231,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1194,6 +1248,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1205,6 +1260,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -1229,6 +1285,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1248,6 +1305,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1264,6 +1322,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1275,6 +1334,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -1299,6 +1359,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -1319,6 +1380,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -1353,6 +1415,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultCustomErrorRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -1404,6 +1467,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -1424,6 +1488,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -1444,6 +1509,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -1464,6 +1530,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -1485,6 +1552,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionFa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -1511,6 +1579,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionMa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1527,6 +1596,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1538,6 +1608,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -1562,6 +1633,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1581,6 +1653,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1597,6 +1670,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1608,6 +1682,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -1632,6 +1707,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -1652,6 +1728,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -1673,6 +1750,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -1693,6 +1771,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -1713,6 +1792,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionTimeout
 {
     /// <summary>
@@ -1733,6 +1813,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionTi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -1754,6 +1835,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionUr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -1775,6 +1857,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -1796,6 +1879,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -1830,6 +1914,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -1863,6 +1948,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteActionWe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteAction
 {
     /// <summary>
@@ -1955,6 +2041,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1971,6 +2058,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1982,6 +2070,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPolicy
 {
     /// <summary>
@@ -2006,6 +2095,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRefPol
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2025,6 +2115,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2041,6 +2132,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2052,6 +2144,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelectorPolicy
 {
     /// <summary>
@@ -2076,6 +2169,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelect
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelector
 {
     /// <summary>
@@ -2096,6 +2190,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultServiceSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultUrlRedirect
 {
     /// <summary>
@@ -2153,6 +2248,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -2174,6 +2270,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderActionRequestH
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -2195,6 +2292,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderActionResponse
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderAction
 {
     /// <summary>
@@ -2229,6 +2327,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -2255,6 +2354,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2271,6 +2371,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2282,6 +2383,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -2306,6 +2408,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2325,6 +2428,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2341,6 +2445,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2352,6 +2457,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -2376,6 +2482,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -2396,6 +2503,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
     /// <summary>
@@ -2430,6 +2538,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
     /// <summary>
@@ -2481,6 +2590,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -2501,6 +2611,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -2521,6 +2632,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -2541,6 +2653,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -2562,6 +2675,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -2588,6 +2702,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2604,6 +2719,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2615,6 +2731,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -2639,6 +2756,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2658,6 +2776,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2674,6 +2793,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2685,6 +2805,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMir
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -2709,6 +2830,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -2729,6 +2851,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -2750,6 +2873,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -2770,6 +2894,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -2790,6 +2915,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionTimeout
 {
     /// <summary>
@@ -2810,6 +2936,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
     /// <summary>
@@ -2837,6 +2964,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionU
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2853,6 +2981,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2864,6 +2993,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicy
 {
     /// <summary>
@@ -2888,6 +3018,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2907,6 +3038,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2923,6 +3055,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2934,6 +3067,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBa
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -2958,6 +3092,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelector
 {
     /// <summary>
@@ -2978,6 +3113,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -2999,6 +3135,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -3020,6 +3157,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -3054,6 +3192,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -3095,6 +3234,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteAction
 {
     /// <summary>
@@ -3187,6 +3327,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3203,6 +3344,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3214,6 +3356,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPolicy
 {
     /// <summary>
@@ -3238,6 +3381,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRefPo
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3257,6 +3401,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3273,6 +3418,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3284,6 +3430,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelectorPolicy
 {
     /// <summary>
@@ -3308,6 +3455,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelec
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelector
 {
     /// <summary>
@@ -3328,6 +3476,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleServiceSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleUrlRedirect
 {
     /// <summary>
@@ -3385,6 +3534,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRuleUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherPathRule
 {
     /// <summary>
@@ -3439,6 +3589,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherPathRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -3459,6 +3610,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesCustomErro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
     /// <summary>
@@ -3485,6 +3637,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesCustomErro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -3506,6 +3659,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -3527,6 +3681,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
@@ -3561,6 +3716,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesHeaderActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
     /// <summary>The end of the range (exclusive).</summary>
@@ -3574,6 +3730,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
     /// <summary>
@@ -3645,6 +3802,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
     /// <summary>
@@ -3661,6 +3819,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
     /// <summary>
@@ -3682,6 +3841,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
     /// <summary>
@@ -3719,6 +3879,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 {
     /// <summary>
@@ -3805,6 +3966,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesMatchRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
     /// <summary>
@@ -3856,6 +4018,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -3876,6 +4039,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -3896,6 +4060,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -3916,6 +4081,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -3937,6 +4103,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -3957,6 +4124,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -3970,6 +4138,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -3990,6 +4159,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -4010,6 +4180,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionTimeout
 {
     /// <summary>
@@ -4030,6 +4201,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
     /// <summary>
@@ -4067,6 +4239,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -4088,6 +4261,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -4109,6 +4283,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -4143,6 +4318,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -4176,6 +4352,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteAction
 {
     /// <summary>
@@ -4268,6 +4445,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesRouteActio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4284,6 +4462,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4295,6 +4474,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicyRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRefPolicy
 {
     /// <summary>
@@ -4319,6 +4499,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 /// <summary>Reference to a BackendService in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4338,6 +4519,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4354,6 +4536,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4365,6 +4548,7 @@ public enum V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPoli
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelectorPolicy
 {
     /// <summary>
@@ -4389,6 +4573,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSel
 /// <summary>Selector for a BackendService in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSelector
 {
     /// <summary>
@@ -4409,6 +4594,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesServiceSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesUrlRedirect
 {
     /// <summary>
@@ -4466,6 +4652,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRulesUrlRedirec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRules
 {
     /// <summary>
@@ -4545,6 +4732,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcherRouteRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderPathMatcher
 {
     /// <summary>
@@ -4640,6 +4828,7 @@ public partial class V1beta1URLMapSpecForProviderPathMatcher
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTestHeaders
 {
     /// <summary>
@@ -4662,6 +4851,7 @@ public partial class V1beta1URLMapSpecForProviderTestHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderTestServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderTestServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4678,6 +4868,7 @@ public enum V1beta1URLMapSpecForProviderTestServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderTestServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderTestServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4689,6 +4880,7 @@ public enum V1beta1URLMapSpecForProviderTestServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTestServiceRefPolicy
 {
     /// <summary>
@@ -4713,6 +4905,7 @@ public partial class V1beta1URLMapSpecForProviderTestServiceRefPolicy
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTestServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -4732,6 +4925,7 @@ public partial class V1beta1URLMapSpecForProviderTestServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4748,6 +4942,7 @@ public enum V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -4759,6 +4954,7 @@ public enum V1beta1URLMapSpecForProviderTestServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTestServiceSelectorPolicy
 {
     /// <summary>
@@ -4783,6 +4979,7 @@ public partial class V1beta1URLMapSpecForProviderTestServiceSelectorPolicy
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTestServiceSelector
 {
     /// <summary>
@@ -4803,6 +5000,7 @@ public partial class V1beta1URLMapSpecForProviderTestServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProviderTest
 {
     /// <summary>Description of this test case.</summary>
@@ -4855,6 +5053,7 @@ public partial class V1beta1URLMapSpecForProviderTest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecForProvider
 {
     /// <summary>
@@ -4952,6 +5151,7 @@ public partial class V1beta1URLMapSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -4978,6 +5178,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -4994,6 +5195,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5005,6 +5207,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -5029,6 +5232,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5048,6 +5252,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5064,6 +5269,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5075,6 +5281,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -5099,6 +5306,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -5119,6 +5327,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -5153,6 +5362,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultCustomErrorResponsePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -5204,6 +5414,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionCorsPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -5224,6 +5435,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -5244,6 +5456,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -5264,6 +5477,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -5285,6 +5499,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -5311,6 +5526,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionMaxStreamDur
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5327,6 +5543,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5338,6 +5555,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -5362,6 +5580,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5381,6 +5600,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5397,6 +5617,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5408,6 +5629,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBa
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -5432,6 +5654,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirro
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -5452,6 +5675,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -5473,6 +5697,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRequestMirro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -5493,6 +5718,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRetryPolicyP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -5513,6 +5739,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionTimeout
 {
     /// <summary>
@@ -5533,6 +5760,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -5554,6 +5782,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionUrlRewrite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -5575,6 +5804,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -5596,6 +5826,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -5630,6 +5861,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -5663,6 +5895,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultRouteAction
 {
     /// <summary>
@@ -5749,6 +5982,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5765,6 +5999,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5776,6 +6011,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultServiceRefPolicy
 {
     /// <summary>
@@ -5800,6 +6036,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultServiceRefPolicy
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -5819,6 +6056,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -5835,6 +6073,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -5846,6 +6085,7 @@ public enum V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicy
 {
     /// <summary>
@@ -5870,6 +6110,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultServiceSelectorPolicy
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultServiceSelector
 {
     /// <summary>
@@ -5890,6 +6131,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderDefaultUrlRedirect
 {
     /// <summary>
@@ -5944,6 +6186,7 @@ public partial class V1beta1URLMapSpecInitProviderDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -5965,6 +6208,7 @@ public partial class V1beta1URLMapSpecInitProviderHeaderActionRequestHeadersToAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -5986,6 +6230,7 @@ public partial class V1beta1URLMapSpecInitProviderHeaderActionResponseHeadersToA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderHeaderAction
 {
     /// <summary>
@@ -6020,6 +6265,7 @@ public partial class V1beta1URLMapSpecInitProviderHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderHostRule
 {
     /// <summary>
@@ -6047,6 +6293,7 @@ public partial class V1beta1URLMapSpecInitProviderHostRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -6073,6 +6320,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6089,6 +6337,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6100,6 +6349,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -6124,6 +6374,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6143,6 +6394,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6159,6 +6411,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6170,6 +6423,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -6194,6 +6448,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -6214,6 +6469,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -6248,6 +6504,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -6299,6 +6556,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -6319,6 +6577,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -6339,6 +6598,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -6359,6 +6619,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -6380,6 +6641,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -6406,6 +6668,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6422,6 +6685,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6433,6 +6697,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -6457,6 +6722,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6476,6 +6742,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6492,6 +6759,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6503,6 +6771,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMir
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -6527,6 +6796,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -6547,6 +6817,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -6568,6 +6839,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -6588,6 +6860,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -6608,6 +6881,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionTimeout
 {
     /// <summary>
@@ -6628,6 +6902,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -6649,6 +6924,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionU
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -6670,6 +6946,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -6691,6 +6968,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -6725,6 +7003,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -6758,6 +7037,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteAction
 {
     /// <summary>
@@ -6850,6 +7130,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6866,6 +7147,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6877,6 +7159,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPolicy
 {
     /// <summary>
@@ -6901,6 +7184,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRefPo
 /// <summary>Reference to a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -6920,6 +7204,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -6936,6 +7221,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -6947,6 +7233,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelectorPolicy
 {
     /// <summary>
@@ -6971,6 +7258,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelec
 /// <summary>Selector for a BackendBucket in compute to populate defaultService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelector
 {
     /// <summary>
@@ -6991,6 +7279,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultServiceSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultUrlRedirect
 {
     /// <summary>
@@ -7048,6 +7337,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -7069,6 +7359,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderActionRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -7090,6 +7381,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderActionRespons
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderAction
 {
     /// <summary>
@@ -7124,6 +7416,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -7150,6 +7443,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7166,6 +7460,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7177,6 +7472,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRefPolicy
 {
     /// <summary>
@@ -7201,6 +7497,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// <summary>Reference to a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7220,6 +7517,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7236,6 +7534,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7247,6 +7546,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponseP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelectorPolicy
 {
     /// <summary>
@@ -7271,6 +7571,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 /// <summary>Selector for a BackendBucket in compute to populate errorService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorServiceSelector
 {
     /// <summary>
@@ -7291,6 +7592,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
     /// <summary>
@@ -7325,6 +7627,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleCustomError
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
     /// <summary>
@@ -7376,6 +7679,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -7396,6 +7700,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -7416,6 +7721,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -7436,6 +7742,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -7457,6 +7764,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -7483,6 +7791,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7499,6 +7808,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7510,6 +7820,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRefPolicy
 {
     /// <summary>
@@ -7534,6 +7845,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7553,6 +7865,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7569,6 +7882,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7580,6 +7894,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMi
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -7604,6 +7919,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicyBackendServiceSelector
 {
     /// <summary>
@@ -7624,6 +7940,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -7645,6 +7962,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -7665,6 +7983,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -7685,6 +8004,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionTimeout
 {
     /// <summary>
@@ -7705,6 +8025,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
     /// <summary>
@@ -7732,6 +8053,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7748,6 +8070,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7759,6 +8082,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRefPolicy
 {
     /// <summary>
@@ -7783,6 +8107,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// <summary>Reference to a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -7802,6 +8127,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -7818,6 +8144,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -7829,6 +8156,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedB
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelectorPolicy
 {
     /// <summary>
@@ -7853,6 +8181,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// <summary>Selector for a BackendService in compute to populate backendService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesBackendServiceSelector
 {
     /// <summary>
@@ -7873,6 +8202,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -7894,6 +8224,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -7915,6 +8246,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -7949,6 +8281,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -7990,6 +8323,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 {
     /// <summary>
@@ -8082,6 +8416,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleRouteAction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8098,6 +8433,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8109,6 +8445,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefPolicy
 {
     /// <summary>
@@ -8133,6 +8470,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRefP
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -8152,6 +8490,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -8168,6 +8507,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -8179,6 +8519,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelectorPolicy
 {
     /// <summary>
@@ -8203,6 +8544,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSele
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSelector
 {
     /// <summary>
@@ -8223,6 +8565,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleServiceSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleUrlRedirect
 {
     /// <summary>
@@ -8280,6 +8623,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRuleUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRule
 {
     /// <summary>
@@ -8334,6 +8678,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherPathRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -8354,6 +8699,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesCustomErr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
     /// <summary>
@@ -8380,6 +8726,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesCustomErr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -8401,6 +8748,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -8422,6 +8770,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
@@ -8456,6 +8805,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
     /// <summary>The end of the range (exclusive).</summary>
@@ -8469,6 +8819,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
     /// <summary>
@@ -8540,6 +8891,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
     /// <summary>
@@ -8556,6 +8908,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
     /// <summary>
@@ -8577,6 +8930,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
     /// <summary>
@@ -8614,6 +8968,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRules
 {
     /// <summary>
@@ -8700,6 +9055,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
     /// <summary>
@@ -8751,6 +9107,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -8771,6 +9128,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -8791,6 +9149,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -8811,6 +9170,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -8832,6 +9192,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -8852,6 +9213,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -8865,6 +9227,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -8885,6 +9248,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -8905,6 +9269,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionTimeout
 {
     /// <summary>
@@ -8925,6 +9290,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
     /// <summary>
@@ -8962,6 +9328,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -8983,6 +9350,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -9004,6 +9372,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -9038,6 +9407,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -9071,6 +9441,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteAction
 {
     /// <summary>
@@ -9163,6 +9534,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesRouteActi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9179,6 +9551,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9190,6 +9563,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRefPolicy
 {
     /// <summary>
@@ -9214,6 +9588,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRe
 /// <summary>Reference to a BackendService in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9233,6 +9608,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9249,6 +9625,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9260,6 +9637,7 @@ public enum V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelectorPolicy
 {
     /// <summary>
@@ -9284,6 +9662,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSe
 /// <summary>Selector for a BackendService in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSelector
 {
     /// <summary>
@@ -9304,6 +9683,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesServiceSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesUrlRedirect
 {
     /// <summary>
@@ -9361,6 +9741,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRulesUrlRedire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRules
 {
     /// <summary>
@@ -9440,6 +9821,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcherRouteRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderPathMatcher
 {
     /// <summary>
@@ -9535,6 +9917,7 @@ public partial class V1beta1URLMapSpecInitProviderPathMatcher
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTestHeaders
 {
     /// <summary>
@@ -9557,6 +9940,7 @@ public partial class V1beta1URLMapSpecInitProviderTestHeaders
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9573,6 +9957,7 @@ public enum V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9584,6 +9969,7 @@ public enum V1beta1URLMapSpecInitProviderTestServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTestServiceRefPolicy
 {
     /// <summary>
@@ -9608,6 +9994,7 @@ public partial class V1beta1URLMapSpecInitProviderTestServiceRefPolicy
 /// <summary>Reference to a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTestServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9627,6 +10014,7 @@ public partial class V1beta1URLMapSpecInitProviderTestServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9643,6 +10031,7 @@ public enum V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9654,6 +10043,7 @@ public enum V1beta1URLMapSpecInitProviderTestServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTestServiceSelectorPolicy
 {
     /// <summary>
@@ -9678,6 +10068,7 @@ public partial class V1beta1URLMapSpecInitProviderTestServiceSelectorPolicy
 /// <summary>Selector for a BackendBucket in compute to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTestServiceSelector
 {
     /// <summary>
@@ -9698,6 +10089,7 @@ public partial class V1beta1URLMapSpecInitProviderTestServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProviderTest
 {
     /// <summary>Description of this test case.</summary>
@@ -9762,6 +10154,7 @@ public partial class V1beta1URLMapSpecInitProviderTest
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecInitProvider
 {
     /// <summary>
@@ -9863,6 +10256,7 @@ public partial class V1beta1URLMapSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -9887,6 +10281,7 @@ public enum V1beta1URLMapSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -9903,6 +10298,7 @@ public enum V1beta1URLMapSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1URLMapSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1URLMapSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -9914,6 +10310,7 @@ public enum V1beta1URLMapSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -9942,6 +10339,7 @@ public partial class V1beta1URLMapSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -9961,6 +10359,7 @@ public partial class V1beta1URLMapSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -9975,6 +10374,7 @@ public partial class V1beta1URLMapSpecWriteConnectionSecretToRef
 /// <summary>URLMapSpec defines the desired state of URLMap</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapSpec
 {
     /// <summary>
@@ -10042,6 +10442,7 @@ public partial class V1beta1URLMapSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -10062,6 +10463,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultCustomErrorResponsePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -10088,6 +10490,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultCustomErrorResponsePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -10139,6 +10542,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionCorsPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -10159,6 +10563,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -10179,6 +10584,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -10199,6 +10605,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -10220,6 +10627,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionFaultInjecti
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -10240,6 +10648,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionMaxStreamDur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -10253,6 +10662,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRequestMirro
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -10273,6 +10683,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRetryPolicyP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -10293,6 +10704,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionRetryPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionTimeout
 {
     /// <summary>
@@ -10313,6 +10725,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionTimeout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -10334,6 +10747,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionUrlRewrite
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -10355,6 +10769,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -10376,6 +10791,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -10410,6 +10826,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -10443,6 +10860,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteActionWeightedBack
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultRouteAction
 {
     /// <summary>
@@ -10523,6 +10941,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderDefaultUrlRedirect
 {
     /// <summary>
@@ -10577,6 +10996,7 @@ public partial class V1beta1URLMapStatusAtProviderDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -10598,6 +11018,7 @@ public partial class V1beta1URLMapStatusAtProviderHeaderActionRequestHeadersToAd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -10619,6 +11040,7 @@ public partial class V1beta1URLMapStatusAtProviderHeaderActionResponseHeadersToA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderHeaderAction
 {
     /// <summary>
@@ -10653,6 +11075,7 @@ public partial class V1beta1URLMapStatusAtProviderHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderHostRule
 {
     /// <summary>
@@ -10680,6 +11103,7 @@ public partial class V1beta1URLMapStatusAtProviderHostRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -10700,6 +11124,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultCustomErrorResponsePolicy
 {
     /// <summary>
@@ -10726,6 +11151,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultCustomErrorR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionCorsPolicy
 {
     /// <summary>
@@ -10777,6 +11203,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -10797,6 +11224,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -10817,6 +11245,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -10837,6 +11266,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -10858,6 +11288,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -10878,6 +11309,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -10891,6 +11323,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -10911,6 +11344,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -10931,6 +11365,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionTimeout
 {
     /// <summary>
@@ -10951,6 +11386,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionUrlRewrite
 {
     /// <summary>
@@ -10972,6 +11408,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionU
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -10993,6 +11430,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11014,6 +11452,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -11048,6 +11487,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -11081,6 +11521,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteActionW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteAction
 {
     /// <summary>
@@ -11167,6 +11608,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultUrlRedirect
 {
     /// <summary>
@@ -11224,6 +11666,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherDefaultUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11245,6 +11688,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderActionRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11266,6 +11710,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderActionRespons
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderAction
 {
     /// <summary>
@@ -11300,6 +11745,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -11320,6 +11766,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleCustomError
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleCustomErrorResponsePolicy
 {
     /// <summary>
@@ -11346,6 +11793,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleCustomError
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionCorsPolicy
 {
     /// <summary>
@@ -11397,6 +11845,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -11417,6 +11866,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -11437,6 +11887,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -11457,6 +11908,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -11478,6 +11930,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -11498,6 +11951,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -11511,6 +11965,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -11531,6 +11986,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -11551,6 +12007,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionTimeout
 {
     /// <summary>
@@ -11571,6 +12028,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionUrlRewrite
 {
     /// <summary>
@@ -11592,6 +12050,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11613,6 +12072,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11634,6 +12094,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -11668,6 +12129,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -11701,6 +12163,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 {
     /// <summary>
@@ -11787,6 +12250,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleRouteAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleUrlRedirect
 {
     /// <summary>
@@ -11844,6 +12308,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRuleUrlRedirect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRule
 {
     /// <summary>
@@ -11890,6 +12355,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherPathRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesCustomErrorResponsePolicyErrorResponseRule
 {
     /// <summary>Valid values include:</summary>
@@ -11910,6 +12376,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesCustomErr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesCustomErrorResponsePolicy
 {
     /// <summary>
@@ -11936,6 +12403,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesCustomErr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11957,6 +12425,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -11978,6 +12447,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderAction
 {
     /// <summary>
@@ -12012,6 +12482,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesHeaderAct
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch
 {
     /// <summary>The end of the range (exclusive).</summary>
@@ -12025,6 +12496,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesHeaderMatches
 {
     /// <summary>
@@ -12096,6 +12568,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels
 {
     /// <summary>
@@ -12112,6 +12585,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesMetadataFilters
 {
     /// <summary>
@@ -12133,6 +12607,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRulesQueryParameterMatches
 {
     /// <summary>
@@ -12170,6 +12645,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRules
 {
     /// <summary>
@@ -12256,6 +12732,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesMatchRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionCorsPolicy
 {
     /// <summary>
@@ -12307,6 +12784,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort
 {
     /// <summary>
@@ -12327,6 +12805,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay
 {
     /// <summary>
@@ -12347,6 +12826,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay
 {
     /// <summary>
@@ -12367,6 +12847,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionFaultInjectionPolicy
 {
     /// <summary>
@@ -12388,6 +12869,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionMaxStreamDuration
 {
     /// <summary>
@@ -12408,6 +12890,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 {
     /// <summary>
@@ -12421,6 +12904,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout
 {
     /// <summary>
@@ -12441,6 +12925,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionRetryPolicy
 {
     /// <summary>Specifies the allowed number retries. This number must be &gt; 0.</summary>
@@ -12461,6 +12946,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionTimeout
 {
     /// <summary>
@@ -12481,6 +12967,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionUrlRewrite
 {
     /// <summary>
@@ -12518,6 +13005,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -12539,6 +13027,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd
 {
     /// <summary>The name of the header.</summary>
@@ -12560,6 +13049,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction
 {
     /// <summary>
@@ -12594,6 +13084,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActionWeightedBackendServices
 {
     /// <summary>
@@ -12627,6 +13118,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteAction
 {
     /// <summary>
@@ -12713,6 +13205,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesRouteActi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesUrlRedirect
 {
     /// <summary>
@@ -12770,6 +13263,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRulesUrlRedire
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRules
 {
     /// <summary>
@@ -12841,6 +13335,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcherRouteRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderPathMatcher
 {
     /// <summary>
@@ -12928,6 +13423,7 @@ public partial class V1beta1URLMapStatusAtProviderPathMatcher
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderTestHeaders
 {
     /// <summary>
@@ -12944,6 +13440,7 @@ public partial class V1beta1URLMapStatusAtProviderTestHeaders
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProviderTest
 {
     /// <summary>Description of this test case.</summary>
@@ -12988,6 +13485,7 @@ public partial class V1beta1URLMapStatusAtProviderTest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusAtProvider
 {
     /// <summary>Creation timestamp in RFC3339 text format.</summary>
@@ -13101,6 +13599,7 @@ public partial class V1beta1URLMapStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatusConditions
 {
     /// <summary>
@@ -13144,6 +13643,7 @@ public partial class V1beta1URLMapStatusConditions
 /// <summary>URLMapStatus defines the observed state of URLMap.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1URLMapStatus
 {
     [JsonPropertyName("atProvider")]
@@ -13162,9 +13662,13 @@ public partial class V1beta1URLMapStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.</summary>
+/// <summary>
+/// URLMap is the Schema for the URLMaps API. UrlMaps are used to route requests to a backend service based on rules that you define for the host and path of an incoming URL.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1URLMap : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1URLMapSpec>, IStatus<V1beta1URLMapStatus?>
 {

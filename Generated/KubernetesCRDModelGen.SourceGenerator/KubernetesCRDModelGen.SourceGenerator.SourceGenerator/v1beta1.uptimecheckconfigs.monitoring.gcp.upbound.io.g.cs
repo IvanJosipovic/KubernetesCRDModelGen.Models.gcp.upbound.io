@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.gcp.upbound.io;
-/// <summary>UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.</summary>
+/// <summary>
+/// UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UptimeCheckConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UptimeCheckConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1UptimeCheckConfigList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1UptimeCheckConfigSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderContentMatchersJsonPathMatcher
 {
     /// <summary>
@@ -74,6 +80,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderContentMatchersJsonP
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderContentMatchers
 {
     /// <summary>String or regex content to match (max 1024 bytes)</summary>
@@ -98,6 +105,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderContentMatchers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAcceptedResponseStatusCodes
 {
     /// <summary>
@@ -115,6 +123,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAcceptedRes
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -132,6 +141,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfoPas
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfo
 {
     /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckAuthInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -160,6 +171,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckServiceAgentAuthentication
 {
     /// <summary>
@@ -172,6 +184,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheckServiceAgen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheck
 {
     /// <summary>
@@ -252,6 +265,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderHttpCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderMonitoredResource
 {
     /// <summary>Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels project_id, instance_id, and zone.</summary>
@@ -271,6 +285,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderMonitoredResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -287,6 +302,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -298,6 +314,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRefPolicy
 {
     /// <summary>
@@ -322,6 +339,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupId
 /// <summary>Reference to a Group in monitoring to populate groupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -341,6 +359,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupId
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -357,6 +376,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -368,6 +388,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelectorPolicy
 {
     /// <summary>
@@ -392,6 +413,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupId
 /// <summary>Selector for a Group in monitoring to populate groupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupIdSelector
 {
     /// <summary>
@@ -412,6 +434,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroupGroupId
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroup
 {
     /// <summary>The group of resources being monitored. Should be the name of a group</summary>
@@ -442,6 +465,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -458,6 +482,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -469,6 +494,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRefPolicy
 {
     /// <summary>
@@ -493,6 +519,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// <summary>Reference to a Function in cloudfunctions2 to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -512,6 +539,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -528,6 +556,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -539,6 +568,7 @@ public enum V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunction
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicy
 {
     /// <summary>
@@ -563,6 +593,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 /// <summary>Selector for a Function in cloudfunctions2 to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2NameSelector
 {
     /// <summary>
@@ -583,6 +614,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorCloudFunctionV2
 {
     /// <summary>The fully qualified name of the cloud function resource.</summary>
@@ -600,6 +632,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitorClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitor
 {
     /// <summary>
@@ -612,6 +645,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderSyntheticMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderTcpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -621,6 +655,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderTcpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProviderTcpCheck
 {
     /// <summary>
@@ -637,6 +672,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProviderTcpCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecForProvider
 {
     /// <summary>
@@ -724,6 +760,7 @@ public partial class V1beta1UptimeCheckConfigSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderContentMatchersJsonPathMatcher
 {
     /// <summary>
@@ -741,6 +778,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderContentMatchersJson
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderContentMatchers
 {
     /// <summary>String or regex content to match (max 1024 bytes)</summary>
@@ -765,6 +803,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderContentMatchers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAcceptedResponseStatusCodes
 {
     /// <summary>
@@ -782,6 +821,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAcceptedRe
 /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPasswordSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -799,6 +839,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfoPa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfo
 {
     /// <summary>A SecretKeySelector is a reference to a secret key in an arbitrary namespace.</summary>
@@ -818,6 +859,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckAuthInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -827,6 +869,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckServiceAgentAuthentication
 {
     /// <summary>
@@ -839,6 +882,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheckServiceAge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheck
 {
     /// <summary>
@@ -919,6 +963,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderHttpCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderMonitoredResource
 {
     /// <summary>Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels project_id, instance_id, and zone.</summary>
@@ -938,6 +983,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderMonitoredResource
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -954,6 +1000,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -965,6 +1012,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRefPolicy
 {
     /// <summary>
@@ -989,6 +1037,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 /// <summary>Reference to a Group in monitoring to populate groupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1008,6 +1057,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1024,6 +1074,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1035,6 +1086,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelectorPolicy
 {
     /// <summary>
@@ -1059,6 +1111,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 /// <summary>Selector for a Group in monitoring to populate groupId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupIdSelector
 {
     /// <summary>
@@ -1079,6 +1132,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroupGroupI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroup
 {
     /// <summary>The group of resources being monitored. Should be the name of a group</summary>
@@ -1109,6 +1163,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderResourceGroup
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1125,6 +1180,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1136,6 +1192,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRefPolicy
 {
     /// <summary>
@@ -1160,6 +1217,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// <summary>Reference to a Function in cloudfunctions2 to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1179,6 +1237,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1195,6 +1254,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1206,6 +1266,7 @@ public enum V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctio
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelectorPolicy
 {
     /// <summary>
@@ -1230,6 +1291,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 /// <summary>Selector for a Function in cloudfunctions2 to populate name.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2NameSelector
 {
     /// <summary>
@@ -1250,6 +1312,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorCloudFunctionV2
 {
     /// <summary>The fully qualified name of the cloud function resource.</summary>
@@ -1267,6 +1330,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitorClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitor
 {
     /// <summary>
@@ -1279,6 +1343,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderSyntheticMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderTcpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -1288,6 +1353,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderTcpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProviderTcpCheck
 {
     /// <summary>
@@ -1316,6 +1382,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProviderTcpCheck
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecInitProvider
 {
     /// <summary>
@@ -1407,6 +1474,7 @@ public partial class V1beta1UptimeCheckConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1431,6 +1499,7 @@ public enum V1beta1UptimeCheckConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1447,6 +1516,7 @@ public enum V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1458,6 +1528,7 @@ public enum V1beta1UptimeCheckConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1486,6 +1557,7 @@ public partial class V1beta1UptimeCheckConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1505,6 +1577,7 @@ public partial class V1beta1UptimeCheckConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1519,6 +1592,7 @@ public partial class V1beta1UptimeCheckConfigSpecWriteConnectionSecretToRef
 /// <summary>UptimeCheckConfigSpec defines the desired state of UptimeCheckConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigSpec
 {
     /// <summary>
@@ -1586,6 +1660,7 @@ public partial class V1beta1UptimeCheckConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderContentMatchersJsonPathMatcher
 {
     /// <summary>
@@ -1603,6 +1678,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderContentMatchersJson
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderContentMatchers
 {
     /// <summary>String or regex content to match (max 1024 bytes)</summary>
@@ -1627,6 +1703,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderContentMatchers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAcceptedResponseStatusCodes
 {
     /// <summary>
@@ -1643,6 +1720,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAcceptedRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAuthInfo
 {
     [JsonPropertyName("passwordWo")]
@@ -1658,6 +1736,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckAuthInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -1667,6 +1746,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckServiceAgentAuthentication
 {
     /// <summary>
@@ -1679,6 +1759,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheckServiceAge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheck
 {
     /// <summary>
@@ -1759,6 +1840,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderHttpCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderMonitoredResource
 {
     /// <summary>Values for all of the labels listed in the associated monitored resource descriptor. For example, Compute Engine VM instances use the labels project_id, instance_id, and zone.</summary>
@@ -1772,6 +1854,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderMonitoredResource
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderResourceGroup
 {
     /// <summary>The group of resources being monitored. Should be the name of a group</summary>
@@ -1788,6 +1871,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderResourceGroup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderSyntheticMonitorCloudFunctionV2
 {
     /// <summary>The fully qualified name of the cloud function resource.</summary>
@@ -1797,6 +1881,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderSyntheticMonitorClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderSyntheticMonitor
 {
     /// <summary>
@@ -1809,6 +1894,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderSyntheticMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderTcpCheckPingConfig
 {
     /// <summary>Number of ICMP pings. A maximum of 3 ICMP pings is currently supported.</summary>
@@ -1818,6 +1904,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderTcpCheckPingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProviderTcpCheck
 {
     /// <summary>
@@ -1834,6 +1921,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProviderTcpCheck
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusAtProvider
 {
     /// <summary>
@@ -1934,6 +2022,7 @@ public partial class V1beta1UptimeCheckConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatusConditions
 {
     /// <summary>
@@ -1977,6 +2066,7 @@ public partial class V1beta1UptimeCheckConfigStatusConditions
 /// <summary>UptimeCheckConfigStatus defines the observed state of UptimeCheckConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1UptimeCheckConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1995,9 +2085,13 @@ public partial class V1beta1UptimeCheckConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.</summary>
+/// <summary>
+/// UptimeCheckConfig is the Schema for the UptimeCheckConfigs API. This message configures which resources and services to monitor for availability.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UptimeCheckConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UptimeCheckConfigSpec>, IStatus<V1beta1UptimeCheckConfigStatus?>
 {

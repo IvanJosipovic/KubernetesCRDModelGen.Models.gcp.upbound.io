@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
-/// <summary>MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.</summary>
+/// <summary>
+/// MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetastoreServiceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1MetastoreService>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1MetastoreServiceList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1MetastoreServiceSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 /// <summary>Reference to a CryptoKey in kms to populate kmsKey.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeyRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 /// <summary>Selector for a CryptoKey in kms to populate kmsKey.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKeySelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfigKmsKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfig
 {
     /// <summary>
@@ -224,6 +238,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigAuxiliaryVersions
 {
     /// <summary>
@@ -244,6 +259,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigAu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigKerberosConfigKeytab
 {
     /// <summary>
@@ -256,6 +272,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigKerberosConfig
 {
     /// <summary>
@@ -276,6 +293,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfigKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfig
 {
     /// <summary>
@@ -318,6 +336,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderHiveMetastoreConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderMaintenanceWindow
 {
     /// <summary>
@@ -334,6 +353,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderMaintenanceWindow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderMetadataIntegrationDataCatalogConfig
 {
     /// <summary>Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.</summary>
@@ -343,6 +363,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderMetadataIntegrationDa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderMetadataIntegration
 {
     /// <summary>
@@ -361,6 +382,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderMetadataIntegration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -377,6 +399,7 @@ public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -388,6 +411,7 @@ public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRefPolicy
 {
     /// <summary>
@@ -412,6 +436,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumer
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -431,6 +456,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumer
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -447,6 +473,7 @@ public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -458,6 +485,7 @@ public enum V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetwo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -482,6 +510,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumer
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumersSubnetworkSelector
 {
     /// <summary>
@@ -502,6 +531,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumers
 {
     /// <summary>
@@ -524,6 +554,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfigConsumer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfig
 {
     /// <summary>
@@ -536,6 +567,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderScalingConfigAutoscalingConfigLimitConfig
 {
     /// <summary>The maximum scaling factor that the service will autoscale to. The default value is 6.0.</summary>
@@ -549,6 +581,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderScalingConfigAutoscal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderScalingConfigAutoscalingConfig
 {
     /// <summary>Defines whether autoscaling is enabled. The default value is false.</summary>
@@ -565,6 +598,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderScalingConfigAutoscal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderScalingConfig
 {
     /// <summary>
@@ -588,6 +622,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderScheduledBackup
 {
     /// <summary>A Cloud Storage URI of a folder, in the format gs://&lt;bucket_name&gt;/&lt;path_inside_bucket&gt;. A sub-folder &lt;backup_folder&gt; containing backup files will be stored below it.</summary>
@@ -609,6 +644,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderScheduledBackup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProviderTelemetryConfig
 {
     /// <summary>
@@ -622,6 +658,7 @@ public partial class V1beta1MetastoreServiceSpecForProviderTelemetryConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecForProvider
 {
     /// <summary>
@@ -752,6 +789,7 @@ public partial class V1beta1MetastoreServiceSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -768,6 +806,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -779,6 +818,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRefPolicy
 {
     /// <summary>
@@ -803,6 +843,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 /// <summary>Reference to a CryptoKey in kms to populate kmsKey.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeyRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -822,6 +863,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -838,6 +880,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -849,6 +892,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelectorPolicy
 {
     /// <summary>
@@ -873,6 +917,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 /// <summary>Selector for a CryptoKey in kms to populate kmsKey.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsKeySelector
 {
     /// <summary>
@@ -893,6 +938,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfigKmsK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfig
 {
     /// <summary>
@@ -913,6 +959,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigAuxiliaryVersions
 {
     /// <summary>
@@ -933,6 +980,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigKerberosConfigKeytab
 {
     /// <summary>
@@ -945,6 +993,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigKerberosConfig
 {
     /// <summary>
@@ -965,6 +1014,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfigK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfig
 {
     /// <summary>
@@ -1007,6 +1057,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderHiveMetastoreConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderMaintenanceWindow
 {
     /// <summary>
@@ -1023,6 +1074,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderMaintenanceWindow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderMetadataIntegrationDataCatalogConfig
 {
     /// <summary>Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.</summary>
@@ -1032,6 +1084,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderMetadataIntegrationD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderMetadataIntegration
 {
     /// <summary>
@@ -1050,6 +1103,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderMetadataIntegration
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1066,6 +1120,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1077,6 +1132,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRefPolicy
 {
     /// <summary>
@@ -1101,6 +1157,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsume
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1120,6 +1177,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsume
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1136,6 +1194,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1147,6 +1206,7 @@ public enum V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetw
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -1171,6 +1231,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsume
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumersSubnetworkSelector
 {
     /// <summary>
@@ -1191,6 +1252,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsume
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsumers
 {
     /// <summary>
@@ -1213,6 +1275,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfigConsume
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfig
 {
     /// <summary>
@@ -1225,6 +1288,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfigAutoscalingConfigLimitConfig
 {
     /// <summary>The maximum scaling factor that the service will autoscale to. The default value is 6.0.</summary>
@@ -1238,6 +1302,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfigAutosca
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfigAutoscalingConfig
 {
     /// <summary>Defines whether autoscaling is enabled. The default value is false.</summary>
@@ -1254,6 +1319,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfigAutosca
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfig
 {
     /// <summary>
@@ -1277,6 +1343,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderScheduledBackup
 {
     /// <summary>A Cloud Storage URI of a folder, in the format gs://&lt;bucket_name&gt;/&lt;path_inside_bucket&gt;. A sub-folder &lt;backup_folder&gt; containing backup files will be stored below it.</summary>
@@ -1298,6 +1365,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderScheduledBackup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProviderTelemetryConfig
 {
     /// <summary>
@@ -1323,6 +1391,7 @@ public partial class V1beta1MetastoreServiceSpecInitProviderTelemetryConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecInitProvider
 {
     /// <summary>
@@ -1444,6 +1513,7 @@ public partial class V1beta1MetastoreServiceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1468,6 +1538,7 @@ public enum V1beta1MetastoreServiceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1484,6 +1555,7 @@ public enum V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1495,6 +1567,7 @@ public enum V1beta1MetastoreServiceSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1523,6 +1596,7 @@ public partial class V1beta1MetastoreServiceSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1542,6 +1616,7 @@ public partial class V1beta1MetastoreServiceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1556,6 +1631,7 @@ public partial class V1beta1MetastoreServiceSpecWriteConnectionSecretToRef
 /// <summary>MetastoreServiceSpec defines the desired state of MetastoreService</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceSpec
 {
     /// <summary>
@@ -1623,6 +1699,7 @@ public partial class V1beta1MetastoreServiceSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderEncryptionConfig
 {
     /// <summary>
@@ -1635,6 +1712,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigAuxiliaryVersions
 {
     /// <summary>
@@ -1655,6 +1733,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigKerberosConfigKeytab
 {
     /// <summary>
@@ -1667,6 +1746,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigKerberosConfig
 {
     /// <summary>
@@ -1687,6 +1767,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfigK
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfig
 {
     /// <summary>
@@ -1729,6 +1810,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderHiveMetastoreConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderMaintenanceWindow
 {
     /// <summary>
@@ -1745,6 +1827,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderMaintenanceWindow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderMetadataIntegrationDataCatalogConfig
 {
     /// <summary>Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.</summary>
@@ -1754,6 +1837,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderMetadataIntegrationD
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderMetadataIntegration
 {
     /// <summary>
@@ -1766,6 +1850,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderMetadataIntegration
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderNetworkConfigConsumers
 {
     /// <summary>The URI of the endpoint used to access the metastore service.</summary>
@@ -1784,6 +1869,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderNetworkConfigConsume
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderNetworkConfig
 {
     /// <summary>
@@ -1796,6 +1882,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderNetworkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfigAutoscalingConfigLimitConfig
 {
     /// <summary>The maximum scaling factor that the service will autoscale to. The default value is 6.0.</summary>
@@ -1809,6 +1896,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfigAutosca
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfigAutoscalingConfig
 {
     /// <summary>Defines whether autoscaling is enabled. The default value is false.</summary>
@@ -1832,6 +1920,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfigAutosca
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfig
 {
     /// <summary>
@@ -1855,6 +1944,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderScalingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderScheduledBackup
 {
     /// <summary>A Cloud Storage URI of a folder, in the format gs://&lt;bucket_name&gt;/&lt;path_inside_bucket&gt;. A sub-folder &lt;backup_folder&gt; containing backup files will be stored below it.</summary>
@@ -1876,6 +1966,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderScheduledBackup
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProviderTelemetryConfig
 {
     /// <summary>
@@ -1889,6 +1980,7 @@ public partial class V1beta1MetastoreServiceStatusAtProviderTelemetryConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusAtProvider
 {
     /// <summary>A Cloud Storage URI (starting with gs://) that specifies where artifacts related to the metastore service are stored.</summary>
@@ -2060,6 +2152,7 @@ public partial class V1beta1MetastoreServiceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatusConditions
 {
     /// <summary>
@@ -2103,6 +2196,7 @@ public partial class V1beta1MetastoreServiceStatusConditions
 /// <summary>MetastoreServiceStatus defines the observed state of MetastoreService.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1MetastoreServiceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2121,9 +2215,13 @@ public partial class V1beta1MetastoreServiceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.</summary>
+/// <summary>
+/// MetastoreService is the Schema for the MetastoreServices API. A managed metastore service that serves metadata queries.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1MetastoreService : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1MetastoreServiceSpec>, IStatus<V1beta1MetastoreServiceStatus?>
 {

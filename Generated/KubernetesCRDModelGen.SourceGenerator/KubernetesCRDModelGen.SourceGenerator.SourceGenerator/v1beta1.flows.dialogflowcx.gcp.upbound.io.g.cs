@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dialogflowcx.gcp.upbound.io;
-/// <summary>Flow is the Schema for the Flows API. Flows represents the conversation flows when you build your chatbot agent.</summary>
+/// <summary>
+/// Flow is the Schema for the Flows API. Flows represents the conversation flows when you build your chatbot agent.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Flow>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1FlowList : IKubernetesObject<V1ListMeta>, IItems<V1b
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1FlowSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderAdvancedSettingsAudioExportGcsDestination
 {
     /// <summary>
@@ -69,6 +75,7 @@ public partial class V1beta1FlowSpecForProviderAdvancedSettingsAudioExportGcsDes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -86,6 +93,7 @@ public partial class V1beta1FlowSpecForProviderAdvancedSettingsDtmfSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -103,6 +111,7 @@ public partial class V1beta1FlowSpecForProviderAdvancedSettingsLoggingSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -130,6 +139,7 @@ public partial class V1beta1FlowSpecForProviderAdvancedSettingsSpeechSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderAdvancedSettings
 {
     /// <summary>If present, incoming audio is exported by Dialogflow to the configured Google Cloud Storage destination. Exposed at the following levels:</summary>
@@ -151,6 +161,7 @@ public partial class V1beta1FlowSpecForProviderAdvancedSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -163,6 +174,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -172,6 +184,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -181,6 +194,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -194,6 +208,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -203,6 +218,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -212,6 +228,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -221,6 +238,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -275,6 +293,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentMe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -288,6 +307,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillmentSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillment
 {
     /// <summary>
@@ -334,6 +354,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlersTriggerFulfillment
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderEventHandlers
 {
     /// <summary>The name of the event to handle.</summary>
@@ -364,6 +385,7 @@ public partial class V1beta1FlowSpecForProviderEventHandlers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsDataStoreConnections
 {
     /// <summary>The full name of the referenced data store. Formats: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore} projects/{project}/locations/{location}/dataStores/{dataStore}</summary>
@@ -387,6 +409,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsDataSto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -403,6 +426,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -414,6 +438,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRefPolicy
 {
     /// <summary>
@@ -438,6 +463,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetF
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -457,6 +483,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetF
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -473,6 +500,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -484,6 +512,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicy
 {
     /// <summary>
@@ -508,6 +537,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetF
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetFlowSelector
 {
     /// <summary>
@@ -528,6 +558,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTargetF
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -559,6 +590,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -576,6 +608,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -603,6 +636,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
     /// <summary>Define behaviors for DTMF (dual tone multi frequency). DTMF settings does not override each other. DTMF settings set at different levels define DTMF detections running in parallel. Exposed at the following levels:</summary>
@@ -620,6 +654,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -632,6 +667,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -641,12 +677,14 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -656,6 +694,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -669,6 +708,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -678,6 +718,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -687,6 +728,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -696,6 +738,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -759,6 +802,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -778,6 +822,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -794,6 +839,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -805,6 +851,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicy
 {
     /// <summary>
@@ -829,6 +876,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -848,6 +896,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -864,6 +913,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -875,6 +925,7 @@ public enum V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillme
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy
 {
     /// <summary>
@@ -899,6 +950,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector
 {
     /// <summary>
@@ -919,6 +971,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
     /// <summary>
@@ -982,6 +1035,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettingsTrigger
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettings
 {
     /// <summary>
@@ -1029,6 +1083,7 @@ public partial class V1beta1FlowSpecForProviderKnowledgeConnectorSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderNluSettings
 {
     /// <summary>
@@ -1055,6 +1110,7 @@ public partial class V1beta1FlowSpecForProviderNluSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderParentRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderParentRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1071,6 +1127,7 @@ public enum V1beta1FlowSpecForProviderParentRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderParentRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderParentRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1082,6 +1139,7 @@ public enum V1beta1FlowSpecForProviderParentRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderParentRefPolicy
 {
     /// <summary>
@@ -1106,6 +1164,7 @@ public partial class V1beta1FlowSpecForProviderParentRefPolicy
 /// <summary>Reference to a Agent in dialogflowcx to populate parent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderParentRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1125,6 +1184,7 @@ public partial class V1beta1FlowSpecForProviderParentRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderParentSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderParentSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1141,6 +1201,7 @@ public enum V1beta1FlowSpecForProviderParentSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderParentSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderParentSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1152,6 +1213,7 @@ public enum V1beta1FlowSpecForProviderParentSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderParentSelectorPolicy
 {
     /// <summary>
@@ -1176,6 +1238,7 @@ public partial class V1beta1FlowSpecForProviderParentSelectorPolicy
 /// <summary>Selector for a Agent in dialogflowcx to populate parent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderParentSelector
 {
     /// <summary>
@@ -1202,6 +1265,7 @@ public partial class V1beta1FlowSpecForProviderParentSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1218,6 +1282,7 @@ public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1229,6 +1294,7 @@ public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPolicy
 {
     /// <summary>
@@ -1253,6 +1319,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRefPoli
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1272,6 +1339,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1288,6 +1356,7 @@ public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1299,6 +1368,7 @@ public enum V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelectorPolicy
 {
     /// <summary>
@@ -1323,6 +1393,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelecto
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelector
 {
     /// <summary>
@@ -1343,6 +1414,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTargetFlowSelecto
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -1355,6 +1427,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -1364,6 +1437,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -1373,6 +1447,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -1386,6 +1461,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -1395,6 +1471,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -1404,6 +1481,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -1413,6 +1491,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -1467,6 +1546,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -1480,6 +1560,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillment
 {
     /// <summary>
@@ -1518,6 +1599,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutesTriggerFulfillmen
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProviderTransitionRoutes
 {
     /// <summary>
@@ -1566,6 +1648,7 @@ public partial class V1beta1FlowSpecForProviderTransitionRoutes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecForProvider
 {
     /// <summary>
@@ -1666,6 +1749,7 @@ public partial class V1beta1FlowSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderAdvancedSettingsAudioExportGcsDestination
 {
     /// <summary>
@@ -1678,6 +1762,7 @@ public partial class V1beta1FlowSpecInitProviderAdvancedSettingsAudioExportGcsDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -1695,6 +1780,7 @@ public partial class V1beta1FlowSpecInitProviderAdvancedSettingsDtmfSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -1712,6 +1798,7 @@ public partial class V1beta1FlowSpecInitProviderAdvancedSettingsLoggingSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -1739,6 +1826,7 @@ public partial class V1beta1FlowSpecInitProviderAdvancedSettingsSpeechSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderAdvancedSettings
 {
     /// <summary>If present, incoming audio is exported by Dialogflow to the configured Google Cloud Storage destination. Exposed at the following levels:</summary>
@@ -1760,6 +1848,7 @@ public partial class V1beta1FlowSpecInitProviderAdvancedSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -1772,6 +1861,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -1781,6 +1871,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -1790,6 +1881,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -1803,6 +1895,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -1812,6 +1905,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -1821,6 +1915,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -1830,6 +1925,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -1884,6 +1980,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -1897,6 +1994,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillmentS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillment
 {
     /// <summary>
@@ -1943,6 +2041,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlersTriggerFulfillment
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderEventHandlers
 {
     /// <summary>The name of the event to handle.</summary>
@@ -1973,6 +2072,7 @@ public partial class V1beta1FlowSpecInitProviderEventHandlers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsDataStoreConnections
 {
     /// <summary>The full name of the referenced data store. Formats: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore} projects/{project}/locations/{location}/dataStores/{dataStore}</summary>
@@ -1996,6 +2096,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsDataSt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2012,6 +2113,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2023,6 +2125,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRefPolicy
 {
     /// <summary>
@@ -2047,6 +2150,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTarget
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2066,6 +2170,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTarget
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2082,6 +2187,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2093,6 +2199,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelectorPolicy
 {
     /// <summary>
@@ -2117,6 +2224,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTarget
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTargetFlowSelector
 {
     /// <summary>
@@ -2137,6 +2245,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTarget
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -2168,6 +2277,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -2185,6 +2295,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -2212,6 +2323,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
     /// <summary>Define behaviors for DTMF (dual tone multi frequency). DTMF settings does not override each other. DTMF settings set at different levels define DTMF detections running in parallel. Exposed at the following levels:</summary>
@@ -2229,6 +2341,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -2241,6 +2354,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -2250,12 +2364,14 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -2265,6 +2381,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -2278,6 +2395,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -2287,6 +2405,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -2296,6 +2415,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -2305,6 +2425,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -2368,6 +2489,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -2387,6 +2509,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2403,6 +2526,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2414,6 +2538,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRefPolicy
 {
     /// <summary>
@@ -2438,6 +2563,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// <summary>Reference to a Webhook in dialogflowcx to populate webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2457,6 +2583,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2473,6 +2600,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2484,6 +2612,7 @@ public enum V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillm
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelectorPolicy
 {
     /// <summary>
@@ -2508,6 +2637,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 /// <summary>Selector for a Webhook in dialogflowcx to populate webhook.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillmentWebhookSelector
 {
     /// <summary>
@@ -2528,6 +2658,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
     /// <summary>
@@ -2591,6 +2722,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettings
 {
     /// <summary>
@@ -2638,6 +2770,7 @@ public partial class V1beta1FlowSpecInitProviderKnowledgeConnectorSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderNluSettings
 {
     /// <summary>
@@ -2664,6 +2797,7 @@ public partial class V1beta1FlowSpecInitProviderNluSettings
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderParentRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderParentRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2680,6 +2814,7 @@ public enum V1beta1FlowSpecInitProviderParentRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderParentRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderParentRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2691,6 +2826,7 @@ public enum V1beta1FlowSpecInitProviderParentRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderParentRefPolicy
 {
     /// <summary>
@@ -2715,6 +2851,7 @@ public partial class V1beta1FlowSpecInitProviderParentRefPolicy
 /// <summary>Reference to a Agent in dialogflowcx to populate parent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderParentRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2734,6 +2871,7 @@ public partial class V1beta1FlowSpecInitProviderParentRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderParentSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderParentSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2750,6 +2888,7 @@ public enum V1beta1FlowSpecInitProviderParentSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderParentSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderParentSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2761,6 +2900,7 @@ public enum V1beta1FlowSpecInitProviderParentSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderParentSelectorPolicy
 {
     /// <summary>
@@ -2785,6 +2925,7 @@ public partial class V1beta1FlowSpecInitProviderParentSelectorPolicy
 /// <summary>Selector for a Agent in dialogflowcx to populate parent.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderParentSelector
 {
     /// <summary>
@@ -2811,6 +2952,7 @@ public partial class V1beta1FlowSpecInitProviderParentSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2827,6 +2969,7 @@ public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2838,6 +2981,7 @@ public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPolicy
 {
     /// <summary>
@@ -2862,6 +3006,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRefPol
 /// <summary>Reference to a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2881,6 +3026,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2897,6 +3043,7 @@ public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2908,6 +3055,7 @@ public enum V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelectorPolicy
 {
     /// <summary>
@@ -2932,6 +3080,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelect
 /// <summary>Selector for a Agent in dialogflowcx to populate targetFlow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelector
 {
     /// <summary>
@@ -2952,6 +3101,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTargetFlowSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -2964,6 +3114,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -2973,6 +3124,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -2982,6 +3134,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>The SSML text to be synthesized. For more information, see SSML.</summary>
@@ -2995,6 +3148,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>URI of the audio clip. Dialogflow does not impose any validation on this value. It is specific to the client that reads it.</summary>
@@ -3004,6 +3158,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -3013,6 +3168,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
     /// <summary>A collection of text responses.</summary>
@@ -3022,6 +3178,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -3076,6 +3233,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -3089,6 +3247,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillment
 {
     /// <summary>
@@ -3127,6 +3286,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProviderTransitionRoutes
 {
     /// <summary>
@@ -3187,6 +3347,7 @@ public partial class V1beta1FlowSpecInitProviderTransitionRoutes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecInitProvider
 {
     /// <summary>
@@ -3291,6 +3452,7 @@ public partial class V1beta1FlowSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3315,6 +3477,7 @@ public enum V1beta1FlowSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3331,6 +3494,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1FlowSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3342,6 +3506,7 @@ public enum V1beta1FlowSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3370,6 +3535,7 @@ public partial class V1beta1FlowSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3389,6 +3555,7 @@ public partial class V1beta1FlowSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3403,6 +3570,7 @@ public partial class V1beta1FlowSpecWriteConnectionSecretToRef
 /// <summary>FlowSpec defines the desired state of Flow</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowSpec
 {
     /// <summary>
@@ -3470,6 +3638,7 @@ public partial class V1beta1FlowSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderAdvancedSettingsAudioExportGcsDestination
 {
     /// <summary>
@@ -3482,6 +3651,7 @@ public partial class V1beta1FlowStatusAtProviderAdvancedSettingsAudioExportGcsDe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -3499,6 +3669,7 @@ public partial class V1beta1FlowStatusAtProviderAdvancedSettingsDtmfSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -3516,6 +3687,7 @@ public partial class V1beta1FlowStatusAtProviderAdvancedSettingsLoggingSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -3543,6 +3715,7 @@ public partial class V1beta1FlowStatusAtProviderAdvancedSettingsSpeechSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderAdvancedSettings
 {
     /// <summary>If present, incoming audio is exported by Dialogflow to the configured Google Cloud Storage destination. Exposed at the following levels:</summary>
@@ -3564,6 +3737,7 @@ public partial class V1beta1FlowStatusAtProviderAdvancedSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -3576,6 +3750,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -3585,6 +3760,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -3594,6 +3770,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>
@@ -3614,6 +3791,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>
@@ -3630,6 +3808,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -3639,6 +3818,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessagesText
 {
     /// <summary>
@@ -3655,6 +3835,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -3709,6 +3890,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentM
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -3722,6 +3904,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillmentS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillment
 {
     /// <summary>
@@ -3768,6 +3951,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlersTriggerFulfillment
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderEventHandlers
 {
     /// <summary>The name of the event to handle.</summary>
@@ -3805,6 +3989,7 @@ public partial class V1beta1FlowStatusAtProviderEventHandlers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsDataStoreConnections
 {
     /// <summary>The full name of the referenced data store. Formats: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore} projects/{project}/locations/{location}/dataStores/{dataStore}</summary>
@@ -3822,6 +4007,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsDataSt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings
 {
     /// <summary>Whether Knowledge Connector is enabled or not.</summary>
@@ -3853,6 +4039,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings
 {
     /// <summary>Enables consent-based end-user input redaction, if true, a pre-defined session parameter $session.params.conversation-redaction will be used to determine if the utterance should be redacted.</summary>
@@ -3870,6 +4057,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings
 {
     /// <summary>Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.</summary>
@@ -3897,6 +4085,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings
 {
     /// <summary>Define behaviors for DTMF (dual tone multi frequency). DTMF settings does not override each other. DTMF settings set at different levels define DTMF detections running in parallel. Exposed at the following levels:</summary>
@@ -3914,6 +4103,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -3926,6 +4116,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -3935,18 +4126,21 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -3956,6 +4150,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments
 {
     /// <summary>
@@ -3983,6 +4178,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio
 {
     /// <summary>
@@ -3995,6 +4191,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>
@@ -4015,6 +4212,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>
@@ -4031,6 +4229,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -4040,6 +4239,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessagesText
 {
     /// <summary>
@@ -4056,6 +4256,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -4137,6 +4338,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -4150,6 +4352,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTriggerFulfillment
 {
     /// <summary>
@@ -4205,6 +4408,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettingsTrigge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettings
 {
     /// <summary>
@@ -4244,6 +4448,7 @@ public partial class V1beta1FlowStatusAtProviderKnowledgeConnectorSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderNluSettings
 {
     /// <summary>
@@ -4264,6 +4469,7 @@ public partial class V1beta1FlowStatusAtProviderNluSettings
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentConditionalCases
 {
     /// <summary>
@@ -4276,6 +4482,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -4285,6 +4492,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
 {
     /// <summary>Custom metadata. Dialogflow doesn&apos;t impose any structure on this.</summary>
@@ -4294,6 +4502,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
 {
     /// <summary>
@@ -4314,6 +4523,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesPlayAudio
 {
     /// <summary>
@@ -4330,6 +4540,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 {
     /// <summary>Transfer the call to a phone number in E.164 format.</summary>
@@ -4339,6 +4550,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessagesText
 {
     /// <summary>
@@ -4355,6 +4567,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentMessages
 {
     /// <summary>The channel which the response is associated with. Clients can specify the channel via QueryParameters.channel, and only associated channel response will be returned.</summary>
@@ -4409,6 +4622,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillmentSetParameterActions
 {
     /// <summary>Display name of the parameter.</summary>
@@ -4422,6 +4636,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillment
 {
     /// <summary>
@@ -4460,6 +4675,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutesTriggerFulfillme
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProviderTransitionRoutes
 {
     /// <summary>
@@ -4507,6 +4723,7 @@ public partial class V1beta1FlowStatusAtProviderTransitionRoutes
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusAtProvider
 {
     /// <summary>
@@ -4611,6 +4828,7 @@ public partial class V1beta1FlowStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatusConditions
 {
     /// <summary>
@@ -4654,6 +4872,7 @@ public partial class V1beta1FlowStatusConditions
 /// <summary>FlowStatus defines the observed state of Flow.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1FlowStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4672,9 +4891,13 @@ public partial class V1beta1FlowStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Flow is the Schema for the Flows API. Flows represents the conversation flows when you build your chatbot agent.</summary>
+/// <summary>
+/// Flow is the Schema for the Flows API. Flows represents the conversation flows when you build your chatbot agent.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Flow : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1FlowSpec>, IStatus<V1beta1FlowStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.bigquery.gcp.upbound.io;
-/// <summary>AnalyticsHubListing is the Schema for the AnalyticsHubListings API. A Bigquery Analytics Hub data exchange listing</summary>
+/// <summary>
+/// AnalyticsHubListing is the Schema for the AnalyticsHubListings API. A Bigquery Analytics Hub data exchange listing
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubListingList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AnalyticsHubListing>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1AnalyticsHubListingList : IKubernetesObject<V1ListMe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1AnalyticsHubListingSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDat
 /// <summary>Reference to a Dataset in bigquery to populate dataset.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelec
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDat
 /// <summary>Selector for a Dataset in bigquery to populate dataset.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDatasetSelector
 {
     /// <summary>
@@ -210,6 +223,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetDat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -226,6 +240,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -237,6 +252,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRefPolicy
 {
     /// <summary>
@@ -261,6 +277,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 /// <summary>Reference to a Table in bigquery to populate table.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -280,6 +297,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -296,6 +314,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -307,6 +326,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedReso
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelectorPolicy
 {
     /// <summary>
@@ -331,6 +351,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 /// <summary>Selector for a Table in bigquery to populate table.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResourcesTableSelector
 {
     /// <summary>
@@ -351,6 +372,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSelectedResources
 {
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
@@ -368,6 +390,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDatasetSel
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDataset
 {
     /// <summary>Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123</summary>
@@ -398,6 +421,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderBigqueryDataset
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -414,6 +438,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -425,6 +450,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefPolicy
 {
     /// <summary>
@@ -449,6 +475,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRefP
 /// <summary>Reference to a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -468,6 +495,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -484,6 +512,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -495,6 +524,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolic
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelectorPolicy
 {
     /// <summary>
@@ -519,6 +549,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSele
 /// <summary>Selector for a AnalyticsHubDataExchange in bigquery to populate dataExchangeId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSelector
 {
     /// <summary>
@@ -539,6 +570,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderDataExchangeIdSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderDataProvider
 {
     /// <summary>Name of the data provider.</summary>
@@ -552,6 +584,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderDataProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPublisher
 {
     /// <summary>Name of the listing publisher.</summary>
@@ -571,6 +604,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPublisher
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -587,6 +621,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -598,6 +633,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRefPolicy
 {
     /// <summary>
@@ -622,6 +658,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRe
 /// <summary>Reference to a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -641,6 +678,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -657,6 +695,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -668,6 +707,7 @@ public enum V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelectorPolicy
 {
     /// <summary>
@@ -692,6 +732,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSe
 /// <summary>Selector for a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSelector
 {
     /// <summary>
@@ -712,6 +753,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopicTopicSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopic
 {
     /// <summary>
@@ -736,6 +778,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderPubsubTopic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProviderRestrictedExportConfig
 {
     /// <summary>If true, enable restricted export.</summary>
@@ -749,6 +792,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProviderRestrictedExportCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecForProvider
 {
     /// <summary>If true, the listing is only available to get the resource metadata. Listing is non subscribable.</summary>
@@ -865,6 +909,7 @@ public partial class V1beta1AnalyticsHubListingSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -881,6 +926,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -892,6 +938,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRefPolicy
 {
     /// <summary>
@@ -916,6 +963,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDa
 /// <summary>Reference to a Dataset in bigquery to populate dataset.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -935,6 +983,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -951,6 +1000,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -962,6 +1012,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelectorPolicy
 {
     /// <summary>
@@ -986,6 +1037,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDa
 /// <summary>Selector for a Dataset in bigquery to populate dataset.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDatasetSelector
 {
     /// <summary>
@@ -1012,6 +1064,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetDa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1028,6 +1081,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1039,6 +1093,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedRes
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRefPolicy
 {
     /// <summary>
@@ -1063,6 +1118,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 /// <summary>Reference to a Table in bigquery to populate table.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1082,6 +1138,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1098,6 +1155,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1109,6 +1167,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelectorPolicy
 {
     /// <summary>
@@ -1133,6 +1192,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 /// <summary>Selector for a Table in bigquery to populate table.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResourcesTableSelector
 {
     /// <summary>
@@ -1153,6 +1213,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSelectedResources
 {
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
@@ -1170,6 +1231,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDatasetSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDataset
 {
     /// <summary>Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123</summary>
@@ -1194,6 +1256,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderBigqueryDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderDataProvider
 {
     /// <summary>Name of the data provider.</summary>
@@ -1207,6 +1270,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderDataProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPublisher
 {
     /// <summary>Name of the listing publisher.</summary>
@@ -1226,6 +1290,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPublisher
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1242,6 +1307,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1253,6 +1319,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRefPolicy
 {
     /// <summary>
@@ -1277,6 +1344,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicR
 /// <summary>Reference to a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1296,6 +1364,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1312,6 +1381,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1323,6 +1393,7 @@ public enum V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelectorPolicy
 {
     /// <summary>
@@ -1347,6 +1418,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicS
 /// <summary>Selector for a Topic in pubsub to populate topic.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicSelector
 {
     /// <summary>
@@ -1367,6 +1439,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopicTopicS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopic
 {
     /// <summary>
@@ -1391,6 +1464,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderPubsubTopic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProviderRestrictedExportConfig
 {
     /// <summary>If true, enable restricted export.</summary>
@@ -1416,6 +1490,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProviderRestrictedExportC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecInitProvider
 {
     /// <summary>If true, the listing is only available to get the resource metadata. Listing is non subscribable.</summary>
@@ -1514,6 +1589,7 @@ public partial class V1beta1AnalyticsHubListingSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1538,6 +1614,7 @@ public enum V1beta1AnalyticsHubListingSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1554,6 +1631,7 @@ public enum V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1565,6 +1643,7 @@ public enum V1beta1AnalyticsHubListingSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1593,6 +1672,7 @@ public partial class V1beta1AnalyticsHubListingSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1612,6 +1692,7 @@ public partial class V1beta1AnalyticsHubListingSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1626,6 +1707,7 @@ public partial class V1beta1AnalyticsHubListingSpecWriteConnectionSecretToRef
 /// <summary>AnalyticsHubListingSpec defines the desired state of AnalyticsHubListing</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingSpec
 {
     /// <summary>
@@ -1693,6 +1775,7 @@ public partial class V1beta1AnalyticsHubListingSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderBigqueryDatasetSelectedResources
 {
     /// <summary>Format: For table: projects/{projectId}/datasets/{datasetId}/tables/{tableId} Example:&quot;projects/test_project/datasets/test_dataset/tables/test_table&quot;</summary>
@@ -1702,6 +1785,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderBigqueryDatasetSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderBigqueryDataset
 {
     /// <summary>Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123</summary>
@@ -1718,6 +1802,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderBigqueryDataset
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderCommercialInfoCloudMarketplace
 {
     /// <summary>
@@ -1738,6 +1823,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderCommercialInfoClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderCommercialInfo
 {
     /// <summary>
@@ -1751,6 +1837,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderCommercialInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderDataProvider
 {
     /// <summary>Name of the data provider.</summary>
@@ -1764,6 +1851,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderDataProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderPublisher
 {
     /// <summary>Name of the listing publisher.</summary>
@@ -1777,6 +1865,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderPublisher
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderPubsubTopic
 {
     /// <summary>
@@ -1793,6 +1882,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderPubsubTopic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProviderRestrictedExportConfig
 {
     /// <summary>If true, enable restricted export.</summary>
@@ -1813,6 +1903,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProviderRestrictedExportC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusAtProvider
 {
     /// <summary>If true, the listing is only available to get the resource metadata. Listing is non subscribable.</summary>
@@ -1935,6 +2026,7 @@ public partial class V1beta1AnalyticsHubListingStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatusConditions
 {
     /// <summary>
@@ -1978,6 +2070,7 @@ public partial class V1beta1AnalyticsHubListingStatusConditions
 /// <summary>AnalyticsHubListingStatus defines the observed state of AnalyticsHubListing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AnalyticsHubListingStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1996,9 +2089,13 @@ public partial class V1beta1AnalyticsHubListingStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AnalyticsHubListing is the Schema for the AnalyticsHubListings API. A Bigquery Analytics Hub data exchange listing</summary>
+/// <summary>
+/// AnalyticsHubListing is the Schema for the AnalyticsHubListings API. A Bigquery Analytics Hub data exchange listing
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AnalyticsHubListing : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AnalyticsHubListingSpec>, IStatus<V1beta1AnalyticsHubListingStatus?>
 {

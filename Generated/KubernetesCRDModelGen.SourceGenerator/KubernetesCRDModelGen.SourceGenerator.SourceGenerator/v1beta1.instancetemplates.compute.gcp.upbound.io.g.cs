@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>InstanceTemplate is the Schema for the InstanceTemplates API. Manages a VM instance template resource within GCE.</summary>
+/// <summary>
+/// InstanceTemplate is the Schema for the InstanceTemplates API. Manages a VM instance template resource within GCE.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1InstanceTemplate>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1InstanceTemplateList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1InstanceTemplateSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderAdvancedMachineFeatures
 {
     /// <summary>Defines whether the instance should have nested virtualization enabled. Defaults to false.</summary>
@@ -86,6 +92,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderAdvancedMachineFeatur
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderConfidentialInstanceConfig
 {
     /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
@@ -99,6 +106,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderConfidentialInstanceC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskDiskEncryptionKey
 {
     /// <summary>
@@ -126,6 +134,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskDiskEncryptionKey
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -142,6 +151,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -153,6 +163,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicy
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefsPolicy
 {
     /// <summary>
@@ -177,6 +188,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesR
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -196,6 +208,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -212,6 +225,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -223,6 +237,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelectorPolicy
 {
     /// <summary>
@@ -247,6 +262,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesS
 /// <summary>Selector for a list of ResourcePolicy in compute to populate resourcePolicies.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesSelector
 {
     /// <summary>
@@ -274,6 +290,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskResourcePoliciesS
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -296,6 +313,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -313,6 +331,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryptionKey
 {
     /// <summary>
@@ -358,6 +377,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceImageEncryp
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -374,6 +394,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -385,6 +406,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicy
 {
     /// <summary>
@@ -409,6 +431,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceRefPolicy
 /// <summary>Reference to a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -428,6 +451,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -444,6 +468,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -455,6 +480,7 @@ public enum V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicyResolv
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPolicy
 {
     /// <summary>
@@ -479,6 +505,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSelectorPol
 /// <summary>Selector for a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSelector
 {
     /// <summary>
@@ -506,6 +533,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -528,6 +556,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEnc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -545,6 +574,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEnc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -584,6 +614,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDiskSourceSnapshotEnc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderDisk
 {
     /// <summary>The architecture of the attached disk. Valid values are ARM64 or x86_64.</summary>
@@ -752,6 +783,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderGuestAccelerator
 {
     /// <summary>The number of the guest accelerator cards exposed to this instance.</summary>
@@ -765,6 +797,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderGuestAccelerator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceAccessConfig
 {
     /// <summary>
@@ -784,6 +817,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceAcces
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceAliasIpRange
 {
     /// <summary>
@@ -807,6 +841,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceAlias
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceIpv6AccessConfig
 {
     /// <summary>
@@ -825,6 +860,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceIpv6A
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -841,6 +877,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -852,6 +889,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRefPolicy
 {
     /// <summary>
@@ -876,6 +914,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetwo
 /// <summary>Reference to a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -895,6 +934,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetwo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -911,6 +951,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -922,6 +963,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelectorPolicy
 {
     /// <summary>
@@ -946,6 +988,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetwo
 /// <summary>Selector for a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetworkSelector
 {
     /// <summary>
@@ -972,6 +1015,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceNetwo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -988,6 +1032,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -999,6 +1044,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRefPolicy
 {
     /// <summary>
@@ -1023,6 +1069,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubne
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1042,6 +1089,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubne
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1058,6 +1106,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSele
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1069,6 +1118,7 @@ public enum V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSele
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -1093,6 +1143,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubne
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubnetworkSelector
 {
     /// <summary>
@@ -1113,6 +1164,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterfaceSubne
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterface
 {
     /// <summary>
@@ -1206,6 +1258,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkInterface
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderNetworkPerformanceConfig
 {
     /// <summary>The egress bandwidth tier to enable. Possible values: TIER_1, DEFAULT</summary>
@@ -1215,6 +1268,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderNetworkPerformanceCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderReservationAffinitySpecificReservation
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -1228,6 +1282,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderReservationAffinitySp
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderReservationAffinity
 {
     /// <summary>
@@ -1244,6 +1299,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderReservationAffinity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderSchedulingLocalSsdRecoveryTimeout
 {
     /// <summary>
@@ -1265,6 +1321,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderSchedulingLocalSsdRec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderSchedulingMaxRunDuration
 {
     /// <summary>
@@ -1286,6 +1343,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderSchedulingMaxRunDurat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderSchedulingNodeAffinities
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -1306,6 +1364,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderSchedulingNodeAffinit
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderSchedulingOnInstanceStopAction
 {
     /// <summary>Whether to discard local SSDs attached to the VM while terminating using max_run_duration. Only supports true at this point.</summary>
@@ -1315,6 +1374,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderSchedulingOnInstanceS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderScheduling
 {
     /// <summary>
@@ -1395,6 +1455,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderScheduling
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1411,6 +1472,7 @@ public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1422,6 +1484,7 @@ public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicyRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRefPolicy
 {
     /// <summary>
@@ -1446,6 +1509,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRe
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate email.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1465,6 +1529,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1481,6 +1546,7 @@ public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1492,6 +1558,7 @@ public enum V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelectorPolicy
 {
     /// <summary>
@@ -1516,6 +1583,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSe
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate email.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSelector
 {
     /// <summary>
@@ -1536,6 +1604,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderServiceAccountEmailSe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderServiceAccount
 {
     /// <summary>
@@ -1564,6 +1633,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderServiceAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProviderShieldedInstanceConfig
 {
     /// <summary>- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.</summary>
@@ -1581,6 +1651,7 @@ public partial class V1beta1InstanceTemplateSpecForProviderShieldedInstanceConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecForProvider
 {
     /// <summary>Configure Nested Virtualisation and Simultaneous Hyper Threading on this VM. Structure is documented below</summary>
@@ -1745,6 +1816,7 @@ public partial class V1beta1InstanceTemplateSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderAdvancedMachineFeatures
 {
     /// <summary>Defines whether the instance should have nested virtualization enabled. Defaults to false.</summary>
@@ -1774,6 +1846,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderAdvancedMachineFeatu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderConfidentialInstanceConfig
 {
     /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
@@ -1787,6 +1860,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderConfidentialInstance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskDiskEncryptionKey
 {
     /// <summary>
@@ -1814,6 +1888,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskDiskEncryptionKe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1830,6 +1905,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1841,6 +1917,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolic
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefsPolicy
 {
     /// <summary>
@@ -1865,6 +1942,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePolicies
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1884,6 +1962,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1900,6 +1979,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1911,6 +1991,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelectorPolicy
 {
     /// <summary>
@@ -1935,6 +2016,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePolicies
 /// <summary>Selector for a list of ResourcePolicy in compute to populate resourcePolicies.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePoliciesSelector
 {
     /// <summary>
@@ -1962,6 +2044,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskResourcePolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -1984,6 +2067,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2001,6 +2085,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncryptionKey
 {
     /// <summary>
@@ -2046,6 +2131,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceImageEncry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2062,6 +2148,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolution
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2073,6 +2160,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicyResolveEnu
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicy
 {
     /// <summary>
@@ -2097,6 +2185,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceRefPolicy
 /// <summary>Reference to a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2116,6 +2205,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2132,6 +2222,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2143,6 +2234,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicyResol
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPolicy
 {
     /// <summary>
@@ -2167,6 +2259,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSelectorPo
 /// <summary>Selector for a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSelector
 {
     /// <summary>
@@ -2194,6 +2287,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEncryptionKeyRawKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2216,6 +2310,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEncryptionKeyRsaEncryptedKeySecretRef
 {
     /// <summary>The key to select.</summary>
@@ -2233,6 +2328,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -2272,6 +2368,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDiskSourceSnapshotEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderDisk
 {
     /// <summary>The architecture of the attached disk. Valid values are ARM64 or x86_64.</summary>
@@ -2440,6 +2537,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderGuestAccelerator
 {
     /// <summary>The number of the guest accelerator cards exposed to this instance.</summary>
@@ -2453,6 +2551,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderGuestAccelerator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceAccessConfig
 {
     /// <summary>
@@ -2472,6 +2571,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceAcce
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceAliasIpRange
 {
     /// <summary>
@@ -2495,6 +2595,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceAlia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceIpv6AccessConfig
 {
     /// <summary>
@@ -2513,6 +2614,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceIpv6
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2529,6 +2631,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2540,6 +2643,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRefPolicy
 {
     /// <summary>
@@ -2564,6 +2668,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetw
 /// <summary>Reference to a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2583,6 +2688,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2599,6 +2705,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelect
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2610,6 +2717,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelect
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelectorPolicy
 {
     /// <summary>
@@ -2634,6 +2742,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetw
 /// <summary>Selector for a Network in compute to populate network.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetworkSelector
 {
     /// <summary>
@@ -2660,6 +2769,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceNetw
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2676,6 +2786,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2687,6 +2798,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRefPolicy
 {
     /// <summary>
@@ -2711,6 +2823,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubn
 /// <summary>Reference to a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2730,6 +2843,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubn
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2746,6 +2860,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2757,6 +2872,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelectorPolicy
 {
     /// <summary>
@@ -2781,6 +2897,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubn
 /// <summary>Selector for a Subnetwork in compute to populate subnetwork.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubnetworkSelector
 {
     /// <summary>
@@ -2801,6 +2918,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterfaceSubn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterface
 {
     /// <summary>
@@ -2894,6 +3012,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkInterface
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderNetworkPerformanceConfig
 {
     /// <summary>The egress bandwidth tier to enable. Possible values: TIER_1, DEFAULT</summary>
@@ -2903,6 +3022,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderNetworkPerformanceCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderReservationAffinitySpecificReservation
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -2916,6 +3036,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderReservationAffinityS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderReservationAffinity
 {
     /// <summary>
@@ -2932,6 +3053,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderReservationAffinity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingLocalSsdRecoveryTimeout
 {
     /// <summary>
@@ -2953,6 +3075,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingLocalSsdRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingMaxRunDuration
 {
     /// <summary>
@@ -2974,6 +3097,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingMaxRunDura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingNodeAffinities
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -2994,6 +3118,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingNodeAffini
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingOnInstanceStopAction
 {
     /// <summary>Whether to discard local SSDs attached to the VM while terminating using max_run_duration. Only supports true at this point.</summary>
@@ -3003,6 +3128,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderSchedulingOnInstance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderScheduling
 {
     /// <summary>
@@ -3083,6 +3209,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderScheduling
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3099,6 +3226,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3110,6 +3238,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicyR
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRefPolicy
 {
     /// <summary>
@@ -3134,6 +3263,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailR
 /// <summary>Reference to a ServiceAccount in cloudplatform to populate email.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3153,6 +3283,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3169,6 +3300,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3180,6 +3312,7 @@ public enum V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelectorPolicy
 {
     /// <summary>
@@ -3204,6 +3337,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailS
 /// <summary>Selector for a ServiceAccount in cloudplatform to populate email.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailSelector
 {
     /// <summary>
@@ -3224,6 +3358,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccountEmailS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccount
 {
     /// <summary>
@@ -3252,6 +3387,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderServiceAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProviderShieldedInstanceConfig
 {
     /// <summary>- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.</summary>
@@ -3281,6 +3417,7 @@ public partial class V1beta1InstanceTemplateSpecInitProviderShieldedInstanceConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecInitProvider
 {
     /// <summary>Configure Nested Virtualisation and Simultaneous Hyper Threading on this VM. Structure is documented below</summary>
@@ -3449,6 +3586,7 @@ public partial class V1beta1InstanceTemplateSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3473,6 +3611,7 @@ public enum V1beta1InstanceTemplateSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3489,6 +3628,7 @@ public enum V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3500,6 +3640,7 @@ public enum V1beta1InstanceTemplateSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3528,6 +3669,7 @@ public partial class V1beta1InstanceTemplateSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3547,6 +3689,7 @@ public partial class V1beta1InstanceTemplateSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3561,6 +3704,7 @@ public partial class V1beta1InstanceTemplateSpecWriteConnectionSecretToRef
 /// <summary>InstanceTemplateSpec defines the desired state of InstanceTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateSpec
 {
     /// <summary>
@@ -3628,6 +3772,7 @@ public partial class V1beta1InstanceTemplateSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderAdvancedMachineFeatures
 {
     /// <summary>Defines whether the instance should have nested virtualization enabled. Defaults to false.</summary>
@@ -3657,6 +3802,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderAdvancedMachineFeatu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderConfidentialInstanceConfig
 {
     /// <summary>Defines the confidential computing technology the instance uses. SEV is an AMD feature. TDX is an Intel feature. One of the following values is required: SEV, SEV_SNP, TDX. on_host_maintenance can be set to MIGRATE if confidential_instance_type is set to SEV and min_cpu_platform is set to &quot;AMD Milan&quot;. Otherwise, on_host_maintenance has to be set to TERMINATE or this will fail to create the VM. If SEV_SNP, currently min_cpu_platform has to be set to &quot;AMD Milan&quot; or this will fail to create the VM.</summary>
@@ -3670,6 +3816,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderConfidentialInstance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderDiskDiskEncryptionKey
 {
     /// <summary>
@@ -3691,6 +3838,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderDiskDiskEncryptionKe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderDiskSourceImageEncryptionKey
 {
     /// <summary>
@@ -3712,6 +3860,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderDiskSourceImageEncry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderDiskSourceSnapshotEncryptionKey
 {
     /// <summary>
@@ -3733,6 +3882,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderDiskSourceSnapshotEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderDisk
 {
     /// <summary>The architecture of the attached disk. Valid values are ARM64 or x86_64.</summary>
@@ -3885,6 +4035,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderGuestAccelerator
 {
     /// <summary>The number of the guest accelerator cards exposed to this instance.</summary>
@@ -3898,6 +4049,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderGuestAccelerator
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceAccessConfig
 {
     /// <summary>
@@ -3921,6 +4073,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceAcce
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceAliasIpRange
 {
     /// <summary>
@@ -3944,6 +4097,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceAlia
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceIpv6AccessConfig
 {
     [JsonPropertyName("externalIpv6")]
@@ -3970,6 +4124,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterfaceIpv6
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterface
 {
     /// <summary>
@@ -4054,6 +4209,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderNetworkInterface
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderNetworkPerformanceConfig
 {
     /// <summary>The egress bandwidth tier to enable. Possible values: TIER_1, DEFAULT</summary>
@@ -4063,6 +4219,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderNetworkPerformanceCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderReservationAffinitySpecificReservation
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -4076,6 +4233,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderReservationAffinityS
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderReservationAffinity
 {
     /// <summary>
@@ -4092,6 +4250,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderReservationAffinity
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingLocalSsdRecoveryTimeout
 {
     /// <summary>
@@ -4113,6 +4272,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingLocalSsdRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingMaxRunDuration
 {
     /// <summary>
@@ -4134,6 +4294,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingMaxRunDura
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingNodeAffinities
 {
     /// <summary>Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.</summary>
@@ -4154,6 +4315,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingNodeAffini
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingOnInstanceStopAction
 {
     /// <summary>Whether to discard local SSDs attached to the VM while terminating using max_run_duration. Only supports true at this point.</summary>
@@ -4163,6 +4325,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderSchedulingOnInstance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderScheduling
 {
     /// <summary>
@@ -4237,6 +4400,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderServiceAccount
 {
     /// <summary>
@@ -4257,6 +4421,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderServiceAccount
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProviderShieldedInstanceConfig
 {
     /// <summary>- Compare the most recent boot measurements to the integrity policy baseline and return a pair of pass/fail results depending on whether they match or not. Defaults to true.</summary>
@@ -4274,6 +4439,7 @@ public partial class V1beta1InstanceTemplateStatusAtProviderShieldedInstanceConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusAtProvider
 {
     /// <summary>Configure Nested Virtualisation and Simultaneous Hyper Threading on this VM. Structure is documented below</summary>
@@ -4477,6 +4643,7 @@ public partial class V1beta1InstanceTemplateStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatusConditions
 {
     /// <summary>
@@ -4520,6 +4687,7 @@ public partial class V1beta1InstanceTemplateStatusConditions
 /// <summary>InstanceTemplateStatus defines the observed state of InstanceTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceTemplateStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4538,9 +4706,13 @@ public partial class V1beta1InstanceTemplateStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InstanceTemplate is the Schema for the InstanceTemplates API. Manages a VM instance template resource within GCE.</summary>
+/// <summary>
+/// InstanceTemplate is the Schema for the InstanceTemplates API. Manages a VM instance template resource within GCE.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InstanceTemplateSpec>, IStatus<V1beta1InstanceTemplateStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.binaryauthorization.gcp.upbound.io;
-/// <summary>Policy is the Schema for the Policys API. A policy for container image binary authorization.</summary>
+/// <summary>
+/// Policy is the Schema for the Policys API. A policy for container image binary authorization.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Policy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PolicyList : IKubernetesObject<V1ListMeta>, IItems<V
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderAdmissionWhitelistPatterns
 {
     /// <summary>
@@ -77,6 +83,7 @@ public partial class V1beta1PolicySpecForProviderAdmissionWhitelistPatterns
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -93,6 +100,7 @@ public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -104,6 +112,7 @@ public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestations
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefsPolicy
 {
     /// <summary>
@@ -128,6 +137,7 @@ public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAtt
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsByRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -147,6 +157,7 @@ public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAtt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -163,6 +174,7 @@ public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -174,6 +186,7 @@ public enum V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestations
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicy
 {
     /// <summary>
@@ -198,6 +211,7 @@ public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAtt
 /// <summary>Selector for a list of Attestor in binaryauthorization to populate requireAttestationsBy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAttestationsBySelector
 {
     /// <summary>
@@ -218,6 +232,7 @@ public partial class V1beta1PolicySpecForProviderClusterAdmissionRulesRequireAtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderClusterAdmissionRules
 {
     /// <summary>The identifier for this object. Format specified above.</summary>
@@ -268,6 +283,7 @@ public partial class V1beta1PolicySpecForProviderClusterAdmissionRules
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -284,6 +300,7 @@ public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -295,6 +312,7 @@ public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsB
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicy
 {
     /// <summary>
@@ -319,6 +337,7 @@ public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAtte
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsByRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -338,6 +357,7 @@ public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAtte
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -354,6 +374,7 @@ public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsB
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -365,6 +386,7 @@ public enum V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsB
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicy
 {
     /// <summary>
@@ -389,6 +411,7 @@ public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAtte
 /// <summary>Selector for a list of Attestor in binaryauthorization to populate requireAttestationsBy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAttestationsBySelector
 {
     /// <summary>
@@ -409,6 +432,7 @@ public partial class V1beta1PolicySpecForProviderDefaultAdmissionRuleRequireAtte
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProviderDefaultAdmissionRule
 {
     /// <summary>
@@ -449,6 +473,7 @@ public partial class V1beta1PolicySpecForProviderDefaultAdmissionRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecForProvider
 {
     /// <summary>
@@ -501,6 +526,7 @@ public partial class V1beta1PolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderAdmissionWhitelistPatterns
 {
     /// <summary>
@@ -521,6 +547,7 @@ public partial class V1beta1PolicySpecInitProviderAdmissionWhitelistPatterns
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -537,6 +564,7 @@ public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -548,6 +576,7 @@ public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestation
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefsPolicy
 {
     /// <summary>
@@ -572,6 +601,7 @@ public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAt
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsByRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -591,6 +621,7 @@ public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -607,6 +638,7 @@ public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -618,6 +650,7 @@ public enum V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestation
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelectorPolicy
 {
     /// <summary>
@@ -642,6 +675,7 @@ public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAt
 /// <summary>Selector for a list of Attestor in binaryauthorization to populate requireAttestationsBy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAttestationsBySelector
 {
     /// <summary>
@@ -662,6 +696,7 @@ public partial class V1beta1PolicySpecInitProviderClusterAdmissionRulesRequireAt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderClusterAdmissionRules
 {
     /// <summary>The identifier for this object. Format specified above.</summary>
@@ -712,6 +747,7 @@ public partial class V1beta1PolicySpecInitProviderClusterAdmissionRules
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -728,6 +764,7 @@ public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -739,6 +776,7 @@ public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestations
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefsPolicy
 {
     /// <summary>
@@ -763,6 +801,7 @@ public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAtt
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsByRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -782,6 +821,7 @@ public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAtt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -798,6 +838,7 @@ public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestations
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -809,6 +850,7 @@ public enum V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestations
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelectorPolicy
 {
     /// <summary>
@@ -833,6 +875,7 @@ public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAtt
 /// <summary>Selector for a list of Attestor in binaryauthorization to populate requireAttestationsBy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAttestationsBySelector
 {
     /// <summary>
@@ -853,6 +896,7 @@ public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRuleRequireAtt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRule
 {
     /// <summary>
@@ -905,6 +949,7 @@ public partial class V1beta1PolicySpecInitProviderDefaultAdmissionRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecInitProvider
 {
     /// <summary>
@@ -961,6 +1006,7 @@ public partial class V1beta1PolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -985,6 +1031,7 @@ public enum V1beta1PolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1001,6 +1048,7 @@ public enum V1beta1PolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1012,6 +1060,7 @@ public enum V1beta1PolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1040,6 +1089,7 @@ public partial class V1beta1PolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1059,6 +1109,7 @@ public partial class V1beta1PolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1073,6 +1124,7 @@ public partial class V1beta1PolicySpecWriteConnectionSecretToRef
 /// <summary>PolicySpec defines the desired state of Policy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicySpec
 {
     /// <summary>
@@ -1140,6 +1192,7 @@ public partial class V1beta1PolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatusAtProviderAdmissionWhitelistPatterns
 {
     /// <summary>
@@ -1154,6 +1207,7 @@ public partial class V1beta1PolicyStatusAtProviderAdmissionWhitelistPatterns
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatusAtProviderClusterAdmissionRules
 {
     /// <summary>The identifier for this object. Format specified above.</summary>
@@ -1190,6 +1244,7 @@ public partial class V1beta1PolicyStatusAtProviderClusterAdmissionRules
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatusAtProviderDefaultAdmissionRule
 {
     /// <summary>
@@ -1222,6 +1277,7 @@ public partial class V1beta1PolicyStatusAtProviderDefaultAdmissionRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatusAtProvider
 {
     /// <summary>
@@ -1279,6 +1335,7 @@ public partial class V1beta1PolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatusConditions
 {
     /// <summary>
@@ -1322,6 +1379,7 @@ public partial class V1beta1PolicyStatusConditions
 /// <summary>PolicyStatus defines the observed state of Policy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1340,9 +1398,13 @@ public partial class V1beta1PolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Policy is the Schema for the Policys API. A policy for container image binary authorization.</summary>
+/// <summary>
+/// Policy is the Schema for the Policys API. A policy for container image binary authorization.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Policy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PolicySpec>, IStatus<V1beta1PolicyStatus?>
 {

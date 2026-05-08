@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>InstanceGroupManager is the Schema for the InstanceGroupManagers API. Manages an Instance Group within GCE.</summary>
+/// <summary>
+/// InstanceGroupManager is the Schema for the InstanceGroupManagers API. Manages an Instance Group within GCE.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceGroupManagerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1InstanceGroupManager>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1InstanceGroupManagerList : IKubernetesObject<V1ListM
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1InstanceGroupManagerSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAllInstancesConfig
 {
     /// <summary>, The label key-value pairs that you want to patch onto the instance.</summary>
@@ -76,6 +82,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAllInstancesConfi
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -92,6 +99,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -103,6 +111,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthC
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRefPolicy
 {
     /// <summary>
@@ -127,6 +136,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolici
 /// <summary>Reference to a HealthCheck in compute to populate healthCheck.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -146,6 +156,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolici
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -162,6 +173,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -173,6 +185,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthC
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelectorPolicy
 {
     /// <summary>
@@ -197,6 +210,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolici
 /// <summary>Selector for a HealthCheck in compute to populate healthCheck.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPoliciesHealthCheckSelector
 {
     /// <summary>
@@ -217,6 +231,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolici
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolicies
 {
     /// <summary>The health check resource that signals autohealing.</summary>
@@ -241,6 +256,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderAutoHealingPolici
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderInstanceLifecyclePolicy
 {
     /// <summary>, Default behavior for all instance or health check failures. Valid options are: REPAIR, DO_NOTHING. If DO_NOTHING then instances will not be repaired. If REPAIR (default), then failed instances will be repaired.</summary>
@@ -254,6 +270,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderInstanceLifecycle
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderNamedPort
 {
     /// <summary>The name which the port will be mapped to.</summary>
@@ -273,6 +290,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderNamedPort
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -289,6 +307,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -300,6 +319,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRefPolicy
 {
     /// <summary>
@@ -324,6 +344,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesW
 /// <summary>Reference to a ResourcePolicy in compute to populate workloadPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicyRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -343,6 +364,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesW
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -359,6 +381,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -370,6 +393,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelectorPolicy
 {
     /// <summary>
@@ -394,6 +418,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesW
 /// <summary>Selector for a ResourcePolicy in compute to populate workloadPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesWorkloadPolicySelector
 {
     /// <summary>
@@ -414,6 +439,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePoliciesW
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePolicies
 {
     /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
@@ -431,6 +457,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderResourcePolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderStandbyPolicy
 {
     /// <summary>- Specifies the number of seconds that the MIG should wait to suspend or stop a VM after that VM was created. The initial delay gives the initialization script the time to prepare your VM for a quick scale out. The value of initial delay must be between 0 and 3600 seconds. The default value is 0.</summary>
@@ -444,6 +471,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderStandbyPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulDisk
 {
     /// <summary>, A value that prescribes what should happen to the stateful disk when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.</summary>
@@ -457,6 +485,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulExternalIp
 {
     /// <summary>, A value that prescribes what should happen to the external ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the external ip when the VM is permanently deleted from the instance group.</summary>
@@ -470,6 +499,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulExternalI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulInternalIp
 {
     /// <summary>, A value that prescribes what should happen to the internal ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the internal ip when the VM is permanently deleted from the instance group.</summary>
@@ -489,6 +519,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderStatefulInternalI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -505,6 +536,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -516,6 +548,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicyResol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPolicy
 {
     /// <summary>
@@ -540,6 +573,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefsPo
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -559,6 +593,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -575,6 +610,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyR
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -586,6 +622,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicyR
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelectorPolicy
 {
     /// <summary>
@@ -610,6 +647,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelect
 /// <summary>Selector for a list of TargetPool in compute to populate targetPools.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelector
 {
     /// <summary>
@@ -630,6 +668,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderTargetPoolsSelect
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderUpdatePolicy
 {
     /// <summary>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with max_surge_percent. If neither is set, defaults to 1</summary>
@@ -673,6 +712,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderUpdatePolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -689,6 +729,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -700,6 +741,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRef
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRefPolicy
 {
     /// <summary>
@@ -724,6 +766,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTe
 /// <summary>Reference to a InstanceTemplate in compute to populate instanceTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -743,6 +786,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -759,6 +803,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSel
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -770,6 +815,7 @@ public enum V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSel
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelectorPolicy
 {
     /// <summary>
@@ -794,6 +840,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTe
 /// <summary>Selector for a InstanceTemplate in compute to populate instanceTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTemplateSelector
 {
     /// <summary>
@@ -814,6 +861,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersionInstanceTe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersionTargetSize
 {
     /// <summary>, The number of instances which are managed for this version. Conflicts with percent.</summary>
@@ -831,6 +879,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersionTargetSize
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProviderVersion
 {
     /// <summary>- The full URL to an instance template from which all new instances of this version will be created. It is recommended to reference instance templates through their unique id (self_link_unique attribute).</summary>
@@ -856,6 +905,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProviderVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecForProvider
 {
     /// <summary>
@@ -1010,6 +1060,7 @@ public partial class V1beta1InstanceGroupManagerSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAllInstancesConfig
 {
     /// <summary>, The label key-value pairs that you want to patch onto the instance.</summary>
@@ -1029,6 +1080,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAllInstancesConf
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1045,6 +1097,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealth
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1056,6 +1109,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealth
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRefPolicy
 {
     /// <summary>
@@ -1080,6 +1134,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolic
 /// <summary>Reference to a HealthCheck in compute to populate healthCheck.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1099,6 +1154,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolic
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1115,6 +1171,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealth
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1126,6 +1183,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealth
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelectorPolicy
 {
     /// <summary>
@@ -1150,6 +1208,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolic
 /// <summary>Selector for a HealthCheck in compute to populate healthCheck.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPoliciesHealthCheckSelector
 {
     /// <summary>
@@ -1170,6 +1229,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolicies
 {
     /// <summary>The health check resource that signals autohealing.</summary>
@@ -1194,6 +1254,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderAutoHealingPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderInstanceLifecyclePolicy
 {
     /// <summary>, Default behavior for all instance or health check failures. Valid options are: REPAIR, DO_NOTHING. If DO_NOTHING then instances will not be repaired. If REPAIR (default), then failed instances will be repaired.</summary>
@@ -1207,6 +1268,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderInstanceLifecycl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderNamedPort
 {
     /// <summary>The name which the port will be mapped to.</summary>
@@ -1226,6 +1288,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderNamedPort
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1242,6 +1305,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1253,6 +1317,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadP
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRefPolicy
 {
     /// <summary>
@@ -1277,6 +1342,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 /// <summary>Reference to a ResourcePolicy in compute to populate workloadPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicyRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1296,6 +1362,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1312,6 +1379,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadP
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1323,6 +1391,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadP
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelectorPolicy
 {
     /// <summary>
@@ -1347,6 +1416,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 /// <summary>Selector for a ResourcePolicy in compute to populate workloadPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePoliciesWorkloadPolicySelector
 {
     /// <summary>
@@ -1367,6 +1437,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 {
     /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
@@ -1384,6 +1455,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderResourcePolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderStandbyPolicy
 {
     /// <summary>- Specifies the number of seconds that the MIG should wait to suspend or stop a VM after that VM was created. The initial delay gives the initialization script the time to prepare your VM for a quick scale out. The value of initial delay must be between 0 and 3600 seconds. The default value is 0.</summary>
@@ -1397,6 +1469,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderStandbyPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulDisk
 {
     /// <summary>, A value that prescribes what should happen to the stateful disk when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.</summary>
@@ -1410,6 +1483,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulExternalIp
 {
     /// <summary>, A value that prescribes what should happen to the external ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the external ip when the VM is permanently deleted from the instance group.</summary>
@@ -1423,6 +1497,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulExternal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulInternalIp
 {
     /// <summary>, A value that prescribes what should happen to the internal ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the internal ip when the VM is permanently deleted from the instance group.</summary>
@@ -1442,6 +1517,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderStatefulInternal
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1458,6 +1534,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyReso
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1469,6 +1546,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicyReso
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsPolicy
 {
     /// <summary>
@@ -1493,6 +1571,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefsP
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1512,6 +1591,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsRefs
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1528,6 +1608,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1539,6 +1620,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicy
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelectorPolicy
 {
     /// <summary>
@@ -1563,6 +1645,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelec
 /// <summary>Selector for a list of TargetPool in compute to populate targetPools.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelector
 {
     /// <summary>
@@ -1583,6 +1666,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderTargetPoolsSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderUpdatePolicy
 {
     /// <summary>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with max_surge_percent. If neither is set, defaults to 1</summary>
@@ -1626,6 +1710,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderUpdatePolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1642,6 +1727,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1653,6 +1739,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRe
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRefPolicy
 {
     /// <summary>
@@ -1677,6 +1764,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceT
 /// <summary>Reference to a InstanceTemplate in compute to populate instanceTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1696,6 +1784,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceT
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1712,6 +1801,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1723,6 +1813,7 @@ public enum V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelectorPolicy
 {
     /// <summary>
@@ -1747,6 +1838,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceT
 /// <summary>Selector for a InstanceTemplate in compute to populate instanceTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceTemplateSelector
 {
     /// <summary>
@@ -1767,6 +1859,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionInstanceT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionTargetSize
 {
     /// <summary>, The number of instances which are managed for this version. Conflicts with percent.</summary>
@@ -1784,6 +1877,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersionTargetSiz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProviderVersion
 {
     /// <summary>- The full URL to an instance template from which all new instances of this version will be created. It is recommended to reference instance templates through their unique id (self_link_unique attribute).</summary>
@@ -1821,6 +1915,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProviderVersion
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecInitProvider
 {
     /// <summary>
@@ -1972,6 +2067,7 @@ public partial class V1beta1InstanceGroupManagerSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1996,6 +2092,7 @@ public enum V1beta1InstanceGroupManagerSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2012,6 +2109,7 @@ public enum V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2023,6 +2121,7 @@ public enum V1beta1InstanceGroupManagerSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2051,6 +2150,7 @@ public partial class V1beta1InstanceGroupManagerSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2070,6 +2170,7 @@ public partial class V1beta1InstanceGroupManagerSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2084,6 +2185,7 @@ public partial class V1beta1InstanceGroupManagerSpecWriteConnectionSecretToRef
 /// <summary>InstanceGroupManagerSpec defines the desired state of InstanceGroupManager</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerSpec
 {
     /// <summary>
@@ -2151,6 +2253,7 @@ public partial class V1beta1InstanceGroupManagerSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderAllInstancesConfig
 {
     /// <summary>, The label key-value pairs that you want to patch onto the instance.</summary>
@@ -2164,6 +2267,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderAllInstancesConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderAutoHealingPolicies
 {
     /// <summary>The health check resource that signals autohealing.</summary>
@@ -2180,6 +2284,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderAutoHealingPolic
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderInstanceLifecyclePolicy
 {
     /// <summary>, Default behavior for all instance or health check failures. Valid options are: REPAIR, DO_NOTHING. If DO_NOTHING then instances will not be repaired. If REPAIR (default), then failed instances will be repaired.</summary>
@@ -2193,6 +2298,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderInstanceLifecycl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderNamedPort
 {
     /// <summary>The name which the port will be mapped to.</summary>
@@ -2206,6 +2312,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderNamedPort
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderResourcePolicies
 {
     /// <summary>The URL of the workload policy that is specified for this managed instance group. It can be a full or partial URL.</summary>
@@ -2215,6 +2322,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderResourcePolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStandbyPolicy
 {
     /// <summary>- Specifies the number of seconds that the MIG should wait to suspend or stop a VM after that VM was created. The initial delay gives the initialization script the time to prepare your VM for a quick scale out. The value of initial delay must be between 0 and 3600 seconds. The default value is 0.</summary>
@@ -2228,6 +2336,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStandbyPolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulDisk
 {
     /// <summary>, A value that prescribes what should happen to the stateful disk when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.</summary>
@@ -2241,6 +2350,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulDisk
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulExternalIp
 {
     /// <summary>, A value that prescribes what should happen to the external ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the external ip when the VM is permanently deleted from the instance group.</summary>
@@ -2254,6 +2364,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulExternal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulInternalIp
 {
     /// <summary>, A value that prescribes what should happen to the internal ip when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the ip when the VM is deleted, but do not delete the ip. ON_PERMANENT_INSTANCE_DELETION will delete the internal ip when the VM is permanently deleted from the instance group.</summary>
@@ -2267,6 +2378,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatefulInternal
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusAllInstancesConfig
 {
     /// <summary>Current all-instances configuration revision. This value is in RFC3339 text format.</summary>
@@ -2279,6 +2391,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusAllInstanc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusStatefulPerInstanceConfigs
 {
     /// <summary>A bit indicating if all of the group&apos;s per-instance configs (listed in the output of a listPerInstanceConfigs API call) have status EFFECTIVE or there are no per-instance-configs.</summary>
@@ -2288,6 +2401,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusStatefulPe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusStateful
 {
     /// <summary>A bit indicating whether the managed instance group has stateful configuration, that is, if you have configured any items in a stateful policy or in per-instance configs. The group might report that it has no stateful config even when there is still some preserved state on a managed instance, for example, if you have deleted all PICs but not yet applied those deletions.</summary>
@@ -2301,6 +2415,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusStateful
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusVersionTarget
 {
     [JsonPropertyName("isReached")]
@@ -2309,6 +2424,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatusVersionTar
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderStatus
 {
     /// <summary>
@@ -2334,6 +2450,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderUpdatePolicy
 {
     /// <summary>, The maximum number of instances that can be created above the specified targetSize during the update process. Conflicts with max_surge_percent. If neither is set, defaults to 1</summary>
@@ -2371,6 +2488,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderUpdatePolicy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderVersionTargetSize
 {
     /// <summary>, The number of instances which are managed for this version. Conflicts with percent.</summary>
@@ -2388,6 +2506,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderVersionTargetSiz
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProviderVersion
 {
     /// <summary>- The full URL to an instance template from which all new instances of this version will be created. It is recommended to reference instance templates through their unique id (self_link_unique attribute).</summary>
@@ -2405,6 +2524,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProviderVersion
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusAtProvider
 {
     /// <summary>
@@ -2583,6 +2703,7 @@ public partial class V1beta1InstanceGroupManagerStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatusConditions
 {
     /// <summary>
@@ -2626,6 +2747,7 @@ public partial class V1beta1InstanceGroupManagerStatusConditions
 /// <summary>InstanceGroupManagerStatus defines the observed state of InstanceGroupManager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1InstanceGroupManagerStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2644,9 +2766,13 @@ public partial class V1beta1InstanceGroupManagerStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>InstanceGroupManager is the Schema for the InstanceGroupManagers API. Manages an Instance Group within GCE.</summary>
+/// <summary>
+/// InstanceGroupManager is the Schema for the InstanceGroupManagers API. Manages an Instance Group within GCE.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1InstanceGroupManager : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1InstanceGroupManagerSpec>, IStatus<V1beta1InstanceGroupManagerStatus?>
 {

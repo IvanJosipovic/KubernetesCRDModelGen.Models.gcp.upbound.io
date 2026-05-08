@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>RegionPerInstanceConfig is the Schema for the RegionPerInstanceConfigs API. A config defined for a single managed instance that belongs to an instance group manager.</summary>
+/// <summary>
+/// RegionPerInstanceConfig is the Schema for the RegionPerInstanceConfigs API. A config defined for a single managed instance that belongs to an instance group manager.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionPerInstanceConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegionPerInstanceConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RegionPerInstanceConfigList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -63,6 +68,7 @@ public enum V1beta1RegionPerInstanceConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -79,6 +85,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -90,6 +97,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourc
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRefPolicy
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 /// <summary>Reference to a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourc
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelectorPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 /// <summary>Selector for a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDiskSourceSelector
 {
     /// <summary>
@@ -204,6 +217,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateDisk
 {
     /// <summary>
@@ -248,6 +262,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateExternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -257,6 +272,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateExternalIp
 {
     /// <summary>
@@ -281,6 +297,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateInternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -290,6 +307,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedStateInternalIp
 {
     /// <summary>
@@ -314,6 +332,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 {
     /// <summary>
@@ -350,6 +369,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderPreservedState
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -366,6 +386,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupMana
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -377,6 +398,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupMana
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRefPolicy
 {
     /// <summary>
@@ -401,6 +423,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstance
 /// <summary>Reference to a RegionInstanceGroupManager in compute to populate regionInstanceGroupManager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -420,6 +443,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -436,6 +460,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupMana
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -447,6 +472,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupMana
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelectorPolicy
 {
     /// <summary>
@@ -471,6 +497,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstance
 /// <summary>Selector for a RegionInstanceGroupManager in compute to populate regionInstanceGroupManager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstanceGroupManagerSelector
 {
     /// <summary>
@@ -497,6 +524,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionInstance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -513,6 +541,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -524,6 +553,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolicy
 {
     /// <summary>
@@ -548,6 +578,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionRefPolic
 /// <summary>Reference to a RegionInstanceGroupManager in compute to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -567,6 +598,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -583,6 +615,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -594,6 +627,7 @@ public enum V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionSelectorPolicy
 {
     /// <summary>
@@ -618,6 +652,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionSelector
 /// <summary>Selector for a RegionInstanceGroupManager in compute to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionSelector
 {
     /// <summary>
@@ -638,6 +673,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProviderRegionSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecForProvider
 {
     /// <summary>
@@ -720,6 +756,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -736,6 +773,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSour
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -747,6 +785,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSour
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRefPolicy
 {
     /// <summary>
@@ -771,6 +810,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 /// <summary>Reference to a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -790,6 +830,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -806,6 +847,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSour
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -817,6 +859,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSour
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelectorPolicy
 {
     /// <summary>
@@ -841,6 +884,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 /// <summary>Selector for a Disk in compute to populate source.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDiskSourceSelector
 {
     /// <summary>
@@ -861,6 +905,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateDisk
 {
     /// <summary>
@@ -905,6 +950,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateExternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -914,6 +960,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateExternalIp
 {
     /// <summary>
@@ -938,6 +985,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateInternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -947,6 +995,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStateInternalIp
 {
     /// <summary>
@@ -971,6 +1020,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedState
 {
     /// <summary>
@@ -1007,6 +1057,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderPreservedStat
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1023,6 +1074,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1034,6 +1086,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupMan
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRefPolicy
 {
     /// <summary>
@@ -1058,6 +1111,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanc
 /// <summary>Reference to a RegionInstanceGroupManager in compute to populate regionInstanceGroupManager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1077,6 +1131,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1093,6 +1148,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupMan
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1104,6 +1160,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupMan
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelectorPolicy
 {
     /// <summary>
@@ -1128,6 +1185,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanc
 /// <summary>Selector for a RegionInstanceGroupManager in compute to populate regionInstanceGroupManager.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanceGroupManagerSelector
 {
     /// <summary>
@@ -1154,6 +1212,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionInstanc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1170,6 +1229,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1181,6 +1241,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPolicy
 {
     /// <summary>
@@ -1205,6 +1266,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionRefPoli
 /// <summary>Reference to a RegionInstanceGroupManager in compute to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1224,6 +1286,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1240,6 +1303,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1251,6 +1315,7 @@ public enum V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelectorPolicy
 {
     /// <summary>
@@ -1275,6 +1340,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelecto
 /// <summary>Selector for a RegionInstanceGroupManager in compute to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelector
 {
     /// <summary>
@@ -1307,6 +1373,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProviderRegionSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecInitProvider
 {
     /// <summary>
@@ -1387,6 +1454,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1411,6 +1479,7 @@ public enum V1beta1RegionPerInstanceConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1427,6 +1496,7 @@ public enum V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1438,6 +1508,7 @@ public enum V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1466,6 +1537,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1485,6 +1557,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1499,6 +1572,7 @@ public partial class V1beta1RegionPerInstanceConfigSpecWriteConnectionSecretToRe
 /// <summary>RegionPerInstanceConfigSpec defines the desired state of RegionPerInstanceConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigSpec
 {
     /// <summary>
@@ -1566,6 +1640,7 @@ public partial class V1beta1RegionPerInstanceConfigSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStateDisk
 {
     /// <summary>
@@ -1602,6 +1677,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStateExternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -1611,6 +1687,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStateExternalIp
 {
     /// <summary>
@@ -1635,6 +1712,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStateInternalIpIpAddress
 {
     /// <summary>The URL of the reservation for this IP address.</summary>
@@ -1644,6 +1722,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStateInternalIp
 {
     /// <summary>
@@ -1668,6 +1747,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedState
 {
     /// <summary>
@@ -1698,6 +1778,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProviderPreservedStat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusAtProvider
 {
     /// <summary>an identifier for the resource with format {{project}}/{{region}}/{{region_instance_group_manager}}/{{name}}</summary>
@@ -1763,6 +1844,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatusConditions
 {
     /// <summary>
@@ -1806,6 +1888,7 @@ public partial class V1beta1RegionPerInstanceConfigStatusConditions
 /// <summary>RegionPerInstanceConfigStatus defines the observed state of RegionPerInstanceConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegionPerInstanceConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1824,9 +1907,13 @@ public partial class V1beta1RegionPerInstanceConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RegionPerInstanceConfig is the Schema for the RegionPerInstanceConfigs API. A config defined for a single managed instance that belongs to an instance group manager.</summary>
+/// <summary>
+/// RegionPerInstanceConfig is the Schema for the RegionPerInstanceConfigs API. A config defined for a single managed instance that belongs to an instance group manager.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegionPerInstanceConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegionPerInstanceConfigSpec>, IStatus<V1beta1RegionPerInstanceConfigStatus?>
 {

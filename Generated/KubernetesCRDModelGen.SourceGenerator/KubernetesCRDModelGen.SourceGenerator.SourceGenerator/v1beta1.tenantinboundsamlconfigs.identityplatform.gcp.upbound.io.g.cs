@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.identityplatform.gcp.upbound.io;
-/// <summary>TenantInboundSAMLConfig is the Schema for the TenantInboundSAMLConfigs API. Inbound SAML configuration for a Identity Toolkit tenant.</summary>
+/// <summary>
+/// TenantInboundSAMLConfig is the Schema for the TenantInboundSAMLConfigs API. Inbound SAML configuration for a Identity Toolkit tenant.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TenantInboundSAMLConfigList : IKubernetesObject<V1ListMeta>, IItems<V1beta1TenantInboundSAMLConfig>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1TenantInboundSAMLConfigList : IKubernetesObject<V1Li
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -61,6 +66,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecDeletionPolicyEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfigIdpCertificatesX509CertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -78,6 +84,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfigIdpCe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfigIdpCertificates
 {
     /// <summary>
@@ -90,6 +97,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfigIdpCe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfig
 {
     /// <summary>
@@ -114,6 +122,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderIdpConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderSpConfig
 {
     /// <summary>Callback URI where responses from IDP are handled. Must start with https://.</summary>
@@ -133,6 +142,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderSpConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -149,6 +159,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -160,6 +171,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicyResolveE
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolicy
 {
     /// <summary>
@@ -184,6 +196,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantRefPolic
 /// <summary>Reference to a Tenant in identityplatform to populate tenant.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -203,6 +216,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -219,6 +233,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyRes
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -230,6 +245,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicyRes
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelectorPolicy
 {
     /// <summary>
@@ -254,6 +270,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelector
 /// <summary>Selector for a Tenant in identityplatform to populate tenant.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelector
 {
     /// <summary>
@@ -274,6 +291,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProviderTenantSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecForProvider
 {
     /// <summary>Human friendly display name.</summary>
@@ -333,6 +351,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecForProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfigIdpCertificatesX509CertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -350,6 +369,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfigIdpC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfigIdpCertificates
 {
     /// <summary>
@@ -362,6 +382,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfigIdpC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfig
 {
     /// <summary>
@@ -386,6 +407,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderIdpConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderSpConfig
 {
     /// <summary>Callback URI where responses from IDP are handled. Must start with https://.</summary>
@@ -405,6 +427,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderSpConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -421,6 +444,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolut
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -432,6 +456,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicyResolve
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPolicy
 {
     /// <summary>
@@ -456,6 +481,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRefPoli
 /// <summary>Reference to a Tenant in identityplatform to populate tenant.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -475,6 +501,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -491,6 +518,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyRe
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -502,6 +530,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicyRe
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelectorPolicy
 {
     /// <summary>
@@ -526,6 +555,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelecto
 /// <summary>Selector for a Tenant in identityplatform to populate tenant.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelector
 {
     /// <summary>
@@ -558,6 +588,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProviderTenantSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecInitProvider
 {
     /// <summary>Human friendly display name.</summary>
@@ -617,6 +648,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -641,6 +673,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -657,6 +690,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolutionE
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -668,6 +702,7 @@ public enum V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -696,6 +731,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -715,6 +751,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -729,6 +766,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpecWriteConnectionSecretToRe
 /// <summary>TenantInboundSAMLConfigSpec defines the desired state of TenantInboundSAMLConfig</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigSpec
 {
     /// <summary>
@@ -800,6 +838,7 @@ public partial class V1beta1TenantInboundSAMLConfigSpec
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfigIdpCertificatesX509CertificateSecretRef
 {
     /// <summary>The key to select.</summary>
@@ -817,6 +856,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfigIdpC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfigIdpCertificates
 {
     /// <summary>
@@ -829,6 +869,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfigIdpC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfig
 {
     /// <summary>
@@ -853,6 +894,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderIdpConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderSpConfigSpCertificates
 {
     /// <summary>
@@ -865,6 +907,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderSpConfigSpCer
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderSpConfig
 {
     /// <summary>Callback URI where responses from IDP are handled. Must start with https://.</summary>
@@ -886,6 +929,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProviderSpConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusAtProvider
 {
     /// <summary>Human friendly display name.</summary>
@@ -938,6 +982,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatusConditions
 {
     /// <summary>
@@ -981,6 +1026,7 @@ public partial class V1beta1TenantInboundSAMLConfigStatusConditions
 /// <summary>TenantInboundSAMLConfigStatus defines the observed state of TenantInboundSAMLConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1TenantInboundSAMLConfigStatus
 {
     [JsonPropertyName("atProvider")]
@@ -999,9 +1045,13 @@ public partial class V1beta1TenantInboundSAMLConfigStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>TenantInboundSAMLConfig is the Schema for the TenantInboundSAMLConfigs API. Inbound SAML configuration for a Identity Toolkit tenant.</summary>
+/// <summary>
+/// TenantInboundSAMLConfig is the Schema for the TenantInboundSAMLConfigs API. Inbound SAML configuration for a Identity Toolkit tenant.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1TenantInboundSAMLConfig : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1TenantInboundSAMLConfigSpec>, IStatus<V1beta1TenantInboundSAMLConfigStatus?>
 {

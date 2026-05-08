@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
-/// <summary>Job is the Schema for the Jobs API. Manages a job resource within a Dataproc cluster.</summary>
+/// <summary>
+/// Job is the Schema for the Jobs API. Manages a job resource within a Dataproc cluster.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobList : IKubernetesObject<V1ListMeta>, IItems<V1beta1Job>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1JobList : IKubernetesObject<V1ListMeta>, IItems<V1be
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1JobSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderHadoopConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1JobSpecForProviderHadoopConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderHadoopConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -102,6 +109,7 @@ public partial class V1beta1JobSpecForProviderHadoopConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderHiveConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -137,6 +145,7 @@ public partial class V1beta1JobSpecForProviderHiveConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPigConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -146,6 +155,7 @@ public partial class V1beta1JobSpecForProviderPigConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPigConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -190,6 +200,7 @@ public partial class V1beta1JobSpecForProviderPigConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -206,6 +217,7 @@ public enum V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -217,6 +229,7 @@ public enum V1beta1JobSpecForProviderPlacementClusterNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPlacementClusterNameRefPolicy
 {
     /// <summary>
@@ -241,6 +254,7 @@ public partial class V1beta1JobSpecForProviderPlacementClusterNameRefPolicy
 /// <summary>Reference to a Cluster in dataproc to populate clusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPlacementClusterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -260,6 +274,7 @@ public partial class V1beta1JobSpecForProviderPlacementClusterNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -276,6 +291,7 @@ public enum V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolutio
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -287,6 +303,7 @@ public enum V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicyResolveEn
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicy
 {
     /// <summary>
@@ -311,6 +328,7 @@ public partial class V1beta1JobSpecForProviderPlacementClusterNameSelectorPolicy
 /// <summary>Selector for a Cluster in dataproc to populate clusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPlacementClusterNameSelector
 {
     /// <summary>
@@ -331,6 +349,7 @@ public partial class V1beta1JobSpecForProviderPlacementClusterNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPlacement
 {
     /// <summary>
@@ -351,6 +370,7 @@ public partial class V1beta1JobSpecForProviderPlacement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPrestoConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -360,6 +380,7 @@ public partial class V1beta1JobSpecForProviderPrestoConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPrestoConfig
 {
     /// <summary>Presto client tags to attach to this query.</summary>
@@ -398,6 +419,7 @@ public partial class V1beta1JobSpecForProviderPrestoConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPysparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -407,6 +429,7 @@ public partial class V1beta1JobSpecForProviderPysparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderPysparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -443,6 +466,7 @@ public partial class V1beta1JobSpecForProviderPysparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderReference
 {
     [JsonPropertyName("jobId")]
@@ -457,6 +481,7 @@ public partial class V1beta1JobSpecForProviderReference
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderRegionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderRegionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -473,6 +498,7 @@ public enum V1beta1JobSpecForProviderRegionRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderRegionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderRegionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -484,6 +510,7 @@ public enum V1beta1JobSpecForProviderRegionRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderRegionRefPolicy
 {
     /// <summary>
@@ -508,6 +535,7 @@ public partial class V1beta1JobSpecForProviderRegionRefPolicy
 /// <summary>Reference to a Cluster in dataproc to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderRegionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -527,6 +555,7 @@ public partial class V1beta1JobSpecForProviderRegionRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderRegionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderRegionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -543,6 +572,7 @@ public enum V1beta1JobSpecForProviderRegionSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecForProviderRegionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecForProviderRegionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -554,6 +584,7 @@ public enum V1beta1JobSpecForProviderRegionSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderRegionSelectorPolicy
 {
     /// <summary>
@@ -578,6 +609,7 @@ public partial class V1beta1JobSpecForProviderRegionSelectorPolicy
 /// <summary>Selector for a Cluster in dataproc to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderRegionSelector
 {
     /// <summary>
@@ -598,6 +630,7 @@ public partial class V1beta1JobSpecForProviderRegionSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed.</summary>
@@ -611,6 +644,7 @@ public partial class V1beta1JobSpecForProviderScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderSparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -620,6 +654,7 @@ public partial class V1beta1JobSpecForProviderSparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderSparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -662,6 +697,7 @@ public partial class V1beta1JobSpecForProviderSparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderSparksqlConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -671,6 +707,7 @@ public partial class V1beta1JobSpecForProviderSparksqlConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProviderSparksqlConfig
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -705,6 +742,7 @@ public partial class V1beta1JobSpecForProviderSparksqlConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecForProvider
 {
     /// <summary>
@@ -778,6 +816,7 @@ public partial class V1beta1JobSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderHadoopConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -787,6 +826,7 @@ public partial class V1beta1JobSpecInitProviderHadoopConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderHadoopConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -823,6 +863,7 @@ public partial class V1beta1JobSpecInitProviderHadoopConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderHiveConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -858,6 +899,7 @@ public partial class V1beta1JobSpecInitProviderHiveConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPigConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -867,6 +909,7 @@ public partial class V1beta1JobSpecInitProviderPigConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPigConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -911,6 +954,7 @@ public partial class V1beta1JobSpecInitProviderPigConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -927,6 +971,7 @@ public enum V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolutionEnu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -938,6 +983,7 @@ public enum V1beta1JobSpecInitProviderPlacementClusterNameRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPlacementClusterNameRefPolicy
 {
     /// <summary>
@@ -962,6 +1008,7 @@ public partial class V1beta1JobSpecInitProviderPlacementClusterNameRefPolicy
 /// <summary>Reference to a Cluster in dataproc to populate clusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPlacementClusterNameRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -981,6 +1028,7 @@ public partial class V1beta1JobSpecInitProviderPlacementClusterNameRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -997,6 +1045,7 @@ public enum V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResoluti
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1008,6 +1057,7 @@ public enum V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicyResolveE
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolicy
 {
     /// <summary>
@@ -1032,6 +1082,7 @@ public partial class V1beta1JobSpecInitProviderPlacementClusterNameSelectorPolic
 /// <summary>Selector for a Cluster in dataproc to populate clusterName.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPlacementClusterNameSelector
 {
     /// <summary>
@@ -1052,6 +1103,7 @@ public partial class V1beta1JobSpecInitProviderPlacementClusterNameSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPlacement
 {
     /// <summary>
@@ -1072,6 +1124,7 @@ public partial class V1beta1JobSpecInitProviderPlacement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPrestoConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1081,6 +1134,7 @@ public partial class V1beta1JobSpecInitProviderPrestoConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPrestoConfig
 {
     /// <summary>Presto client tags to attach to this query.</summary>
@@ -1119,6 +1173,7 @@ public partial class V1beta1JobSpecInitProviderPrestoConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPysparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1128,6 +1183,7 @@ public partial class V1beta1JobSpecInitProviderPysparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderPysparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1164,6 +1220,7 @@ public partial class V1beta1JobSpecInitProviderPysparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderReference
 {
     [JsonPropertyName("jobId")]
@@ -1178,6 +1235,7 @@ public partial class V1beta1JobSpecInitProviderReference
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderRegionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderRegionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1194,6 +1252,7 @@ public enum V1beta1JobSpecInitProviderRegionRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderRegionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderRegionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1205,6 +1264,7 @@ public enum V1beta1JobSpecInitProviderRegionRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderRegionRefPolicy
 {
     /// <summary>
@@ -1229,6 +1289,7 @@ public partial class V1beta1JobSpecInitProviderRegionRefPolicy
 /// <summary>Reference to a Cluster in dataproc to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderRegionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1248,6 +1309,7 @@ public partial class V1beta1JobSpecInitProviderRegionRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderRegionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderRegionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1264,6 +1326,7 @@ public enum V1beta1JobSpecInitProviderRegionSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecInitProviderRegionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecInitProviderRegionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1275,6 +1338,7 @@ public enum V1beta1JobSpecInitProviderRegionSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderRegionSelectorPolicy
 {
     /// <summary>
@@ -1299,6 +1363,7 @@ public partial class V1beta1JobSpecInitProviderRegionSelectorPolicy
 /// <summary>Selector for a Cluster in dataproc to populate region.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderRegionSelector
 {
     /// <summary>
@@ -1319,6 +1384,7 @@ public partial class V1beta1JobSpecInitProviderRegionSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed.</summary>
@@ -1332,6 +1398,7 @@ public partial class V1beta1JobSpecInitProviderScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderSparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1341,6 +1408,7 @@ public partial class V1beta1JobSpecInitProviderSparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderSparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1383,6 +1451,7 @@ public partial class V1beta1JobSpecInitProviderSparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderSparksqlConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1392,6 +1461,7 @@ public partial class V1beta1JobSpecInitProviderSparksqlConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProviderSparksqlConfig
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -1438,6 +1508,7 @@ public partial class V1beta1JobSpecInitProviderSparksqlConfig
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecInitProvider
 {
     /// <summary>
@@ -1515,6 +1586,7 @@ public partial class V1beta1JobSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1539,6 +1611,7 @@ public enum V1beta1JobSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1555,6 +1628,7 @@ public enum V1beta1JobSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1566,6 +1640,7 @@ public enum V1beta1JobSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1594,6 +1669,7 @@ public partial class V1beta1JobSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1613,6 +1689,7 @@ public partial class V1beta1JobSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1627,6 +1704,7 @@ public partial class V1beta1JobSpecWriteConnectionSecretToRef
 /// <summary>JobSpec defines the desired state of Job</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobSpec
 {
     /// <summary>
@@ -1694,6 +1772,7 @@ public partial class V1beta1JobSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderHadoopConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1703,6 +1782,7 @@ public partial class V1beta1JobStatusAtProviderHadoopConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderHadoopConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1739,6 +1819,7 @@ public partial class V1beta1JobStatusAtProviderHadoopConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderHiveConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -1774,6 +1855,7 @@ public partial class V1beta1JobStatusAtProviderHiveConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPigConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1783,6 +1865,7 @@ public partial class V1beta1JobStatusAtProviderPigConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPigConfig
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.</summary>
@@ -1821,6 +1904,7 @@ public partial class V1beta1JobStatusAtProviderPigConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPlacement
 {
     /// <summary>
@@ -1837,6 +1921,7 @@ public partial class V1beta1JobStatusAtProviderPlacement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPrestoConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1846,6 +1931,7 @@ public partial class V1beta1JobStatusAtProviderPrestoConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPrestoConfig
 {
     /// <summary>Presto client tags to attach to this query.</summary>
@@ -1884,6 +1970,7 @@ public partial class V1beta1JobStatusAtProviderPrestoConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPysparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1893,6 +1980,7 @@ public partial class V1beta1JobStatusAtProviderPysparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderPysparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1929,6 +2017,7 @@ public partial class V1beta1JobStatusAtProviderPysparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderReference
 {
     [JsonPropertyName("jobId")]
@@ -1937,6 +2026,7 @@ public partial class V1beta1JobStatusAtProviderReference
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed.</summary>
@@ -1950,6 +2040,7 @@ public partial class V1beta1JobStatusAtProviderScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderSparkConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1959,6 +2050,7 @@ public partial class V1beta1JobStatusAtProviderSparkConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderSparkConfig
 {
     /// <summary>HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -2001,6 +2093,7 @@ public partial class V1beta1JobStatusAtProviderSparkConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderSparksqlConfigLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &apos;root&apos; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2010,6 +2103,7 @@ public partial class V1beta1JobStatusAtProviderSparksqlConfigLoggingConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderSparksqlConfig
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -2044,6 +2138,7 @@ public partial class V1beta1JobStatusAtProviderSparksqlConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProviderStatus
 {
     /// <summary>Optional job state details, such as an error description if the state is ERROR.</summary>
@@ -2065,6 +2160,7 @@ public partial class V1beta1JobStatusAtProviderStatus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusAtProvider
 {
     /// <summary>If present, the location of miscellaneous control files which may be used as part of job setup and handling. If not present, control files may be placed in the same location as driver_output_uri.</summary>
@@ -2152,6 +2248,7 @@ public partial class V1beta1JobStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatusConditions
 {
     /// <summary>
@@ -2195,6 +2292,7 @@ public partial class V1beta1JobStatusConditions
 /// <summary>JobStatus defines the observed state of Job.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2213,9 +2311,13 @@ public partial class V1beta1JobStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>Job is the Schema for the Jobs API. Manages a job resource within a Dataproc cluster.</summary>
+/// <summary>
+/// Job is the Schema for the Jobs API. Manages a job resource within a Dataproc cluster.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1Job : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1JobSpec>, IStatus<V1beta1JobStatus?>
 {

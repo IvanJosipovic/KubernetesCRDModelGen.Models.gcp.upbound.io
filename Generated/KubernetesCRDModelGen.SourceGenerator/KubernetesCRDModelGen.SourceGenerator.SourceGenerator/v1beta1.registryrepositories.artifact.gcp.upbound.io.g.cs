@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.artifact.gcp.upbound.io;
-/// <summary>RegistryRepository is the Schema for the RegistryRepositorys API. A repository for storing artifacts</summary>
+/// <summary>
+/// RegistryRepository is the Schema for the RegistryRepositorys API. A repository for storing artifacts
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegistryRepositoryList : IKubernetesObject<V1ListMeta>, IItems<V1beta1RegistryRepository>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1RegistryRepositoryList : IKubernetesObject<V1ListMet
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1RegistryRepositorySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderCleanupPoliciesCondition
 {
     /// <summary>Match versions newer than a duration.</summary>
@@ -90,6 +96,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderCleanupPoliciesCond
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderCleanupPoliciesMostRecentVersions
 {
     /// <summary>Minimum number of versions to keep.</summary>
@@ -103,6 +110,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderCleanupPoliciesMost
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderCleanupPolicies
 {
     /// <summary>
@@ -134,6 +142,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderCleanupPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderDockerConfig
 {
     /// <summary>The repository which enabled this flag prevents all tags from being modified, moved or deleted. This does not prevent tags from being created.</summary>
@@ -143,6 +152,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderDockerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderMavenConfig
 {
     /// <summary>
@@ -163,6 +173,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderMavenConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigAptRepositoryPublicRepository
 {
     /// <summary>
@@ -179,6 +190,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigAptRepository
 {
     /// <summary>
@@ -197,6 +209,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -213,6 +226,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -224,6 +238,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommon
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicy
 {
     /// <summary>
@@ -248,6 +263,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// <summary>Reference to a RegistryRepository in artifact to populate uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -267,6 +283,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -283,6 +300,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -294,6 +312,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommon
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicy
 {
     /// <summary>
@@ -318,6 +337,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// <summary>Selector for a RegistryRepository in artifact to populate uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepositoryUriSelector
 {
     /// <summary>
@@ -338,6 +358,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigCommonRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -355,6 +376,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigDockerRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -364,6 +386,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigDockerRepository
 {
     /// <summary>
@@ -383,6 +406,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigMavenRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -392,6 +416,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigMavenRepository
 {
     /// <summary>
@@ -411,6 +436,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigNpmRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -420,6 +446,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigNpmRepository
 {
     /// <summary>
@@ -439,6 +466,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigPythonRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -448,6 +476,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigPythonRepository
 {
     /// <summary>
@@ -473,6 +502,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -489,6 +519,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -500,6 +531,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstre
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicy
 {
     /// <summary>
@@ -524,6 +556,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// <summary>Reference to a SecretVersion in secretmanager to populate passwordSecretVersion.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -543,6 +576,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -559,6 +593,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstre
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -570,6 +605,7 @@ public enum V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstre
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicy
 {
     /// <summary>
@@ -594,6 +630,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// <summary>Selector for a SecretVersion in secretmanager to populate passwordSecretVersion.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelector
 {
     /// <summary>
@@ -614,6 +651,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials
 {
     /// <summary>
@@ -639,6 +677,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigUpstreamCredentials
 {
     /// <summary>
@@ -651,6 +690,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigYumRepositoryPublicRepository
 {
     /// <summary>
@@ -667,6 +707,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfigYumRepository
 {
     /// <summary>
@@ -679,6 +720,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryConfig
 {
     /// <summary>
@@ -757,6 +799,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderRemoteRepositoryCon
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -773,6 +816,7 @@ public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -784,6 +828,7 @@ public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicy
 {
     /// <summary>
@@ -808,6 +853,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 /// <summary>Reference to a RegistryRepository in artifact to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -827,6 +873,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -843,6 +890,7 @@ public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -854,6 +902,7 @@ public enum V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicy
 {
     /// <summary>
@@ -878,6 +927,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 /// <summary>Selector for a RegistryRepository in artifact to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelector
 {
     /// <summary>
@@ -898,6 +948,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfigUpstreamPolicies
 {
     /// <summary>The user-provided ID of the upstream policy.</summary>
@@ -926,6 +977,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryConfig
 {
     /// <summary>
@@ -939,6 +991,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVirtualRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProviderVulnerabilityScanningConfig
 {
     /// <summary>
@@ -951,6 +1004,7 @@ public partial class V1beta1RegistryRepositorySpecForProviderVulnerabilityScanni
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecForProvider
 {
     /// <summary>
@@ -1061,6 +1115,7 @@ public partial class V1beta1RegistryRepositorySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPoliciesCondition
 {
     /// <summary>Match versions newer than a duration.</summary>
@@ -1094,6 +1149,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPoliciesCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPoliciesMostRecentVersions
 {
     /// <summary>Minimum number of versions to keep.</summary>
@@ -1107,6 +1163,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPoliciesMos
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPolicies
 {
     /// <summary>
@@ -1138,6 +1195,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderCleanupPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderDockerConfig
 {
     /// <summary>The repository which enabled this flag prevents all tags from being modified, moved or deleted. This does not prevent tags from being created.</summary>
@@ -1147,6 +1205,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderDockerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderMavenConfig
 {
     /// <summary>
@@ -1167,6 +1226,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderMavenConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigAptRepositoryPublicRepository
 {
     /// <summary>
@@ -1183,6 +1243,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigAptRepository
 {
     /// <summary>
@@ -1201,6 +1262,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1217,6 +1279,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1228,6 +1291,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRefPolicy
 {
     /// <summary>
@@ -1252,6 +1316,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// <summary>Reference to a RegistryRepository in artifact to populate uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1271,6 +1336,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1287,6 +1353,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1298,6 +1365,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelectorPolicy
 {
     /// <summary>
@@ -1322,6 +1390,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// <summary>Selector for a RegistryRepository in artifact to populate uri.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepositoryUriSelector
 {
     /// <summary>
@@ -1342,6 +1411,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigCommonRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -1359,6 +1429,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigDockerRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -1368,6 +1439,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigDockerRepository
 {
     /// <summary>
@@ -1387,6 +1459,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigMavenRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -1396,6 +1469,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigMavenRepository
 {
     /// <summary>
@@ -1415,6 +1489,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigNpmRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -1424,6 +1499,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigNpmRepository
 {
     /// <summary>
@@ -1443,6 +1519,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigPythonRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -1452,6 +1529,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigPythonRepository
 {
     /// <summary>
@@ -1477,6 +1555,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1493,6 +1572,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1504,6 +1584,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstr
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRefPolicy
 {
     /// <summary>
@@ -1528,6 +1609,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// <summary>Reference to a SecretVersion in secretmanager to populate passwordSecretVersion.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1547,6 +1629,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1563,6 +1646,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstr
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1574,6 +1658,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstr
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelectorPolicy
 {
     /// <summary>
@@ -1598,6 +1683,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// <summary>Selector for a SecretVersion in secretmanager to populate passwordSecretVersion.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsPasswordSecretVersionSelector
 {
     /// <summary>
@@ -1618,6 +1704,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials
 {
     /// <summary>
@@ -1643,6 +1730,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigUpstreamCredentials
 {
     /// <summary>
@@ -1655,6 +1743,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigYumRepositoryPublicRepository
 {
     /// <summary>
@@ -1671,6 +1760,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfigYumRepository
 {
     /// <summary>
@@ -1683,6 +1773,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryConfig
 {
     /// <summary>
@@ -1761,6 +1852,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderRemoteRepositoryCo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1777,6 +1869,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpst
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1788,6 +1881,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpst
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRefPolicy
 {
     /// <summary>
@@ -1812,6 +1906,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 /// <summary>Reference to a RegistryRepository in artifact to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositoryRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1831,6 +1926,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1847,6 +1943,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpst
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1858,6 +1955,7 @@ public enum V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpst
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelectorPolicy
 {
     /// <summary>
@@ -1882,6 +1980,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 /// <summary>Selector for a RegistryRepository in artifact to populate repository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPoliciesRepositorySelector
 {
     /// <summary>
@@ -1902,6 +2001,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfigUpstreamPolicies
 {
     /// <summary>The user-provided ID of the upstream policy.</summary>
@@ -1930,6 +2030,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryConfig
 {
     /// <summary>
@@ -1943,6 +2044,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVirtualRepositoryC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProviderVulnerabilityScanningConfig
 {
     /// <summary>
@@ -1967,6 +2069,7 @@ public partial class V1beta1RegistryRepositorySpecInitProviderVulnerabilityScann
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecInitProvider
 {
     /// <summary>
@@ -2077,6 +2180,7 @@ public partial class V1beta1RegistryRepositorySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2101,6 +2205,7 @@ public enum V1beta1RegistryRepositorySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2117,6 +2222,7 @@ public enum V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2128,6 +2234,7 @@ public enum V1beta1RegistryRepositorySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2156,6 +2263,7 @@ public partial class V1beta1RegistryRepositorySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2175,6 +2283,7 @@ public partial class V1beta1RegistryRepositorySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2189,6 +2298,7 @@ public partial class V1beta1RegistryRepositorySpecWriteConnectionSecretToRef
 /// <summary>RegistryRepositorySpec defines the desired state of RegistryRepository</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositorySpec
 {
     /// <summary>
@@ -2256,6 +2366,7 @@ public partial class V1beta1RegistryRepositorySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPoliciesCondition
 {
     /// <summary>Match versions newer than a duration.</summary>
@@ -2289,6 +2400,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPoliciesCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPoliciesMostRecentVersions
 {
     /// <summary>Minimum number of versions to keep.</summary>
@@ -2302,6 +2414,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPoliciesMos
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPolicies
 {
     /// <summary>
@@ -2333,6 +2446,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderCleanupPolicies
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderDockerConfig
 {
     /// <summary>The repository which enabled this flag prevents all tags from being modified, moved or deleted. This does not prevent tags from being created.</summary>
@@ -2342,6 +2456,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderDockerConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderMavenConfig
 {
     /// <summary>
@@ -2362,6 +2477,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderMavenConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigAptRepositoryPublicRepository
 {
     /// <summary>
@@ -2378,6 +2494,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigAptRepository
 {
     /// <summary>
@@ -2390,6 +2507,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigCommonRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -2399,6 +2517,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigDockerRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -2408,6 +2527,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigDockerRepository
 {
     /// <summary>
@@ -2427,6 +2547,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigMavenRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -2436,6 +2557,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigMavenRepository
 {
     /// <summary>
@@ -2455,6 +2577,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigNpmRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -2464,6 +2587,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigNpmRepository
 {
     /// <summary>
@@ -2483,6 +2607,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigPythonRepositoryCustomRepository
 {
     /// <summary>Specific uri to the registry, e.g. &quot;https://registry-1.docker.io&quot;</summary>
@@ -2492,6 +2617,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigPythonRepository
 {
     /// <summary>
@@ -2511,6 +2637,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials
 {
     /// <summary>
@@ -2528,6 +2655,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigUpstreamCredentials
 {
     /// <summary>
@@ -2540,6 +2668,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigYumRepositoryPublicRepository
 {
     /// <summary>
@@ -2556,6 +2685,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfigYumRepository
 {
     /// <summary>
@@ -2568,6 +2698,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryConfig
 {
     /// <summary>
@@ -2640,6 +2771,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderRemoteRepositoryCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderVirtualRepositoryConfigUpstreamPolicies
 {
     /// <summary>The user-provided ID of the upstream policy.</summary>
@@ -2660,6 +2792,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderVirtualRepositoryC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderVirtualRepositoryConfig
 {
     /// <summary>
@@ -2673,6 +2806,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderVirtualRepositoryC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProviderVulnerabilityScanningConfig
 {
     /// <summary>
@@ -2699,6 +2833,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProviderVulnerabilityScann
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusAtProvider
 {
     /// <summary>
@@ -2840,6 +2975,7 @@ public partial class V1beta1RegistryRepositoryStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatusConditions
 {
     /// <summary>
@@ -2883,6 +3019,7 @@ public partial class V1beta1RegistryRepositoryStatusConditions
 /// <summary>RegistryRepositoryStatus defines the observed state of RegistryRepository.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1RegistryRepositoryStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2901,9 +3038,13 @@ public partial class V1beta1RegistryRepositoryStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>RegistryRepository is the Schema for the RegistryRepositorys API. A repository for storing artifacts</summary>
+/// <summary>
+/// RegistryRepository is the Schema for the RegistryRepositorys API. A repository for storing artifacts
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1RegistryRepository : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1RegistryRepositorySpec>, IStatus<V1beta1RegistryRepositoryStatus?>
 {
