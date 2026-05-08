@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.datalossprevention.gcp.upbound.io;
-/// <summary>JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.</summary>
+/// <summary>
+/// JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobTriggerList : IKubernetesObject<V1ListMeta>, IItems<V1beta1JobTrigger>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1JobTriggerList : IKubernetesObject<V1ListMeta>, IIte
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1JobTriggerSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationConfig
 {
     /// <summary>If this template is specified, it will serve as the default de-identify template.</summary>
@@ -80,6 +86,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -96,6 +103,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -107,6 +115,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicy
 {
     /// <summary>
@@ -131,6 +140,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -166,6 +177,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -177,6 +189,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -201,6 +214,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelector
 {
     /// <summary>
@@ -227,6 +241,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -243,6 +258,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -254,6 +270,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicy
 {
     /// <summary>
@@ -278,6 +295,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -297,6 +315,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -313,6 +332,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -324,6 +344,7 @@ public enum V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransform
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicy
 {
     /// <summary>
@@ -348,6 +369,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelector
 {
     /// <summary>
@@ -368,6 +390,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -405,6 +428,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
     /// <summary>
@@ -417,6 +441,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 {
     /// <summary>
@@ -455,12 +480,14 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsDeidentify
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsJobNotificationEmails
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsPubSub
 {
     /// <summary>Cloud Pub/Sub topic to send notifications to.</summary>
@@ -470,24 +497,28 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsPubSub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsPublishToStackdriver
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -509,6 +540,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindingsOutputConfig
 {
     /// <summary>
@@ -534,6 +566,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindings
 {
     /// <summary>
@@ -546,6 +579,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActionsSaveFindin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobActions
 {
     /// <summary>
@@ -588,6 +622,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -597,6 +632,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
     /// <summary>
@@ -609,6 +645,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
     /// <summary>
@@ -628,6 +665,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
     /// <summary>
@@ -640,6 +678,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
     /// <summary>
@@ -667,6 +706,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -683,6 +723,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
     /// <summary>
@@ -695,6 +736,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
     /// <summary>
@@ -711,12 +753,14 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCustomInfoTypes
 {
     /// <summary>
@@ -779,6 +823,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigCust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
     /// <summary>
@@ -791,6 +836,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigInfoTypes
 {
     /// <summary>
@@ -818,6 +864,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigInfo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
     /// <summary>
@@ -830,6 +877,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
     /// <summary>
@@ -857,6 +905,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
@@ -875,6 +924,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimits
 {
     /// <summary>
@@ -895,6 +945,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigLimi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
     /// <summary>
@@ -907,6 +958,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetInfoTypes
 {
     /// <summary>
@@ -934,6 +986,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -943,6 +996,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
     /// <summary>
@@ -955,6 +1009,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
     /// <summary>
@@ -974,6 +1029,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -990,6 +1046,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -1003,6 +1060,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
     /// <summary>
@@ -1026,6 +1084,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
     /// <summary>
@@ -1038,6 +1097,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
     /// <summary>
@@ -1065,6 +1125,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
     /// <summary>
@@ -1077,6 +1138,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -1093,6 +1155,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
     /// <summary>
@@ -1130,6 +1193,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -1146,6 +1210,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
     /// <summary>
@@ -1169,6 +1234,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -1182,6 +1248,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
     /// <summary>
@@ -1212,6 +1279,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSetRules
 {
     /// <summary>
@@ -1231,6 +1299,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRuleSet
 {
     /// <summary>
@@ -1250,6 +1319,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfigRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfig
 {
     /// <summary>
@@ -1300,6 +1370,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobInspectConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
     /// <summary>
@@ -1316,6 +1387,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
     /// <summary>
@@ -1332,6 +1404,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
     /// <summary>
@@ -1348,6 +1421,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -1369,6 +1443,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQueryOptions
 {
     /// <summary>
@@ -1429,6 +1504,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigBigQ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
     /// <summary>The name of a Cloud Storage bucket.</summary>
@@ -1454,6 +1530,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
     /// <summary>
@@ -1476,6 +1553,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigCloudStorageOptions
 {
     /// <summary>
@@ -1526,6 +1604,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigClou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptionsKind
 {
     /// <summary>
@@ -1542,6 +1621,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigData
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
     /// <summary>If not empty, the ID of the namespace to which the entities belong.</summary>
@@ -1555,6 +1635,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigData
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigDatastoreOptions
 {
     /// <summary>
@@ -1575,6 +1656,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigData
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
     /// <summary>
@@ -1591,6 +1673,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
     /// <summary>
@@ -1605,6 +1688,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybridOptions
 {
     /// <summary>A description of the job trigger.</summary>
@@ -1640,6 +1724,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigHybr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
     /// <summary>
@@ -1656,6 +1741,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigTimespanConfig
 {
     /// <summary>
@@ -1685,6 +1771,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfigTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfig
 {
     /// <summary>
@@ -1725,6 +1812,7 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJobStorageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderInspectJob
 {
     /// <summary>
@@ -1755,12 +1843,14 @@ public partial class V1beta1JobTriggerSpecForProviderInspectJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderTriggersManual
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderTriggersSchedule
 {
     /// <summary>
@@ -1775,6 +1865,7 @@ public partial class V1beta1JobTriggerSpecForProviderTriggersSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProviderTriggers
 {
     /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
@@ -1791,6 +1882,7 @@ public partial class V1beta1JobTriggerSpecForProviderTriggers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecForProvider
 {
     /// <summary>A description of the job trigger.</summary>
@@ -1841,6 +1933,7 @@ public partial class V1beta1JobTriggerSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationConfig
 {
     /// <summary>If this template is specified, it will serve as the default de-identify template.</summary>
@@ -1864,6 +1957,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1880,6 +1974,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1891,6 +1986,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRefPolicy
 {
     /// <summary>
@@ -1915,6 +2011,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// <summary>Reference to a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1934,6 +2031,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1950,6 +2048,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1961,6 +2060,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelectorPolicy
 {
     /// <summary>
@@ -1985,6 +2085,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// <summary>Selector for a Dataset in bigquery to populate datasetId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableDatasetIdSelector
 {
     /// <summary>
@@ -2011,6 +2112,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2027,6 +2129,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2038,6 +2141,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRefPolicy
 {
     /// <summary>
@@ -2062,6 +2166,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// <summary>Reference to a Table in bigquery to populate tableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2081,6 +2186,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2097,6 +2203,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2108,6 +2215,7 @@ public enum V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransfor
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelectorPolicy
 {
     /// <summary>
@@ -2132,6 +2240,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 /// <summary>Selector for a Table in bigquery to populate tableId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableTableIdSelector
 {
     /// <summary>
@@ -2152,6 +2261,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2189,6 +2299,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
     /// <summary>
@@ -2201,6 +2312,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentify
 {
     /// <summary>
@@ -2239,12 +2351,14 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsJobNotificationEmails
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsPubSub
 {
     /// <summary>Cloud Pub/Sub topic to send notifications to.</summary>
@@ -2254,24 +2368,28 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsPubSub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsPublishToStackdriver
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -2293,6 +2411,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindingsOutputConfig
 {
     /// <summary>
@@ -2318,6 +2437,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindings
 {
     /// <summary>
@@ -2330,6 +2450,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobActions
 {
     /// <summary>
@@ -2372,6 +2493,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -2381,6 +2503,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
     /// <summary>
@@ -2393,6 +2516,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
     /// <summary>
@@ -2412,6 +2536,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
     /// <summary>
@@ -2424,6 +2549,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
     /// <summary>
@@ -2451,6 +2577,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -2467,6 +2594,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
     /// <summary>
@@ -2479,6 +2607,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
     /// <summary>
@@ -2495,12 +2624,14 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCustomInfoTypes
 {
     /// <summary>
@@ -2563,6 +2694,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
     /// <summary>
@@ -2575,6 +2707,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigInfoTypes
 {
     /// <summary>
@@ -2602,6 +2735,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
     /// <summary>
@@ -2614,6 +2748,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
     /// <summary>
@@ -2641,6 +2776,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
@@ -2659,6 +2795,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLimits
 {
     /// <summary>
@@ -2679,6 +2816,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
     /// <summary>
@@ -2691,6 +2829,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetInfoTypes
 {
     /// <summary>
@@ -2718,6 +2857,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -2727,6 +2867,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
     /// <summary>
@@ -2739,6 +2880,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
     /// <summary>
@@ -2758,6 +2900,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -2774,6 +2917,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -2787,6 +2931,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
     /// <summary>
@@ -2810,6 +2955,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
     /// <summary>
@@ -2822,6 +2968,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
     /// <summary>
@@ -2849,6 +2996,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
     /// <summary>
@@ -2861,6 +3009,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -2877,6 +3026,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
     /// <summary>
@@ -2914,6 +3064,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -2930,6 +3081,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
     /// <summary>
@@ -2953,6 +3105,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -2966,6 +3119,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
     /// <summary>
@@ -2996,6 +3150,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSetRules
 {
     /// <summary>
@@ -3015,6 +3170,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRuleSet
 {
     /// <summary>
@@ -3034,6 +3190,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfig
 {
     /// <summary>
@@ -3084,6 +3241,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobInspectConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
     /// <summary>
@@ -3100,6 +3258,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
     /// <summary>
@@ -3116,6 +3275,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
     /// <summary>
@@ -3132,6 +3292,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -3153,6 +3314,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBigQueryOptions
 {
     /// <summary>
@@ -3213,6 +3375,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
     /// <summary>The name of a Cloud Storage bucket.</summary>
@@ -3238,6 +3401,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
     /// <summary>
@@ -3260,6 +3424,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigCloudStorageOptions
 {
     /// <summary>
@@ -3310,6 +3475,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptionsKind
 {
     /// <summary>
@@ -3326,6 +3492,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
     /// <summary>If not empty, the ID of the namespace to which the entities belong.</summary>
@@ -3339,6 +3506,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDatastoreOptions
 {
     /// <summary>
@@ -3359,6 +3527,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
     /// <summary>
@@ -3375,6 +3544,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
     /// <summary>
@@ -3389,6 +3559,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHybridOptions
 {
     /// <summary>A description of the job trigger.</summary>
@@ -3424,6 +3595,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
     /// <summary>
@@ -3440,6 +3612,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigTim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigTimespanConfig
 {
     /// <summary>
@@ -3469,6 +3642,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfigTim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfig
 {
     /// <summary>
@@ -3509,6 +3683,7 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJobStorageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderInspectJob
 {
     /// <summary>
@@ -3539,12 +3714,14 @@ public partial class V1beta1JobTriggerSpecInitProviderInspectJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderTriggersManual
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderTriggersSchedule
 {
     /// <summary>
@@ -3559,6 +3736,7 @@ public partial class V1beta1JobTriggerSpecInitProviderTriggersSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProviderTriggers
 {
     /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
@@ -3587,6 +3765,7 @@ public partial class V1beta1JobTriggerSpecInitProviderTriggers
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecInitProvider
 {
     /// <summary>A description of the job trigger.</summary>
@@ -3641,6 +3820,7 @@ public partial class V1beta1JobTriggerSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -3665,6 +3845,7 @@ public enum V1beta1JobTriggerSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -3681,6 +3862,7 @@ public enum V1beta1JobTriggerSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1JobTriggerSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1JobTriggerSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -3692,6 +3874,7 @@ public enum V1beta1JobTriggerSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -3720,6 +3903,7 @@ public partial class V1beta1JobTriggerSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -3739,6 +3923,7 @@ public partial class V1beta1JobTriggerSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -3753,6 +3938,7 @@ public partial class V1beta1JobTriggerSpecWriteConnectionSecretToRef
 /// <summary>JobTriggerSpec defines the desired state of JobTrigger</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerSpec
 {
     /// <summary>
@@ -3820,6 +4006,7 @@ public partial class V1beta1JobTriggerSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationConfig
 {
     /// <summary>If this template is specified, it will serve as the default de-identify template.</summary>
@@ -3837,6 +4024,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -3858,6 +4046,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentifyTransformationDetailsStorageConfig
 {
     /// <summary>
@@ -3870,6 +4059,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentify
 {
     /// <summary>
@@ -3908,12 +4098,14 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsDeidentif
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsJobNotificationEmails
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsPubSub
 {
     /// <summary>Cloud Pub/Sub topic to send notifications to.</summary>
@@ -3923,24 +4115,28 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsPubSub
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsPublishFindingsToCloudDataCatalog
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsPublishSummaryToCscc
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsPublishToStackdriver
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfigTable
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -3962,6 +4158,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindingsOutputConfig
 {
     /// <summary>
@@ -3987,6 +4184,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindings
 {
     /// <summary>
@@ -3999,6 +4197,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActionsSaveFindi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobActions
 {
     /// <summary>
@@ -4041,6 +4240,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobActions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -4050,6 +4250,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionaryWordList
 {
     /// <summary>
@@ -4062,6 +4263,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesDictionary
 {
     /// <summary>
@@ -4081,6 +4283,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 {
     /// <summary>
@@ -4093,6 +4296,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesInfoType
 {
     /// <summary>
@@ -4120,6 +4324,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -4136,6 +4341,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesSensitivityScore
 {
     /// <summary>
@@ -4148,6 +4354,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesStoredType
 {
     /// <summary>
@@ -4171,12 +4378,14 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypesSurrogateType
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCustomInfoTypes
 {
     /// <summary>
@@ -4239,6 +4448,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigCus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigInfoTypesSensitivityScore
 {
     /// <summary>
@@ -4251,6 +4461,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigInfoTypes
 {
     /// <summary>
@@ -4278,6 +4489,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigInf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore
 {
     /// <summary>
@@ -4290,6 +4502,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType
 {
     /// <summary>
@@ -4317,6 +4530,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLimitsMaxFindingsPerInfoType
 {
     /// <summary>
@@ -4335,6 +4549,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLimits
 {
     /// <summary>
@@ -4355,6 +4570,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigLim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 {
     /// <summary>
@@ -4367,6 +4583,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetInfoTypes
 {
     /// <summary>
@@ -4394,6 +4611,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath
 {
     /// <summary>A url representing a file or path (no wildcards) in Cloud Storage. Example: gs://[BUCKET_NAME]/dictionary.txt</summary>
@@ -4403,6 +4621,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList
 {
     /// <summary>
@@ -4415,6 +4634,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary
 {
     /// <summary>
@@ -4434,6 +4654,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -4450,6 +4671,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -4463,6 +4685,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 {
     /// <summary>
@@ -4486,6 +4709,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore
 {
     /// <summary>
@@ -4498,6 +4722,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes
 {
     /// <summary>
@@ -4525,6 +4750,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 {
     /// <summary>
@@ -4537,6 +4763,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRuleRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -4553,6 +4780,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesExclusionRule
 {
     /// <summary>
@@ -4590,6 +4818,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex
 {
     /// <summary>The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.</summary>
@@ -4606,6 +4835,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment
 {
     /// <summary>
@@ -4629,6 +4859,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRuleProximity
 {
     /// <summary>Number of characters after the finding to consider. Either this or window_before must be specified</summary>
@@ -4642,6 +4873,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRulesHotwordRule
 {
     /// <summary>
@@ -4672,6 +4904,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSetRules
 {
     /// <summary>
@@ -4691,6 +4924,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRuleSet
 {
     /// <summary>
@@ -4710,6 +4944,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfigRul
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfig
 {
     /// <summary>
@@ -4760,6 +4995,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobInspectConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsExcludedFields
 {
     /// <summary>
@@ -4776,6 +5012,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsIdentifyingFields
 {
     /// <summary>
@@ -4792,6 +5029,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsIncludedFields
 {
     /// <summary>
@@ -4808,6 +5046,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptionsTableReference
 {
     /// <summary>The ID of the dataset containing this table.</summary>
@@ -4829,6 +5068,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBigQueryOptions
 {
     /// <summary>
@@ -4889,6 +5129,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigBig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet
 {
     /// <summary>The name of a Cloud Storage bucket.</summary>
@@ -4914,6 +5155,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptionsFileSet
 {
     /// <summary>
@@ -4936,6 +5178,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigCloudStorageOptions
 {
     /// <summary>
@@ -4986,6 +5229,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigClo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptionsKind
 {
     /// <summary>
@@ -5002,6 +5246,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptionsPartitionId
 {
     /// <summary>If not empty, the ID of the namespace to which the entities belong.</summary>
@@ -5015,6 +5260,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDatastoreOptions
 {
     /// <summary>
@@ -5035,6 +5281,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigDat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields
 {
     /// <summary>
@@ -5051,6 +5298,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptionsTableOptions
 {
     /// <summary>
@@ -5065,6 +5313,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHybridOptions
 {
     /// <summary>A description of the job trigger.</summary>
@@ -5100,6 +5349,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigHyb
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigTimespanConfigTimestampField
 {
     /// <summary>
@@ -5116,6 +5366,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigTim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigTimespanConfig
 {
     /// <summary>
@@ -5145,6 +5396,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfigTim
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfig
 {
     /// <summary>
@@ -5185,6 +5437,7 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJobStorageConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderInspectJob
 {
     /// <summary>
@@ -5215,12 +5468,14 @@ public partial class V1beta1JobTriggerStatusAtProviderInspectJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderTriggersManual
 {
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderTriggersSchedule
 {
     /// <summary>
@@ -5235,6 +5490,7 @@ public partial class V1beta1JobTriggerStatusAtProviderTriggersSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProviderTriggers
 {
     /// <summary>For use with hybrid jobs. Jobs must be manually created and finished.</summary>
@@ -5251,6 +5507,7 @@ public partial class V1beta1JobTriggerStatusAtProviderTriggers
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusAtProvider
 {
     /// <summary>The creation timestamp of an inspectTemplate. Set by the server.</summary>
@@ -5322,6 +5579,7 @@ public partial class V1beta1JobTriggerStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatusConditions
 {
     /// <summary>
@@ -5365,6 +5623,7 @@ public partial class V1beta1JobTriggerStatusConditions
 /// <summary>JobTriggerStatus defines the observed state of JobTrigger.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1JobTriggerStatus
 {
     [JsonPropertyName("atProvider")]
@@ -5383,9 +5642,13 @@ public partial class V1beta1JobTriggerStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.</summary>
+/// <summary>
+/// JobTrigger is the Schema for the JobTriggers API. A job trigger configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1JobTrigger : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1JobTriggerSpec>, IStatus<V1beta1JobTriggerStatus?>
 {

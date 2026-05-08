@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.gcp.upbound.io;
-/// <summary>SLO is the Schema for the SLOs API. A Service-Level Objective (SLO) describes the level of desired good service.</summary>
+/// <summary>
+/// SLO is the Schema for the SLOs API. A Service-Level Objective (SLO) describes the level of desired good service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SLOList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SLO>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SLOList : IKubernetesObject<V1ListMeta>, IItems<V1be
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SLOSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderBasicSliAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1SLOSpecForProviderBasicSliAvailability
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderBasicSliLatency
 {
     /// <summary>
@@ -79,6 +86,7 @@ public partial class V1beta1SLOSpecForProviderBasicSliLatency
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderBasicSli
 {
     /// <summary>
@@ -131,6 +139,7 @@ public partial class V1beta1SLOSpecForProviderBasicSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderRequestBasedSliDistributionCutRange
 {
     /// <summary>
@@ -150,6 +159,7 @@ public partial class V1beta1SLOSpecForProviderRequestBasedSliDistributionCutRang
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderRequestBasedSliDistributionCut
 {
     /// <summary>
@@ -176,6 +186,7 @@ public partial class V1beta1SLOSpecForProviderRequestBasedSliDistributionCut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderRequestBasedSliGoodTotalRatio
 {
     /// <summary>
@@ -216,6 +227,7 @@ public partial class V1beta1SLOSpecForProviderRequestBasedSliGoodTotalRatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderRequestBasedSli
 {
     /// <summary>
@@ -251,6 +263,7 @@ public partial class V1beta1SLOSpecForProviderRequestBasedSli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecForProviderServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecForProviderServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -267,6 +280,7 @@ public enum V1beta1SLOSpecForProviderServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecForProviderServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecForProviderServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -278,6 +292,7 @@ public enum V1beta1SLOSpecForProviderServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderServiceRefPolicy
 {
     /// <summary>
@@ -302,6 +317,7 @@ public partial class V1beta1SLOSpecForProviderServiceRefPolicy
 /// <summary>Reference to a CustomService in monitoring to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -321,6 +337,7 @@ public partial class V1beta1SLOSpecForProviderServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecForProviderServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecForProviderServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -337,6 +354,7 @@ public enum V1beta1SLOSpecForProviderServiceSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecForProviderServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecForProviderServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -348,6 +366,7 @@ public enum V1beta1SLOSpecForProviderServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderServiceSelectorPolicy
 {
     /// <summary>
@@ -372,6 +391,7 @@ public partial class V1beta1SLOSpecForProviderServiceSelectorPolicy
 /// <summary>Selector for a CustomService in monitoring to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderServiceSelector
 {
     /// <summary>
@@ -392,6 +412,7 @@ public partial class V1beta1SLOSpecForProviderServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -401,6 +422,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency
 {
     /// <summary>
@@ -414,6 +436,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance
 {
     /// <summary>
@@ -466,6 +489,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange
 {
     /// <summary>
@@ -485,6 +509,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut
 {
     /// <summary>
@@ -511,6 +536,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio
 {
     /// <summary>
@@ -551,6 +577,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThresholdPerformance
 {
     /// <summary>
@@ -580,6 +607,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThreshold
 {
     /// <summary>
@@ -607,6 +635,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliGoodTotalRatioThres
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricMeanInRangeRange
 {
     /// <summary>
@@ -626,6 +655,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricMeanInRangeRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricMeanInRange
 {
     /// <summary>
@@ -655,6 +685,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricMeanInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricSumInRangeRange
 {
     /// <summary>
@@ -674,6 +705,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricSumInRangeRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricSumInRange
 {
     /// <summary>
@@ -703,6 +735,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSliMetricSumInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProviderWindowsBasedSli
 {
     /// <summary>
@@ -762,6 +795,7 @@ public partial class V1beta1SLOSpecForProviderWindowsBasedSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecForProvider
 {
     /// <summary>
@@ -865,6 +899,7 @@ public partial class V1beta1SLOSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderBasicSliAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -874,6 +909,7 @@ public partial class V1beta1SLOSpecInitProviderBasicSliAvailability
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderBasicSliLatency
 {
     /// <summary>
@@ -887,6 +923,7 @@ public partial class V1beta1SLOSpecInitProviderBasicSliLatency
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderBasicSli
 {
     /// <summary>
@@ -939,6 +976,7 @@ public partial class V1beta1SLOSpecInitProviderBasicSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderRequestBasedSliDistributionCutRange
 {
     /// <summary>
@@ -958,6 +996,7 @@ public partial class V1beta1SLOSpecInitProviderRequestBasedSliDistributionCutRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderRequestBasedSliDistributionCut
 {
     /// <summary>
@@ -984,6 +1023,7 @@ public partial class V1beta1SLOSpecInitProviderRequestBasedSliDistributionCut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderRequestBasedSliGoodTotalRatio
 {
     /// <summary>
@@ -1024,6 +1064,7 @@ public partial class V1beta1SLOSpecInitProviderRequestBasedSliGoodTotalRatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderRequestBasedSli
 {
     /// <summary>
@@ -1059,6 +1100,7 @@ public partial class V1beta1SLOSpecInitProviderRequestBasedSli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecInitProviderServiceRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecInitProviderServiceRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1075,6 +1117,7 @@ public enum V1beta1SLOSpecInitProviderServiceRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecInitProviderServiceRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecInitProviderServiceRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1086,6 +1129,7 @@ public enum V1beta1SLOSpecInitProviderServiceRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderServiceRefPolicy
 {
     /// <summary>
@@ -1110,6 +1154,7 @@ public partial class V1beta1SLOSpecInitProviderServiceRefPolicy
 /// <summary>Reference to a CustomService in monitoring to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderServiceRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1129,6 +1174,7 @@ public partial class V1beta1SLOSpecInitProviderServiceRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecInitProviderServiceSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecInitProviderServiceSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1145,6 +1191,7 @@ public enum V1beta1SLOSpecInitProviderServiceSelectorPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecInitProviderServiceSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecInitProviderServiceSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1156,6 +1203,7 @@ public enum V1beta1SLOSpecInitProviderServiceSelectorPolicyResolveEnum
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderServiceSelectorPolicy
 {
     /// <summary>
@@ -1180,6 +1228,7 @@ public partial class V1beta1SLOSpecInitProviderServiceSelectorPolicy
 /// <summary>Selector for a CustomService in monitoring to populate service.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderServiceSelector
 {
     /// <summary>
@@ -1200,6 +1249,7 @@ public partial class V1beta1SLOSpecInitProviderServiceSelector
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -1209,6 +1259,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency
 {
     /// <summary>
@@ -1222,6 +1273,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance
 {
     /// <summary>
@@ -1274,6 +1326,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange
 {
     /// <summary>
@@ -1293,6 +1346,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut
 {
     /// <summary>
@@ -1319,6 +1373,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio
 {
     /// <summary>
@@ -1359,6 +1414,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThresholdPerformance
 {
     /// <summary>
@@ -1388,6 +1444,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThreshold
 {
     /// <summary>
@@ -1415,6 +1472,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricMeanInRangeRange
 {
     /// <summary>
@@ -1434,6 +1492,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricMeanInRangeR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricMeanInRange
 {
     /// <summary>
@@ -1463,6 +1522,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricMeanInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricSumInRangeRange
 {
     /// <summary>
@@ -1482,6 +1542,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricSumInRangeRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricSumInRange
 {
     /// <summary>
@@ -1511,6 +1572,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSliMetricSumInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProviderWindowsBasedSli
 {
     /// <summary>
@@ -1582,6 +1644,7 @@ public partial class V1beta1SLOSpecInitProviderWindowsBasedSli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecInitProvider
 {
     /// <summary>
@@ -1689,6 +1752,7 @@ public partial class V1beta1SLOSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1713,6 +1777,7 @@ public enum V1beta1SLOSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1729,6 +1794,7 @@ public enum V1beta1SLOSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SLOSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SLOSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1740,6 +1806,7 @@ public enum V1beta1SLOSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1768,6 +1835,7 @@ public partial class V1beta1SLOSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1787,6 +1855,7 @@ public partial class V1beta1SLOSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1801,6 +1870,7 @@ public partial class V1beta1SLOSpecWriteConnectionSecretToRef
 /// <summary>SLOSpec defines the desired state of SLO</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOSpec
 {
     /// <summary>
@@ -1868,6 +1938,7 @@ public partial class V1beta1SLOSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderBasicSliAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -1877,6 +1948,7 @@ public partial class V1beta1SLOStatusAtProviderBasicSliAvailability
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderBasicSliLatency
 {
     /// <summary>
@@ -1890,6 +1962,7 @@ public partial class V1beta1SLOStatusAtProviderBasicSliLatency
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderBasicSli
 {
     /// <summary>
@@ -1942,6 +2015,7 @@ public partial class V1beta1SLOStatusAtProviderBasicSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderRequestBasedSliDistributionCutRange
 {
     /// <summary>
@@ -1961,6 +2035,7 @@ public partial class V1beta1SLOStatusAtProviderRequestBasedSliDistributionCutRan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderRequestBasedSliDistributionCut
 {
     /// <summary>
@@ -1987,6 +2062,7 @@ public partial class V1beta1SLOStatusAtProviderRequestBasedSliDistributionCut
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderRequestBasedSliGoodTotalRatio
 {
     /// <summary>
@@ -2027,6 +2103,7 @@ public partial class V1beta1SLOStatusAtProviderRequestBasedSliGoodTotalRatio
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderRequestBasedSli
 {
     /// <summary>
@@ -2056,6 +2133,7 @@ public partial class V1beta1SLOStatusAtProviderRequestBasedSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability
 {
     /// <summary>Whether an availability SLI is enabled or not. Must be set to true. Defaults to true.</summary>
@@ -2065,6 +2143,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency
 {
     /// <summary>
@@ -2078,6 +2157,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance
 {
     /// <summary>
@@ -2130,6 +2210,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange
 {
     /// <summary>
@@ -2149,6 +2230,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut
 {
     /// <summary>
@@ -2175,6 +2257,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio
 {
     /// <summary>
@@ -2215,6 +2298,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThresholdPerformance
 {
     /// <summary>
@@ -2244,6 +2328,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThreshold
 {
     /// <summary>
@@ -2271,6 +2356,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliGoodTotalRatioThre
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricMeanInRangeRange
 {
     /// <summary>
@@ -2290,6 +2376,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricMeanInRangeR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricMeanInRange
 {
     /// <summary>
@@ -2319,6 +2406,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricMeanInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricSumInRangeRange
 {
     /// <summary>
@@ -2338,6 +2426,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricSumInRangeRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricSumInRange
 {
     /// <summary>
@@ -2367,6 +2456,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSliMetricSumInRange
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProviderWindowsBasedSli
 {
     /// <summary>
@@ -2426,6 +2516,7 @@ public partial class V1beta1SLOStatusAtProviderWindowsBasedSli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusAtProvider
 {
     /// <summary>
@@ -2533,6 +2624,7 @@ public partial class V1beta1SLOStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatusConditions
 {
     /// <summary>
@@ -2576,6 +2668,7 @@ public partial class V1beta1SLOStatusConditions
 /// <summary>SLOStatus defines the observed state of SLO.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SLOStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2594,9 +2687,13 @@ public partial class V1beta1SLOStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SLO is the Schema for the SLOs API. A Service-Level Objective (SLO) describes the level of desired good service.</summary>
+/// <summary>
+/// SLO is the Schema for the SLOs API. A Service-Level Objective (SLO) describes the level of desired good service.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SLO : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SLOSpec>, IStatus<V1beta1SLOStatus?>
 {

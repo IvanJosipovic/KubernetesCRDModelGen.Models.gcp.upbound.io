@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.iam.gcp.upbound.io;
-/// <summary>WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.</summary>
+/// <summary>
+/// WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPoolProviderList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkloadIdentityPoolProvider>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderList : IKubernetesObject
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderAws
 {
     /// <summary>The AWS account ID.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderAws
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderOidc
 {
     /// <summary>
@@ -98,6 +105,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderSaml
 {
     /// <summary>SAML Identity provider configuration metadata xml doc.</summary>
@@ -113,6 +121,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderSaml
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -129,6 +138,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -140,6 +150,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRefPolicy
 {
     /// <summary>
@@ -164,6 +175,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 /// <summary>Reference to a WorkloadIdentityPool in iam to populate workloadIdentityPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -183,6 +195,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -199,6 +212,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -210,6 +224,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPo
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelectorPolicy
 {
     /// <summary>
@@ -234,6 +249,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 /// <summary>Selector for a WorkloadIdentityPool in iam to populate workloadIdentityPoolId.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadIdentityPoolIdSelector
 {
     /// <summary>
@@ -254,6 +270,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderWorkloadI
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStoreIntermediateCas
 {
     /// <summary>
@@ -266,6 +283,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStoreTrustAnchors
 {
     /// <summary>
@@ -278,6 +296,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509TrustStore
 {
     /// <summary>
@@ -301,6 +320,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509Trust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509
 {
     /// <summary>
@@ -317,6 +337,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProviderX509
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecForProvider
 {
     /// <summary>
@@ -408,6 +429,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderAws
 {
     /// <summary>The AWS account ID.</summary>
@@ -417,6 +439,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderAws
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderOidc
 {
     /// <summary>
@@ -449,6 +472,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderSaml
 {
     /// <summary>SAML Identity provider configuration metadata xml doc.</summary>
@@ -458,6 +482,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderSaml
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStoreIntermediateCas
 {
     /// <summary>
@@ -470,6 +495,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStoreTrustAnchors
 {
     /// <summary>
@@ -482,6 +508,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509TrustStore
 {
     /// <summary>
@@ -505,6 +532,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509
 {
     /// <summary>
@@ -533,6 +561,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProviderX509
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProvider
 {
     /// <summary>
@@ -612,6 +641,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -636,6 +666,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -652,6 +683,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolu
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -663,6 +695,7 @@ public enum V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicyResolv
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -691,6 +724,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRefPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -710,6 +744,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -724,6 +759,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpecWriteConnectionSecre
 /// <summary>WorkloadIdentityPoolProviderSpec defines the desired state of WorkloadIdentityPoolProvider</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderSpec
 {
     /// <summary>
@@ -791,6 +827,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderAws
 {
     /// <summary>The AWS account ID.</summary>
@@ -800,6 +837,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderAws
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderOidc
 {
     /// <summary>
@@ -832,6 +870,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderOidc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderSaml
 {
     /// <summary>SAML Identity provider configuration metadata xml doc.</summary>
@@ -841,6 +880,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderSaml
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStoreIntermediateCas
 {
     /// <summary>
@@ -853,6 +893,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStoreTrustAnchors
 {
     /// <summary>
@@ -865,6 +906,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509TrustStore
 {
     /// <summary>
@@ -888,6 +930,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509Trus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509
 {
     /// <summary>
@@ -904,6 +947,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProviderX509
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProvider
 {
     /// <summary>
@@ -1003,6 +1047,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatusConditions
 {
     /// <summary>
@@ -1046,6 +1091,7 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatusConditions
 /// <summary>WorkloadIdentityPoolProviderStatus defines the observed state of WorkloadIdentityPoolProvider.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkloadIdentityPoolProviderStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1064,9 +1110,13 @@ public partial class V1beta1WorkloadIdentityPoolProviderStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.</summary>
+/// <summary>
+/// WorkloadIdentityPoolProvider is the Schema for the WorkloadIdentityPoolProviders API. A configuration for an external identity provider.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkloadIdentityPoolProvider : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkloadIdentityPoolProviderSpec>, IStatus<V1beta1WorkloadIdentityPoolProviderStatus?>
 {

@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.compute.gcp.upbound.io;
-/// <summary>SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.</summary>
+/// <summary>
+/// SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1SecurityPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1SecurityPolicyList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1SecurityPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
     /// <summary>If enabled, traffic matching each unique value for the specified type constitutes a separate traffic unit. It can only be set to true if value is empty.</summary>
@@ -74,6 +80,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
     /// <summary>Confidence threshold above which Adaptive Protection&apos;s auto-deploy takes actions.</summary>
@@ -115,6 +122,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
     /// <summary>If set to true, enables CAAP for L7 DDoS detection.</summary>
@@ -132,6 +140,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfig
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
@@ -141,6 +150,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdaptiveProtectionConfi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfigJsonCustomConfig
 {
     /// <summary>
@@ -155,6 +165,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfigJs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfig
 {
     /// <summary>
@@ -179,6 +190,7 @@ public partial class V1beta1SecurityPolicySpecForProviderAdvancedOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRecaptchaOptionsConfig
 {
     /// <summary>A field to supply a reCAPTCHA site key to be used for all the rules using the redirect action with the type of GOOGLE_RECAPTCHA under the security policy. The specified site key needs to be created from the reCAPTCHA API. The user is responsible for the validity of the specified site key. If not specified, a Google-managed site key is used.</summary>
@@ -188,6 +200,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRecaptchaOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderActionRequestHeadersToAdds
 {
     /// <summary>The name of the header to set.</summary>
@@ -201,6 +214,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderActionRequest
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderAction
 {
     /// <summary>The list of request headers to add or overwrite if they&apos;re already present. Structure is documented below.</summary>
@@ -210,6 +224,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchConfig
 {
     /// <summary>
@@ -223,6 +238,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExpr
 {
     /// <summary>
@@ -235,6 +251,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExpr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptionsRecaptchaOptions
 {
     /// <summary>A list of site keys to be used during the validation of reCAPTCHA action-tokens. The provided site keys need to be created from reCAPTCHA API under the same project where the security policy is created.</summary>
@@ -248,6 +265,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptionsRec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptions
 {
     /// <summary>
@@ -260,6 +278,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatchExprOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleMatch
 {
     /// <summary>
@@ -295,6 +314,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -308,6 +328,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -321,6 +342,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -334,6 +356,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -347,6 +370,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfigExclusion
 {
     /// <summary>Request cookie whose value will be excluded from inspection during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -376,6 +400,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafConfig
 {
     /// <summary>An exclusion to apply during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -385,6 +410,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRulePreconfiguredWafCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsBanThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -398,6 +424,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsBan
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
     /// <summary>Rate limit key name applicable only for the following key types:</summary>
@@ -411,6 +438,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsEnf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsExceedRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -424,6 +452,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsExc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsRateLimitThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -437,6 +466,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptionsRat
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptions
 {
     /// <summary>
@@ -488,6 +518,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRateLimitOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRuleRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -501,6 +532,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRuleRedirectOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProviderRule
 {
     /// <summary>Action to take when match matches the request. Valid values:</summary>
@@ -551,6 +583,7 @@ public partial class V1beta1SecurityPolicySpecForProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecForProvider
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
@@ -594,6 +627,7 @@ public partial class V1beta1SecurityPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
     /// <summary>If enabled, traffic matching each unique value for the specified type constitutes a separate traffic unit. It can only be set to true if value is empty.</summary>
@@ -611,6 +645,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
     /// <summary>Confidence threshold above which Adaptive Protection&apos;s auto-deploy takes actions.</summary>
@@ -652,6 +687,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
     /// <summary>If set to true, enables CAAP for L7 DDoS detection.</summary>
@@ -669,6 +705,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConfig
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
@@ -678,6 +715,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfigJsonCustomConfig
 {
     /// <summary>
@@ -692,6 +730,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfigJ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfig
 {
     /// <summary>
@@ -716,6 +755,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderAdvancedOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRecaptchaOptionsConfig
 {
     /// <summary>A field to supply a reCAPTCHA site key to be used for all the rules using the redirect action with the type of GOOGLE_RECAPTCHA under the security policy. The specified site key needs to be created from the reCAPTCHA API. The user is responsible for the validity of the specified site key. If not specified, a Google-managed site key is used.</summary>
@@ -725,6 +765,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRecaptchaOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderActionRequestHeadersToAdds
 {
     /// <summary>The name of the header to set.</summary>
@@ -738,6 +779,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderActionReques
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderAction
 {
     /// <summary>The list of request headers to add or overwrite if they&apos;re already present. Structure is documented below.</summary>
@@ -747,6 +789,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchConfig
 {
     /// <summary>
@@ -760,6 +803,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExpr
 {
     /// <summary>
@@ -772,6 +816,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExpr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptionsRecaptchaOptions
 {
     /// <summary>A list of site keys to be used during the validation of reCAPTCHA action-tokens. The provided site keys need to be created from reCAPTCHA API under the same project where the security policy is created.</summary>
@@ -785,6 +830,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptionsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptions
 {
     /// <summary>
@@ -797,6 +843,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatchExprOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleMatch
 {
     /// <summary>
@@ -832,6 +879,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -845,6 +893,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -858,6 +907,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -871,6 +921,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -884,6 +935,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfigExclusion
 {
     /// <summary>Request cookie whose value will be excluded from inspection during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -913,6 +965,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafConfig
 {
     /// <summary>An exclusion to apply during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -922,6 +975,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsBanThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -935,6 +989,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsBa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
     /// <summary>Rate limit key name applicable only for the following key types:</summary>
@@ -948,6 +1003,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsExceedRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -961,6 +1017,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsEx
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsRateLimitThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -974,6 +1031,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptionsRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptions
 {
     /// <summary>
@@ -1025,6 +1083,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRateLimitOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRuleRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -1038,6 +1097,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRuleRedirectOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProviderRule
 {
     /// <summary>Action to take when match matches the request. Valid values:</summary>
@@ -1100,6 +1160,7 @@ public partial class V1beta1SecurityPolicySpecInitProviderRule
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecInitProvider
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
@@ -1147,6 +1208,7 @@ public partial class V1beta1SecurityPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1171,6 +1233,7 @@ public enum V1beta1SecurityPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1187,6 +1250,7 @@ public enum V1beta1SecurityPolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1SecurityPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1SecurityPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1198,6 +1262,7 @@ public enum V1beta1SecurityPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1226,6 +1291,7 @@ public partial class V1beta1SecurityPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1245,6 +1311,7 @@ public partial class V1beta1SecurityPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1259,6 +1326,7 @@ public partial class V1beta1SecurityPolicySpecWriteConnectionSecretToRef
 /// <summary>SecurityPolicySpec defines the desired state of SecurityPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicySpec
 {
     /// <summary>
@@ -1326,6 +1394,7 @@ public partial class V1beta1SecurityPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsTrafficGranularityConfigs
 {
     /// <summary>If enabled, traffic matching each unique value for the specified type constitutes a separate traffic unit. It can only be set to true if value is empty.</summary>
@@ -1343,6 +1412,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigs
 {
     /// <summary>Confidence threshold above which Adaptive Protection&apos;s auto-deploy takes actions.</summary>
@@ -1384,6 +1454,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfigLayer7DdosDefenseConfig
 {
     /// <summary>If set to true, enables CAAP for L7 DDoS detection.</summary>
@@ -1401,6 +1472,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConfig
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection Layer 7 DDoS Defense. Structure is documented below.</summary>
@@ -1410,6 +1482,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdaptiveProtectionConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfigJsonCustomConfig
 {
     /// <summary>
@@ -1424,6 +1497,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfigJ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig
 {
     /// <summary>
@@ -1448,6 +1522,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderAdvancedOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRecaptchaOptionsConfig
 {
     /// <summary>A field to supply a reCAPTCHA site key to be used for all the rules using the redirect action with the type of GOOGLE_RECAPTCHA under the security policy. The specified site key needs to be created from the reCAPTCHA API. The user is responsible for the validity of the specified site key. If not specified, a Google-managed site key is used.</summary>
@@ -1457,6 +1532,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRecaptchaOptionsConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderActionRequestHeadersToAdds
 {
     /// <summary>The name of the header to set.</summary>
@@ -1470,6 +1546,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderActionReques
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderAction
 {
     /// <summary>The list of request headers to add or overwrite if they&apos;re already present. Structure is documented below.</summary>
@@ -1479,6 +1556,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleHeaderAction
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchConfig
 {
     /// <summary>
@@ -1492,6 +1570,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExpr
 {
     /// <summary>
@@ -1504,6 +1583,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExpr
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptionsRecaptchaOptions
 {
     /// <summary>A list of site keys to be used during the validation of reCAPTCHA action-tokens. The provided site keys need to be created from reCAPTCHA API under the same project where the security policy is created.</summary>
@@ -1517,6 +1597,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptionsRe
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptions
 {
     /// <summary>
@@ -1529,6 +1610,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatchExprOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatch
 {
     /// <summary>
@@ -1564,6 +1646,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleMatch
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestCookie
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -1577,6 +1660,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestHeader
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -1590,6 +1674,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestQueryParam
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -1603,6 +1688,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusionRequestUri
 {
     /// <summary>You can specify an exact match or a partial match by using a field operator and a field value.</summary>
@@ -1616,6 +1702,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfigExclusion
 {
     /// <summary>Request cookie whose value will be excluded from inspection during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -1645,6 +1732,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafConfig
 {
     /// <summary>An exclusion to apply during preconfigured WAF evaluation. Structure is documented below.</summary>
@@ -1654,6 +1742,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRulePreconfiguredWafCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsBanThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -1667,6 +1756,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsBa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEnforceOnKeyConfigs
 {
     /// <summary>Rate limit key name applicable only for the following key types:</summary>
@@ -1680,6 +1770,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEn
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsExceedRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -1693,6 +1784,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsEx
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsRateLimitThreshold
 {
     /// <summary>Number of HTTP(S) requests for calculating the threshold.</summary>
@@ -1706,6 +1798,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptionsRa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptions
 {
     /// <summary>
@@ -1757,6 +1850,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRateLimitOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRuleRedirectOptions
 {
     /// <summary>External redirection target when EXTERNAL_302 is set in type.</summary>
@@ -1770,6 +1864,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRuleRedirectOptions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProviderRule
 {
     /// <summary>Action to take when match matches the request. Valid values:</summary>
@@ -1820,6 +1915,7 @@ public partial class V1beta1SecurityPolicyStatusAtProviderRule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusAtProvider
 {
     /// <summary>Configuration for Google Cloud Armor Adaptive Protection. Structure is documented below.</summary>
@@ -1876,6 +1972,7 @@ public partial class V1beta1SecurityPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatusConditions
 {
     /// <summary>
@@ -1919,6 +2016,7 @@ public partial class V1beta1SecurityPolicyStatusConditions
 /// <summary>SecurityPolicyStatus defines the observed state of SecurityPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1SecurityPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -1937,9 +2035,13 @@ public partial class V1beta1SecurityPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.</summary>
+/// <summary>
+/// SecurityPolicy is the Schema for the SecurityPolicys API. Creates a Security Policy resource for Google Compute Engine.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1SecurityPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1SecurityPolicySpec>, IStatus<V1beta1SecurityPolicyStatus?>
 {

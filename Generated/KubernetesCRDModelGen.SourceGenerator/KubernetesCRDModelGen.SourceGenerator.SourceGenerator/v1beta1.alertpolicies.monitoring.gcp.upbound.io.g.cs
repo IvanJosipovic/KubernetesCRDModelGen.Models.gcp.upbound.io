@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.monitoring.gcp.upbound.io;
-/// <summary>AlertPolicy is the Schema for the AlertPolicys API. A description of the conditions under which some aspect of your system is considered to be &quot;unhealthy&quot; and the ways to notify people or services about this state.</summary>
+/// <summary>
+/// AlertPolicy is the Schema for the AlertPolicys API. A description of the conditions under which some aspect of your system is considered to be &quot;unhealthy&quot; and the ways to notify people or services about this state.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AlertPolicyList : IKubernetesObject<V1ListMeta>, IItems<V1beta1AlertPolicy>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1AlertPolicyList : IKubernetesObject<V1ListMeta>, IIt
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AlertPolicySpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AlertPolicySpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1AlertPolicySpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderAlertStrategyNotificationChannelStrategy
 {
     /// <summary>
@@ -75,6 +81,7 @@ public partial class V1beta1AlertPolicySpecForProviderAlertStrategyNotificationC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderAlertStrategyNotificationRateLimit
 {
     /// <summary>Not more than one notification per period.</summary>
@@ -84,6 +91,7 @@ public partial class V1beta1AlertPolicySpecForProviderAlertStrategyNotificationR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderAlertStrategy
 {
     /// <summary>If an alert policy that was active has no data for this long, any open incidents will close.</summary>
@@ -116,6 +124,7 @@ public partial class V1beta1AlertPolicySpecForProviderAlertStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsentAggregations
 {
     /// <summary>
@@ -216,6 +225,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsentA
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsentTrigger
 {
     /// <summary>
@@ -237,6 +247,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsentT
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsent
 {
     /// <summary>
@@ -312,6 +323,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMatchedLog
 {
     /// <summary>
@@ -346,6 +358,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMatched
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMonitoringQueryLanguageTrigger
 {
     /// <summary>
@@ -367,6 +380,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMonitoringQueryLanguage
 {
     /// <summary>
@@ -423,6 +437,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionMonitor
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionPrometheusQueryLanguage
 {
     /// <summary>
@@ -511,6 +526,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionPrometh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlBooleanTest
 {
     /// <summary>
@@ -523,6 +539,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlBool
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlDailyExecutionTime
 {
     /// <summary>
@@ -559,6 +576,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlDail
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlDaily
 {
     /// <summary>
@@ -580,6 +598,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlDail
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlHourly
 {
     /// <summary>
@@ -600,6 +619,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlHour
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlMinutes
 {
     /// <summary>
@@ -612,6 +632,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlMinu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
@@ -635,6 +656,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSqlRowC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSql
 {
     /// <summary>
@@ -685,6 +707,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionSql
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresholdAggregations
 {
     /// <summary>
@@ -785,6 +808,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresholdDenominatorAggregations
 {
     /// <summary>
@@ -885,6 +909,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresholdForecastOptions
 {
     /// <summary>
@@ -901,6 +926,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresholdTrigger
 {
     /// <summary>
@@ -922,6 +948,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThreshold
 {
     /// <summary>
@@ -1081,6 +1108,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditionsConditionThresho
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderConditions
 {
     /// <summary>
@@ -1146,6 +1174,7 @@ public partial class V1beta1AlertPolicySpecForProviderConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderDocumentationLinks
 {
     /// <summary>A short display name for the link. The display name must not be empty or exceed 63 characters. Example: &quot;playbook&quot;.</summary>
@@ -1159,6 +1188,7 @@ public partial class V1beta1AlertPolicySpecForProviderDocumentationLinks
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProviderDocumentation
 {
     /// <summary>
@@ -1196,6 +1226,7 @@ public partial class V1beta1AlertPolicySpecForProviderDocumentation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecForProvider
 {
     /// <summary>
@@ -1288,6 +1319,7 @@ public partial class V1beta1AlertPolicySpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderAlertStrategyNotificationChannelStrategy
 {
     /// <summary>
@@ -1306,6 +1338,7 @@ public partial class V1beta1AlertPolicySpecInitProviderAlertStrategyNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderAlertStrategyNotificationRateLimit
 {
     /// <summary>Not more than one notification per period.</summary>
@@ -1315,6 +1348,7 @@ public partial class V1beta1AlertPolicySpecInitProviderAlertStrategyNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderAlertStrategy
 {
     /// <summary>If an alert policy that was active has no data for this long, any open incidents will close.</summary>
@@ -1347,6 +1381,7 @@ public partial class V1beta1AlertPolicySpecInitProviderAlertStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsentAggregations
 {
     /// <summary>
@@ -1447,6 +1482,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsentTrigger
 {
     /// <summary>
@@ -1468,6 +1504,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsent
 {
     /// <summary>
@@ -1543,6 +1580,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMatchedLog
 {
     /// <summary>
@@ -1577,6 +1615,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMatche
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMonitoringQueryLanguageTrigger
 {
     /// <summary>
@@ -1598,6 +1637,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMonito
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMonitoringQueryLanguage
 {
     /// <summary>
@@ -1654,6 +1694,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionMonito
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionPrometheusQueryLanguage
 {
     /// <summary>
@@ -1742,6 +1783,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionPromet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlBooleanTest
 {
     /// <summary>
@@ -1754,6 +1796,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlBoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlDailyExecutionTime
 {
     /// <summary>
@@ -1790,6 +1833,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlDai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlDaily
 {
     /// <summary>
@@ -1811,6 +1855,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlDai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlHourly
 {
     /// <summary>
@@ -1831,6 +1876,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlHou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlMinutes
 {
     /// <summary>
@@ -1843,6 +1889,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlMin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
@@ -1866,6 +1913,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSqlRow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSql
 {
     /// <summary>
@@ -1916,6 +1964,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionSql
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresholdAggregations
 {
     /// <summary>
@@ -2016,6 +2065,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresholdDenominatorAggregations
 {
     /// <summary>
@@ -2116,6 +2166,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresholdForecastOptions
 {
     /// <summary>
@@ -2132,6 +2183,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresholdTrigger
 {
     /// <summary>
@@ -2153,6 +2205,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThreshold
 {
     /// <summary>
@@ -2312,6 +2365,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderConditions
 {
     /// <summary>
@@ -2377,6 +2431,7 @@ public partial class V1beta1AlertPolicySpecInitProviderConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderDocumentationLinks
 {
     /// <summary>A short display name for the link. The display name must not be empty or exceed 63 characters. Example: &quot;playbook&quot;.</summary>
@@ -2390,6 +2445,7 @@ public partial class V1beta1AlertPolicySpecInitProviderDocumentationLinks
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProviderDocumentation
 {
     /// <summary>
@@ -2439,6 +2495,7 @@ public partial class V1beta1AlertPolicySpecInitProviderDocumentation
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecInitProvider
 {
     /// <summary>
@@ -2535,6 +2592,7 @@ public partial class V1beta1AlertPolicySpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AlertPolicySpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AlertPolicySpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2559,6 +2617,7 @@ public enum V1beta1AlertPolicySpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AlertPolicySpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AlertPolicySpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2575,6 +2634,7 @@ public enum V1beta1AlertPolicySpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1AlertPolicySpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1AlertPolicySpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2586,6 +2646,7 @@ public enum V1beta1AlertPolicySpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2614,6 +2675,7 @@ public partial class V1beta1AlertPolicySpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2633,6 +2695,7 @@ public partial class V1beta1AlertPolicySpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2647,6 +2710,7 @@ public partial class V1beta1AlertPolicySpecWriteConnectionSecretToRef
 /// <summary>AlertPolicySpec defines the desired state of AlertPolicy</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicySpec
 {
     /// <summary>
@@ -2714,6 +2778,7 @@ public partial class V1beta1AlertPolicySpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategyNotificationChannelStrategy
 {
     /// <summary>
@@ -2732,6 +2797,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategyNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategyNotificationRateLimit
 {
     /// <summary>Not more than one notification per period.</summary>
@@ -2741,6 +2807,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategyNotification
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategy
 {
     /// <summary>If an alert policy that was active has no data for this long, any open incidents will close.</summary>
@@ -2773,6 +2840,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderAlertStrategy
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsentAggregations
 {
     /// <summary>
@@ -2873,6 +2941,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsentTrigger
 {
     /// <summary>
@@ -2894,6 +2963,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsent
 {
     /// <summary>
@@ -2969,6 +3039,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionAbsent
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMatchedLog
 {
     /// <summary>
@@ -3003,6 +3074,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMatche
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMonitoringQueryLanguageTrigger
 {
     /// <summary>
@@ -3024,6 +3096,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMonito
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMonitoringQueryLanguage
 {
     /// <summary>
@@ -3080,6 +3153,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionMonito
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionPrometheusQueryLanguage
 {
     /// <summary>
@@ -3168,6 +3242,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionPromet
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlBooleanTest
 {
     /// <summary>
@@ -3180,6 +3255,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlBoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlDailyExecutionTime
 {
     /// <summary>
@@ -3216,6 +3292,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlDai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlDaily
 {
     /// <summary>
@@ -3237,6 +3314,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlDai
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlHourly
 {
     /// <summary>
@@ -3257,6 +3335,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlHou
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlMinutes
 {
     /// <summary>
@@ -3269,6 +3348,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlMin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlRowCountTest
 {
     /// <summary>
@@ -3292,6 +3372,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSqlRow
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSql
 {
     /// <summary>
@@ -3342,6 +3423,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionSql
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresholdAggregations
 {
     /// <summary>
@@ -3442,6 +3524,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresholdDenominatorAggregations
 {
     /// <summary>
@@ -3542,6 +3625,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresholdForecastOptions
 {
     /// <summary>
@@ -3558,6 +3642,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresholdTrigger
 {
     /// <summary>
@@ -3579,6 +3664,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThreshold
 {
     /// <summary>
@@ -3738,6 +3824,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditionsConditionThresh
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderConditions
 {
     /// <summary>
@@ -3815,6 +3902,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderConditions
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderCreationRecord
 {
     /// <summary>
@@ -3834,6 +3922,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderCreationRecord
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderDocumentationLinks
 {
     /// <summary>A short display name for the link. The display name must not be empty or exceed 63 characters. Example: &quot;playbook&quot;.</summary>
@@ -3847,6 +3936,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderDocumentationLinks
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProviderDocumentation
 {
     /// <summary>
@@ -3884,6 +3974,7 @@ public partial class V1beta1AlertPolicyStatusAtProviderDocumentation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusAtProvider
 {
     /// <summary>
@@ -3997,6 +4088,7 @@ public partial class V1beta1AlertPolicyStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatusConditions
 {
     /// <summary>
@@ -4040,6 +4132,7 @@ public partial class V1beta1AlertPolicyStatusConditions
 /// <summary>AlertPolicyStatus defines the observed state of AlertPolicy.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1AlertPolicyStatus
 {
     [JsonPropertyName("atProvider")]
@@ -4058,9 +4151,13 @@ public partial class V1beta1AlertPolicyStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>AlertPolicy is the Schema for the AlertPolicys API. A description of the conditions under which some aspect of your system is considered to be &quot;unhealthy&quot; and the ways to notify people or services about this state.</summary>
+/// <summary>
+/// AlertPolicy is the Schema for the AlertPolicys API. A description of the conditions under which some aspect of your system is considered to be &quot;unhealthy&quot; and the ways to notify people or services about this state.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1AlertPolicy : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1AlertPolicySpec>, IStatus<V1beta1AlertPolicyStatus?>
 {

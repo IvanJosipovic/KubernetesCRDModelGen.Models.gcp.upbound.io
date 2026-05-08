@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.dataproc.gcp.upbound.io;
-/// <summary>WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.</summary>
+/// <summary>
+/// WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkflowTemplateList : IKubernetesObject<V1ListMeta>, IItems<V1beta1WorkflowTemplate>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1WorkflowTemplateList : IKubernetesObject<V1ListMeta>
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkflowTemplateSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkflowTemplateSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1WorkflowTemplateSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderEncryptionConfig
 {
     /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
@@ -66,6 +72,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -75,6 +82,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJobLoggingC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -112,6 +120,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHadoopJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -121,6 +130,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -150,6 +160,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsHiveJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -159,6 +170,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobLoggingConf
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -168,6 +180,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -201,6 +214,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPigJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -210,6 +224,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobLoggingC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -219,6 +234,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJobQueryLis
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJob
 {
     /// <summary>Presto client tags to attach to this query</summary>
@@ -252,6 +268,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPrestoJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -261,6 +278,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -298,6 +316,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsPysparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed. A job may be reported as thrashing if driver exits with non-zero code 4 times within 10 minute window. Maximum value is 10.</summary>
@@ -311,6 +330,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -320,6 +340,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJobLoggingCo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -357,6 +378,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -366,6 +388,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJobLoggingC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -395,6 +418,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkRJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -404,6 +428,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobLoggin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -413,6 +438,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJobQueryL
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJob
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -442,6 +468,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobsSparkSqlJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderJobs
 {
     /// <summary>Job is a Hadoop job.</summary>
@@ -495,6 +522,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderJobs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationRegex
 {
     /// <summary>Required. RE2 regular expressions used to validate the parameter&apos;s value. The value must match the regex in its entirety (substring matches are not sufficient).</summary>
@@ -504,6 +532,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationR
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationValues
 {
     /// <summary>Required. List of allowed values for the parameter.</summary>
@@ -513,6 +542,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidationV
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidation
 {
     /// <summary>Validation based on regular expressions.</summary>
@@ -526,6 +556,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderParameters
 {
     /// <summary>Brief description of the parameter. Must not exceed 1024 characters.</summary>
@@ -547,6 +578,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementClusterSelector
 {
     /// <summary>Required. The cluster labels. Cluster must have all labels to match.</summary>
@@ -560,6 +592,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementClusterSelec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigAutoscalingConfig
 {
     /// <summary>The autoscaling policy used by the cluster. Only resource names including projectid and location (region) are valid. Examples: * https://www.googleapis.com/compute/v1/projects/ Note that the policy must be in the same project and Dataproc region.</summary>
@@ -569,6 +602,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEncryptionConfig
 {
     /// <summary>The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.</summary>
@@ -578,6 +612,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigEndpointConfig
 {
     /// <summary>If true, enable http access to specific ports on the cluster from external sources. Defaults to false.</summary>
@@ -587,6 +622,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
     /// <summary>Required. The URI of a sole-tenant /zones/us-central1-a/nodeGroups/node-group-1*node-group-1`</summary>
@@ -596,6 +632,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
     /// <summary>Type of reservation to consume Possible values: TYPE_UNSPECIFIED, NO_RESERVATION, ANY_RESERVATION, SPECIFIC_RESERVATION</summary>
@@ -613,6 +650,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
     /// <summary>Defines whether instances have Integrity Monitoring enabled.</summary>
@@ -630,6 +668,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigGceClusterConfig
 {
     /// <summary>If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.</summary>
@@ -683,6 +722,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigInitializationActions
 {
     /// <summary>Required. Cloud Storage URI of executable file.</summary>
@@ -696,6 +736,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigLifecycleConfig
 {
     /// <summary>The time when cluster will be auto-deleted (see JSON representation of (https://developers.google.com/protocol-buffers/docs/proto3#json)).</summary>
@@ -713,6 +754,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -726,6 +768,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -743,6 +786,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigMasterConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -776,6 +820,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -789,6 +834,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -806,6 +852,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -839,6 +886,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
     /// <summary>The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.</summary>
@@ -904,6 +952,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSecurityConfig
 {
     /// <summary>Kerberos related configuration.</summary>
@@ -913,6 +962,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigSoftwareConfig
 {
     /// <summary>The version of software inside the cluster. It must be one of the supported Dataproc Versions, such as &quot;1.2&quot; (including a subminor version, such as &quot;1.2.29&quot;), or the &quot;preview&quot; version. If unspecified, it defaults to the latest Debian version.</summary>
@@ -930,6 +980,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -943,6 +994,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -960,6 +1012,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfigWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -993,6 +1046,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClusterConfig
 {
     /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
@@ -1050,6 +1104,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedCluster
 {
     /// <summary>Required. The cluster name prefix. A unique cluster name will be formed by appending a random suffix. The name must contain only lower-case letters (a-z), numbers (0-9), and hyphens (-). Must begin with a letter. Cannot begin or end with hyphen. Must consist of between 2 and 35 characters.</summary>
@@ -1067,6 +1122,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacementManagedClust
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProviderPlacement
 {
     /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
@@ -1080,6 +1136,7 @@ public partial class V1beta1WorkflowTemplateSpecForProviderPlacement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecForProvider
 {
     /// <summary>(Beta only) Optional. Timeout duration for the DAG of jobs. You can use &quot;s&quot;, &quot;m&quot;, &quot;h&quot;, and &quot;d&quot; suffixes for second, minute, hour, and day duration values, respectively. The timeout duration must be from 10 minutes (&quot;10m&quot;) to 24 hours (&quot;24h&quot; or &quot;1d&quot;). The timer begins when the first job is submitted. If the workflow is running at the end of the timeout period, any remaining jobs are cancelled, the workflow is ended, and if the workflow was running on a (/dataproc/docs/concepts/workflows/using-workflows#configuring_or_selecting_a_cluster), the cluster is deleted.</summary>
@@ -1121,6 +1178,7 @@ public partial class V1beta1WorkflowTemplateSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig
 {
     /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
@@ -1130,6 +1188,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1139,6 +1198,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1176,6 +1236,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHadoopJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -1185,6 +1246,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -1214,6 +1276,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsHiveJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1223,6 +1286,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobLoggingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -1232,6 +1296,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -1265,6 +1330,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPigJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1274,6 +1340,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -1283,6 +1350,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJobQueryLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJob
 {
     /// <summary>Presto client tags to attach to this query</summary>
@@ -1316,6 +1384,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPrestoJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1325,6 +1394,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJobLoggin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1362,6 +1432,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsPysparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed. A job may be reported as thrashing if driver exits with non-zero code 4 times within 10 minute window. Maximum value is 10.</summary>
@@ -1375,6 +1446,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1384,6 +1456,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJobLoggingC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1421,6 +1494,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1430,6 +1504,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -1459,6 +1534,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkRJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -1468,6 +1544,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobLoggi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -1477,6 +1554,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJobQuery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJob
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -1506,6 +1584,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobsSparkSqlJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderJobs
 {
     /// <summary>Job is a Hadoop job.</summary>
@@ -1559,6 +1638,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderJobs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidationRegex
 {
     /// <summary>Required. RE2 regular expressions used to validate the parameter&apos;s value. The value must match the regex in its entirety (substring matches are not sufficient).</summary>
@@ -1568,6 +1648,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidationValues
 {
     /// <summary>Required. List of allowed values for the parameter.</summary>
@@ -1577,6 +1658,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 {
     /// <summary>Validation based on regular expressions.</summary>
@@ -1590,6 +1672,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderParameters
 {
     /// <summary>Brief description of the parameter. Must not exceed 1024 characters.</summary>
@@ -1611,6 +1694,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementClusterSelector
 {
     /// <summary>Required. The cluster labels. Cluster must have all labels to match.</summary>
@@ -1624,6 +1708,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementClusterSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigAutoscalingConfig
 {
     /// <summary>The autoscaling policy used by the cluster. Only resource names including projectid and location (region) are valid. Examples: * https://www.googleapis.com/compute/v1/projects/ Note that the policy must be in the same project and Dataproc region.</summary>
@@ -1633,6 +1718,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEncryptionConfig
 {
     /// <summary>The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.</summary>
@@ -1642,6 +1728,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigEndpointConfig
 {
     /// <summary>If true, enable http access to specific ports on the cluster from external sources. Defaults to false.</summary>
@@ -1651,6 +1738,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
     /// <summary>Required. The URI of a sole-tenant /zones/us-central1-a/nodeGroups/node-group-1*node-group-1`</summary>
@@ -1660,6 +1748,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
     /// <summary>Type of reservation to consume Possible values: TYPE_UNSPECIFIED, NO_RESERVATION, ANY_RESERVATION, SPECIFIC_RESERVATION</summary>
@@ -1677,6 +1766,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
     /// <summary>Defines whether instances have Integrity Monitoring enabled.</summary>
@@ -1694,6 +1784,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigGceClusterConfig
 {
     /// <summary>If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.</summary>
@@ -1747,6 +1838,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigInitializationActions
 {
     /// <summary>Required. Cloud Storage URI of executable file.</summary>
@@ -1760,6 +1852,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigLifecycleConfig
 {
     /// <summary>The time when cluster will be auto-deleted (see JSON representation of (https://developers.google.com/protocol-buffers/docs/proto3#json)).</summary>
@@ -1777,6 +1870,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -1790,6 +1884,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -1807,6 +1902,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigMasterConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -1840,6 +1936,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -1853,6 +1950,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -1870,6 +1968,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -1903,6 +2002,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
     /// <summary>The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.</summary>
@@ -1968,6 +2068,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSecurityConfig
 {
     /// <summary>Kerberos related configuration.</summary>
@@ -1977,6 +2078,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigSoftwareConfig
 {
     /// <summary>The version of software inside the cluster. It must be one of the supported Dataproc Versions, such as &quot;1.2&quot; (including a subminor version, such as &quot;1.2.29&quot;), or the &quot;preview&quot; version. If unspecified, it defaults to the latest Debian version.</summary>
@@ -1994,6 +2096,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -2007,6 +2110,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -2024,6 +2128,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfigWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -2057,6 +2162,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClusterConfig
 {
     /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
@@ -2114,6 +2220,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedCluster
 {
     /// <summary>Required. The cluster name prefix. A unique cluster name will be formed by appending a random suffix. The name must contain only lower-case letters (a-z), numbers (0-9), and hyphens (-). Must begin with a letter. Cannot begin or end with hyphen. Must consist of between 2 and 35 characters.</summary>
@@ -2131,6 +2238,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProviderPlacement
 {
     /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
@@ -2156,6 +2264,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProviderPlacement
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecInitProvider
 {
     /// <summary>(Beta only) Optional. Timeout duration for the DAG of jobs. You can use &quot;s&quot;, &quot;m&quot;, &quot;h&quot;, and &quot;d&quot; suffixes for second, minute, hour, and day duration values, respectively. The timeout duration must be from 10 minutes (&quot;10m&quot;) to 24 hours (&quot;24h&quot; or &quot;1d&quot;). The timer begins when the first job is submitted. If the workflow is running at the end of the timeout period, any remaining jobs are cancelled, the workflow is ended, and if the workflow was running on a (/dataproc/docs/concepts/workflows/using-workflows#configuring_or_selecting_a_cluster), the cluster is deleted.</summary>
@@ -2197,6 +2306,7 @@ public partial class V1beta1WorkflowTemplateSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkflowTemplateSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkflowTemplateSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -2221,6 +2331,7 @@ public enum V1beta1WorkflowTemplateSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -2237,6 +2348,7 @@ public enum V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -2248,6 +2360,7 @@ public enum V1beta1WorkflowTemplateSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -2276,6 +2389,7 @@ public partial class V1beta1WorkflowTemplateSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -2295,6 +2409,7 @@ public partial class V1beta1WorkflowTemplateSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -2309,6 +2424,7 @@ public partial class V1beta1WorkflowTemplateSpecWriteConnectionSecretToRef
 /// <summary>WorkflowTemplateSpec defines the desired state of WorkflowTemplate</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateSpec
 {
     /// <summary>
@@ -2376,6 +2492,7 @@ public partial class V1beta1WorkflowTemplateSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig
 {
     /// <summary>The uri of the KMS key used to encrypt various sensitive files.</summary>
@@ -2385,6 +2502,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderEncryptionConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2394,6 +2512,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -2431,6 +2550,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHadoopJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -2440,6 +2560,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -2469,6 +2590,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsHiveJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2478,6 +2600,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobLoggingCon
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -2487,6 +2610,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJobQueryList
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJob
 {
     /// <summary>Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent parallel queries.</summary>
@@ -2520,6 +2644,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPigJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2529,6 +2654,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -2538,6 +2664,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJobQueryLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJob
 {
     /// <summary>Presto client tags to attach to this query</summary>
@@ -2571,6 +2698,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPrestoJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2580,6 +2708,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJobLoggin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -2617,6 +2746,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsPysparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsScheduling
 {
     /// <summary>Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed. A job may be reported as thrashing if driver exits with non-zero code 4 times within 10 minute window. Maximum value is 10.</summary>
@@ -2630,6 +2760,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsScheduling
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2639,6 +2770,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJobLoggingC
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -2676,6 +2808,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2685,6 +2818,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJobLogging
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJob
 {
     /// <summary>HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.</summary>
@@ -2714,6 +2848,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkRJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobLoggingConfig
 {
     /// <summary>The per-package log levels for the driver. This may include &quot;root&quot; package name to configure rootLogger. Examples: &apos;com.google = FATAL&apos;, &apos;root = INFO&apos;, &apos;org.apache = DEBUG&apos;</summary>
@@ -2723,6 +2858,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobLoggi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobQueryList
 {
     /// <summary>Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: &quot;hiveJob&quot;: { &quot;queryList&quot;: { &quot;queries&quot;: } }</summary>
@@ -2732,6 +2868,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJobQuery
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJob
 {
     /// <summary>HCFS URIs of jar files to be added to the Spark CLASSPATH.</summary>
@@ -2761,6 +2898,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobsSparkSqlJob
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderJobs
 {
     /// <summary>Job is a Hadoop job.</summary>
@@ -2814,6 +2952,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderJobs
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidationRegex
 {
     /// <summary>Required. RE2 regular expressions used to validate the parameter&apos;s value. The value must match the regex in its entirety (substring matches are not sufficient).</summary>
@@ -2823,6 +2962,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidationValues
 {
     /// <summary>Required. List of allowed values for the parameter.</summary>
@@ -2832,6 +2972,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 {
     /// <summary>Validation based on regular expressions.</summary>
@@ -2845,6 +2986,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParametersValidation
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderParameters
 {
     /// <summary>Brief description of the parameter. Must not exceed 1024 characters.</summary>
@@ -2866,6 +3008,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderParameters
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementClusterSelector
 {
     /// <summary>Required. The cluster labels. Cluster must have all labels to match.</summary>
@@ -2879,6 +3022,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementClusterSele
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigAutoscalingConfig
 {
     /// <summary>The autoscaling policy used by the cluster. Only resource names including projectid and location (region) are valid. Examples: * https://www.googleapis.com/compute/v1/projects/ Note that the policy must be in the same project and Dataproc region.</summary>
@@ -2888,6 +3032,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEncryptionConfig
 {
     /// <summary>The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.</summary>
@@ -2897,6 +3042,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigEndpointConfig
 {
     /// <summary>If true, enable http access to specific ports on the cluster from external sources. Defaults to false.</summary>
@@ -2910,6 +3056,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity
 {
     /// <summary>Required. The URI of a sole-tenant /zones/us-central1-a/nodeGroups/node-group-1*node-group-1`</summary>
@@ -2919,6 +3066,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigReservationAffinity
 {
     /// <summary>Type of reservation to consume Possible values: TYPE_UNSPECIFIED, NO_RESERVATION, ANY_RESERVATION, SPECIFIC_RESERVATION</summary>
@@ -2936,6 +3084,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 {
     /// <summary>Defines whether instances have Integrity Monitoring enabled.</summary>
@@ -2953,6 +3102,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigGceClusterConfig
 {
     /// <summary>If true, all instances in the cluster will only have internal IP addresses. By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. This internal_ip_only restriction can only be enabled for subnetwork enabled networks, and all off-cluster dependencies must be configured to be accessible without external IP addresses.</summary>
@@ -3006,6 +3156,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigInitializationActions
 {
     /// <summary>Required. Cloud Storage URI of executable file.</summary>
@@ -3019,6 +3170,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigLifecycleConfig
 {
     /// <summary>The time when cluster will be auto-deleted (see JSON representation of (https://developers.google.com/protocol-buffers/docs/proto3#json)).</summary>
@@ -3040,6 +3192,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -3053,6 +3206,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -3070,6 +3224,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfigManagedGroupConfig
 {
     /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
@@ -3083,6 +3238,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigMasterConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -3128,6 +3284,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -3141,6 +3298,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -3158,6 +3316,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig
 {
     /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
@@ -3171,6 +3330,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecondaryWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -3216,6 +3376,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecurityConfigKerberosConfig
 {
     /// <summary>The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.</summary>
@@ -3281,6 +3442,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSecurityConfig
 {
     /// <summary>Kerberos related configuration.</summary>
@@ -3290,6 +3452,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigSoftwareConfig
 {
     /// <summary>The version of software inside the cluster. It must be one of the supported Dataproc Versions, such as &quot;1.2&quot; (including a subminor version, such as &quot;1.2.29&quot;), or the &quot;preview&quot; version. If unspecified, it defaults to the latest Debian version.</summary>
@@ -3307,6 +3470,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigAccelerators
 {
     /// <summary>The number of the accelerator cards of this type exposed to this instance.</summary>
@@ -3320,6 +3484,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigDiskConfig
 {
     /// <summary>Size in GB of the boot disk (default is 500GB).</summary>
@@ -3337,6 +3502,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfigManagedGroupConfig
 {
     /// <summary>Output only. The resource name of the workflow template, as described in https://cloud.google.com/apis/design/resource_names. * For projects.regions.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/regions/{region}/workflowTemplates/{template_id} * For projects.locations.workflowTemplates, the resource name of the template has the following format: projects/{project_id}/locations/{location}/workflowTemplates/{template_id}</summary>
@@ -3350,6 +3516,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfigWorkerConfig
 {
     /// <summary>The Compute Engine accelerator configuration for these instances.</summary>
@@ -3395,6 +3562,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClusterConfig
 {
     /// <summary>Autoscaling config for the policy associated with the cluster. Cluster does not autoscale if this field is unset.</summary>
@@ -3452,6 +3620,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedCluster
 {
     /// <summary>Required. The cluster name prefix. A unique cluster name will be formed by appending a random suffix. The name must contain only lower-case letters (a-z), numbers (0-9), and hyphens (-). Must begin with a letter. Cannot begin or end with hyphen. Must consist of between 2 and 35 characters.</summary>
@@ -3469,6 +3638,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacementManagedClus
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProviderPlacement
 {
     /// <summary>A selector that chooses target cluster for jobs based on metadata. The selector is evaluated at the time each job is submitted.</summary>
@@ -3482,6 +3652,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProviderPlacement
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusAtProvider
 {
     /// <summary>Output only. The time template was created.</summary>
@@ -3542,6 +3713,7 @@ public partial class V1beta1WorkflowTemplateStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatusConditions
 {
     /// <summary>
@@ -3585,6 +3757,7 @@ public partial class V1beta1WorkflowTemplateStatusConditions
 /// <summary>WorkflowTemplateStatus defines the observed state of WorkflowTemplate.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1WorkflowTemplateStatus
 {
     [JsonPropertyName("atProvider")]
@@ -3603,9 +3776,13 @@ public partial class V1beta1WorkflowTemplateStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.</summary>
+/// <summary>
+/// WorkflowTemplate is the Schema for the WorkflowTemplates API. A Workflow Template is a reusable workflow configuration.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1WorkflowTemplate : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1WorkflowTemplateSpec>, IStatus<V1beta1WorkflowTemplateStatus?>
 {

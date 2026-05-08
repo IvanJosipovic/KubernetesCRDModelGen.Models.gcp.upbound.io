@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.osconfig.gcp.upbound.io;
-/// <summary>PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.</summary>
+/// <summary>
+/// PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PatchDeploymentList : IKubernetesObject<V1ListMeta>, IItems<V1beta1PatchDeployment>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1PatchDeploymentList : IKubernetesObject<V1ListMeta>,
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -57,6 +62,7 @@ public enum V1beta1PatchDeploymentSpecDeletionPolicyEnum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterGroupLabels
 {
     /// <summary>Compute Engine instance labels that must be present for a VM instance to be targeted by this filter</summary>
@@ -72,6 +78,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterGroupLab
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -88,6 +95,7 @@ public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPoli
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -99,6 +107,7 @@ public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPoli
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefsPolicy
 {
     /// <summary>
@@ -123,6 +132,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstance
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -142,6 +152,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstance
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -158,6 +169,7 @@ public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -169,6 +181,7 @@ public enum V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelectorPolicy
 {
     /// <summary>
@@ -193,6 +206,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstance
 /// <summary>Selector for a list of Instance in compute to populate instances.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstancesSelector
 {
     /// <summary>
@@ -213,6 +227,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilterInstance
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilter
 {
     /// <summary>Target all VM instances in the project. If true, no other criteria is permitted.</summary>
@@ -256,6 +271,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderInstanceFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderOneTimeSchedule
 {
     /// <summary>
@@ -268,6 +284,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderOneTimeSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigApt
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -292,6 +309,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigApt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigGoo
 {
     /// <summary>goo update settings. Use this setting to override the default goo patch rules.</summary>
@@ -301,6 +319,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigGoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -318,6 +337,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -346,6 +366,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -363,6 +384,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -391,6 +413,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStep
 {
     /// <summary>
@@ -410,6 +433,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPostStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -427,6 +451,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepLinu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -455,6 +480,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepLinu
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -472,6 +498,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepWind
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -500,6 +527,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStepWind
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStep
 {
     /// <summary>
@@ -519,6 +547,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigPreStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigWindowsUpdate
 {
     /// <summary>
@@ -542,6 +571,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigWindowsUpda
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigYum
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -567,6 +597,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigYum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigZypper
 {
     /// <summary>Install only patches with these categories. Common categories include security, recommended, and feature.</summary>
@@ -599,6 +630,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfigZypper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderPatchConfig
 {
     /// <summary>
@@ -664,6 +696,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderPatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
     /// <summary>
@@ -684,6 +717,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleMonth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleMonthly
 {
     /// <summary>
@@ -704,6 +738,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleMonth
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleTimeOfDay
 {
     /// <summary>
@@ -728,6 +763,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleTimeO
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleTimeZone
 {
     /// <summary>IANA Time Zone Database time zone, e.g. &quot;America/New_York&quot;.</summary>
@@ -741,6 +777,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleTimeZ
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleWeekly
 {
     /// <summary>
@@ -753,6 +790,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringScheduleWeekl
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRecurringSchedule
 {
     /// <summary>
@@ -801,6 +839,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRecurringSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRolloutDisruptionBudget
 {
     /// <summary>Specifies a fixed value.</summary>
@@ -814,6 +853,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRolloutDisruptionBudge
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProviderRollout
 {
     /// <summary>
@@ -837,6 +877,7 @@ public partial class V1beta1PatchDeploymentSpecForProviderRollout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecForProvider
 {
     /// <summary>Description of the patch deployment. Length of the description is limited to 1024 characters.</summary>
@@ -895,6 +936,7 @@ public partial class V1beta1PatchDeploymentSpecForProvider
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterGroupLabels
 {
     /// <summary>Compute Engine instance labels that must be present for a VM instance to be targeted by this filter</summary>
@@ -910,6 +952,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterGroupLa
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -926,6 +969,7 @@ public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPol
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -937,6 +981,7 @@ public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPol
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefsPolicy
 {
     /// <summary>
@@ -961,6 +1006,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstanc
 /// <summary>A Reference to a named object.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesRefs
 {
     /// <summary>Name of the referenced object.</summary>
@@ -980,6 +1026,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstanc
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -996,6 +1043,7 @@ public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelecto
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1007,6 +1055,7 @@ public enum V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelecto
 /// <summary>Policies for selection.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelectorPolicy
 {
     /// <summary>
@@ -1031,6 +1080,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstanc
 /// <summary>Selector for a list of Instance in compute to populate instances.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstancesSelector
 {
     /// <summary>
@@ -1051,6 +1101,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilterInstanc
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilter
 {
     /// <summary>Target all VM instances in the project. If true, no other criteria is permitted.</summary>
@@ -1094,6 +1145,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderInstanceFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderOneTimeSchedule
 {
     /// <summary>
@@ -1106,6 +1158,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderOneTimeSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigApt
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -1130,6 +1183,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigApt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigGoo
 {
     /// <summary>goo update settings. Use this setting to override the default goo patch rules.</summary>
@@ -1139,6 +1193,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigGoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -1156,6 +1211,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -1184,6 +1240,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -1201,6 +1258,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepWi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -1229,6 +1287,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStepWi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStep
 {
     /// <summary>
@@ -1248,6 +1307,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPostStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -1265,6 +1325,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -1293,6 +1354,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -1310,6 +1372,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -1338,6 +1401,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStep
 {
     /// <summary>
@@ -1357,6 +1421,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigPreStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigWindowsUpdate
 {
     /// <summary>
@@ -1380,6 +1445,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigWindowsUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigYum
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -1405,6 +1471,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigYum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigZypper
 {
     /// <summary>Install only patches with these categories. Common categories include security, recommended, and feature.</summary>
@@ -1437,6 +1504,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfigZypper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfig
 {
     /// <summary>
@@ -1502,6 +1570,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderPatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
     /// <summary>
@@ -1522,6 +1591,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleMont
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleMonthly
 {
     /// <summary>
@@ -1542,6 +1612,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleMont
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleTimeOfDay
 {
     /// <summary>
@@ -1566,6 +1637,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleTimeZone
 {
     /// <summary>IANA Time Zone Database time zone, e.g. &quot;America/New_York&quot;.</summary>
@@ -1579,6 +1651,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleWeekly
 {
     /// <summary>
@@ -1591,6 +1664,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringScheduleWeek
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRecurringSchedule
 {
     /// <summary>
@@ -1639,6 +1713,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRecurringSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRolloutDisruptionBudget
 {
     /// <summary>Specifies a fixed value.</summary>
@@ -1652,6 +1727,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRolloutDisruptionBudg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProviderRollout
 {
     /// <summary>
@@ -1687,6 +1763,7 @@ public partial class V1beta1PatchDeploymentSpecInitProviderRollout
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecInitProvider
 {
     /// <summary>Description of the patch deployment. Length of the description is limited to 1024 characters.</summary>
@@ -1749,6 +1826,7 @@ public partial class V1beta1PatchDeploymentSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -1773,6 +1851,7 @@ public enum V1beta1PatchDeploymentSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -1789,6 +1868,7 @@ public enum V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public enum V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -1800,6 +1880,7 @@ public enum V1beta1PatchDeploymentSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -1828,6 +1909,7 @@ public partial class V1beta1PatchDeploymentSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -1847,6 +1929,7 @@ public partial class V1beta1PatchDeploymentSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -1861,6 +1944,7 @@ public partial class V1beta1PatchDeploymentSpecWriteConnectionSecretToRef
 /// <summary>PatchDeploymentSpec defines the desired state of PatchDeployment</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentSpec
 {
     /// <summary>
@@ -1928,6 +2012,7 @@ public partial class V1beta1PatchDeploymentSpec
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderInstanceFilterGroupLabels
 {
     /// <summary>Compute Engine instance labels that must be present for a VM instance to be targeted by this filter</summary>
@@ -1937,6 +2022,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderInstanceFilterGroupLa
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderInstanceFilter
 {
     /// <summary>Target all VM instances in the project. If true, no other criteria is permitted.</summary>
@@ -1972,6 +2058,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderInstanceFilter
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderOneTimeSchedule
 {
     /// <summary>
@@ -1984,6 +2071,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderOneTimeSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigApt
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -2008,6 +2096,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigApt
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigGoo
 {
     /// <summary>goo update settings. Use this setting to override the default goo patch rules.</summary>
@@ -2017,6 +2106,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigGoo
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -2034,6 +2124,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -2062,6 +2153,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepLi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -2079,6 +2171,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepWi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -2107,6 +2200,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStepWi
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStep
 {
     /// <summary>
@@ -2126,6 +2220,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPostStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepLinuxExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -2143,6 +2238,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepLinuxExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -2171,6 +2267,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepLin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepWindowsExecStepConfigGcsObject
 {
     /// <summary>Bucket of the Cloud Storage object.</summary>
@@ -2188,6 +2285,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepWindowsExecStepConfig
 {
     /// <summary>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</summary>
@@ -2216,6 +2314,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStepWin
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStep
 {
     /// <summary>
@@ -2235,6 +2334,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigPreStep
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigWindowsUpdate
 {
     /// <summary>
@@ -2258,6 +2358,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigWindowsUpd
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigYum
 {
     /// <summary>List of packages to exclude from update.</summary>
@@ -2283,6 +2384,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigYum
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigZypper
 {
     /// <summary>Install only patches with these categories. Common categories include security, recommended, and feature.</summary>
@@ -2315,6 +2417,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfigZypper
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfig
 {
     /// <summary>
@@ -2380,6 +2483,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderPatchConfig
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleMonthlyWeekDayOfMonth
 {
     /// <summary>
@@ -2400,6 +2504,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleMont
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleMonthly
 {
     /// <summary>
@@ -2420,6 +2525,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleMont
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleTimeOfDay
 {
     /// <summary>
@@ -2444,6 +2550,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleTimeZone
 {
     /// <summary>IANA Time Zone Database time zone, e.g. &quot;America/New_York&quot;.</summary>
@@ -2457,6 +2564,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleTime
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleWeekly
 {
     /// <summary>
@@ -2469,6 +2577,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringScheduleWeek
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRecurringSchedule
 {
     /// <summary>
@@ -2533,6 +2642,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRecurringSchedule
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRolloutDisruptionBudget
 {
     /// <summary>Specifies a fixed value.</summary>
@@ -2546,6 +2656,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRolloutDisruptionBudg
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProviderRollout
 {
     /// <summary>
@@ -2569,6 +2680,7 @@ public partial class V1beta1PatchDeploymentStatusAtProviderRollout
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusAtProvider
 {
     /// <summary>
@@ -2660,6 +2772,7 @@ public partial class V1beta1PatchDeploymentStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatusConditions
 {
     /// <summary>
@@ -2703,6 +2816,7 @@ public partial class V1beta1PatchDeploymentStatusConditions
 /// <summary>PatchDeploymentStatus defines the observed state of PatchDeployment.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1PatchDeploymentStatus
 {
     [JsonPropertyName("atProvider")]
@@ -2721,9 +2835,13 @@ public partial class V1beta1PatchDeploymentStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.</summary>
+/// <summary>
+/// PatchDeployment is the Schema for the PatchDeployments API. Patch deployments are configurations that individual patch jobs use to complete a patch.
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.6.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1PatchDeployment : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1PatchDeploymentSpec>, IStatus<V1beta1PatchDeploymentStatus?>
 {
