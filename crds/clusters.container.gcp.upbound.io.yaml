@@ -1405,9 +1405,26 @@ spec:
                               insecureKubeletReadonlyPortEnabled:
                                 description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                                 type: string
+                              memoryManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                  type: object
+                                type: array
                               podPidsLimit:
                                 description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                                 type: number
+                              topologyManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                    scope:
+                                      description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                      type: string
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         labels:
@@ -3615,9 +3632,26 @@ spec:
                               insecureKubeletReadonlyPortEnabled:
                                 description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                                 type: string
+                              memoryManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                  type: object
+                                type: array
                               podPidsLimit:
                                 description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                                 type: number
+                              topologyManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                    scope:
+                                      description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                      type: string
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         labels:
@@ -5913,9 +5947,26 @@ spec:
                               insecureKubeletReadonlyPortEnabled:
                                 description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                                 type: string
+                              memoryManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                  type: object
+                                type: array
                               podPidsLimit:
                                 description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                                 type: number
+                              topologyManager:
+                                items:
+                                  properties:
+                                    policy:
+                                      type: string
+                                    scope:
+                                      description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                      type: string
+                                  type: object
+                                type: array
                             type: object
                           type: array
                         labels:
@@ -6584,9 +6635,26 @@ spec:
                                     insecureKubeletReadonlyPortEnabled:
                                       description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                                       type: string
+                                    memoryManager:
+                                      items:
+                                        properties:
+                                          policy:
+                                            type: string
+                                        type: object
+                                      type: array
                                     podPidsLimit:
                                       description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                                       type: number
+                                    topologyManager:
+                                      items:
+                                        properties:
+                                          policy:
+                                            type: string
+                                          scope:
+                                            description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                            type: string
+                                        type: object
+                                      type: array
                                   type: object
                                 type: array
                               labels:
@@ -7885,7 +7953,7 @@ spec:
                         description: the key to use to encrypt/decrypt secrets.  See the DatabaseEncryption definition for more information.
                         type: string
                       state:
-                        description: ENCRYPTED or DECRYPTED
+                        description: ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
                         type: string
                     type: object
                   datapathProvider:
@@ -8637,9 +8705,22 @@ spec:
                           insecureKubeletReadonlyPortEnabled:
                             description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                             type: string
+                          memoryManager:
+                            properties:
+                              policy:
+                                type: string
+                            type: object
                           podPidsLimit:
                             description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                             type: number
+                          topologyManager:
+                            properties:
+                              policy:
+                                type: string
+                              scope:
+                                description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                type: string
+                            type: object
                         type: object
                       labels:
                         additionalProperties:
@@ -9894,7 +9975,7 @@ spec:
                         description: the key to use to encrypt/decrypt secrets.  See the DatabaseEncryption definition for more information.
                         type: string
                       state:
-                        description: ENCRYPTED or DECRYPTED
+                        description: ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
                         type: string
                     type: object
                   datapathProvider:
@@ -10637,9 +10718,22 @@ spec:
                           insecureKubeletReadonlyPortEnabled:
                             description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                             type: string
+                          memoryManager:
+                            properties:
+                              policy:
+                                type: string
+                            type: object
                           podPidsLimit:
                             description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                             type: number
+                          topologyManager:
+                            properties:
+                              policy:
+                                type: string
+                              scope:
+                                description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                type: string
+                            type: object
                         type: object
                       labels:
                         additionalProperties:
@@ -11981,7 +12075,7 @@ spec:
                         description: the key to use to encrypt/decrypt secrets.  See the DatabaseEncryption definition for more information.
                         type: string
                       state:
-                        description: ENCRYPTED or DECRYPTED
+                        description: ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
                         type: string
                     type: object
                   datapathProvider:
@@ -12725,9 +12819,22 @@ spec:
                           insecureKubeletReadonlyPortEnabled:
                             description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                             type: string
+                          memoryManager:
+                            properties:
+                              policy:
+                                type: string
+                            type: object
                           podPidsLimit:
                             description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                             type: number
+                          topologyManager:
+                            properties:
+                              policy:
+                                type: string
+                              scope:
+                                description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                type: string
+                            type: object
                         type: object
                       labels:
                         additionalProperties:
@@ -13345,9 +13452,22 @@ spec:
                                 insecureKubeletReadonlyPortEnabled:
                                   description: 'only port is enabled for newly created node pools in the cluster. It is strongly recommended to set this to FALSE. Possible values: TRUE, FALSE.'
                                   type: string
+                                memoryManager:
+                                  properties:
+                                    policy:
+                                      type: string
+                                  type: object
                                 podPidsLimit:
                                   description: Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.
                                   type: number
+                                topologyManager:
+                                  properties:
+                                    policy:
+                                      type: string
+                                    scope:
+                                      description: 'Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.'
+                                      type: string
+                                  type: object
                               type: object
                             labels:
                               additionalProperties:

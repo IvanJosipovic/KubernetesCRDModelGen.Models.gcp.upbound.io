@@ -531,6 +531,25 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfigHostMaintenancePoli
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecForProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecForProviderNodeConfigKubeletConfig
 {
     [JsonPropertyName("allowedUnsafeSysctls")]
@@ -566,8 +585,14 @@ public partial class V1beta2NodePoolSpecForProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2NodePoolSpecForProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2NodePoolSpecForProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -1582,6 +1607,25 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfigHostMaintenancePol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfig
 {
     [JsonPropertyName("allowedUnsafeSysctls")]
@@ -1617,8 +1661,14 @@ public partial class V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2NodePoolSpecInitProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -2831,6 +2881,25 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfigHostMaintenancePol
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfig
 {
     [JsonPropertyName("allowedUnsafeSysctls")]
@@ -2866,8 +2935,14 @@ public partial class V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2NodePoolStatusAtProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]

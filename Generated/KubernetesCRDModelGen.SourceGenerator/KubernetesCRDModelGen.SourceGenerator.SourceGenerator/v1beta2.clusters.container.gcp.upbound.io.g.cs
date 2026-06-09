@@ -797,7 +797,7 @@ public partial class V1beta2ClusterSpecForProviderDatabaseEncryption
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>ENCRYPTED or DECRYPTED</summary>
+    /// <summary>ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -1640,6 +1640,26 @@ public partial class V1beta2ClusterSpecForProviderNodeConfigHostMaintenancePolic
     public string? MaintenanceInterval { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecForProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecForProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
 /// <summary>
 /// Kubelet configuration, currently supported attributes can be found here.
 /// Structure is documented below.
@@ -1712,9 +1732,15 @@ public partial class V1beta2ClusterSpecForProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2ClusterSpecForProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2ClusterSpecForProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
@@ -4306,7 +4332,7 @@ public partial class V1beta2ClusterSpecInitProviderDatabaseEncryption
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>ENCRYPTED or DECRYPTED</summary>
+    /// <summary>ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -5149,6 +5175,26 @@ public partial class V1beta2ClusterSpecInitProviderNodeConfigHostMaintenancePoli
     public string? MaintenanceInterval { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecInitProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterSpecInitProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
 /// <summary>
 /// Kubelet configuration, currently supported attributes can be found here.
 /// Structure is documented below.
@@ -5221,9 +5267,15 @@ public partial class V1beta2ClusterSpecInitProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2ClusterSpecInitProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2ClusterSpecInitProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
@@ -8015,7 +8067,7 @@ public partial class V1beta2ClusterStatusAtProviderDatabaseEncryption
     [JsonPropertyName("keyName")]
     public string? KeyName { get; set; }
 
-    /// <summary>ENCRYPTED or DECRYPTED</summary>
+    /// <summary>ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.</summary>
     [JsonPropertyName("state")]
     public string? State { get; set; }
 }
@@ -8769,6 +8821,26 @@ public partial class V1beta2ClusterStatusAtProviderNodeConfigHostMaintenancePoli
     public string? MaintenanceInterval { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterStatusAtProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterStatusAtProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
 /// <summary>
 /// Kubelet configuration, currently supported attributes can be found here.
 /// Structure is documented below.
@@ -8841,9 +8913,15 @@ public partial class V1beta2ClusterStatusAtProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2ClusterStatusAtProviderNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2ClusterStatusAtProviderNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
@@ -9650,6 +9728,26 @@ public partial class V1beta2ClusterStatusAtProviderNodePoolNodeConfigHostMainten
     public string? MaintenanceInterval { get; set; }
 }
 
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta2ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
 /// <summary>
 /// Kubelet configuration, currently supported attributes can be found here.
 /// Structure is documented below.
@@ -9722,9 +9820,15 @@ public partial class V1beta2ClusterStatusAtProviderNodePoolNodeConfigKubeletConf
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public V1beta2ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigMemoryManager? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public V1beta2ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigTopologyManager? TopologyManager { get; set; }
 }
 
 /// <summary>Amounts for 2M and 1G hugepages. Structure is documented below.</summary>
