@@ -1509,6 +1509,28 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigHostMaintenancePolic
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecForProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterSpecForProviderNodeConfigKubeletConfig
 {
     /// <summary>Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. The allowed sysctl groups are kernel.shm*, kernel.msg*, kernel.sem, fs.mqueue.*, and net.*.</summary>
@@ -1575,9 +1597,15 @@ public partial class V1beta1ClusterSpecForProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public IList<V1beta1ClusterSpecForProviderNodeConfigKubeletConfigMemoryManager>? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public IList<V1beta1ClusterSpecForProviderNodeConfigKubeletConfigTopologyManager>? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -4861,6 +4889,28 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigHostMaintenancePoli
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterSpecInitProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterSpecInitProviderNodeConfigKubeletConfig
 {
     /// <summary>Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. The allowed sysctl groups are kernel.shm*, kernel.msg*, kernel.sem, fs.mqueue.*, and net.*.</summary>
@@ -4927,9 +4977,15 @@ public partial class V1beta1ClusterSpecInitProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public IList<V1beta1ClusterSpecInitProviderNodeConfigKubeletConfigMemoryManager>? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public IList<V1beta1ClusterSpecInitProviderNodeConfigKubeletConfigTopologyManager>? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -8325,6 +8381,28 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigHostMaintenancePoli
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterStatusAtProviderNodeConfigKubeletConfig
 {
     /// <summary>Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. The allowed sysctl groups are kernel.shm*, kernel.msg*, kernel.sem, fs.mqueue.*, and net.*.</summary>
@@ -8391,9 +8469,15 @@ public partial class V1beta1ClusterStatusAtProviderNodeConfigKubeletConfig
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public IList<V1beta1ClusterStatusAtProviderNodeConfigKubeletConfigMemoryManager>? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public IList<V1beta1ClusterStatusAtProviderNodeConfigKubeletConfigTopologyManager>? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
@@ -9195,6 +9279,28 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigHostMainten
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigMemoryManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
+public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigTopologyManager
+{
+    [JsonPropertyName("policy")]
+    public string? Policy { get; set; }
+
+    /// <summary>Whether or not to enable GKE Auto-Monitoring. Supported values include: ALL, NONE.</summary>
+    [JsonPropertyName("scope")]
+    public string? Scope { get; set; }
+}
+
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.6.0.")]
 public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConfig
 {
     /// <summary>Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. The allowed sysctl groups are kernel.shm*, kernel.msg*, kernel.sem, fs.mqueue.*, and net.*.</summary>
@@ -9261,9 +9367,15 @@ public partial class V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConf
     [JsonPropertyName("insecureKubeletReadonlyPortEnabled")]
     public string? InsecureKubeletReadonlyPortEnabled { get; set; }
 
+    [JsonPropertyName("memoryManager")]
+    public IList<V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigMemoryManager>? MemoryManager { get; set; }
+
     /// <summary>Controls the maximum number of processes allowed to run in a pod. The value must be greater than or equal to 1024 and less than 4194304.</summary>
     [JsonPropertyName("podPidsLimit")]
     public double? PodPidsLimit { get; set; }
+
+    [JsonPropertyName("topologyManager")]
+    public IList<V1beta1ClusterStatusAtProviderNodePoolNodeConfigKubeletConfigTopologyManager>? TopologyManager { get; set; }
 }
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
