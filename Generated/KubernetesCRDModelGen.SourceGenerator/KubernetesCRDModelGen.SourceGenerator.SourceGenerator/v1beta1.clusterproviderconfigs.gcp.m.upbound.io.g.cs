@@ -189,6 +189,42 @@ public partial class V1beta1ClusterProviderConfigSpecCredentials
     public V1beta1ClusterProviderConfigSpecCredentialsUpbound? Upbound { get; set; }
 }
 
+/// <summary>
+/// ExponentialFailureRateLimiter, when set, overrides the parameters of the
+/// exponential failure rate limiter used to schedule retries for the
+/// managed resource that this policy applies to.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter
+{
+    /// <summary>BaseDelay is the initial delay between retries.</summary>
+    [JsonPropertyName("baseDelay")]
+    public string? BaseDelay { get; set; }
+
+    /// <summary>MaxDelay is the maximum delay between retries.</summary>
+    [JsonPropertyName("maxDelay")]
+    public string? MaxDelay { get; set; }
+}
+
+/// <summary>
+/// ReconciliationPolicy configures how a managed resource is reconciled.
+/// It currently allows overriding the controller&apos;s failure rate limiter
+/// parameters on a per-resource basis via ExponentialFailureRateLimiter.
+/// </summary>
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
+[global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+public partial class V1beta1ClusterProviderConfigSpecReconciliationPolicy
+{
+    /// <summary>
+    /// ExponentialFailureRateLimiter, when set, overrides the parameters of the
+    /// exponential failure rate limiter used to schedule retries for the
+    /// managed resource that this policy applies to.
+    /// </summary>
+    [JsonPropertyName("exponentialFailureRateLimiter")]
+    public V1beta1ClusterProviderConfigSpecReconciliationPolicyExponentialFailureRateLimiter? ExponentialFailureRateLimiter { get; set; }
+}
+
 /// <summary>A ProviderConfigSpec defines the desired state of a ProviderConfig.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
@@ -201,6 +237,14 @@ public partial class V1beta1ClusterProviderConfigSpec
     /// <summary>ProjectID is the project name (not numerical ID) of this GCP ProviderConfig.</summary>
     [JsonPropertyName("projectID")]
     public required string ProjectID { get; set; }
+
+    /// <summary>
+    /// ReconciliationPolicy configures how a managed resource is reconciled.
+    /// It currently allows overriding the controller&apos;s failure rate limiter
+    /// parameters on a per-resource basis via ExponentialFailureRateLimiter.
+    /// </summary>
+    [JsonPropertyName("reconciliationPolicy")]
+    public V1beta1ClusterProviderConfigSpecReconciliationPolicy? ReconciliationPolicy { get; set; }
 }
 
 /// <summary>A Condition that may apply to a resource.</summary>
